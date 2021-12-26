@@ -156,7 +156,7 @@ public class LoginFormCustomer extends javax.swing.JFrame {
             this.dispose();
         }
         else {
-            jLabel5.setText("invalid");
+            jLabel5.setText("Invalid");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
