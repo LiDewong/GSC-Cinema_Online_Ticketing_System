@@ -4,10 +4,8 @@
  */
 package cinemaswingtest1;
 
-/**
- *
- * @author Sengko
- */
+
+
 public class CinemaSwingTest1 {
 
     /**

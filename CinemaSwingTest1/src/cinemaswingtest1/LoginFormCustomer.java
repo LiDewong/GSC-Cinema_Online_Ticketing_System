@@ -143,21 +143,28 @@ public class LoginFormCustomer extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String email = jTextField1.getText();
-        String password = String.valueOf(jPasswordField1.getPassword());
-        System.out.println(email + ", " + password);
-        
-        if (email.equals("sengko") && password.equals("ku1234")) {
-            LoginSuccessfulCustomer lsc = new LoginSuccessfulCustomer();
-            lsc.setVisible(true);
-            lsc.pack();
-            lsc.setLocationRelativeTo(null);
-            lsc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.dispose();
+
+        try {
+            String email = jTextField1.getText();
+            String password = String.valueOf(jPasswordField1.getPassword());
+            System.out.println(email + ", " + password);
+            boolean x =API.customerLogin(email, password);
+            System.out.println(x);
+
+            if (x) {
+                LoginSuccessfulCustomer lsc = new LoginSuccessfulCustomer();
+                lsc.setVisible(true);
+                lsc.pack();
+                lsc.setLocationRelativeTo(null);
+                lsc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                this.dispose();
+            } else {
+                jLabel5.setText("Invalid");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-        else {
-            jLabel5.setText("Invalid");
-        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
