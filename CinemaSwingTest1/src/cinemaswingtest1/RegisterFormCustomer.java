@@ -143,6 +143,16 @@ public class RegisterFormCustomer extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try {
+            String name = jTextField1.getText();
+            String email = jTextField2.getText();
+            String phone_number = jTextField3.getText();
+            String password = String.valueOf(jPasswordField1.getPassword());
+            API.customerSignUp(name, email, password, phone_number);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
         LoginFormCustomer lgf = new LoginFormCustomer();
         lgf.setVisible(true);
         lgf.pack();
