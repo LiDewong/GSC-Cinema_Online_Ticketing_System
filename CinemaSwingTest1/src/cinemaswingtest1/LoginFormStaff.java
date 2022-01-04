@@ -132,11 +132,14 @@ public class LoginFormStaff extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String email = jTextField1.getText();
-        String password = String.valueOf(jPasswordField1.getPassword());
-        System.out.println(email + ", " + password);
         
-        if (email.equals("sengko") && password.equals("ku1234")) {
+        try {
+            String email = jTextField1.getText();
+            String password = String.valueOf(jPasswordField1.getPassword());
+            System.out.println(email + ", " + password);
+            boolean x =API.staffLogin(email, password);
+            
+            if (x) {
             LoginSuccessfulCustomer lsc = new LoginSuccessfulCustomer();
             lsc.setVisible(true);
             lsc.pack();
@@ -147,6 +150,13 @@ public class LoginFormStaff extends javax.swing.JFrame {
         else {
             jLabel5.setText("Invalid");
         }
+            //
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
