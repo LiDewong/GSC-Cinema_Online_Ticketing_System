@@ -140,11 +140,11 @@ public class LoginFormStaff extends javax.swing.JFrame {
             boolean x =API.staffLogin(email, password);
             
             if (x) {
-            LoginSuccessfulCustomer lsc = new LoginSuccessfulCustomer();
-            lsc.setVisible(true);
-            lsc.pack();
-            lsc.setLocationRelativeTo(null);
-            lsc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            LoginSuccessfulStaff lss = new LoginSuccessfulStaff();
+            lss.setVisible(true);
+            lss.pack();
+            lss.setLocationRelativeTo(null);
+            lss.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.dispose();
         }
         else {
