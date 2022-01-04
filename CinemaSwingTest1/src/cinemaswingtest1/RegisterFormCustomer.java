@@ -123,11 +123,11 @@ public class RegisterFormCustomer extends javax.swing.JFrame {
             System.out.println(e.getMessage());
         }
         
-        LoginFormCustomer lgf = new LoginFormCustomer();
-        lgf.setVisible(true);
-        lgf.pack();
-        lgf.setLocationRelativeTo(null);
-        lgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        LoginFormCustomer lfc = new LoginFormCustomer();
+        lfc.setVisible(true);
+        lfc.pack();
+        lfc.setLocationRelativeTo(null);
+        lfc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -114,11 +114,21 @@ public class RegisterFormStaff extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        LoginFormCustomer lgf = new LoginFormCustomer();
-        lgf.setVisible(true);
-        lgf.pack();
-        lgf.setLocationRelativeTo(null);
-        lgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        try {
+            String name = jTextField1.getText();
+            String staffID = jTextField2.getText();
+            String email = jTextField3.getText();
+            String password = String.valueOf(jPasswordField1.getPassword());
+            API.staffSignUp(name, email, password, staffID);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        LoginFormStaff lfs = new LoginFormStaff();
+        lfs.setVisible(true);
+        lfs.pack();
+        lfs.setLocationRelativeTo(null);
+        lfs.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
