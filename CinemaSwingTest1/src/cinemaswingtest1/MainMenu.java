@@ -1,21 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package cinemaswingtest1;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author YEZP
- */
 public class MainMenu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ScaleImage
-     */
     public MainMenu() {
         initComponents();
 //        ScaleImage();
