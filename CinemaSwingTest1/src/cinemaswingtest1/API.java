@@ -1,21 +1,16 @@
 package cinemaswingtest1;
 
 /**
- * Setup:
- * This class required JSON Library
- * CTRL press this: https://search.maven.org/remotecontent?filepath=org/json/json/20211205/json-20211205.jar
- * Drag and Drop the jar file into the directory you want
- * Right click the project and select properties
- * Go to libraries, press the + besides the class path
- * Click add JAR/folder
- * Select that jar downloaded file
- * All done!
+ * Setup: This class required JSON Library CTRL press this:
+ * https://search.maven.org/remotecontent?filepath=org/json/json/20211205/json-20211205.jar
+ * Drag and Drop the jar file into the directory you want Right click the
+ * project and select properties Go to libraries, press the + besides the class
+ * path Click add JAR/folder Select that jar downloaded file All done!
  *
  * Collapse all methods CTRL + SHIFT + MINUS(-)
  *
  * @
  */
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
@@ -204,18 +199,20 @@ public class API {
      * @param name
      * @param email
      * @param password
-     * @param staff_id
+     * @param id
+     * @param phone_number
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String name, String email, String password, String staff_id) throws Exception {
+    public static boolean staffSignUp(String name, String email, String password, String id, String phone_number) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
             data.put("name", name);
             data.put("email", email);
             data.put("password", password);
-            data.put("staff_id", staff_id);
+            data.put("id", id);
+            data.put("phone_number", phone_number);
 
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(buildFormDataFromMap(data))
