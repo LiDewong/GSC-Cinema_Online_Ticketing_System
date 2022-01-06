@@ -182,17 +182,17 @@ public class API {
             JSONObject user = (JSONObject) staffs.get(i);
             String name = (String) user.get("name");
             String email = (String) user.get("email");
-            String phone_number = (String) user.get("phone_number");
-            Staff s = new Staff(name, email, phone_number);
+            String staff_id = (String) user.get("staff_id");
+            Staff s = new Staff(name, email, staff_id);
             list.add(s);
         }
 
         for (int i = 0; i < list.size(); i++) {
             String name = list.get(i).getName();
             String email = list.get(i).getEmail();
-            String phone_number = list.get(i).getPhoneNumber();
+            String staff_id = list.get(i).getstaff_id();
 
-            System.out.println("Staff " + (i + 1) + ": " + name + " " + email + " " + phone_number);
+            System.out.println("Staff " + (i + 1) + ": " + name + " " + email + " " + staff_id);
         }
 
         return list;
@@ -204,18 +204,18 @@ public class API {
      * @param name
      * @param email
      * @param password
-     * @param staffID
+     * @param staff_id
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String name, String email, String password, String staffID) throws Exception {
+    public static boolean staffSignUp(String name, String email, String password, String staff_id) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
             data.put("name", name);
             data.put("email", email);
             data.put("password", password);
-            data.put("phone_number", staffID);
+            data.put("staff_id", staff_id);
 
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(buildFormDataFromMap(data))
