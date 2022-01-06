@@ -22,7 +22,7 @@ public class ImageTest extends javax.swing.JFrame {
     }
     
     public void ScaleImage(){
-        ImageIcon icon = new ImageIcon("https://github.com/Christina-Ku-Pei-San/CinemaSwingTest1/blob/main/CinemaSwingTest1/src/cinemaswingtest1/20218612026.png");
+        ImageIcon icon = new ImageIcon("https://github.com/Christina-Ku-Pei-San/CinemaSwingTest1/blob/main/CinemaSwingTest1/src/cinemaswingtest1/20218612026.png?raw=true");
         Image img=icon.getImage();        
         Image imgScale=img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon=new ImageIcon(imgScale);
