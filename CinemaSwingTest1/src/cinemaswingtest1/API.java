@@ -312,12 +312,12 @@ public class API {
 
         private String name;
         private String email;
-        private String phone_number;
+        private String staff_id;
 
-        public Staff(String name, String email, String phone_number) {
+        public Staff(String name, String email, String staff_id) {
             this.name = name;
             this.email = email;
-            this.phone_number = phone_number;
+            this.staff_id = staff_id;
         }
 
         public String getName() {
@@ -328,13 +328,13 @@ public class API {
             return email;
         }
 
-        public String getPhoneNumber() {
-            return phone_number;
+        public String getstaff_id() {
+            return staff_id;
         }
 
         @Override
         public String toString() {
-            return name + " " + email + " " + phone_number;
+            return name + " " + email + " " + staff_id;
         }
     }
 
