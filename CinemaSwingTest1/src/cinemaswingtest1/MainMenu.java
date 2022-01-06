@@ -115,35 +115,20 @@ public class MainMenu extends javax.swing.JFrame {
         label8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
 
         label2.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\OIP.jpg")); // NOI18N
-        getContentPane().add(label2);
-        label2.setBounds(246, 148, 160, 190);
 
         label.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\fop pic3.jpg")); // NOI18N
-        getContentPane().add(label);
-        label.setBounds(36, 150, 170, 188);
 
         label3.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\fop.jpg")); // NOI18N
-        getContentPane().add(label3);
-        label3.setBounds(440, 150, 156, 188);
 
         jLabel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
         jLabel.setForeground(new java.awt.Color(255, 255, 255));
         jLabel.setText("Now Showing");
-        getContentPane().add(jLabel);
-        jLabel.setBounds(390, 10, 250, 110);
 
         label4.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic.jpg")); // NOI18N
-        getContentPane().add(label4);
-        label4.setBounds(630, 150, 149, 188);
 
         label5.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\poster.jpg")); // NOI18N
-        getContentPane().add(label5);
-        label5.setBounds(810, 150, 150, 190);
-        getContentPane().add(label9);
-        label9.setBounds(210, 30, 160, 210);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 24)); // NOI18N
@@ -153,20 +138,78 @@ public class MainMenu extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(470, 400, 95, 35);
 
         label6.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\logo.png")); // NOI18N
-        getContentPane().add(label6);
-        label6.setBounds(10, 30, 140, 40);
 
         label7.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic1.jpg")); // NOI18N
-        getContentPane().add(label7);
-        label7.setBounds(0, 130, 990, 220);
 
         label8.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic (1).jpg")); // NOI18N
-        getContentPane().add(label8);
-        label8.setBounds(0, 0, 990, 470);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(label6)
+                .addGap(240, 240, 240)
+                .addComponent(jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(630, 630, 630)
+                .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(label5))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(246, 246, 246)
+                .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(label))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(440, 440, 440)
+                .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(470, 470, 470)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(label7)
+            .addComponent(label8)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(label6))
+                    .addComponent(jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(label5)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(label))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(400, 400, 400)
+                .addComponent(jButton1))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(label7))
+            .addComponent(label8)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
