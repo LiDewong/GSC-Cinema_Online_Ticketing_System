@@ -8,80 +8,80 @@ public class MainMenu extends javax.swing.JFrame {
 
     public MainMenu() {
         initComponents();
-        ScaleImage();
-        scaleImage();
-        scaleImage1();
-        scaleImage2();
-        scaleImage3();
-        scaleImage4();
-        scaleImage5();
-        scaleImage6();
+//        ScaleImage();
+//        scaleImage();
+//        scaleImage1();
+//        scaleImage2();
+//        scaleImage3();
+//        scaleImage4();
+//        scaleImage5();
+//        scaleImage6();
         
     }
     
-    public void ScaleImage(){
-        ImageIcon icon = new ImageIcon("https://raw.githubusercontent.com/Christina-Ku-Pei-San/CinemaSwingTest1/main/CinemaSwingTest1/src/cinemaswingtest1/fop%20pic3.jpg");
-        Image img=icon.getImage();        
-        Image imgScale=img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon scaledIcon=new ImageIcon(imgScale);
-        label.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\OIP.jpeg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label2.getWidth(), label2.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label2.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage1(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\fop.jpg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label3.getWidth(), label3.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label3.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage2(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic.jpg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label4.getWidth(), label4.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label4.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage3(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\poster.jpg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label5.getWidth(), label5.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label5.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage4(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\logo.png");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label6.getWidth(), label6.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label6.setIcon(scaledIcon);
-    }
-
-    public void scaleImage5(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic1.jpeg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label7.getWidth(), label7.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label7.setIcon(scaledIcon);
-    }
-    
-    public void scaleImage6(){
-    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic.jpeg");
-    Image img=icon.getImage();
-    Image imgScale=img.getScaledInstance(label8.getWidth(), label8.getHeight(), Image.SCALE_SMOOTH);
-    ImageIcon scaledIcon=new ImageIcon(imgScale);
-    label8.setIcon(scaledIcon);
-    }
+//    public void ScaleImage(){
+//        ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\fop pic3.jpg");
+//        Image img=icon.getImage();        
+//        Image imgScale=img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
+//        ImageIcon scaledIcon=new ImageIcon(imgScale);
+//        label.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\OIP.jpeg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label2.getWidth(), label2.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label2.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage1(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\fop.jpg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label3.getWidth(), label3.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label3.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage2(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic.jpg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label4.getWidth(), label4.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label4.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage3(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\poster.jpg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label5.getWidth(), label5.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label5.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage4(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\logo.png");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label6.getWidth(), label6.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label6.setIcon(scaledIcon);
+//    }
+//
+//    public void scaleImage5(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic1.jpeg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label7.getWidth(), label7.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label7.setIcon(scaledIcon);
+//    }
+//    
+//    public void scaleImage6(){
+//    ImageIcon icon = new ImageIcon("C:\\Users\\YEZP\\Downloads\\WIX1001\\pic.jpeg");
+//    Image img=icon.getImage();
+//    Image imgScale=img.getScaledInstance(label8.getWidth(), label8.getHeight(), Image.SCALE_SMOOTH);
+//    ImageIcon scaledIcon=new ImageIcon(imgScale);
+//    label8.setIcon(scaledIcon);
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
