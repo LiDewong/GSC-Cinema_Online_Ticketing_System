@@ -204,7 +204,7 @@ public class API {
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String name, String email, String password, String id, String phone_number) throws Exception {
+    public static boolean staffSignUp(String name, String email, String password, int id, String phone_number) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();

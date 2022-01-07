@@ -25,83 +25,106 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-              <Component id="label6" min="-2" pref="140" max="-2" attributes="0"/>
-              <EmptySpace min="260" pref="260" max="-2" attributes="0"/>
-              <Component id="jLabel" min="-2" pref="290" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-              <Component id="label" min="-2" pref="170" max="-2" attributes="0"/>
-              <EmptySpace min="234" pref="234" max="-2" attributes="0"/>
-              <Component id="label3" min="-2" pref="156" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="810" pref="810" max="-2" attributes="0"/>
-              <Component id="label5" min="-2" pref="150" max="-2" attributes="0"/>
+              <Component id="label6" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="240" pref="240" max="-2" attributes="0"/>
+              <Component id="jLabel" min="-2" pref="250" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="630" pref="630" max="-2" attributes="0"/>
               <Component id="label4" min="-2" pref="149" max="-2" attributes="0"/>
+              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+              <Component id="label5" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="210" pref="210" max="-2" attributes="0"/>
+              <Component id="label9" min="-2" pref="160" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="246" pref="246" max="-2" attributes="0"/>
               <Component id="label2" min="-2" pref="160" max="-2" attributes="0"/>
           </Group>
-          <Component id="label7" min="-2" pref="990" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
+              <Component id="label" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="440" pref="440" max="-2" attributes="0"/>
+              <Component id="label3" min="-2" pref="156" max="-2" attributes="0"/>
+          </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="470" pref="470" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" pref="95" max="-2" attributes="0"/>
           </Group>
-          <Component id="label8" min="-2" pref="990" max="-2" attributes="0"/>
+          <Component id="label7" min="-2" max="-2" attributes="0"/>
+          <Component id="label8" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      <Component id="label6" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                      <Component id="label6" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jLabel" min="-2" pref="110" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                      <Component id="label" min="-2" pref="188" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                      <Component id="label3" min="-2" pref="188" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                      <Component id="label5" min="-2" pref="188" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                      <Component id="label4" min="-2" pref="188" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="label2" min="-2" pref="190" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="label7" min="-2" pref="220" max="-2" attributes="0"/>
+                  <Component id="label4" min="-2" pref="188" max="-2" attributes="0"/>
+                  <Component id="label5" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+              <Component id="label9" min="-2" pref="210" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="148" pref="148" max="-2" attributes="0"/>
+              <Component id="label2" min="-2" pref="190" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="150" pref="150" max="-2" attributes="0"/>
+              <Component id="label" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="150" pref="150" max="-2" attributes="0"/>
+              <Component id="label3" min="-2" pref="188" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="400" pref="400" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
           </Group>
-          <Component id="label8" min="-2" pref="470" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="130" pref="130" max="-2" attributes="0"/>
+              <Component id="label7" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Component id="label8" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JLabel" name="label2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\OIP.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\fop pic3.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\fop.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel">
       <Properties>
@@ -115,8 +138,20 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label4">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label5">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\poster.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="label9">
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -133,10 +168,25 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="label6">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\logo.png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label7">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic1.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label8">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic (1).jpg"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

@@ -120,7 +120,8 @@ public class RegisterFormStaff extends javax.swing.JFrame {
             String staffID = jTextField2.getText();
             String email = jTextField3.getText();
             String password = String.valueOf(jPasswordField1.getPassword());
-            API.staffSignUp(name, email, password, staffID, "012345678");
+            int id = Integer.parseInt(staffID);
+            API.staffSignUp(name, email, password, id, "012345678");
 
         
         
