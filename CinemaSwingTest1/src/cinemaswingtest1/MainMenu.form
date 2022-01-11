@@ -36,10 +36,6 @@
               <Component id="label5" min="-2" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="210" pref="210" max="-2" attributes="0"/>
-              <Component id="label9" min="-2" pref="160" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
               <EmptySpace min="246" pref="246" max="-2" attributes="0"/>
               <Component id="label2" min="-2" pref="160" max="-2" attributes="0"/>
           </Group>
@@ -77,10 +73,6 @@
               </Group>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-              <Component id="label9" min="-2" pref="210" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
               <EmptySpace min="148" pref="148" max="-2" attributes="0"/>
               <Component id="label2" min="-2" pref="190" max="-2" attributes="0"/>
           </Group>
@@ -108,21 +100,21 @@
     <Component class="javax.swing.JLabel" name="label2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/cinemaswingtest1/images/OIP.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/OIP.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\fop pic3.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/fop pic3.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\fop.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/fop.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -140,18 +132,16 @@
     <Component class="javax.swing.JLabel" name="label4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/pic.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\poster.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/poster.jpg"/>
         </Property>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="label9">
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -170,21 +160,21 @@
     <Component class="javax.swing.JLabel" name="label6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\logo.png"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/logo.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic1.jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/pic1.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\YEZP\Downloads\pic (1).jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/pic (1).jpg"/>
         </Property>
       </Properties>
     </Component>

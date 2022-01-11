@@ -20,7 +20,6 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel = new javax.swing.JLabel();
         label4 = new javax.swing.JLabel();
         label5 = new javax.swing.JLabel();
-        label9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         label6 = new javax.swing.JLabel();
         label7 = new javax.swing.JLabel();
@@ -28,19 +27,19 @@ public class MainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        label2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/images/OIP.jpg"))); // NOI18N
+        label2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/OIP.jpg"))); // NOI18N
 
-        label.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\fop pic3.jpg")); // NOI18N
+        label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop pic3.jpg"))); // NOI18N
 
-        label3.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\fop.jpg")); // NOI18N
+        label3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop.jpg"))); // NOI18N
 
         jLabel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
         jLabel.setForeground(new java.awt.Color(255, 255, 255));
         jLabel.setText("Now Showing");
 
-        label4.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic.jpg")); // NOI18N
+        label4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic.jpg"))); // NOI18N
 
-        label5.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\poster.jpg")); // NOI18N
+        label5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/poster.jpg"))); // NOI18N
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 24)); // NOI18N
@@ -51,11 +50,11 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        label6.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\logo.png")); // NOI18N
+        label6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo.png"))); // NOI18N
 
-        label7.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic1.jpg")); // NOI18N
+        label7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic1.jpg"))); // NOI18N
 
-        label8.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\pic (1).jpg")); // NOI18N
+        label8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic (1).jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,9 +70,6 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(label5))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(210, 210, 210)
-                .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(246, 246, 246)
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -102,9 +98,6 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(label5)))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(148, 148, 148)
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -178,6 +171,5 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel label6;
     private javax.swing.JLabel label7;
     private javax.swing.JLabel label8;
-    private javax.swing.JLabel label9;
     // End of variables declaration//GEN-END:variables
 }
