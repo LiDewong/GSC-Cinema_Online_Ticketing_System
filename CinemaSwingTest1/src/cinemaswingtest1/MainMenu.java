@@ -28,7 +28,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        label2.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\OIP.jpg")); // NOI18N
+        label2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/images/OIP.jpg"))); // NOI18N
 
         label.setIcon(new javax.swing.ImageIcon("C:\\Users\\YEZP\\Downloads\\fop pic3.jpg")); // NOI18N
 
