@@ -135,11 +135,11 @@ public class LoginFormCustomer extends javax.swing.JFrame {
             System.out.println(x);
 
             if (x) {
-                LoginSuccessfulCustomer lsc = new LoginSuccessfulCustomer();
-                lsc.setVisible(true);
-                lsc.pack();
-                lsc.setLocationRelativeTo(null);
-                lsc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                MainMenu mm = new MainMenu();
+                mm.setVisible(true);
+                mm.pack();
+                mm.setLocationRelativeTo(null);
+                mm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 this.dispose();
             } else {
                 jLabel5.setText("Invalid");
