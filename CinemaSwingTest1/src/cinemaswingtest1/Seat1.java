@@ -1,6 +1,14 @@
 package cinemaswingtest1;
 
+import java.awt.Color;
+
 public class Seat1 extends javax.swing.JFrame {
+
+    private int c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,
+            c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,
+            c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,
+            c31,c32,c33,c34,c35,c36,c37,c38,c39,c40,
+            c41,c42,c43,c44,c45,c46,c47,c48,c49;
 
     /**
      * Creates new form Seat
@@ -512,199 +520,346 @@ public class Seat1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+        jButton1.setBackground(Color.CYAN);
+        c1++;
+        if (c1 % 2 == 0)
+            jButton1.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+        jButton2.setBackground(Color.CYAN);
+        c2++;
+        if (c2 % 2 == 0)
+            jButton2.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        jButton3.setBackground(Color.CYAN);
+        c3++;
+        if (c3 % 2 == 0)
+            jButton3.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        jButton4.setBackground(Color.CYAN);
+        c4++;
+        if (c4 % 2 == 0)
+            jButton4.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        jButton5.setBackground(Color.CYAN);
+        c5++;
+        if (c5 % 2 == 0)
+            jButton5.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        jButton6.setBackground(Color.CYAN);
+        c6++;
+        if (c6 % 2 == 0)
+            jButton6.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+        jButton7.setBackground(Color.CYAN);
+        c7++;
+        if (c7 % 2 == 0)
+            jButton7.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+        jButton11.setBackground(Color.CYAN);
+        c8++;
+        if (c8 % 2 == 0)
+            jButton11.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
+        jButton12.setBackground(Color.CYAN);
+        c9++;
+        if (c9 % 2 == 0)
+            jButton12.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
+        jButton13.setBackground(Color.CYAN);
+        c10++;
+        if (c10 % 2 == 0)
+            jButton13.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
+        jButton14.setBackground(Color.CYAN);
+        c11++;
+        if (c11 % 2 == 0)
+            jButton14.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
+        jButton15.setBackground(Color.CYAN);
+        c12++;
+        if (c12 % 2 == 0)
+            jButton15.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
+        jButton16.setBackground(Color.CYAN);
+        c13++;
+        if (c13 % 2 == 0)
+            jButton16.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
+        jButton17.setBackground(Color.CYAN);
+        c14++;
+        if (c14 % 2 == 0)
+            jButton17.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
+        jButton21.setBackground(Color.CYAN);
+        c15++;
+        if (c15 % 2 == 0)
+            jButton21.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
+        jButton22.setBackground(Color.CYAN);
+        c16++;
+        if (c16 % 2 == 0)
+            jButton22.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
+        jButton23.setBackground(Color.CYAN);
+        c17++;
+        if (c17 % 2 == 0)
+            jButton23.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
+        jButton24.setBackground(Color.CYAN);
+        c18++;
+        if (c18 % 2 == 0)
+            jButton24.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
+        jButton25.setBackground(Color.CYAN);
+        c19++;
+        if (c19 % 2 == 0)
+            jButton25.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
+        jButton26.setBackground(Color.CYAN);
+        c20++;
+        if (c20 % 2 == 0)
+            jButton26.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+        jButton27.setBackground(Color.CYAN);
+        c21++;
+        if (c21 % 2 == 0)
+            jButton27.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
+        jButton31.setBackground(Color.CYAN);
+        c22++;
+        if (c22 % 2 == 0)
+            jButton31.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
+        jButton32.setBackground(Color.CYAN);
+        c23++;
+        if (c23 % 2 == 0)
+            jButton32.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        // TODO add your handling code here:
+        jButton33.setBackground(Color.CYAN);
+        c24++;
+        if (c24 % 2 == 0)
+            jButton33.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        // TODO add your handling code here:
+        jButton34.setBackground(Color.CYAN);
+        c25++;
+        if (c25 % 2 == 0)
+            jButton34.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
-        // TODO add your handling code here:
+        jButton35.setBackground(Color.CYAN);
+        c26++;
+        if (c26 % 2 == 0)
+            jButton35.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
-        // TODO add your handling code here:
+        jButton36.setBackground(Color.CYAN);
+        c27++;
+        if (c27 % 2 == 0)
+            jButton36.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        // TODO add your handling code here:
+        jButton37.setBackground(Color.CYAN);
+        c28++;
+        if (c28 % 2 == 0)
+            jButton37.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
-        // TODO add your handling code here:
+        jButton41.setBackground(Color.CYAN);
+        c29++;
+        if (c29 % 2 == 0)
+            jButton41.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
-        // TODO add your handling code here:
+        jButton42.setBackground(Color.CYAN);
+        c30++;
+        if (c30 % 2 == 0)
+            jButton42.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
-        // TODO add your handling code here:
+        jButton43.setBackground(Color.CYAN);
+        c31++;
+        if (c31 % 2 == 0)
+            jButton43.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
-        // TODO add your handling code here:
+        jButton44.setBackground(Color.CYAN);
+        c32++;
+        if (c32 % 2 == 0)
+            jButton44.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        // TODO add your handling code here:
+        jButton45.setBackground(Color.CYAN);
+        c33++;
+        if (c33 % 2 == 0)
+            jButton45.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
-        // TODO add your handling code here:
+        jButton46.setBackground(Color.CYAN);
+        c34++;
+        if (c34 % 2 == 0)
+            jButton46.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
-        // TODO add your handling code here:
+        jButton47.setBackground(Color.CYAN);
+        c35++;
+        if (c35 % 2 == 0)
+            jButton47.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-        // TODO add your handling code here:
+        jButton51.setBackground(Color.CYAN);
+        c36++;
+        if (c36 % 2 == 0)
+            jButton51.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
-        // TODO add your handling code here:
+        jButton52.setBackground(Color.CYAN);
+        c37++;
+        if (c37 % 2 == 0)
+            jButton52.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
-        // TODO add your handling code here:
+        jButton53.setBackground(Color.CYAN);
+        c38++;
+        if (c38 % 2 == 0)
+            jButton53.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
-        // TODO add your handling code here:
+        jButton54.setBackground(Color.CYAN);
+        c39++;
+        if (c39 % 2 == 0)
+            jButton54.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        // TODO add your handling code here:
+        jButton55.setBackground(Color.CYAN);
+        c40++;
+        if (c40 % 2 == 0)
+            jButton55.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
-        // TODO add your handling code here:
+        jButton56.setBackground(Color.CYAN);
+        c41++;
+        if (c41 % 2 == 0)
+            jButton56.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
-        // TODO add your handling code here:
+        jButton57.setBackground(Color.CYAN);
+        c42++;
+        if (c42 % 2 == 0)
+            jButton57.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
-        // TODO add your handling code here:
+        jButton61.setBackground(Color.CYAN);
+        c43++;
+        if (c43 % 2 == 0)
+            jButton61.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
-        // TODO add your handling code here:
+        jButton62.setBackground(Color.CYAN);
+        c44++;
+        if (c44 % 2 == 0)
+            jButton62.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
-        // TODO add your handling code here:
+        jButton63.setBackground(Color.CYAN);
+        c45++;
+        if (c45 % 2 == 0)
+            jButton63.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton63ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
-        // TODO add your handling code here:
+        jButton64.setBackground(Color.CYAN);
+        c46++;
+        if (c46 % 2 == 0)
+            jButton64.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton64ActionPerformed
 
     private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
-        // TODO add your handling code here:
+        jButton65.setBackground(Color.CYAN);
+        c47++;
+        if (c47 % 2 == 0)
+            jButton65.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton65ActionPerformed
 
     private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
-        // TODO add your handling code here:
+        jButton66.setBackground(Color.CYAN);
+        c48++;
+        if (c48 % 2 == 0)
+            jButton66.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton66ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        // TODO add your handling code here:
+        jButton67.setBackground(Color.CYAN);
+        c49++;
+        if (c49 % 2 == 0)
+            jButton67.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_jButton67ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
