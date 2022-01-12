@@ -1,5 +1,7 @@
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
+
 public class MainMenu extends javax.swing.JFrame {
 
     public MainMenu() {
@@ -24,7 +26,6 @@ public class MainMenu extends javax.swing.JFrame {
         label6 = new javax.swing.JLabel();
         label7 = new javax.swing.JLabel();
         label8 = new javax.swing.JLabel();
-        ButtonL1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -33,6 +34,11 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 148, 160, 190));
 
         label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop pic3.jpg"))); // NOI18N
+        label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelMouseClicked(evt);
+            }
+        });
         getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 150, -1, -1));
 
         label3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop.jpg"))); // NOI18N
@@ -68,14 +74,6 @@ public class MainMenu extends javax.swing.JFrame {
         label8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic (1).jpg"))); // NOI18N
         getContentPane().add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        ButtonL1.setText("jButton3");
-        ButtonL1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonL1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(ButtonL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 170, 190));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -84,12 +82,14 @@ public class MainMenu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void ButtonL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonL1ActionPerformed
-    Movie1Detail movie=new Movie1Detail();
-        movie.show();     //display Main Menu here
-        
-        dispose(); 
-    }//GEN-LAST:event_ButtonL1ActionPerformed
+    private void labelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMouseClicked
+        Movie1Detail movie = new Movie1Detail();
+        movie.setVisible(true);
+        movie.pack();
+        movie.setLocationRelativeTo(null);
+        movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_labelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -128,7 +128,6 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonL1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel;
     private javax.swing.JLabel label;
