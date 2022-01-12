@@ -57,7 +57,7 @@ public class MainMenu extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 95, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, -1));
 
         label6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo.png"))); // NOI18N
         getContentPane().add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
