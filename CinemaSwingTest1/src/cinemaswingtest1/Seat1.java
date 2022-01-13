@@ -4,11 +4,12 @@ import java.awt.Color;
 
 public class Seat1 extends javax.swing.JFrame {
 
-    private int c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,
-            c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,
-            c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,
-            c31,c32,c33,c34,c35,c36,c37,c38,c39,c40,
-            c41,c42,c43,c44,c45,c46,c47,c48,c49;
+    private int a1,a2,a3,a4,a5,a6,
+            b1,b2,b3,b4,b5,b6,
+            c1,c2,c3,c4,c5,c6,
+            d1,d2,d3,d4,d5,d6,
+            e1,e2,e3,e4,e5,e6,
+            f1,f2,f3,f4,f5,f6;
 
     /**
      * Creates new form Seat
@@ -33,49 +34,36 @@ public class Seat1 extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
         jButton31 = new javax.swing.JButton();
         jButton32 = new javax.swing.JButton();
         jButton33 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
-        jButton37 = new javax.swing.JButton();
         jButton41 = new javax.swing.JButton();
         jButton42 = new javax.swing.JButton();
         jButton43 = new javax.swing.JButton();
         jButton44 = new javax.swing.JButton();
         jButton45 = new javax.swing.JButton();
         jButton46 = new javax.swing.JButton();
-        jButton47 = new javax.swing.JButton();
         jButton51 = new javax.swing.JButton();
         jButton52 = new javax.swing.JButton();
         jButton53 = new javax.swing.JButton();
         jButton54 = new javax.swing.JButton();
         jButton55 = new javax.swing.JButton();
         jButton56 = new javax.swing.JButton();
-        jButton57 = new javax.swing.JButton();
-        jButton61 = new javax.swing.JButton();
-        jButton62 = new javax.swing.JButton();
-        jButton63 = new javax.swing.JButton();
-        jButton64 = new javax.swing.JButton();
-        jButton65 = new javax.swing.JButton();
-        jButton66 = new javax.swing.JButton();
-        jButton67 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
@@ -90,7 +78,7 @@ public class Seat1 extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Seat");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 60, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 60, -1));
 
         jButton1.setText("A1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -140,14 +128,6 @@ public class Seat1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 92, 60, -1));
 
-        jButton7.setText("A7");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 92, 60, -1));
-
         jButton11.setText("B1");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -195,14 +175,6 @@ public class Seat1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 133, 60, -1));
-
-        jButton17.setText("B7");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 133, 60, -1));
 
         jButton21.setText("C1");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -252,14 +224,6 @@ public class Seat1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 174, 60, -1));
 
-        jButton27.setText("C7");
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 174, 60, -1));
-
         jButton31.setText("D1");
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -307,14 +271,6 @@ public class Seat1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 215, 60, -1));
-
-        jButton37.setText("D7");
-        jButton37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton37ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 215, 60, -1));
 
         jButton41.setText("E1");
         jButton41.addActionListener(new java.awt.event.ActionListener() {
@@ -364,14 +320,6 @@ public class Seat1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 256, 60, -1));
 
-        jButton47.setText("E7");
-        jButton47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton47ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 256, 60, -1));
-
         jButton51.setText("F1");
         jButton51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -420,77 +368,13 @@ public class Seat1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 297, 60, -1));
 
-        jButton57.setText("F7");
-        jButton57.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton57ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 297, 60, -1));
-
-        jButton61.setText("G1");
-        jButton61.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton61ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 338, 60, -1));
-
-        jButton62.setText("G2");
-        jButton62.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton62ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 338, 60, -1));
-
-        jButton63.setText("G3");
-        jButton63.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton63ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 338, 60, -1));
-
-        jButton64.setText("G4");
-        jButton64.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton64ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 338, 60, -1));
-
-        jButton65.setText("G5");
-        jButton65.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton65ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 338, 60, -1));
-
-        jButton66.setText("G6");
-        jButton66.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton66ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 338, 60, -1));
-
-        jButton67.setText("G7");
-        jButton67.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton67ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 338, 60, -1));
-
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Screen");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, 460, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, 390, -1));
 
         jButton10.setText("NEXT");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -498,7 +382,7 @@ public class Seat1 extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, -1, -1));
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, -1, -1));
 
         jButton18.setText("BACK");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -506,7 +390,7 @@ public class Seat1 extends javax.swing.JFrame {
                 jButton18ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -514,353 +398,406 @@ public class Seat1 extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic (1).jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 420));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jButton1.setBackground(Color.CYAN);
-        c1++;
-        if (c1 % 2 == 0)
+        if (a1 == 0) {
+            jButton1.setBackground(Color.CYAN);
+            a1++;
+        }
+        else {
             jButton1.setBackground(Color.LIGHT_GRAY);
+            a1--;
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jButton2.setBackground(Color.CYAN);
-        c2++;
-        if (c2 % 2 == 0)
+        if (a2 == 0) {
+            jButton2.setBackground(Color.CYAN);
+            a2++;
+        }
+        else {
             jButton2.setBackground(Color.LIGHT_GRAY);
+            a2--;
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jButton3.setBackground(Color.CYAN);
-        c3++;
-        if (c3 % 2 == 0)
+        if (a3 == 0) {
+            jButton3.setBackground(Color.CYAN);
+            a3++;
+        }
+        else {
             jButton3.setBackground(Color.LIGHT_GRAY);
+            a3--;
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        jButton4.setBackground(Color.CYAN);
-        c4++;
-        if (c4 % 2 == 0)
+        if (a4 == 0) {
+            jButton4.setBackground(Color.CYAN);
+            a4++;
+        }
+        else {
             jButton4.setBackground(Color.LIGHT_GRAY);
+            a4--;
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        jButton5.setBackground(Color.CYAN);
-        c5++;
-        if (c5 % 2 == 0)
+        if (a5 == 0) {
+            jButton5.setBackground(Color.CYAN);
+            a5++;
+        }
+        else {
             jButton5.setBackground(Color.LIGHT_GRAY);
+            a5--;
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        jButton6.setBackground(Color.CYAN);
-        c6++;
-        if (c6 % 2 == 0)
+        if (a6 == 0) {
+            jButton6.setBackground(Color.CYAN);
+            a6++;
+        }
+        else {
             jButton6.setBackground(Color.LIGHT_GRAY);
+            a6--;
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        jButton7.setBackground(Color.CYAN);
-        c7++;
-        if (c7 % 2 == 0)
-            jButton7.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        jButton11.setBackground(Color.CYAN);
-        c8++;
-        if (c8 % 2 == 0)
+        if (b1 == 0) {
+            jButton11.setBackground(Color.CYAN);
+            b1++;
+        }
+        else {
             jButton11.setBackground(Color.LIGHT_GRAY);
+            b1--;
+        }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        jButton12.setBackground(Color.CYAN);
-        c9++;
-        if (c9 % 2 == 0)
+        if (b2 == 0) {
+            jButton12.setBackground(Color.CYAN);
+            b2++;
+        }
+        else {
             jButton12.setBackground(Color.LIGHT_GRAY);
+            b2--;
+        }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        jButton13.setBackground(Color.CYAN);
-        c10++;
-        if (c10 % 2 == 0)
+        if (b3 == 0) {
+            jButton13.setBackground(Color.CYAN);
+            b3++;
+        }
+        else {
             jButton13.setBackground(Color.LIGHT_GRAY);
+            b3--;
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        jButton14.setBackground(Color.CYAN);
-        c11++;
-        if (c11 % 2 == 0)
+        if (b4 == 0) {
+            jButton14.setBackground(Color.CYAN);
+            b4++;
+        }
+        else {
             jButton14.setBackground(Color.LIGHT_GRAY);
+            b4--;
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        jButton15.setBackground(Color.CYAN);
-        c12++;
-        if (c12 % 2 == 0)
+        if (b5 == 0) {
+            jButton15.setBackground(Color.CYAN);
+            b5++;
+        }
+        else {
             jButton15.setBackground(Color.LIGHT_GRAY);
+            b5--;
+        }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        jButton16.setBackground(Color.CYAN);
-        c13++;
-        if (c13 % 2 == 0)
+        if (b6 == 0) {
+            jButton16.setBackground(Color.CYAN);
+            b6++;
+        }
+        else {
             jButton16.setBackground(Color.LIGHT_GRAY);
+            b6--;
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        jButton17.setBackground(Color.CYAN);
-        c14++;
-        if (c14 % 2 == 0)
-            jButton17.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton17ActionPerformed
-
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        jButton21.setBackground(Color.CYAN);
-        c15++;
-        if (c15 % 2 == 0)
+        if (c1 == 0) {
+            jButton21.setBackground(Color.CYAN);
+            c1++;
+        }
+        else {
             jButton21.setBackground(Color.LIGHT_GRAY);
+            c1--;
+        }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        jButton22.setBackground(Color.CYAN);
-        c16++;
-        if (c16 % 2 == 0)
+        if (c2 == 0) {
+            jButton22.setBackground(Color.CYAN);
+            c2++;
+        }
+        else {
             jButton22.setBackground(Color.LIGHT_GRAY);
+            c2--;
+        }
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        jButton23.setBackground(Color.CYAN);
-        c17++;
-        if (c17 % 2 == 0)
+        if (c3 == 0) {
+            jButton23.setBackground(Color.CYAN);
+            c3++;
+        }
+        else {
             jButton23.setBackground(Color.LIGHT_GRAY);
+            c3--;
+        }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        jButton24.setBackground(Color.CYAN);
-        c18++;
-        if (c18 % 2 == 0)
+        if (c4 == 0) {
+            jButton24.setBackground(Color.CYAN);
+            c4++;
+        }
+        else {
             jButton24.setBackground(Color.LIGHT_GRAY);
+            c4--;
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        jButton25.setBackground(Color.CYAN);
-        c19++;
-        if (c19 % 2 == 0)
+        if (c5 == 0) {
+            jButton25.setBackground(Color.CYAN);
+            c5++;
+        }
+        else {
             jButton25.setBackground(Color.LIGHT_GRAY);
+            c5--;
+        }
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        jButton26.setBackground(Color.CYAN);
-        c20++;
-        if (c20 % 2 == 0)
+        if (c6 == 0) {
+            jButton26.setBackground(Color.CYAN);
+            c6++;
+        }
+        else {
             jButton26.setBackground(Color.LIGHT_GRAY);
+            c6--;
+        }
     }//GEN-LAST:event_jButton26ActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        jButton27.setBackground(Color.CYAN);
-        c21++;
-        if (c21 % 2 == 0)
-            jButton27.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton27ActionPerformed
-
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        jButton31.setBackground(Color.CYAN);
-        c22++;
-        if (c22 % 2 == 0)
+        if (d1 == 0) {
+            jButton31.setBackground(Color.CYAN);
+            d1++;
+        }
+        else {
             jButton31.setBackground(Color.LIGHT_GRAY);
+            d1--;
+        }
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        jButton32.setBackground(Color.CYAN);
-        c23++;
-        if (c23 % 2 == 0)
+        if (d2 == 0) {
+            jButton32.setBackground(Color.CYAN);
+            d2++;
+        }
+        else {
             jButton32.setBackground(Color.LIGHT_GRAY);
+            d2--;
+        }
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        jButton33.setBackground(Color.CYAN);
-        c24++;
-        if (c24 % 2 == 0)
+        if (d3 == 0) {
+            jButton33.setBackground(Color.CYAN);
+            d3++;
+        }
+        else {
             jButton33.setBackground(Color.LIGHT_GRAY);
+            d3--;
+        }
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        jButton34.setBackground(Color.CYAN);
-        c25++;
-        if (c25 % 2 == 0)
+        if (d4 == 0) {
+            jButton34.setBackground(Color.CYAN);
+            d4++;
+        }
+        else {
             jButton34.setBackground(Color.LIGHT_GRAY);
+            d4--;
+        }
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
-        jButton35.setBackground(Color.CYAN);
-        c26++;
-        if (c26 % 2 == 0)
+        if (d5 == 0) {
+            jButton35.setBackground(Color.CYAN);
+            d5++;
+        }
+        else {
             jButton35.setBackground(Color.LIGHT_GRAY);
+            d5--;
+        }
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
-        jButton36.setBackground(Color.CYAN);
-        c27++;
-        if (c27 % 2 == 0)
+        if (d6 == 0) {
+            jButton36.setBackground(Color.CYAN);
+            d6++;
+        }
+        else {
             jButton36.setBackground(Color.LIGHT_GRAY);
+            d6--;
+        }
     }//GEN-LAST:event_jButton36ActionPerformed
 
-    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        jButton37.setBackground(Color.CYAN);
-        c28++;
-        if (c28 % 2 == 0)
-            jButton37.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton37ActionPerformed
-
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
-        jButton41.setBackground(Color.CYAN);
-        c29++;
-        if (c29 % 2 == 0)
+        if (e1 == 0) {
+            jButton41.setBackground(Color.CYAN);
+            e1++;
+        }
+        else {
             jButton41.setBackground(Color.LIGHT_GRAY);
+            e1--;
+        }
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
-        jButton42.setBackground(Color.CYAN);
-        c30++;
-        if (c30 % 2 == 0)
+        if (e2 == 0) {
+            jButton42.setBackground(Color.CYAN);
+            e2++;
+        }
+        else {
             jButton42.setBackground(Color.LIGHT_GRAY);
+            e2--;
+        }
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
-        jButton43.setBackground(Color.CYAN);
-        c31++;
-        if (c31 % 2 == 0)
+        if (e3 == 0) {
+            jButton43.setBackground(Color.CYAN);
+            e3++;
+        }
+        else {
             jButton43.setBackground(Color.LIGHT_GRAY);
+            e3--;
+        }
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
-        jButton44.setBackground(Color.CYAN);
-        c32++;
-        if (c32 % 2 == 0)
+        if (e4 == 0) {
+            jButton44.setBackground(Color.CYAN);
+            e4++;
+        }
+        else {
             jButton44.setBackground(Color.LIGHT_GRAY);
+            e4--;
+        }
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        jButton45.setBackground(Color.CYAN);
-        c33++;
-        if (c33 % 2 == 0)
+        if (e5 == 0) {
+            jButton45.setBackground(Color.CYAN);
+            e5++;
+        }
+        else {
             jButton45.setBackground(Color.LIGHT_GRAY);
+            e5--;
+        }
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
-        jButton46.setBackground(Color.CYAN);
-        c34++;
-        if (c34 % 2 == 0)
+        if (e6 == 0) {
+            jButton46.setBackground(Color.CYAN);
+            e6++;
+        }
+        else {
             jButton46.setBackground(Color.LIGHT_GRAY);
+            e6--;
+        }
     }//GEN-LAST:event_jButton46ActionPerformed
 
-    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
-        jButton47.setBackground(Color.CYAN);
-        c35++;
-        if (c35 % 2 == 0)
-            jButton47.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton47ActionPerformed
-
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-        jButton51.setBackground(Color.CYAN);
-        c36++;
-        if (c36 % 2 == 0)
+        if (f1 == 0) {
+            jButton51.setBackground(Color.CYAN);
+            f1++;
+        }
+        else {
             jButton51.setBackground(Color.LIGHT_GRAY);
+            f1--;
+        }
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
-        jButton52.setBackground(Color.CYAN);
-        c37++;
-        if (c37 % 2 == 0)
+        if (f2 == 0) {
+            jButton52.setBackground(Color.CYAN);
+            f2++;
+        }
+        else {
             jButton52.setBackground(Color.LIGHT_GRAY);
+            f2--;
+        }
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
-        jButton53.setBackground(Color.CYAN);
-        c38++;
-        if (c38 % 2 == 0)
+        if (f3 == 0) {
+            jButton53.setBackground(Color.CYAN);
+            f3++;
+        }
+        else {
             jButton53.setBackground(Color.LIGHT_GRAY);
+            f3--;
+        }
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
-        jButton54.setBackground(Color.CYAN);
-        c39++;
-        if (c39 % 2 == 0)
+        if (f4 == 0) {
+            jButton54.setBackground(Color.CYAN);
+            f4++;
+        }
+        else {
             jButton54.setBackground(Color.LIGHT_GRAY);
+            f4--;
+        }
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        jButton55.setBackground(Color.CYAN);
-        c40++;
-        if (c40 % 2 == 0)
+        if (f5 == 0) {
+            jButton55.setBackground(Color.CYAN);
+            f5++;
+        }
+        else {
             jButton55.setBackground(Color.LIGHT_GRAY);
+            f5--;
+        }
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
-        jButton56.setBackground(Color.CYAN);
-        c41++;
-        if (c41 % 2 == 0)
+        if (f6 == 0) {
+            jButton56.setBackground(Color.CYAN);
+            f6++;
+        }
+        else {
             jButton56.setBackground(Color.LIGHT_GRAY);
+            f6--;
+        }
     }//GEN-LAST:event_jButton56ActionPerformed
-
-    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
-        jButton57.setBackground(Color.CYAN);
-        c42++;
-        if (c42 % 2 == 0)
-            jButton57.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton57ActionPerformed
-
-    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
-        jButton61.setBackground(Color.CYAN);
-        c43++;
-        if (c43 % 2 == 0)
-            jButton61.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton61ActionPerformed
-
-    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
-        jButton62.setBackground(Color.CYAN);
-        c44++;
-        if (c44 % 2 == 0)
-            jButton62.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton62ActionPerformed
-
-    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
-        jButton63.setBackground(Color.CYAN);
-        c45++;
-        if (c45 % 2 == 0)
-            jButton63.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton63ActionPerformed
-
-    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
-        jButton64.setBackground(Color.CYAN);
-        c46++;
-        if (c46 % 2 == 0)
-            jButton64.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton64ActionPerformed
-
-    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
-        jButton65.setBackground(Color.CYAN);
-        c47++;
-        if (c47 % 2 == 0)
-            jButton65.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton65ActionPerformed
-
-    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
-        jButton66.setBackground(Color.CYAN);
-        c48++;
-        if (c48 % 2 == 0)
-            jButton66.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton66ActionPerformed
-
-    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        jButton67.setBackground(Color.CYAN);
-        c49++;
-        if (c49 % 2 == 0)
-            jButton67.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jButton67ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
@@ -917,7 +854,6 @@ public class Seat1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton21;
@@ -926,7 +862,6 @@ public class Seat1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -934,7 +869,6 @@ public class Seat1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
@@ -942,7 +876,6 @@ public class Seat1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton47;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton52;
@@ -950,16 +883,7 @@ public class Seat1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton56;
-    private javax.swing.JButton jButton57;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton61;
-    private javax.swing.JButton jButton62;
-    private javax.swing.JButton jButton63;
-    private javax.swing.JButton jButton64;
-    private javax.swing.JButton jButton65;
-    private javax.swing.JButton jButton66;
-    private javax.swing.JButton jButton67;
-    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
