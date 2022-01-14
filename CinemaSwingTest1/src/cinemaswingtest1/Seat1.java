@@ -511,12 +511,14 @@ public class Seat1 extends javax.swing.JFrame {
         jButton89.setPreferredSize(new java.awt.Dimension(55, 25));
         getContentPane().add(jButton89, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 602, -1, -1));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Twin");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 602, -1, 25));
 
         jButton90.setPreferredSize(new java.awt.Dimension(55, 25));
         getContentPane().add(jButton90, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 602, -1, -1));
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Single");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 602, -1, 25));
 
