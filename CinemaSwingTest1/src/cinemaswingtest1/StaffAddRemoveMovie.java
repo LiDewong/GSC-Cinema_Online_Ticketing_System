@@ -50,41 +50,41 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Title");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(132, 35, 114, 22);
+        jLabel2.setBounds(140, 50, 114, 22);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Release Date");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(132, 108, 114, 22);
+        jLabel3.setBounds(140, 120, 114, 22);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Cast");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(132, 174, 103, 22);
+        jLabel4.setBounds(140, 180, 103, 22);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Synopsis");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(132, 240, 114, 22);
+        jLabel5.setBounds(140, 250, 114, 22);
 
         txtDate.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(txtDate);
-        txtDate.setBounds(290, 107, 320, 30);
+        txtDate.setBounds(290, 110, 320, 30);
 
         txtTitle.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(txtTitle);
-        txtTitle.setBounds(290, 34, 320, 30);
+        txtTitle.setBounds(290, 40, 320, 30);
 
         txtSynopsis.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(txtSynopsis);
-        txtSynopsis.setBounds(290, 239, 320, 30);
+        txtSynopsis.setBounds(290, 250, 320, 30);
 
         txtCast.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(txtCast);
-        txtCast.setBounds(290, 173, 320, 30);
+        txtCast.setBounds(290, 180, 320, 30);
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -103,7 +103,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         }
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(80, 300, 890, 313);
+        jScrollPane1.setBounds(80, 320, 890, 300);
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
