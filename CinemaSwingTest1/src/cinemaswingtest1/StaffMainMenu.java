@@ -11,6 +11,7 @@ public class StaffMainMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -20,7 +21,7 @@ public class StaffMainMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setText("Movie");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -28,9 +29,13 @@ public class StaffMainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(164, 64, 79, 31);
+        jButton1.setBounds(390, 160, 260, 60);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(10, 0, 100, 70);
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton2.setText("Seat");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -38,7 +43,7 @@ public class StaffMainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(164, 121, 79, 31);
+        jButton2.setBounds(390, 280, 260, 60);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton3.setText("Price");
@@ -50,7 +55,7 @@ public class StaffMainMenu extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(390, 520, 260, 60);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Option");
@@ -118,5 +123,6 @@ public class StaffMainMenu extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
