@@ -28,14 +28,13 @@ public class CustomerOrStaff extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("GSC Online Ticket Booking System ");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 120, 670, 110);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 670, 110));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
@@ -45,8 +44,7 @@ public class CustomerOrStaff extends javax.swing.JFrame {
                 jButton1MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(410, 260, 240, 49);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 259, 300, 60));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 0));
         jButton2.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
@@ -56,17 +54,14 @@ public class CustomerOrStaff extends javax.swing.JFrame {
                 jButton2MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(410, 440, 240, 50);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 300, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(470, 30, 90, 40);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1050, 640);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
         setLocationRelativeTo(null);
