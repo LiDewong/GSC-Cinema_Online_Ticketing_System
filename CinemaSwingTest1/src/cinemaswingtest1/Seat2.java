@@ -273,6 +273,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 90, -1, -1));
 
+        btnB01.setBackground(new java.awt.Color(255, 255, 255));
         btnB01.setText("B01");
         btnB01.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB01.addActionListener(new java.awt.event.ActionListener() {
@@ -282,6 +283,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 133, -1, -1));
 
+        btnB11.setBackground(new java.awt.Color(255, 255, 255));
         btnB11.setText("B11");
         btnB11.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB11.addActionListener(new java.awt.event.ActionListener() {
@@ -291,6 +293,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 133, -1, -1));
 
+        btnB03.setBackground(new java.awt.Color(255, 255, 255));
         btnB03.setText("B03");
         btnB03.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB03.addActionListener(new java.awt.event.ActionListener() {
@@ -300,6 +303,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 133, -1, -1));
 
+        btnB05.setBackground(new java.awt.Color(255, 255, 255));
         btnB05.setText("B05");
         btnB05.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB05.addActionListener(new java.awt.event.ActionListener() {
@@ -309,6 +313,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 133, -1, -1));
 
+        btnB07.setBackground(new java.awt.Color(255, 255, 255));
         btnB07.setText("B07");
         btnB07.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB07.addActionListener(new java.awt.event.ActionListener() {
@@ -318,6 +323,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 133, -1, -1));
 
+        btnB09.setBackground(new java.awt.Color(255, 255, 255));
         btnB09.setText("B09");
         btnB09.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB09.addActionListener(new java.awt.event.ActionListener() {
@@ -357,6 +363,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 176, -1, -1));
 
+        btnD01.setBackground(new java.awt.Color(255, 255, 255));
         btnD01.setText("D01");
         btnD01.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD01.addActionListener(new java.awt.event.ActionListener() {
@@ -366,6 +373,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnD01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 219, -1, -1));
 
+        btnD11.setBackground(new java.awt.Color(255, 255, 255));
         btnD11.setText("D11");
         btnD11.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD11.addActionListener(new java.awt.event.ActionListener() {
@@ -385,6 +393,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 176, -1, -1));
 
+        btnD03.setBackground(new java.awt.Color(255, 255, 255));
         btnD03.setText("D03");
         btnD03.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD03.addActionListener(new java.awt.event.ActionListener() {
@@ -394,6 +403,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnD03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 219, -1, -1));
 
+        btnD05.setBackground(new java.awt.Color(255, 255, 255));
         btnD05.setText("D05");
         btnD05.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD05.addActionListener(new java.awt.event.ActionListener() {
@@ -413,6 +423,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 176, -1, -1));
 
+        btnD07.setBackground(new java.awt.Color(255, 255, 255));
         btnD07.setText("D07");
         btnD07.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD07.addActionListener(new java.awt.event.ActionListener() {
@@ -432,6 +443,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 176, -1, -1));
 
+        btnD09.setBackground(new java.awt.Color(255, 255, 255));
         btnD09.setText("D09");
         btnD09.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD09.addActionListener(new java.awt.event.ActionListener() {
@@ -491,6 +503,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 262, -1, -1));
 
+        btnF01.setBackground(new java.awt.Color(255, 255, 255));
         btnF01.setText("F01");
         btnF01.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF01.addActionListener(new java.awt.event.ActionListener() {
@@ -500,6 +513,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnF01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 305, -1, -1));
 
+        btnF11.setBackground(new java.awt.Color(255, 255, 255));
         btnF11.setText("F11");
         btnF11.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF11.addActionListener(new java.awt.event.ActionListener() {
@@ -519,6 +533,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 262, -1, -1));
 
+        btnF03.setBackground(new java.awt.Color(255, 255, 255));
         btnF03.setText("F03");
         btnF03.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF03.addActionListener(new java.awt.event.ActionListener() {
@@ -528,6 +543,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnF03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 305, -1, -1));
 
+        btnF05.setBackground(new java.awt.Color(255, 255, 255));
         btnF05.setText("F05");
         btnF05.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF05.addActionListener(new java.awt.event.ActionListener() {
@@ -547,6 +563,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 262, -1, -1));
 
+        btnF07.setBackground(new java.awt.Color(255, 255, 255));
         btnF07.setText("F07");
         btnF07.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF07.addActionListener(new java.awt.event.ActionListener() {
@@ -566,6 +583,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 262, -1, -1));
 
+        btnF09.setBackground(new java.awt.Color(255, 255, 255));
         btnF09.setText("F09");
         btnF09.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF09.addActionListener(new java.awt.event.ActionListener() {
@@ -625,6 +643,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 348, -1, -1));
 
+        btnH01.setBackground(new java.awt.Color(255, 255, 255));
         btnH01.setText("H01");
         btnH01.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH01.addActionListener(new java.awt.event.ActionListener() {
@@ -634,6 +653,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnH01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 391, -1, -1));
 
+        btnH11.setBackground(new java.awt.Color(255, 255, 255));
         btnH11.setText("H11");
         btnH11.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH11.addActionListener(new java.awt.event.ActionListener() {
@@ -653,6 +673,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 348, -1, -1));
 
+        btnH03.setBackground(new java.awt.Color(255, 255, 255));
         btnH03.setText("H03");
         btnH03.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH03.addActionListener(new java.awt.event.ActionListener() {
@@ -662,6 +683,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnH03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 391, -1, -1));
 
+        btnH05.setBackground(new java.awt.Color(255, 255, 255));
         btnH05.setText("H05");
         btnH05.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH05.addActionListener(new java.awt.event.ActionListener() {
@@ -681,6 +703,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 348, -1, -1));
 
+        btnH07.setBackground(new java.awt.Color(255, 255, 255));
         btnH07.setText("H07");
         btnH07.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH07.addActionListener(new java.awt.event.ActionListener() {
@@ -700,6 +723,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 348, -1, -1));
 
+        btnH09.setBackground(new java.awt.Color(255, 255, 255));
         btnH09.setText("H09");
         btnH09.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH09.addActionListener(new java.awt.event.ActionListener() {
@@ -759,6 +783,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnI02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 434, -1, -1));
 
+        btnJ01.setBackground(new java.awt.Color(255, 255, 255));
         btnJ01.setText("J01");
         btnJ01.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ01.addActionListener(new java.awt.event.ActionListener() {
@@ -768,6 +793,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnJ01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 477, -1, -1));
 
+        btnJ11.setBackground(new java.awt.Color(255, 255, 255));
         btnJ11.setText("J11");
         btnJ11.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ11.addActionListener(new java.awt.event.ActionListener() {
@@ -787,6 +813,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnI05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 434, -1, -1));
 
+        btnJ03.setBackground(new java.awt.Color(255, 255, 255));
         btnJ03.setText("J03");
         btnJ03.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ03.addActionListener(new java.awt.event.ActionListener() {
@@ -796,6 +823,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnJ03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 477, -1, -1));
 
+        btnJ05.setBackground(new java.awt.Color(255, 255, 255));
         btnJ05.setText("J05");
         btnJ05.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ05.addActionListener(new java.awt.event.ActionListener() {
@@ -815,6 +843,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnI04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 434, -1, -1));
 
+        btnJ07.setBackground(new java.awt.Color(255, 255, 255));
         btnJ07.setText("J07");
         btnJ07.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ07.addActionListener(new java.awt.event.ActionListener() {
@@ -834,6 +863,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnI08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 434, -1, -1));
 
+        btnJ09.setBackground(new java.awt.Color(255, 255, 255));
         btnJ09.setText("J09");
         btnJ09.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ09.addActionListener(new java.awt.event.ActionListener() {
@@ -955,6 +985,7 @@ public class Seat2 extends javax.swing.JFrame {
         jLabel3.setText("Twin");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 602, -1, 25));
 
+        btnAvailable.setBackground(new java.awt.Color(255, 255, 255));
         btnAvailable.setPreferredSize(new java.awt.Dimension(55, 25));
         getContentPane().add(btnAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 602, -1, -1));
 
@@ -962,6 +993,7 @@ public class Seat2 extends javax.swing.JFrame {
         jLabel5.setText("Available");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 602, 50, 25));
 
+        btnJ17.setBackground(new java.awt.Color(255, 255, 255));
         btnJ17.setText("J17");
         btnJ17.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ17.addActionListener(new java.awt.event.ActionListener() {
@@ -971,6 +1003,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnJ17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 477, -1, -1));
 
+        btnJ13.setBackground(new java.awt.Color(255, 255, 255));
         btnJ13.setText("J13");
         btnJ13.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ13.addActionListener(new java.awt.event.ActionListener() {
@@ -990,6 +1023,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnI14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 434, -1, -1));
 
+        btnJ15.setBackground(new java.awt.Color(255, 255, 255));
         btnJ15.setText("J15");
         btnJ15.setPreferredSize(new java.awt.Dimension(55, 25));
         btnJ15.addActionListener(new java.awt.event.ActionListener() {
@@ -1099,6 +1133,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 90, -1, -1));
 
+        btnB17.setBackground(new java.awt.Color(255, 255, 255));
         btnB17.setText("B17");
         btnB17.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB17.addActionListener(new java.awt.event.ActionListener() {
@@ -1108,6 +1143,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 133, -1, -1));
 
+        btnB13.setBackground(new java.awt.Color(255, 255, 255));
         btnB13.setText("B13");
         btnB13.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB13.addActionListener(new java.awt.event.ActionListener() {
@@ -1117,6 +1153,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 133, -1, -1));
 
+        btnB15.setBackground(new java.awt.Color(255, 255, 255));
         btnB15.setText("B15");
         btnB15.setPreferredSize(new java.awt.Dimension(55, 25));
         btnB15.addActionListener(new java.awt.event.ActionListener() {
@@ -1136,6 +1173,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 176, -1, -1));
 
+        btnD17.setBackground(new java.awt.Color(255, 255, 255));
         btnD17.setText("D17");
         btnD17.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD17.addActionListener(new java.awt.event.ActionListener() {
@@ -1145,6 +1183,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 219, -1, -1));
 
+        btnD13.setBackground(new java.awt.Color(255, 255, 255));
         btnD13.setText("D13");
         btnD13.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD13.addActionListener(new java.awt.event.ActionListener() {
@@ -1164,6 +1203,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 176, -1, -1));
 
+        btnD15.setBackground(new java.awt.Color(255, 255, 255));
         btnD15.setText("D15");
         btnD15.setPreferredSize(new java.awt.Dimension(55, 25));
         btnD15.addActionListener(new java.awt.event.ActionListener() {
@@ -1203,6 +1243,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 262, -1, -1));
 
+        btnF17.setBackground(new java.awt.Color(255, 255, 255));
         btnF17.setText("F17");
         btnF17.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF17.addActionListener(new java.awt.event.ActionListener() {
@@ -1212,6 +1253,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnF17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 305, -1, -1));
 
+        btnF13.setBackground(new java.awt.Color(255, 255, 255));
         btnF13.setText("F13");
         btnF13.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF13.addActionListener(new java.awt.event.ActionListener() {
@@ -1231,6 +1273,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 262, -1, -1));
 
+        btnF15.setBackground(new java.awt.Color(255, 255, 255));
         btnF15.setText("F15");
         btnF15.setPreferredSize(new java.awt.Dimension(55, 25));
         btnF15.addActionListener(new java.awt.event.ActionListener() {
@@ -1270,6 +1313,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 348, -1, -1));
 
+        btnH17.setBackground(new java.awt.Color(255, 255, 255));
         btnH17.setText("H17");
         btnH17.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH17.addActionListener(new java.awt.event.ActionListener() {
@@ -1279,6 +1323,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnH17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 391, -1, -1));
 
+        btnH13.setBackground(new java.awt.Color(255, 255, 255));
         btnH13.setText("H13");
         btnH13.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH13.addActionListener(new java.awt.event.ActionListener() {
@@ -1298,6 +1343,7 @@ public class Seat2 extends javax.swing.JFrame {
         });
         getContentPane().add(btnG14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 348, -1, -1));
 
+        btnH15.setBackground(new java.awt.Color(255, 255, 255));
         btnH15.setText("H15");
         btnH15.setPreferredSize(new java.awt.Dimension(55, 25));
         btnH15.addActionListener(new java.awt.event.ActionListener() {
@@ -1345,7 +1391,7 @@ public class Seat2 extends javax.swing.JFrame {
         jLabel6.setText("Selected");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 50, 30));
 
-        btnUnavailable.setBackground(new java.awt.Color(102, 102, 102));
+        btnUnavailable.setEnabled(false);
         btnUnavailable.setPreferredSize(new java.awt.Dimension(55, 25));
         getContentPane().add(btnUnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 600, -1, -1));
 
@@ -1519,7 +1565,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB01ActionPerformed
         if (b01 == 1) {
-            btnB01.setBackground(Color.LIGHT_GRAY);
+            btnB01.setBackground(Color.WHITE);
             b01 = 0;
         }
         else if (b01 == 0) {
@@ -1530,7 +1576,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB03ActionPerformed
         if (b03 == 1) {
-            btnB03.setBackground(Color.LIGHT_GRAY);
+            btnB03.setBackground(Color.WHITE);
             b03 = 0;
         }
         else if (b03 == 0) {
@@ -1541,7 +1587,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB05ActionPerformed
         if (b05 == 1) {
-            btnB05.setBackground(Color.LIGHT_GRAY);
+            btnB05.setBackground(Color.WHITE);
             b05 = 0;
         }
         else if (b05 == 0) {
@@ -1552,7 +1598,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB07ActionPerformed
         if (b07 == 1) {
-            btnB07.setBackground(Color.LIGHT_GRAY);
+            btnB07.setBackground(Color.WHITE);
             b07 = 0;
         }
         else if (b07 == 0) {
@@ -1563,7 +1609,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB09ActionPerformed
         if (b09 == 1) {
-            btnB09.setBackground(Color.LIGHT_GRAY);
+            btnB09.setBackground(Color.WHITE);
             b09 = 0;
         }
         else if (b09 == 0) {
@@ -1574,7 +1620,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB11ActionPerformed
         if (b11 == 1) {
-            btnB11.setBackground(Color.LIGHT_GRAY);
+            btnB11.setBackground(Color.WHITE);
             b11 = 0;
         }
         else if (b11 == 0) {
@@ -1585,7 +1631,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB13ActionPerformed
         if (b13 == 1) {
-            btnB13.setBackground(Color.LIGHT_GRAY);
+            btnB13.setBackground(Color.WHITE);
             b13 = 0;
         }
         else if (b13 == 0) {
@@ -1596,7 +1642,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB15ActionPerformed
         if (b15 == 1) {
-            btnB15.setBackground(Color.LIGHT_GRAY);
+            btnB15.setBackground(Color.WHITE);
             b15 = 0;
         }
         else if (b15 == 0) {
@@ -1607,7 +1653,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB17ActionPerformed
         if (b17 == 1) {
-            btnB17.setBackground(Color.LIGHT_GRAY);
+            btnB17.setBackground(Color.WHITE);
             b17 = 0;
         }
         else if (b17 == 0) {
@@ -1774,7 +1820,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD01ActionPerformed
         if (d01 == 1) {
-            btnD01.setBackground(Color.LIGHT_GRAY);
+            btnD01.setBackground(Color.WHITE);
             d01 = 0;
         }
         else if (d01 == 0) {
@@ -1785,7 +1831,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD03ActionPerformed
         if (d03 == 1) {
-            btnD03.setBackground(Color.LIGHT_GRAY);
+            btnD03.setBackground(Color.WHITE);
             d03 = 0;
         }
         else if (d03 == 0) {
@@ -1796,7 +1842,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD05ActionPerformed
         if (d05 == 1) {
-            btnD05.setBackground(Color.LIGHT_GRAY);
+            btnD05.setBackground(Color.WHITE);
             d05 = 0;
         }
         else if (d05 == 0) {
@@ -1807,7 +1853,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD07ActionPerformed
         if (d07 == 1) {
-            btnD07.setBackground(Color.LIGHT_GRAY);
+            btnD07.setBackground(Color.WHITE);
             d07 = 0;
         }
         else if (d07 == 0) {
@@ -1818,7 +1864,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD09ActionPerformed
         if (d09 == 1) {
-            btnD09.setBackground(Color.LIGHT_GRAY);
+            btnD09.setBackground(Color.WHITE);
             d09 = 0;
         }
         else if (d09 == 0) {
@@ -1829,7 +1875,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD11ActionPerformed
         if (d11 == 1) {
-            btnD11.setBackground(Color.LIGHT_GRAY);
+            btnD11.setBackground(Color.WHITE);
             d11 = 0;
         }
         else if (d11 == 0) {
@@ -1840,7 +1886,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD13ActionPerformed
         if (d13 == 1) {
-            btnD13.setBackground(Color.LIGHT_GRAY);
+            btnD13.setBackground(Color.WHITE);
             d13 = 0;
         }
         else if (d13 == 0) {
@@ -1851,7 +1897,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD15ActionPerformed
         if (d15 == 1) {
-            btnD15.setBackground(Color.LIGHT_GRAY);
+            btnD15.setBackground(Color.WHITE);
             d15 = 0;
         }
         else if (d15 == 0) {
@@ -1862,7 +1908,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD17ActionPerformed
         if (d17 == 1) {
-            btnD17.setBackground(Color.LIGHT_GRAY);
+            btnD17.setBackground(Color.WHITE);
             d17 = 0;
         }
         else if (d17 == 0) {
@@ -2029,7 +2075,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF01ActionPerformed
         if (f01 == 1) {
-            btnF01.setBackground(Color.LIGHT_GRAY);
+            btnF01.setBackground(Color.WHITE);
             f01 = 0;
         }
         else if (f01 == 0) {
@@ -2040,7 +2086,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF03ActionPerformed
         if (f03 == 1) {
-            btnF03.setBackground(Color.LIGHT_GRAY);
+            btnF03.setBackground(Color.WHITE);
             f03 = 0;
         }
         else if (f03 == 0) {
@@ -2051,7 +2097,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF05ActionPerformed
         if (f05 == 1) {
-            btnF05.setBackground(Color.LIGHT_GRAY);
+            btnF05.setBackground(Color.WHITE);
             f05 = 0;
         }
         else if (f05 == 0) {
@@ -2062,7 +2108,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF07ActionPerformed
         if (f07 == 1) {
-            btnF07.setBackground(Color.LIGHT_GRAY);
+            btnF07.setBackground(Color.WHITE);
             f07 = 0;
         }
         else if (f07 == 0) {
@@ -2073,7 +2119,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF09ActionPerformed
         if (f09 == 1) {
-            btnF09.setBackground(Color.LIGHT_GRAY);
+            btnF09.setBackground(Color.WHITE);
             f09 = 0;
         }
         else if (f09 == 0) {
@@ -2084,7 +2130,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF11ActionPerformed
         if (f11 == 1) {
-            btnF11.setBackground(Color.LIGHT_GRAY);
+            btnF11.setBackground(Color.WHITE);
             f11 = 0;
         }
         else if (f11 == 0) {
@@ -2095,7 +2141,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF13ActionPerformed
         if (f13 == 1) {
-            btnF13.setBackground(Color.LIGHT_GRAY);
+            btnF13.setBackground(Color.WHITE);
             f13 = 0;
         }
         else if (f13 == 0) {
@@ -2106,7 +2152,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF15ActionPerformed
         if (f15 == 1) {
-            btnF15.setBackground(Color.LIGHT_GRAY);
+            btnF15.setBackground(Color.WHITE);
             f15 = 0;
         }
         else if (f15 == 0) {
@@ -2117,7 +2163,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnF17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF17ActionPerformed
         if (f17 == 1) {
-            btnF17.setBackground(Color.LIGHT_GRAY);
+            btnF17.setBackground(Color.WHITE);
             f17 = 0;
         }
         else if (f17 == 0) {
@@ -2284,7 +2330,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH01ActionPerformed
         if (h01 == 1) {
-            btnH01.setBackground(Color.LIGHT_GRAY);
+            btnH01.setBackground(Color.WHITE);
             h01 = 0;
         }
         else if (h01 == 0) {
@@ -2295,7 +2341,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH03ActionPerformed
         if (h03 == 1) {
-            btnH03.setBackground(Color.LIGHT_GRAY);
+            btnH03.setBackground(Color.WHITE);
             h03 = 0;
         }
         else if (h03 == 0) {
@@ -2306,7 +2352,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH05ActionPerformed
         if (h05 == 1) {
-            btnH05.setBackground(Color.LIGHT_GRAY);
+            btnH05.setBackground(Color.WHITE);
             h05 = 0;
         }
         else if (h05 == 0) {
@@ -2317,7 +2363,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH07ActionPerformed
         if (h07 == 1) {
-            btnH07.setBackground(Color.LIGHT_GRAY);
+            btnH07.setBackground(Color.WHITE);
             h07 = 0;
         }
         else if (h07 == 0) {
@@ -2328,7 +2374,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH09ActionPerformed
         if (h09 == 1) {
-            btnH09.setBackground(Color.LIGHT_GRAY);
+            btnH09.setBackground(Color.WHITE);
             h09 = 0;
         }
         else if (h09 == 0) {
@@ -2339,7 +2385,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH11ActionPerformed
         if (h11 == 1) {
-            btnH11.setBackground(Color.LIGHT_GRAY);
+            btnH11.setBackground(Color.WHITE);
             h11 = 0;
         }
         else if (h11 == 0) {
@@ -2350,7 +2396,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH13ActionPerformed
         if (h13 == 1) {
-            btnH13.setBackground(Color.LIGHT_GRAY);
+            btnH13.setBackground(Color.WHITE);
             h13 = 0;
         }
         else if (h13 == 0) {
@@ -2361,7 +2407,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH15ActionPerformed
         if (h15 == 1) {
-            btnH15.setBackground(Color.LIGHT_GRAY);
+            btnH15.setBackground(Color.WHITE);
             h15 = 0;
         }
         else if (h15 == 0) {
@@ -2372,7 +2418,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnH17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH17ActionPerformed
         if (h17 == 1) {
-            btnH17.setBackground(Color.LIGHT_GRAY);
+            btnH17.setBackground(Color.WHITE);
             h17 = 0;
         }
         else if (h17 == 0) {
@@ -2539,7 +2585,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ01ActionPerformed
         if (j01 == 1) {
-            btnJ01.setBackground(Color.LIGHT_GRAY);
+            btnJ01.setBackground(Color.WHITE);
             j01 = 0;
         }
         else if (j01 == 0) {
@@ -2550,7 +2596,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ03ActionPerformed
         if (j03 == 1) {
-            btnJ03.setBackground(Color.LIGHT_GRAY);
+            btnJ03.setBackground(Color.WHITE);
             j03 = 0;
         }
         else if (j03 == 0) {
@@ -2561,7 +2607,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ05ActionPerformed
         if (j05 == 1) {
-            btnJ05.setBackground(Color.LIGHT_GRAY);
+            btnJ05.setBackground(Color.WHITE);
             j05 = 0;
         }
         else if (j05 == 0) {
@@ -2572,7 +2618,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ07ActionPerformed
         if (j07 == 1) {
-            btnJ07.setBackground(Color.LIGHT_GRAY);
+            btnJ07.setBackground(Color.WHITE);
             j07 = 0;
         }
         else if (j07 == 0) {
@@ -2583,7 +2629,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ09ActionPerformed
         if (j09 == 1) {
-            btnJ09.setBackground(Color.LIGHT_GRAY);
+            btnJ09.setBackground(Color.WHITE);
             j09 = 0;
         }
         else if (j09 == 0) {
@@ -2594,7 +2640,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ11ActionPerformed
         if (j11 == 1) {
-            btnJ11.setBackground(Color.LIGHT_GRAY);
+            btnJ11.setBackground(Color.WHITE);
             j11 = 0;
         }
         else if (j11 == 0) {
@@ -2605,7 +2651,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ13ActionPerformed
         if (j13 == 1) {
-            btnJ13.setBackground(Color.LIGHT_GRAY);
+            btnJ13.setBackground(Color.WHITE);
             j13 = 0;
         }
         else if (j13 == 0) {
@@ -2616,7 +2662,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ15ActionPerformed
         if (j15 == 1) {
-            btnJ15.setBackground(Color.LIGHT_GRAY);
+            btnJ15.setBackground(Color.WHITE);
             j15 = 0;
         }
         else if (j15 == 0) {
@@ -2627,7 +2673,7 @@ public class Seat2 extends javax.swing.JFrame {
 
     private void btnJ17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ17ActionPerformed
         if (j17 == 1) {
-            btnJ17.setBackground(Color.LIGHT_GRAY);
+            btnJ17.setBackground(Color.WHITE);
             j17 = 0;
         }
         else if (j17 == 0) {
