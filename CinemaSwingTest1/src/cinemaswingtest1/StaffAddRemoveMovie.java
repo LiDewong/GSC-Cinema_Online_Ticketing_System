@@ -39,6 +39,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         txtCast = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
         btnAdd = new javax.swing.JButton();
         btnRemove = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -93,6 +94,15 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 890, 300));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setText("Back To Option");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 240, 140, 40));
+
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd.setText("Add");
@@ -101,7 +111,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnAddActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(811, 101, 111, 37));
+        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 70, 140, 37));
 
         btnRemove.setBackground(new java.awt.Color(255, 255, 51));
         btnRemove.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -111,7 +121,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnRemoveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(811, 190, 111, 37));
+        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 150, 140, 37));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -163,6 +173,14 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnRemoveActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        StaffMainMenu mainMenu=new StaffMainMenu();
+        mainMenu.show();     //display Main Menu here
+        
+        dispose(); 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -202,6 +220,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnRemove;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
