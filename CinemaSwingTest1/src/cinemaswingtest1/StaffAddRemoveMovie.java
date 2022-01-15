@@ -1,16 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author YEZP
- */
 public class StaffAddRemoveMovie extends javax.swing.JFrame {
 
     /**
@@ -29,14 +23,6 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        txtDate = new javax.swing.JTextField();
-        txtTitle = new javax.swing.JTextField();
-        txtSynopsis = new javax.swing.JTextField();
-        txtCast = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
@@ -47,30 +33,6 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Title");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 114, -1));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Release Date");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 114, -1));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Cast");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 103, -1));
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Synopsis");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 114, -1));
-        getContentPane().add(txtDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 320, 30));
-        getContentPane().add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 320, 30));
-        getContentPane().add(txtSynopsis, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 320, 30));
-        getContentPane().add(txtCast, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 320, 30));
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -102,11 +64,11 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 250, 140, 37));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 140, 37));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Save");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 180, 140, 37));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 140, 37));
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -116,7 +78,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnAddActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 140, 37));
+        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 140, 37));
 
         btnRemove.setBackground(new java.awt.Color(255, 255, 51));
         btnRemove.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -126,7 +88,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnRemoveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 110, 140, 37));
+        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, 140, 37));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -136,32 +98,43 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        // TODO add your handling code here:
-        //code to load date into table
-        //validation for not leave blank data
-        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")){
-            //if any of four field left blank then show message
-            JOptionPane.showMessageDialog(this, "Please Enter All Data !");
-        }
-        else{
-            //if all data field then...
-            //store enter data into String array
-            String data[]={txtTitle.getText(),txtDate.getText(),txtCast.getText(),txtSynopsis.getText()};
+        StaffAddMovie addmovie=new StaffAddMovie();
+        addmovie.setVisible(true);
+        addmovie.pack();
+        addmovie.setLocationRelativeTo(null);
+        addmovie.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
-            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
-            tblModel.addRow(data); //row added
-            //successfully added message
-            JOptionPane.showMessageDialog(this,"Add Date Successfully !");
-            //clear textfield for new entry
-            txtTitle.setText("");
-            txtDate.setText("");
-            txtCast.setText("");
-            txtSynopsis.setText("");
-        }
+        StaffAddMovie mainMenu=new StaffAddMovie();
+        mainMenu.show();     //display Main Menu here
+        
+        dispose(); 
+        
+        
+//        //code to load date into table
+//        //validation for not leave blank data
+//        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")){
+//            //if any of four field left blank then show message
+//            JOptionPane.showMessageDialog(this, "Please Enter All Data !");
+//        }
+//        else{
+//            //if all data field then...
+//            //store enter data into String array
+//            String data[]={txtTitle.getText(),txtDate.getText(),txtCast.getText(),txtSynopsis.getText()};
+//        
+//            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
+//            tblModel.addRow(data); //row added
+//            //successfully added message
+//            JOptionPane.showMessageDialog(this,"Add Date Successfully !");
+//            //clear textfield for new entry
+//            txtTitle.setText("");
+//            txtDate.setText("");
+//            txtCast.setText("");
+//            txtSynopsis.setText("");
+//        }
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
-        // TODO add your handling code here:
+        
         //get jtable model first
         DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
         //delete row
@@ -186,7 +159,10 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         
         dispose(); 
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    public static void AddRowToJTable(Object[] dataRow){
+        DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
+        tblModel.addRow(dataRow);
+    }
     /**
      * @param args the command line arguments
      */
@@ -229,15 +205,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField txtCast;
-    private javax.swing.JTextField txtDate;
-    private javax.swing.JTextField txtSynopsis;
-    private javax.swing.JTextField txtTitle;
+    private static javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
