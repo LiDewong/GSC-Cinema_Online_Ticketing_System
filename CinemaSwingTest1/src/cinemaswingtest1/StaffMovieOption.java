@@ -17,83 +17,60 @@ public class StaffMovieOption extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 11)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jButton1.setText("Spider-Man: No Way Home");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(20, 21, 310, 50);
 
-        jButton2.setFont(new java.awt.Font("Yu Gothic", 0, 11)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jButton2.setText("The Medium");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(20, 75, 310, 50);
 
-        jButton3.setFont(new java.awt.Font("Yu Gothic", 0, 11)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jButton3.setText("No Time To Die");
+        getContentPane().add(jButton3);
+        jButton3.setBounds(20, 133, 310, 50);
 
-        jButton4.setFont(new java.awt.Font("Yu Gothic", 0, 11)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jButton4.setText("Eternals");
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jButton4);
+        jButton4.setBounds(30, 390, 310, 50);
 
-        jButton5.setFont(new java.awt.Font("Yu Gothic", 0, 11)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jButton5.setText("Ghostbusters: Afterlife");
+        getContentPane().add(jButton5);
+        jButton5.setBounds(30, 520, 310, 50);
 
-        jButton6.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         jButton6.setText("Add Movie");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton6);
+        jButton6.setBounds(780, 220, 210, 50);
 
-        jButton7.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         jButton7.setText("Remove Movie");
+        getContentPane().add(jButton7);
+        jButton7.setBounds(780, 380, 210, 50);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(51, 51, 51))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jButton1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jButton6)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jButton3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jButton7)))
-                .addGap(12, 12, 12)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addGap(24, 24, 24))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1050, 640);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -123,5 +100,6 @@ public class StaffMovieOption extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
