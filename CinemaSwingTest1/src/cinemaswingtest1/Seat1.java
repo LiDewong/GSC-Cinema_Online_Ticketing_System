@@ -943,6 +943,7 @@ public class Seat1 extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
