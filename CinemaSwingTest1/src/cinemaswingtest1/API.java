@@ -19,6 +19,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,7 +39,7 @@ public class API {
      */
     public static List<Customer> getAllCustomer() throws Exception {
         List<Customer> list = new ArrayList<>();
-
+        
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
                 .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/customer/get_all"))
@@ -49,6 +50,7 @@ public class API {
 
         int statusCode = response.statusCode();
         String body = response.body();
+//        System.out.println(body);
 
         JSONObject json = new JSONObject(body);
         JSONArray users = json.getJSONArray("user");
@@ -142,7 +144,9 @@ public class API {
             JSONObject json = new JSONObject(body);
 
             boolean verified = json.getBoolean("verified");
+            String message = json.getString("message");
 
+            System.out.println(message);
             return verified && statusCode == 200;
         } catch (IOException | InterruptedException e) {
             System.out.println(e.getMessage());
@@ -177,17 +181,17 @@ public class API {
             JSONObject user = (JSONObject) staffs.get(i);
             String name = (String) user.get("name");
             String email = (String) user.get("email");
-            String staff_id = (String) user.get("staff_id");
-            Staff s = new Staff(name, email, staff_id);
+            String phone_number = (String) user.get("phone_number");
+            Staff s = new Staff(name, email, phone_number);
             list.add(s);
         }
 
         for (int i = 0; i < list.size(); i++) {
             String name = list.get(i).getName();
             String email = list.get(i).getEmail();
-            String staff_id = list.get(i).getstaff_id();
+            String phone_number = list.get(i).getPhoneNumber();
 
-            System.out.println("Staff " + (i + 1) + ": " + name + " " + email + " " + staff_id);
+            System.out.println("Staff " + (i + 1) + ": " + name + " " + email + " " + phone_number);
         }
 
         return list;
@@ -199,19 +203,17 @@ public class API {
      * @param name
      * @param email
      * @param password
-     * @param id
      * @param phone_number
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String name, String email, String password, int id, String phone_number) throws Exception {
+    public static boolean staffSignUp(String name, String email, String password, String phone_number) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
             data.put("name", name);
             data.put("email", email);
             data.put("password", password);
-            data.put("id", id);
             data.put("phone_number", phone_number);
 
             HttpRequest request = HttpRequest.newBuilder()
@@ -273,6 +275,123 @@ public class API {
         return false;
     }
 
+    public static boolean createMovie(String name,
+            String release_date,
+            String cast,
+            String synopsis,
+            String day,
+            String time,
+            int total_seat,
+            String image_url) {
+        try {
+            // form parameters
+            Map<Object, Object> data = new HashMap<>();
+            data.put("name", name);
+            data.put("release_date", release_date);
+            data.put("cast", cast);
+            data.put("synopsis", synopsis);
+            data.put("day", day);
+            data.put("time", time);
+            data.put("total_seat", total_seat);
+            data.put("image_url", image_url);
+
+            HttpRequest request = HttpRequest.newBuilder()
+                    .POST(buildFormDataFromMap(data))
+//                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/create"))
+                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/create"))
+                    .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
+                    .header("Content-Type", "application/x-www-form-urlencoded")
+                    .build();
+
+            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+            int statusCode = response.statusCode();
+            String body = response.body();
+            
+            JSONObject json = new JSONObject(body);
+            return statusCode == 200;
+        } catch (IOException | InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return false;
+    }
+
+    public static boolean bookSeat(String customer_email, String seat_id) {
+        try {
+            // form parameters
+            Map<Object, Object> data = new HashMap<>();
+            data.put("email", customer_email);
+            data.put("seat_id", seat_id);
+
+            HttpRequest request = HttpRequest.newBuilder()
+                    .POST(buildFormDataFromMap(data))
+                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/book"))
+                    .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
+                    .header("Content-Type", "application/x-www-form-urlencoded")
+                    .build();
+
+            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+            int statusCode = response.statusCode();
+            String body = response.body();
+
+            return statusCode == 200;
+        } catch (IOException | InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return false;
+    }
+
+    public static List<Movie> getAllMovie() throws Exception {
+        List<Movie> list = new ArrayList<>();
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .GET()
+                .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/get_all_movie"))
+                .setHeader("User-Agent", "Java 11 HttpClient Bot")
+                .build();
+
+        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+        int statusCode = response.statusCode();
+        String body = response.body();
+
+        JSONObject json = new JSONObject(body);
+        JSONArray movies = json.getJSONArray("movie");
+
+        for (int i = 0; i < movies.length(); i++) {
+            JSONObject movie = (JSONObject) movies.get(i);
+            String name = (String) movie.get("name");
+            String release_date = (String) movie.get("release_date");
+            String cast = (String) movie.get("cast");
+            String synopsis = (String) movie.get("synopsis");
+            String day = (String) movie.get("day");
+            String time = (String) movie.get("time");
+            int total_seat = (int) movie.get("total_seat");
+            String image_url = (String) movie.get("image_url");
+            Movie c = new Movie(name, release_date, cast, synopsis, day, time, total_seat, image_url);
+            list.add(c);
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            String name = list.get(i).name;
+            String release_date = list.get(i).release_date;
+            String cast = list.get(i).cast;
+            String synopsis = list.get(i).synopsis;
+            String day = list.get(i).day;
+            String time = list.get(i).time;
+            int total_seat = list.get(i).total_seat;
+            String image_url = list.get(i).image_url;
+            
+
+//            System.out.println("Customer " + (i + 1) + ": " + name + " " + email + " " + phone_number);
+        }
+
+        return list;
+    }
+    
     // Delete this if you have customer class
     private static class Customer {
 
@@ -309,12 +428,12 @@ public class API {
 
         private String name;
         private String email;
-        private String staff_id;
+        private String phone_number;
 
-        public Staff(String name, String email, String staff_id) {
+        public Staff(String name, String email, String phone_number) {
             this.name = name;
             this.email = email;
-            this.staff_id = staff_id;
+            this.phone_number = phone_number;
         }
 
         public String getName() {
@@ -325,13 +444,36 @@ public class API {
             return email;
         }
 
-        public String getstaff_id() {
-            return staff_id;
+        public String getPhoneNumber() {
+            return phone_number;
         }
 
         @Override
         public String toString() {
-            return name + " " + email + " " + staff_id;
+            return name + " " + email + " " + phone_number;
+        }
+    }
+
+    private static class Movie {
+
+        String name;
+        String release_date;
+        String cast;
+        String synopsis;
+        String day;
+        String time;
+        int total_seat;
+        String image_url;
+
+        public Movie(String name, String release_date, String cast, String synopsis, String day, String time, int total_seat, String image_url) {
+            this.name = name;
+            this.release_date = release_date;
+            this.cast = cast;
+            this.synopsis = synopsis;
+            this.day = day;
+            this.time = time;
+            this.total_seat = total_seat;
+            this.image_url = image_url;
         }
     }
 
