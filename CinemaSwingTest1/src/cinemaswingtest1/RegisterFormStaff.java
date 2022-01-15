@@ -43,10 +43,10 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(270, 20, 462, 58);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(122, 161, 180, 25);
+        jTextField3.setBounds(122, 161, 270, 30);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
-        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
         jButton1.setText("Register");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,7 +54,7 @@ public class RegisterFormStaff extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(10, 247, 87, 33);
+        jButton1.setBounds(10, 247, 140, 40);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,9 +68,9 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(10, 206, 80, 29);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(576, 69, 180, 25);
+        jTextField1.setBounds(576, 69, 270, 30);
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(122, 204, 180, 25);
+        jPasswordField1.setBounds(122, 204, 270, 30);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -78,7 +78,7 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(10, 157, 40, 29);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(122, 112, 180, 25);
+        jTextField2.setBounds(122, 112, 270, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
