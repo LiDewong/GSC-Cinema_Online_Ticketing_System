@@ -20,38 +20,33 @@ public class StaffMovieOption extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 20)); // NOI18N
         jButton1.setText("Spider-Man: No Way Home");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(20, 21, 310, 50);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 340, 50));
 
-        jButton2.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Yu Gothic", 0, 20)); // NOI18N
         jButton2.setText("The Medium");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(20, 75, 310, 50);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 340, 50));
 
-        jButton3.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Yu Gothic", 0, 20)); // NOI18N
         jButton3.setText("No Time To Die");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(20, 133, 310, 50);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 340, 50));
 
-        jButton4.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Yu Gothic", 0, 20)); // NOI18N
         jButton4.setText("Eternals");
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jButton4);
-        jButton4.setBounds(30, 390, 310, 50);
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 340, 50));
 
-        jButton5.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Yu Gothic", 0, 20)); // NOI18N
         jButton5.setText("Ghostbusters: Afterlife");
-        getContentPane().add(jButton5);
-        jButton5.setBounds(30, 520, 310, 50);
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 340, 50));
 
         jButton6.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         jButton6.setText("Add Movie");
@@ -60,17 +55,14 @@ public class StaffMovieOption extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(780, 220, 210, 50);
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 220, 210, 50));
 
         jButton7.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         jButton7.setText("Remove Movie");
-        getContentPane().add(jButton7);
-        jButton7.setBounds(780, 380, 210, 50);
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 380, 210, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1050, 640);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
