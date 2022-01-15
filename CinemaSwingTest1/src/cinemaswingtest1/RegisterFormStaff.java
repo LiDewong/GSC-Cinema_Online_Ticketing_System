@@ -41,9 +41,9 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Staff Registration Form");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(270, 20, 462, 58);
+        jLabel1.setBounds(280, 100, 462, 58);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(500, 370, 270, 30);
+        jTextField3.setBounds(480, 370, 270, 30);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
@@ -60,31 +60,31 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Name");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 71, 80, 29);
+        jLabel2.setBounds(310, 190, 80, 29);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Password");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 206, 80, 29);
+        jLabel3.setBounds(310, 450, 140, 40);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(576, 69, 270, 30);
+        jTextField1.setBounds(480, 190, 270, 30);
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(480, 450, 270, 30);
+        jPasswordField1.setBounds(480, 460, 270, 30);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Email");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 157, 40, 29);
+        jLabel4.setBounds(310, 370, 120, 40);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(122, 112, 270, 30);
+        jTextField2.setBounds(480, 280, 270, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Staff ID");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 114, 60, 29);
+        jLabel5.setBounds(310, 280, 140, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -92,9 +92,8 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         jLabel6.setBounds(10, 10, 90, 50);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
-        jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 1089, 640);
+        jLabel7.setBounds(0, 0, 1050, 640);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
