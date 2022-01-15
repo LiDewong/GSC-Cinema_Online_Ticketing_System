@@ -22,7 +22,7 @@
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-    <Property name="useNullLayout" type="boolean" value="true"/>
+    <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel2">
@@ -90,11 +90,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDate">
-      <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="290" y="110" width="320" height="30"/>
@@ -102,11 +97,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtTitle">
-      <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="290" y="40" width="320" height="30"/>
@@ -114,11 +104,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtSynopsis">
-      <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="290" y="250" width="320" height="30"/>
@@ -126,11 +111,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCast">
-      <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="290" y="180" width="320" height="30"/>
@@ -155,11 +135,35 @@
               <Font name="Tahoma" size="14" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="4" rowCount="0">
-                <Column editable="true" title="Title" type="java.lang.Object"/>
-                <Column editable="true" title="Release Date" type="java.lang.Object"/>
-                <Column editable="true" title="Cast" type="java.lang.Object"/>
-                <Column editable="true" title="Synopsis" type="java.lang.Object"/>
+              <Table columnCount="4" rowCount="5">
+                <Column editable="true" title="Title" type="java.lang.Object">
+                  <Data value="Spider-Man: No Way Home"/>
+                  <Data value="No Time To Die"/>
+                  <Data value="Eternals"/>
+                  <Data value="The Medium"/>
+                  <Data value="Ghostbusters: Afterlife"/>
+                </Column>
+                <Column editable="true" title="Release Date" type="java.lang.Object">
+                  <Data value="16 Dec 2021"/>
+                  <Data value="25 Nov 2021"/>
+                  <Data value="04 Nov 2021"/>
+                  <Data value="02 Dec 2021"/>
+                  <Data value="02 Dec 2021"/>
+                </Column>
+                <Column editable="true" title="Cast" type="java.lang.Object">
+                  <Data value="Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon"/>
+                  <Data value="Daniel Craig, Rami Malek, Ana de Armas"/>
+                  <Data value="Angelina Jolie, Salma Hayek, Richard Madden"/>
+                  <Data value=" Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan"/>
+                  <Data value="Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd"/>
+                </Column>
+                <Column editable="true" title="Synopsis" type="java.lang.Object">
+                  <Data value="For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero&apos;s identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange&apos;s help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who&apos;ve ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. "/>
+                  <Data value="In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology."/>
+                  <Data value="The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations."/>
+                  <Data value="A horrifying story of a shaman&apos;s inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be."/>
+                  <Data value="From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan."/>
+                </Column>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -186,6 +190,7 @@
                 </Column>
               </TableColumnModel>
             </Property>
+            <Property name="rowHeight" type="int" value="23"/>
             <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
             </Property>
@@ -239,7 +244,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="1050" height="640"/>
+          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

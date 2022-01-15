@@ -44,57 +44,46 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Title");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(140, 50, 114, 22);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 114, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Release Date");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(140, 120, 114, 22);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 114, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Cast");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(140, 180, 103, 22);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 103, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Synopsis");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(140, 250, 114, 22);
-
-        txtDate.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(txtDate);
-        txtDate.setBounds(290, 110, 320, 30);
-
-        txtTitle.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(txtTitle);
-        txtTitle.setBounds(290, 40, 320, 30);
-
-        txtSynopsis.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(txtSynopsis);
-        txtSynopsis.setBounds(290, 250, 320, 30);
-
-        txtCast.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(txtCast);
-        txtCast.setBounds(290, 180, 320, 30);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 114, -1));
+        getContentPane().add(txtDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 320, 30));
+        getContentPane().add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 320, 30));
+        getContentPane().add(txtSynopsis, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 320, 30));
+        getContentPane().add(txtCast, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 320, 30));
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {"Spider-Man: No Way Home", "16 Dec 2021", "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon", "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange's help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who've ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. "},
+                {"No Time To Die", "25 Nov 2021", "Daniel Craig, Rami Malek, Ana de Armas", "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology."},
+                {"Eternals", "04 Nov 2021", "Angelina Jolie, Salma Hayek, Richard Madden", "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations."},
+                {"The Medium", "02 Dec 2021", " Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan", "A horrifying story of a shaman's inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be."},
+                {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan."}
             },
             new String [] {
                 "Title", "Release Date", "Cast", "Synopsis"
             }
         ));
+        jTable1.setRowHeight(23);
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(20);
@@ -102,8 +91,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(20);
         }
 
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(80, 320, 890, 300);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 890, 300));
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -113,8 +101,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnAddActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAdd);
-        btnAdd.setBounds(811, 101, 111, 37);
+        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(811, 101, 111, 37));
 
         btnRemove.setBackground(new java.awt.Color(255, 255, 51));
         btnRemove.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -124,12 +111,10 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnRemoveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRemove);
-        btnRemove.setBounds(811, 190, 111, 37);
+        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(811, 190, 111, 37));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1050, 640);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
