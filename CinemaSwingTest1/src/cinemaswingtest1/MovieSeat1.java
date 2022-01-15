@@ -2,24 +2,26 @@ package cinemaswingtest1;
 
 import java.awt.Color;
 
-public class Seat2 extends javax.swing.JFrame {
-
-    private int a01,a02,a04,a05,a07,a08,a10,a11,a13,a14,a16,a17,
-            b01,b03,b05,b07,b09,b11,b13,b15,b17,
-            c01,c02,c04,c05,c07,c08,c10,c11,c13,c14,c16,c17,
-            d01,d03,d05,d07,d09,d11,d13,d15,d17,
-            e01,e02,e04,e05,e07,e08,e10,e11,e13,e14,e16,e17,
-            f01,f03,f05,f07,f09,f11,f13,f15,f17,
-            g01,g02,g04,g05,g07,g08,g10,g11,g13,g14,g16,g17,
-            h01,h03,h05,h07,h09,h11,h13,h15,h17,
-            i01,i02,i04,i05,i07,i08,i10,i11,i13,i14,i16,i17,
-            j01,j03,j05,j07,j09,j11,j13,j15,j17,
-            k01,k02,k04,k05,k07,k08,k10,k11,k13,k14,k16,k17;
+public class MovieSeat1 extends javax.swing.JFrame {
+    
+    private int[] seat = new int[78];
+    private String[] id = {"A01","A02","A04","A05","A07","A08","A10","A11",
+                            "B01","B03","B05","B07","B09","B11",
+                            "C01","C02","C04","C05","C07","C08","C10","C11",
+                            "D01","D03","D05","D07","D09","D11",
+                            "E01","E02","E04","E05","E07","E08","E10","E11",
+                            "F01","F03","F05","F07","F09","F11",
+                            "G01","G02","G04","G05","G07","G08","G10","G11",
+                            "H01","H03","H05","H07","H09","H11",
+                            "I01","I02","I04","I05","I07","I08","I10","I11",
+                            "J01","J03","J05","J07","J09","J11",
+                            "K01","K02","K04","K05","K07","K08","K10","K11"};
+//    private int cnt;
 
     /**
      * Creates new form Seat
      */
-    public Seat2() {
+    public MovieSeat1() {
         initComponents();
     }
 
@@ -115,58 +117,18 @@ public class Seat2 extends javax.swing.JFrame {
         btnK08 = new javax.swing.JButton();
         btnK07 = new javax.swing.JButton();
         btnK11 = new javax.swing.JButton();
-        btnTwin1 = new javax.swing.JButton();
-        btnTwin2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        btnAvailable = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        btnJ17 = new javax.swing.JButton();
-        btnJ13 = new javax.swing.JButton();
-        btnI14 = new javax.swing.JButton();
-        btnJ15 = new javax.swing.JButton();
-        btnI13 = new javax.swing.JButton();
-        btnI17 = new javax.swing.JButton();
-        btnK16 = new javax.swing.JButton();
-        btnK14 = new javax.swing.JButton();
-        btnK13 = new javax.swing.JButton();
-        btnK17 = new javax.swing.JButton();
-        btnA14 = new javax.swing.JButton();
-        btnA13 = new javax.swing.JButton();
-        btnA17 = new javax.swing.JButton();
-        btnA16 = new javax.swing.JButton();
-        btnB17 = new javax.swing.JButton();
-        btnB13 = new javax.swing.JButton();
-        btnB15 = new javax.swing.JButton();
-        btnC16 = new javax.swing.JButton();
-        btnD17 = new javax.swing.JButton();
-        btnD13 = new javax.swing.JButton();
-        btnC14 = new javax.swing.JButton();
-        btnD15 = new javax.swing.JButton();
-        btnC13 = new javax.swing.JButton();
-        btnC17 = new javax.swing.JButton();
-        btnE16 = new javax.swing.JButton();
-        btnF17 = new javax.swing.JButton();
-        btnF13 = new javax.swing.JButton();
-        btnE14 = new javax.swing.JButton();
-        btnF15 = new javax.swing.JButton();
-        btnE13 = new javax.swing.JButton();
-        btnE17 = new javax.swing.JButton();
-        btnG16 = new javax.swing.JButton();
-        btnH17 = new javax.swing.JButton();
-        btnH13 = new javax.swing.JButton();
-        btnG14 = new javax.swing.JButton();
-        btnH15 = new javax.swing.JButton();
-        btnG13 = new javax.swing.JButton();
-        btnG17 = new javax.swing.JButton();
-        btnI16 = new javax.swing.JButton();
         btnSelected = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        btnUnavailable = new javax.swing.JButton();
+        btnTwin1 = new javax.swing.JButton();
+        btnTwin2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        btnAvailable = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        btnUnavailable = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1050, 640));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
@@ -181,10 +143,15 @@ public class Seat2 extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("S C R E E N");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, 1031, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, 1030, -1));
 
         btnNext.setText("NEXT");
-        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 600, 60, 25));
+        btnNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(978, 602, 60, 25));
 
         btnBack.setText("BACK");
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 602, -1, 25));
@@ -201,7 +168,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+        getContentPane().add(btnA01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 92, -1, -1));
 
         btnA02.setBackground(new java.awt.Color(255, 204, 255));
         btnA02.setText("A02");
@@ -211,7 +178,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 90, -1, -1));
+        getContentPane().add(btnA02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 92, -1, -1));
 
         btnA05.setBackground(new java.awt.Color(255, 204, 255));
         btnA05.setText("A05");
@@ -221,7 +188,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 90, -1, -1));
+        getContentPane().add(btnA05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 92, -1, -1));
 
         btnA04.setBackground(new java.awt.Color(255, 204, 255));
         btnA04.setText("A04");
@@ -231,7 +198,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 90, -1, -1));
+        getContentPane().add(btnA04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 92, -1, -1));
 
         btnA08.setBackground(new java.awt.Color(255, 204, 255));
         btnA08.setText("A08");
@@ -241,7 +208,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 90, -1, -1));
+        getContentPane().add(btnA08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 92, -1, -1));
 
         btnA07.setBackground(new java.awt.Color(255, 204, 255));
         btnA07.setText("A07");
@@ -251,7 +218,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 90, -1, -1));
+        getContentPane().add(btnA07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 92, -1, -1));
 
         btnA11.setBackground(new java.awt.Color(255, 204, 255));
         btnA11.setText("A11");
@@ -261,7 +228,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
+        getContentPane().add(btnA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 92, -1, -1));
 
         btnA10.setBackground(new java.awt.Color(255, 204, 255));
         btnA10.setText("A10");
@@ -271,7 +238,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnA10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 90, -1, -1));
+        getContentPane().add(btnA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 92, -1, -1));
 
         btnB01.setBackground(new java.awt.Color(255, 255, 255));
         btnB01.setText("B01");
@@ -281,7 +248,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 133, -1, -1));
+        getContentPane().add(btnB01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 135, -1, -1));
 
         btnB11.setBackground(new java.awt.Color(255, 255, 255));
         btnB11.setText("B11");
@@ -291,7 +258,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 133, -1, -1));
+        getContentPane().add(btnB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 135, -1, -1));
 
         btnB03.setBackground(new java.awt.Color(255, 255, 255));
         btnB03.setText("B03");
@@ -301,7 +268,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB03ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 133, -1, -1));
+        getContentPane().add(btnB03, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 135, -1, -1));
 
         btnB05.setBackground(new java.awt.Color(255, 255, 255));
         btnB05.setText("B05");
@@ -311,7 +278,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 133, -1, -1));
+        getContentPane().add(btnB05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 135, -1, -1));
 
         btnB07.setBackground(new java.awt.Color(255, 255, 255));
         btnB07.setText("B07");
@@ -321,7 +288,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 133, -1, -1));
+        getContentPane().add(btnB07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 135, -1, -1));
 
         btnB09.setBackground(new java.awt.Color(255, 255, 255));
         btnB09.setText("B09");
@@ -331,7 +298,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnB09ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnB09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 133, -1, -1));
+        getContentPane().add(btnB09, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 135, -1, -1));
 
         btnC10.setBackground(new java.awt.Color(255, 204, 255));
         btnC10.setText("C10");
@@ -341,7 +308,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 176, -1, -1));
+        getContentPane().add(btnC10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 178, -1, -1));
 
         btnC01.setBackground(new java.awt.Color(255, 204, 255));
         btnC01.setText("C01");
@@ -351,7 +318,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 176, -1, -1));
+        getContentPane().add(btnC01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 178, -1, -1));
 
         btnC02.setBackground(new java.awt.Color(255, 204, 255));
         btnC02.setText("C02");
@@ -361,7 +328,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 176, -1, -1));
+        getContentPane().add(btnC02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 178, -1, -1));
 
         btnD01.setBackground(new java.awt.Color(255, 255, 255));
         btnD01.setText("D01");
@@ -371,7 +338,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 219, -1, -1));
+        getContentPane().add(btnD01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 221, -1, -1));
 
         btnD11.setBackground(new java.awt.Color(255, 255, 255));
         btnD11.setText("D11");
@@ -381,7 +348,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 219, -1, -1));
+        getContentPane().add(btnD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 221, -1, -1));
 
         btnC05.setBackground(new java.awt.Color(255, 204, 255));
         btnC05.setText("C05");
@@ -391,7 +358,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 176, -1, -1));
+        getContentPane().add(btnC05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 178, -1, -1));
 
         btnD03.setBackground(new java.awt.Color(255, 255, 255));
         btnD03.setText("D03");
@@ -401,7 +368,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD03ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 219, -1, -1));
+        getContentPane().add(btnD03, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 221, -1, -1));
 
         btnD05.setBackground(new java.awt.Color(255, 255, 255));
         btnD05.setText("D05");
@@ -411,7 +378,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 219, -1, -1));
+        getContentPane().add(btnD05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 221, -1, -1));
 
         btnC04.setBackground(new java.awt.Color(255, 204, 255));
         btnC04.setText("C04");
@@ -421,7 +388,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 176, -1, -1));
+        getContentPane().add(btnC04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 178, -1, -1));
 
         btnD07.setBackground(new java.awt.Color(255, 255, 255));
         btnD07.setText("D07");
@@ -431,7 +398,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 219, -1, -1));
+        getContentPane().add(btnD07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 221, -1, -1));
 
         btnC08.setBackground(new java.awt.Color(255, 204, 255));
         btnC08.setText("C08");
@@ -441,7 +408,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 176, -1, -1));
+        getContentPane().add(btnC08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 178, -1, -1));
 
         btnD09.setBackground(new java.awt.Color(255, 255, 255));
         btnD09.setText("D09");
@@ -451,7 +418,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnD09ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnD09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 219, -1, -1));
+        getContentPane().add(btnD09, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 221, -1, -1));
 
         btnC07.setBackground(new java.awt.Color(255, 204, 255));
         btnC07.setText("C07");
@@ -461,7 +428,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 176, -1, -1));
+        getContentPane().add(btnC07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 178, -1, -1));
 
         btnC11.setBackground(new java.awt.Color(255, 204, 255));
         btnC11.setText("C11");
@@ -471,7 +438,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnC11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 176, -1, -1));
+        getContentPane().add(btnC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 178, -1, -1));
 
         btnE10.setBackground(new java.awt.Color(255, 204, 255));
         btnE10.setText("E10");
@@ -481,7 +448,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 262, -1, -1));
+        getContentPane().add(btnE10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 264, -1, -1));
 
         btnE01.setBackground(new java.awt.Color(255, 204, 255));
         btnE01.setText("E01");
@@ -491,7 +458,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 262, -1, -1));
+        getContentPane().add(btnE01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 264, -1, -1));
 
         btnE02.setBackground(new java.awt.Color(255, 204, 255));
         btnE02.setText("E02");
@@ -501,7 +468,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 262, -1, -1));
+        getContentPane().add(btnE02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 264, -1, -1));
 
         btnF01.setBackground(new java.awt.Color(255, 255, 255));
         btnF01.setText("F01");
@@ -511,7 +478,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 305, -1, -1));
+        getContentPane().add(btnF01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 307, -1, -1));
 
         btnF11.setBackground(new java.awt.Color(255, 255, 255));
         btnF11.setText("F11");
@@ -521,7 +488,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 305, -1, -1));
+        getContentPane().add(btnF11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 307, -1, -1));
 
         btnE05.setBackground(new java.awt.Color(255, 204, 255));
         btnE05.setText("E05");
@@ -531,7 +498,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 262, -1, -1));
+        getContentPane().add(btnE05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 264, -1, -1));
 
         btnF03.setBackground(new java.awt.Color(255, 255, 255));
         btnF03.setText("F03");
@@ -541,7 +508,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF03ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 305, -1, -1));
+        getContentPane().add(btnF03, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 307, -1, -1));
 
         btnF05.setBackground(new java.awt.Color(255, 255, 255));
         btnF05.setText("F05");
@@ -551,7 +518,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 305, -1, -1));
+        getContentPane().add(btnF05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 307, -1, -1));
 
         btnE04.setBackground(new java.awt.Color(255, 204, 255));
         btnE04.setText("E04");
@@ -561,7 +528,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 262, -1, -1));
+        getContentPane().add(btnE04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 264, -1, -1));
 
         btnF07.setBackground(new java.awt.Color(255, 255, 255));
         btnF07.setText("F07");
@@ -571,7 +538,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 305, -1, -1));
+        getContentPane().add(btnF07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 307, -1, -1));
 
         btnE08.setBackground(new java.awt.Color(255, 204, 255));
         btnE08.setText("E08");
@@ -581,7 +548,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 262, -1, -1));
+        getContentPane().add(btnE08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 264, -1, -1));
 
         btnF09.setBackground(new java.awt.Color(255, 255, 255));
         btnF09.setText("F09");
@@ -591,7 +558,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnF09ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnF09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 305, -1, -1));
+        getContentPane().add(btnF09, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 307, -1, -1));
 
         btnE07.setBackground(new java.awt.Color(255, 204, 255));
         btnE07.setText("E07");
@@ -601,7 +568,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 262, -1, -1));
+        getContentPane().add(btnE07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 264, -1, -1));
 
         btnE11.setBackground(new java.awt.Color(255, 204, 255));
         btnE11.setText("E11");
@@ -611,7 +578,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnE11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 262, -1, -1));
+        getContentPane().add(btnE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 264, -1, -1));
 
         btnG10.setBackground(new java.awt.Color(255, 204, 255));
         btnG10.setText("G10");
@@ -621,7 +588,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 348, -1, -1));
+        getContentPane().add(btnG10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, -1, -1));
 
         btnG01.setBackground(new java.awt.Color(255, 204, 255));
         btnG01.setText("G01");
@@ -631,7 +598,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 348, -1, -1));
+        getContentPane().add(btnG01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 350, -1, -1));
 
         btnG02.setBackground(new java.awt.Color(255, 204, 255));
         btnG02.setText("G02");
@@ -641,7 +608,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 348, -1, -1));
+        getContentPane().add(btnG02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 350, -1, -1));
 
         btnH01.setBackground(new java.awt.Color(255, 255, 255));
         btnH01.setText("H01");
@@ -651,7 +618,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 391, -1, -1));
+        getContentPane().add(btnH01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 393, -1, -1));
 
         btnH11.setBackground(new java.awt.Color(255, 255, 255));
         btnH11.setText("H11");
@@ -661,7 +628,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 391, -1, -1));
+        getContentPane().add(btnH11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 393, -1, -1));
 
         btnG05.setBackground(new java.awt.Color(255, 204, 255));
         btnG05.setText("G05");
@@ -671,7 +638,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 348, -1, -1));
+        getContentPane().add(btnG05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 350, -1, -1));
 
         btnH03.setBackground(new java.awt.Color(255, 255, 255));
         btnH03.setText("H03");
@@ -681,7 +648,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH03ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 391, -1, -1));
+        getContentPane().add(btnH03, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 393, -1, -1));
 
         btnH05.setBackground(new java.awt.Color(255, 255, 255));
         btnH05.setText("H05");
@@ -691,7 +658,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 391, -1, -1));
+        getContentPane().add(btnH05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 393, -1, -1));
 
         btnG04.setBackground(new java.awt.Color(255, 204, 255));
         btnG04.setText("G04");
@@ -701,7 +668,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 348, -1, -1));
+        getContentPane().add(btnG04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 350, -1, -1));
 
         btnH07.setBackground(new java.awt.Color(255, 255, 255));
         btnH07.setText("H07");
@@ -711,7 +678,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 391, -1, -1));
+        getContentPane().add(btnH07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 393, -1, -1));
 
         btnG08.setBackground(new java.awt.Color(255, 204, 255));
         btnG08.setText("G08");
@@ -721,7 +688,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 348, -1, -1));
+        getContentPane().add(btnG08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 350, -1, -1));
 
         btnH09.setBackground(new java.awt.Color(255, 255, 255));
         btnH09.setText("H09");
@@ -731,7 +698,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnH09ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnH09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 391, -1, -1));
+        getContentPane().add(btnH09, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 393, -1, -1));
 
         btnG07.setBackground(new java.awt.Color(255, 204, 255));
         btnG07.setText("G07");
@@ -741,7 +708,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 348, -1, -1));
+        getContentPane().add(btnG07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 350, -1, -1));
 
         btnG11.setBackground(new java.awt.Color(255, 204, 255));
         btnG11.setText("G11");
@@ -751,7 +718,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnG11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnG11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 348, -1, -1));
+        getContentPane().add(btnG11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 350, -1, -1));
 
         btnI10.setBackground(new java.awt.Color(255, 204, 255));
         btnI10.setText("I10");
@@ -761,7 +728,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 434, -1, -1));
+        getContentPane().add(btnI10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 436, -1, -1));
 
         btnI01.setBackground(new java.awt.Color(255, 204, 255));
         btnI01.setText("I01");
@@ -771,7 +738,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 434, -1, -1));
+        getContentPane().add(btnI01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 436, -1, -1));
 
         btnI02.setBackground(new java.awt.Color(255, 204, 255));
         btnI02.setText("I02");
@@ -781,7 +748,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 434, -1, -1));
+        getContentPane().add(btnI02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 436, -1, -1));
 
         btnJ01.setBackground(new java.awt.Color(255, 255, 255));
         btnJ01.setText("J01");
@@ -791,7 +758,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 477, -1, -1));
+        getContentPane().add(btnJ01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 479, -1, -1));
 
         btnJ11.setBackground(new java.awt.Color(255, 255, 255));
         btnJ11.setText("J11");
@@ -801,7 +768,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 477, -1, -1));
+        getContentPane().add(btnJ11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 479, -1, -1));
 
         btnI05.setBackground(new java.awt.Color(255, 204, 255));
         btnI05.setText("I05");
@@ -811,7 +778,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 434, -1, -1));
+        getContentPane().add(btnI05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 436, -1, -1));
 
         btnJ03.setBackground(new java.awt.Color(255, 255, 255));
         btnJ03.setText("J03");
@@ -821,7 +788,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ03ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 477, -1, -1));
+        getContentPane().add(btnJ03, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 479, -1, -1));
 
         btnJ05.setBackground(new java.awt.Color(255, 255, 255));
         btnJ05.setText("J05");
@@ -831,7 +798,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 477, -1, -1));
+        getContentPane().add(btnJ05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 479, -1, -1));
 
         btnI04.setBackground(new java.awt.Color(255, 204, 255));
         btnI04.setText("I04");
@@ -841,7 +808,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 434, -1, -1));
+        getContentPane().add(btnI04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 436, -1, -1));
 
         btnJ07.setBackground(new java.awt.Color(255, 255, 255));
         btnJ07.setText("J07");
@@ -851,7 +818,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 477, -1, -1));
+        getContentPane().add(btnJ07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 479, -1, -1));
 
         btnI08.setBackground(new java.awt.Color(255, 204, 255));
         btnI08.setText("I08");
@@ -861,7 +828,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 434, -1, -1));
+        getContentPane().add(btnI08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 436, -1, -1));
 
         btnJ09.setBackground(new java.awt.Color(255, 255, 255));
         btnJ09.setText("J09");
@@ -871,7 +838,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnJ09ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJ09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 477, -1, -1));
+        getContentPane().add(btnJ09, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 479, -1, -1));
 
         btnI07.setBackground(new java.awt.Color(255, 204, 255));
         btnI07.setText("I07");
@@ -881,7 +848,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 434, -1, -1));
+        getContentPane().add(btnI07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 436, -1, -1));
 
         btnI11.setBackground(new java.awt.Color(255, 204, 255));
         btnI11.setText("I11");
@@ -891,7 +858,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnI11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnI11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 434, -1, -1));
+        getContentPane().add(btnI11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 436, -1, -1));
 
         btnK10.setBackground(new java.awt.Color(255, 204, 255));
         btnK10.setText("K10");
@@ -901,7 +868,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK10ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 520, -1, -1));
+        getContentPane().add(btnK10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 522, -1, -1));
 
         btnK01.setBackground(new java.awt.Color(255, 204, 255));
         btnK01.setText("K01");
@@ -911,7 +878,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK01ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
+        getContentPane().add(btnK01, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 522, -1, -1));
 
         btnK02.setBackground(new java.awt.Color(255, 204, 255));
         btnK02.setText("K02");
@@ -921,7 +888,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK02ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 520, -1, -1));
+        getContentPane().add(btnK02, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 522, -1, -1));
 
         btnK05.setBackground(new java.awt.Color(255, 204, 255));
         btnK05.setText("K05");
@@ -931,7 +898,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK05ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 520, -1, -1));
+        getContentPane().add(btnK05, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 522, -1, -1));
 
         btnK04.setBackground(new java.awt.Color(255, 204, 255));
         btnK04.setText("K04");
@@ -941,7 +908,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK04ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 520, -1, -1));
+        getContentPane().add(btnK04, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 522, -1, -1));
 
         btnK08.setBackground(new java.awt.Color(255, 204, 255));
         btnK08.setText("K08");
@@ -951,7 +918,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK08ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 520, -1, -1));
+        getContentPane().add(btnK08, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 522, -1, -1));
 
         btnK07.setBackground(new java.awt.Color(255, 204, 255));
         btnK07.setText("K07");
@@ -961,7 +928,7 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK07ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 520, -1, -1));
+        getContentPane().add(btnK07, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 522, -1, -1));
 
         btnK11.setBackground(new java.awt.Color(255, 204, 255));
         btnK11.setText("K11");
@@ -971,1863 +938,1119 @@ public class Seat2 extends javax.swing.JFrame {
                 btnK11ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnK11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 520, -1, -1));
-
-        btnTwin1.setBackground(new java.awt.Color(255, 204, 255));
-        btnTwin1.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(btnTwin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 602, -1, -1));
-
-        btnTwin2.setBackground(new java.awt.Color(255, 204, 255));
-        btnTwin2.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(btnTwin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 602, -1, -1));
-
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Twin");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 602, -1, 25));
-
-        btnAvailable.setBackground(new java.awt.Color(255, 255, 255));
-        btnAvailable.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(btnAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 602, -1, -1));
-
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Available");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 602, 50, 25));
-
-        btnJ17.setBackground(new java.awt.Color(255, 255, 255));
-        btnJ17.setText("J17");
-        btnJ17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnJ17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnJ17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnJ17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 477, -1, -1));
-
-        btnJ13.setBackground(new java.awt.Color(255, 255, 255));
-        btnJ13.setText("J13");
-        btnJ13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnJ13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnJ13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnJ13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 477, -1, -1));
-
-        btnI14.setBackground(new java.awt.Color(255, 204, 255));
-        btnI14.setText("I14");
-        btnI14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnI14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnI14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnI14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 434, -1, -1));
-
-        btnJ15.setBackground(new java.awt.Color(255, 255, 255));
-        btnJ15.setText("J15");
-        btnJ15.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnJ15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnJ15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnJ15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 477, -1, -1));
-
-        btnI13.setBackground(new java.awt.Color(255, 204, 255));
-        btnI13.setText("I13");
-        btnI13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnI13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnI13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnI13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 434, -1, -1));
-
-        btnI17.setBackground(new java.awt.Color(255, 204, 255));
-        btnI17.setText("I17");
-        btnI17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnI17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnI17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnI17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 434, -1, -1));
-
-        btnK16.setBackground(new java.awt.Color(255, 204, 255));
-        btnK16.setText("K16");
-        btnK16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnK16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnK16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnK16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 520, -1, -1));
-
-        btnK14.setBackground(new java.awt.Color(255, 204, 255));
-        btnK14.setText("K14");
-        btnK14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnK14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnK14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnK14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 520, -1, -1));
-
-        btnK13.setBackground(new java.awt.Color(255, 204, 255));
-        btnK13.setText("K13");
-        btnK13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnK13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnK13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnK13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 520, -1, -1));
-
-        btnK17.setBackground(new java.awt.Color(255, 204, 255));
-        btnK17.setText("K17");
-        btnK17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnK17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnK17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnK17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 520, -1, -1));
-
-        btnA14.setBackground(new java.awt.Color(255, 204, 255));
-        btnA14.setText("A14");
-        btnA14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnA14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnA14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 90, -1, -1));
-
-        btnA13.setBackground(new java.awt.Color(255, 204, 255));
-        btnA13.setText("A13");
-        btnA13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnA13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnA13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 90, -1, -1));
-
-        btnA17.setBackground(new java.awt.Color(255, 204, 255));
-        btnA17.setText("A17");
-        btnA17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnA17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnA17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 90, -1, -1));
-
-        btnA16.setBackground(new java.awt.Color(255, 204, 255));
-        btnA16.setText("A16");
-        btnA16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnA16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnA16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 90, -1, -1));
-
-        btnB17.setBackground(new java.awt.Color(255, 255, 255));
-        btnB17.setText("B17");
-        btnB17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnB17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnB17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 133, -1, -1));
-
-        btnB13.setBackground(new java.awt.Color(255, 255, 255));
-        btnB13.setText("B13");
-        btnB13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnB13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnB13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 133, -1, -1));
-
-        btnB15.setBackground(new java.awt.Color(255, 255, 255));
-        btnB15.setText("B15");
-        btnB15.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnB15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnB15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnB15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 133, -1, -1));
-
-        btnC16.setBackground(new java.awt.Color(255, 204, 255));
-        btnC16.setText("C16");
-        btnC16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnC16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnC16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 176, -1, -1));
-
-        btnD17.setBackground(new java.awt.Color(255, 255, 255));
-        btnD17.setText("D17");
-        btnD17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnD17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnD17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 219, -1, -1));
-
-        btnD13.setBackground(new java.awt.Color(255, 255, 255));
-        btnD13.setText("D13");
-        btnD13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnD13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnD13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnD13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 219, -1, -1));
-
-        btnC14.setBackground(new java.awt.Color(255, 204, 255));
-        btnC14.setText("C14");
-        btnC14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnC14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnC14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 176, -1, -1));
-
-        btnD15.setBackground(new java.awt.Color(255, 255, 255));
-        btnD15.setText("D15");
-        btnD15.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnD15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnD15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnD15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 219, -1, -1));
-
-        btnC13.setBackground(new java.awt.Color(255, 204, 255));
-        btnC13.setText("C13");
-        btnC13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnC13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnC13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnC13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 176, -1, -1));
-
-        btnC17.setBackground(new java.awt.Color(255, 204, 255));
-        btnC17.setText("C17");
-        btnC17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnC17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnC17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnC17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 176, -1, -1));
-
-        btnE16.setBackground(new java.awt.Color(255, 204, 255));
-        btnE16.setText("E16");
-        btnE16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnE16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnE16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 262, -1, -1));
-
-        btnF17.setBackground(new java.awt.Color(255, 255, 255));
-        btnF17.setText("F17");
-        btnF17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnF17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnF17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnF17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 305, -1, -1));
-
-        btnF13.setBackground(new java.awt.Color(255, 255, 255));
-        btnF13.setText("F13");
-        btnF13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnF13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnF13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnF13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 305, -1, -1));
-
-        btnE14.setBackground(new java.awt.Color(255, 204, 255));
-        btnE14.setText("E14");
-        btnE14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnE14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnE14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 262, -1, -1));
-
-        btnF15.setBackground(new java.awt.Color(255, 255, 255));
-        btnF15.setText("F15");
-        btnF15.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnF15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnF15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnF15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 305, -1, -1));
-
-        btnE13.setBackground(new java.awt.Color(255, 204, 255));
-        btnE13.setText("E13");
-        btnE13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnE13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnE13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnE13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 262, -1, -1));
-
-        btnE17.setBackground(new java.awt.Color(255, 204, 255));
-        btnE17.setText("E17");
-        btnE17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnE17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnE17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnE17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 262, -1, -1));
-
-        btnG16.setBackground(new java.awt.Color(255, 204, 255));
-        btnG16.setText("G16");
-        btnG16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnG16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnG16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnG16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 348, -1, -1));
-
-        btnH17.setBackground(new java.awt.Color(255, 255, 255));
-        btnH17.setText("H17");
-        btnH17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnH17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnH17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnH17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 391, -1, -1));
-
-        btnH13.setBackground(new java.awt.Color(255, 255, 255));
-        btnH13.setText("H13");
-        btnH13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnH13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnH13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnH13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 391, -1, -1));
-
-        btnG14.setBackground(new java.awt.Color(255, 204, 255));
-        btnG14.setText("G14");
-        btnG14.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnG14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnG14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnG14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 348, -1, -1));
-
-        btnH15.setBackground(new java.awt.Color(255, 255, 255));
-        btnH15.setText("H15");
-        btnH15.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnH15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnH15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnH15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 391, -1, -1));
-
-        btnG13.setBackground(new java.awt.Color(255, 204, 255));
-        btnG13.setText("G13");
-        btnG13.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnG13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnG13ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnG13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 348, -1, -1));
-
-        btnG17.setBackground(new java.awt.Color(255, 204, 255));
-        btnG17.setText("G17");
-        btnG17.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnG17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnG17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnG17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 348, -1, -1));
-
-        btnI16.setBackground(new java.awt.Color(255, 204, 255));
-        btnI16.setText("I16");
-        btnI16.setPreferredSize(new java.awt.Dimension(55, 25));
-        btnI16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnI16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnI16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 434, -1, -1));
+        getContentPane().add(btnK11, new org.netbeans.lib.awtextra.AbsoluteConstraints(801, 522, -1, -1));
 
         btnSelected.setBackground(new java.awt.Color(255, 255, 0));
         btnSelected.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(btnSelected, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 602, -1, -1));
+        getContentPane().add(btnSelected, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 604, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Selected");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 50, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 602, 50, 30));
 
-        btnUnavailable.setEnabled(false);
-        btnUnavailable.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(btnUnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 600, -1, -1));
+        btnTwin1.setBackground(new java.awt.Color(255, 204, 255));
+        btnTwin1.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnTwin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 604, -1, -1));
+
+        btnTwin2.setBackground(new java.awt.Color(255, 204, 255));
+        btnTwin2.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnTwin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 604, -1, -1));
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Unavailable");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 600, 100, 25));
+        jLabel7.setText("Twin");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 604, -1, 25));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
-        jLabel8.setText("jLabel8");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
+        btnAvailable.setBackground(new java.awt.Color(255, 255, 255));
+        btnAvailable.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 604, -1, -1));
+
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Available");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 604, 50, 25));
+
+        btnUnavailable.setBackground(new java.awt.Color(102, 102, 102));
+        btnUnavailable.setEnabled(false);
+        btnUnavailable.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnUnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 602, -1, -1));
+
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Unavailable");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 602, 60, 25));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
-        if (a01 == 1) {
+        if (seat[0] == 1) {
             btnA01.setBackground(new Color(255, 204, 255));
             btnA02.setBackground(new Color(255, 204, 255));
-            a01 = 0;
+            seat[0] = 0;
+            seat[1] = 0;
         }
-        else if (a01 == 0) {
+        else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
             btnA02.setBackground(Color.YELLOW);
-            a01 = 1;
+            seat[0] = 1;
+            seat[1] = 1;
         }
     }//GEN-LAST:event_btnA01ActionPerformed
 
     private void btnA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA02ActionPerformed
-        if (a01 == 1) {
+        if (seat[0] == 1) {
             btnA01.setBackground(new Color(255, 204, 255));
             btnA02.setBackground(new Color(255, 204, 255));
-            a01 = 0;
+            seat[0] = 0;
+            seat[1] = 0;
         }
-        else if (a01 == 0) {
+        else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
             btnA02.setBackground(Color.YELLOW);
-            a01 = 1;
+            seat[0] = 1;
+            seat[1] = 1;
         }
     }//GEN-LAST:event_btnA02ActionPerformed
 
     private void btnA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA04ActionPerformed
-        if (a04 == 1) {
+        if (seat[2] == 1) {
             btnA04.setBackground(new Color(255, 204, 255));
             btnA05.setBackground(new Color(255, 204, 255));
-            a04 = 0;
+            seat[2] = 0;
+            seat[3] = 0;
         }
-        else if (a04 == 0) {
+        else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
             btnA05.setBackground(Color.YELLOW);
-            a04 = 1;
+            seat[2] = 1;
+            seat[3] = 1;
         }
     }//GEN-LAST:event_btnA04ActionPerformed
 
     private void btnA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA05ActionPerformed
-        if (a04 == 1) {
+        if (seat[2] == 1) {
             btnA04.setBackground(new Color(255, 204, 255));
             btnA05.setBackground(new Color(255, 204, 255));
-            a04 = 0;
+            seat[2] = 0;
+            seat[3] = 0;
         }
-        else if (a04 == 0) {
+        else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
             btnA05.setBackground(Color.YELLOW);
-            a04 = 1;
+            seat[2] = 1;
+            seat[3] = 1;
         }
     }//GEN-LAST:event_btnA05ActionPerformed
 
     private void btnA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA07ActionPerformed
-        if (a07 == 1) {
+        if (seat[4] == 1) {
             btnA07.setBackground(new Color(255, 204, 255));
             btnA08.setBackground(new Color(255, 204, 255));
-            a07 = 0;
+            seat[4] = 0;
+            seat[5] = 0;
         }
-        else if (a07 == 0) {
+        else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
             btnA08.setBackground(Color.YELLOW);
-            a07 = 1;
+            seat[4] = 1;
+            seat[5] = 1;
         }
     }//GEN-LAST:event_btnA07ActionPerformed
 
     private void btnA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA08ActionPerformed
-        if (a07 == 1) {
+        if (seat[4] == 1) {
             btnA07.setBackground(new Color(255, 204, 255));
             btnA08.setBackground(new Color(255, 204, 255));
-            a07 = 0;
+            seat[4] = 0;
+            seat[5] = 0;
         }
-        else if (a07 == 0) {
+        else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
             btnA08.setBackground(Color.YELLOW);
-            a07 = 1;
+            seat[4] = 1;
+            seat[5] = 1;
         }
     }//GEN-LAST:event_btnA08ActionPerformed
 
     private void btnA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA10ActionPerformed
-        if (a10 == 1) {
+        if (seat[6] == 1) {
             btnA10.setBackground(new Color(255, 204, 255));
             btnA11.setBackground(new Color(255, 204, 255));
-            a10 = 0;
+            seat[6] = 0;
+            seat[7] = 0;
         }
-        else if (a10 == 0) {
+        else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
             btnA11.setBackground(Color.YELLOW);
-            a10 = 1;
+            seat[6] = 1;
+            seat[7] = 1;
         }
     }//GEN-LAST:event_btnA10ActionPerformed
 
     private void btnA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA11ActionPerformed
-        if (a10 == 1) {
+        if (seat[6] == 1) {
             btnA10.setBackground(new Color(255, 204, 255));
             btnA11.setBackground(new Color(255, 204, 255));
-            a10 = 0;
+            seat[6] = 0;
+            seat[7] = 0;
         }
-        else if (a10 == 0) {
+        else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
             btnA11.setBackground(Color.YELLOW);
-            a10 = 1;
+            seat[6] = 1;
+            seat[7] = 1;
         }
     }//GEN-LAST:event_btnA11ActionPerformed
 
-    private void btnA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA13ActionPerformed
-        if (a13 == 1) {
-            btnA13.setBackground(new Color(255, 204, 255));
-            btnA14.setBackground(new Color(255, 204, 255));
-            a13 = 0;
-        }
-        else if (a13 == 0) {
-            btnA13.setBackground(Color.YELLOW);
-            btnA14.setBackground(Color.YELLOW);
-            a13 = 1;
-        }
-    }//GEN-LAST:event_btnA13ActionPerformed
-
-    private void btnA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA14ActionPerformed
-        if (a13 == 1) {
-            btnA13.setBackground(new Color(255, 204, 255));
-            btnA14.setBackground(new Color(255, 204, 255));
-            a13 = 0;
-        }
-        else if (a13 == 0) {
-            btnA13.setBackground(Color.YELLOW);
-            btnA14.setBackground(Color.YELLOW);
-            a13 = 1;
-        }
-    }//GEN-LAST:event_btnA14ActionPerformed
-
-    private void btnA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA16ActionPerformed
-        if (a16 == 1) {
-            btnA16.setBackground(new Color(255, 204, 255));
-            btnA17.setBackground(new Color(255, 204, 255));
-            a16 = 0;
-        }
-        else if (a16 == 0) {
-            btnA16.setBackground(Color.YELLOW);
-            btnA17.setBackground(Color.YELLOW);
-            a16 = 1;
-        }
-    }//GEN-LAST:event_btnA16ActionPerformed
-
-    private void btnA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA17ActionPerformed
-        if (a16 == 1) {
-            btnA16.setBackground(new Color(255, 204, 255));
-            btnA17.setBackground(new Color(255, 204, 255));
-            a16 = 0;
-        }
-        else if (a16 == 0) {
-            btnA16.setBackground(Color.YELLOW);
-            btnA17.setBackground(Color.YELLOW);
-            a16 = 1;
-        }
-    }//GEN-LAST:event_btnA17ActionPerformed
-
     private void btnB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB01ActionPerformed
-        if (b01 == 1) {
+        if (seat[8] == 1) {
             btnB01.setBackground(Color.WHITE);
-            b01 = 0;
+            seat[8] = 0;
         }
-        else if (b01 == 0) {
+        else if (seat[8] == 0) {
             btnB01.setBackground(Color.YELLOW);
-            b01 = 1;
+            seat[8] = 1;
         }
     }//GEN-LAST:event_btnB01ActionPerformed
 
     private void btnB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB03ActionPerformed
-        if (b03 == 1) {
+        if (seat[9] == 1) {
             btnB03.setBackground(Color.WHITE);
-            b03 = 0;
+            seat[9] = 0;
         }
-        else if (b03 == 0) {
+        else if (seat[9] == 0) {
             btnB03.setBackground(Color.YELLOW);
-            b03 = 1;
+            seat[9] = 1;
         }
     }//GEN-LAST:event_btnB03ActionPerformed
 
     private void btnB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB05ActionPerformed
-        if (b05 == 1) {
+        if (seat[10] == 1) {
             btnB05.setBackground(Color.WHITE);
-            b05 = 0;
+            seat[10] = 0;
         }
-        else if (b05 == 0) {
+        else if (seat[10] == 0) {
             btnB05.setBackground(Color.YELLOW);
-            b05 = 1;
+            seat[10] = 1;
         }
     }//GEN-LAST:event_btnB05ActionPerformed
 
     private void btnB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB07ActionPerformed
-        if (b07 == 1) {
+        if (seat[11] == 1) {
             btnB07.setBackground(Color.WHITE);
-            b07 = 0;
+            seat[11] = 0;
         }
-        else if (b07 == 0) {
+        else if (seat[11] == 0) {
             btnB07.setBackground(Color.YELLOW);
-            b07 = 1;
+            seat[11] = 1;
         }
     }//GEN-LAST:event_btnB07ActionPerformed
 
     private void btnB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB09ActionPerformed
-        if (b09 == 1) {
+        if (seat[12] == 1) {
             btnB09.setBackground(Color.WHITE);
-            b09 = 0;
+            seat[12] = 0;
         }
-        else if (b09 == 0) {
+        else if (seat[12] == 0) {
             btnB09.setBackground(Color.YELLOW);
-            b09 = 1;
+            seat[12] = 1;
         }
     }//GEN-LAST:event_btnB09ActionPerformed
 
     private void btnB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB11ActionPerformed
-        if (b11 == 1) {
+        if (seat[13] == 1) {
             btnB11.setBackground(Color.WHITE);
-            b11 = 0;
+            seat[13] = 0;
         }
-        else if (b11 == 0) {
+        else if (seat[13] == 0) {
             btnB11.setBackground(Color.YELLOW);
-            b11 = 1;
+            seat[13] = 1;
         }
     }//GEN-LAST:event_btnB11ActionPerformed
 
-    private void btnB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB13ActionPerformed
-        if (b13 == 1) {
-            btnB13.setBackground(Color.WHITE);
-            b13 = 0;
-        }
-        else if (b13 == 0) {
-            btnB13.setBackground(Color.YELLOW);
-            b13 = 1;
-        }
-    }//GEN-LAST:event_btnB13ActionPerformed
-
-    private void btnB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB15ActionPerformed
-        if (b15 == 1) {
-            btnB15.setBackground(Color.WHITE);
-            b15 = 0;
-        }
-        else if (b15 == 0) {
-            btnB15.setBackground(Color.YELLOW);
-            b15 = 1;
-        }
-    }//GEN-LAST:event_btnB15ActionPerformed
-
-    private void btnB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB17ActionPerformed
-        if (b17 == 1) {
-            btnB17.setBackground(Color.WHITE);
-            b17 = 0;
-        }
-        else if (b17 == 0) {
-            btnB17.setBackground(Color.YELLOW);
-            b17 = 1;
-        }
-    }//GEN-LAST:event_btnB17ActionPerformed
-
     private void btnC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC01ActionPerformed
-        if (c01 == 1) {
+        if (seat[14] == 1) {
             btnC01.setBackground(new Color(255, 204, 255));
             btnC02.setBackground(new Color(255, 204, 255));
-            c01 = 0;
+            seat[14] = 0;
+            seat[15] = 0;
         }
-        else if (c01 == 0) {
+        else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
             btnC02.setBackground(Color.YELLOW);
-            c01 = 1;
+            seat[14] = 1;
+            seat[15] = 1;
         }
     }//GEN-LAST:event_btnC01ActionPerformed
 
     private void btnC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC02ActionPerformed
-        if (c01 == 1) {
+        if (seat[14] == 1) {
             btnC01.setBackground(new Color(255, 204, 255));
             btnC02.setBackground(new Color(255, 204, 255));
-            c01 = 0;
+            seat[14] = 0;
+            seat[15] = 0;
         }
-        else if (c01 == 0) {
+        else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
             btnC02.setBackground(Color.YELLOW);
-            c01 = 1;
+            seat[14] = 1;
+            seat[15] = 1;
         }
     }//GEN-LAST:event_btnC02ActionPerformed
 
     private void btnC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC04ActionPerformed
-        if (c04 == 1) {
+        if (seat[16] == 1) {
             btnC04.setBackground(new Color(255, 204, 255));
             btnC05.setBackground(new Color(255, 204, 255));
-            c04 = 0;
+            seat[16] = 0;
+            seat[17] = 0;
         }
-        else if (c04 == 0) {
+        else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
             btnC05.setBackground(Color.YELLOW);
-            c04 = 1;
+            seat[16] = 1;
+            seat[17] = 1;
         }
     }//GEN-LAST:event_btnC04ActionPerformed
 
     private void btnC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC05ActionPerformed
-        if (c04 == 1) {
+        if (seat[16] == 1) {
             btnC04.setBackground(new Color(255, 204, 255));
             btnC05.setBackground(new Color(255, 204, 255));
-            c04 = 0;
+            seat[16] = 0;
+            seat[17] = 0;
         }
-        else if (c04 == 0) {
+        else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
             btnC05.setBackground(Color.YELLOW);
-            c04 = 1;
+            seat[16] = 1;
+            seat[17] = 1;
         }
     }//GEN-LAST:event_btnC05ActionPerformed
 
     private void btnC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC07ActionPerformed
-        if (c07 == 1) {
+        if (seat[18] == 1) {
             btnC07.setBackground(new Color(255, 204, 255));
             btnC08.setBackground(new Color(255, 204, 255));
-            c07 = 0;
+            seat[18] = 0;
+            seat[19] = 0;
         }
-        else if (c07 == 0) {
+        else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
             btnC08.setBackground(Color.YELLOW);
-            c07 = 1;
+            seat[18] = 1;
+            seat[19] = 1;
         }
     }//GEN-LAST:event_btnC07ActionPerformed
 
     private void btnC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC08ActionPerformed
-        if (c07 == 1) {
+        if (seat[18] == 1) {
             btnC07.setBackground(new Color(255, 204, 255));
             btnC08.setBackground(new Color(255, 204, 255));
-            c07 = 0;
+            seat[18] = 0;
+            seat[19] = 0;
         }
-        else if (c07 == 0) {
+        else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
             btnC08.setBackground(Color.YELLOW);
-            c07 = 1;
+            seat[18] = 1;
+            seat[19] = 1;
         }
     }//GEN-LAST:event_btnC08ActionPerformed
 
     private void btnC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC10ActionPerformed
-        if (c10 == 1) {
+        if (seat[20] == 1) {
             btnC10.setBackground(new Color(255, 204, 255));
             btnC11.setBackground(new Color(255, 204, 255));
-            c10 = 0;
+            seat[20] = 0;
+            seat[21] = 0;
         }
-        else if (c10 == 0) {
+        else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
             btnC11.setBackground(Color.YELLOW);
-            c10 = 1;
+            seat[20] = 1;
+            seat[21] = 1;
         }
     }//GEN-LAST:event_btnC10ActionPerformed
 
     private void btnC11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC11ActionPerformed
-        if (c10 == 1) {
+        if (seat[20] == 1) {
             btnC10.setBackground(new Color(255, 204, 255));
             btnC11.setBackground(new Color(255, 204, 255));
-            c10 = 0;
+            seat[20] = 0;
+            seat[21] = 0;
         }
-        else if (c10 == 0) {
+        else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
             btnC11.setBackground(Color.YELLOW);
-            c10 = 1;
+            seat[20] = 1;
+            seat[21] = 1;
         }
     }//GEN-LAST:event_btnC11ActionPerformed
 
-    private void btnC13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC13ActionPerformed
-        if (c13 == 1) {
-            btnC13.setBackground(new Color(255, 204, 255));
-            btnC14.setBackground(new Color(255, 204, 255));
-            c13 = 0;
-        }
-        else if (c13 == 0) {
-            btnC13.setBackground(Color.YELLOW);
-            btnC14.setBackground(Color.YELLOW);
-            c13 = 1;
-        }
-    }//GEN-LAST:event_btnC13ActionPerformed
-
-    private void btnC14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC14ActionPerformed
-        if (c13 == 1) {
-            btnC13.setBackground(new Color(255, 204, 255));
-            btnC14.setBackground(new Color(255, 204, 255));
-            c13 = 0;
-        }
-        else if (c13 == 0) {
-            btnC13.setBackground(Color.YELLOW);
-            btnC14.setBackground(Color.YELLOW);
-            c13 = 1;
-        }
-    }//GEN-LAST:event_btnC14ActionPerformed
-
-    private void btnC16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC16ActionPerformed
-        if (c16 == 1) {
-            btnC16.setBackground(new Color(255, 204, 255));
-            btnC17.setBackground(new Color(255, 204, 255));
-            c16 = 0;
-        }
-        else if (c16 == 0) {
-            btnC16.setBackground(Color.YELLOW);
-            btnC17.setBackground(Color.YELLOW);
-            c16 = 1;
-        }
-    }//GEN-LAST:event_btnC16ActionPerformed
-
-    private void btnC17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC17ActionPerformed
-        if (c16 == 1) {
-            btnC16.setBackground(new Color(255, 204, 255));
-            btnC17.setBackground(new Color(255, 204, 255));
-            c16 = 0;
-        }
-        else if (c16 == 0) {
-            btnC16.setBackground(Color.YELLOW);
-            btnC17.setBackground(Color.YELLOW);
-            c16 = 1;
-        }
-    }//GEN-LAST:event_btnC17ActionPerformed
-
     private void btnD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD01ActionPerformed
-        if (d01 == 1) {
+        if (seat[22] == 1) {
             btnD01.setBackground(Color.WHITE);
-            d01 = 0;
+            seat[22] = 0;
         }
-        else if (d01 == 0) {
+        else if (seat[22] == 0) {
             btnD01.setBackground(Color.YELLOW);
-            d01 = 1;
+            seat[22] = 1;
         }
     }//GEN-LAST:event_btnD01ActionPerformed
 
     private void btnD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD03ActionPerformed
-        if (d03 == 1) {
+        if (seat[23] == 1) {
             btnD03.setBackground(Color.WHITE);
-            d03 = 0;
+            seat[23] = 0;
         }
-        else if (d03 == 0) {
+        else if (seat[23] == 0) {
             btnD03.setBackground(Color.YELLOW);
-            d03 = 1;
+            seat[23] = 1;
         }
     }//GEN-LAST:event_btnD03ActionPerformed
 
     private void btnD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD05ActionPerformed
-        if (d05 == 1) {
+        if (seat[24] == 1) {
             btnD05.setBackground(Color.WHITE);
-            d05 = 0;
+            seat[24] = 0;
         }
-        else if (d05 == 0) {
+        else if (seat[24] == 0) {
             btnD05.setBackground(Color.YELLOW);
-            d05 = 1;
+            seat[24] = 1;
         }
     }//GEN-LAST:event_btnD05ActionPerformed
 
     private void btnD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD07ActionPerformed
-        if (d07 == 1) {
+        if (seat[25] == 1) {
             btnD07.setBackground(Color.WHITE);
-            d07 = 0;
+            seat[25] = 0;
         }
-        else if (d07 == 0) {
+        else if (seat[25] == 0) {
             btnD07.setBackground(Color.YELLOW);
-            d07 = 1;
+            seat[25] = 1;
         }
     }//GEN-LAST:event_btnD07ActionPerformed
 
     private void btnD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD09ActionPerformed
-        if (d09 == 1) {
+        if (seat[26] == 1) {
             btnD09.setBackground(Color.WHITE);
-            d09 = 0;
+            seat[26] = 0;
         }
-        else if (d09 == 0) {
+        else if (seat[26] == 0) {
             btnD09.setBackground(Color.YELLOW);
-            d09 = 1;
+            seat[26] = 1;
         }
     }//GEN-LAST:event_btnD09ActionPerformed
 
     private void btnD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD11ActionPerformed
-        if (d11 == 1) {
+        if (seat[27] == 1) {
             btnD11.setBackground(Color.WHITE);
-            d11 = 0;
+            seat[27] = 0;
         }
-        else if (d11 == 0) {
+        else if (seat[27] == 0) {
             btnD11.setBackground(Color.YELLOW);
-            d11 = 1;
+            seat[27] = 1;
         }
     }//GEN-LAST:event_btnD11ActionPerformed
 
-    private void btnD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD13ActionPerformed
-        if (d13 == 1) {
-            btnD13.setBackground(Color.WHITE);
-            d13 = 0;
-        }
-        else if (d13 == 0) {
-            btnD13.setBackground(Color.YELLOW);
-            d13 = 1;
-        }
-    }//GEN-LAST:event_btnD13ActionPerformed
-
-    private void btnD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD15ActionPerformed
-        if (d15 == 1) {
-            btnD15.setBackground(Color.WHITE);
-            d15 = 0;
-        }
-        else if (d15 == 0) {
-            btnD15.setBackground(Color.YELLOW);
-            d15 = 1;
-        }
-    }//GEN-LAST:event_btnD15ActionPerformed
-
-    private void btnD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD17ActionPerformed
-        if (d17 == 1) {
-            btnD17.setBackground(Color.WHITE);
-            d17 = 0;
-        }
-        else if (d17 == 0) {
-            btnD17.setBackground(Color.YELLOW);
-            d17 = 1;
-        }
-    }//GEN-LAST:event_btnD17ActionPerformed
-
     private void btnE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE01ActionPerformed
-        if (e01 == 1) {
+        if (seat[28] == 1) {
             btnE01.setBackground(new Color(255, 204, 255));
             btnE02.setBackground(new Color(255, 204, 255));
-            e01 = 0;
+            seat[28] = 0;
+            seat[29] = 0;
         }
-        else if (e01 == 0) {
+        else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
             btnE02.setBackground(Color.YELLOW);
-            e01 = 1;
+            seat[28] = 1;
+            seat[29] = 1;
         }
     }//GEN-LAST:event_btnE01ActionPerformed
 
     private void btnE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE02ActionPerformed
-        if (e01 == 1) {
+        if (seat[28] == 1) {
             btnE01.setBackground(new Color(255, 204, 255));
             btnE02.setBackground(new Color(255, 204, 255));
-            e01 = 0;
+            seat[28] = 0;
+            seat[29] = 0;
         }
-        else if (e01 == 0) {
+        else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
             btnE02.setBackground(Color.YELLOW);
-            e01 = 1;
+            seat[28] = 1;
+            seat[29] = 1;
         }
     }//GEN-LAST:event_btnE02ActionPerformed
 
     private void btnE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE04ActionPerformed
-        if (e04 == 1) {
+        if (seat[30] == 1) {
             btnE04.setBackground(new Color(255, 204, 255));
             btnE05.setBackground(new Color(255, 204, 255));
-            e04 = 0;
+            seat[30] = 0;
+            seat[31] = 0;
         }
-        else if (e04 == 0) {
+        else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
             btnE05.setBackground(Color.YELLOW);
-            e04 = 1;
+            seat[30] = 1;
+            seat[31] = 1;
         }
     }//GEN-LAST:event_btnE04ActionPerformed
 
     private void btnE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE05ActionPerformed
-        if (e04 == 1) {
+        if (seat[30] == 1) {
             btnE04.setBackground(new Color(255, 204, 255));
             btnE05.setBackground(new Color(255, 204, 255));
-            e04 = 0;
+            seat[30] = 0;
+            seat[31] = 0;
         }
-        else if (e04 == 0) {
+        else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
             btnE05.setBackground(Color.YELLOW);
-            e04 = 1;
+            seat[30] = 1;
+            seat[31] = 1;
         }
     }//GEN-LAST:event_btnE05ActionPerformed
 
     private void btnE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE07ActionPerformed
-        if (e07 == 1) {
+        if (seat[32] == 1) {
             btnE07.setBackground(new Color(255, 204, 255));
             btnE08.setBackground(new Color(255, 204, 255));
-            e07 = 0;
+            seat[32] = 0;
+            seat[33] = 0;
         }
-        else if (e07 == 0) {
+        else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
             btnE08.setBackground(Color.YELLOW);
-            e07 = 1;
+            seat[32] = 1;
+            seat[33] = 1;
         }
     }//GEN-LAST:event_btnE07ActionPerformed
 
     private void btnE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE08ActionPerformed
-        if (e07 == 1) {
+        if (seat[32] == 1) {
             btnE07.setBackground(new Color(255, 204, 255));
             btnE08.setBackground(new Color(255, 204, 255));
-            e07 = 0;
+            seat[32] = 0;
+            seat[33] = 0;
         }
-        else if (e07 == 0) {
+        else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
             btnE08.setBackground(Color.YELLOW);
-            e07 = 1;
+            seat[32] = 1;
+            seat[33] = 1;
         }
     }//GEN-LAST:event_btnE08ActionPerformed
 
     private void btnE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE10ActionPerformed
-        if (e10 == 1) {
+        if (seat[34] == 1) {
             btnE10.setBackground(new Color(255, 204, 255));
             btnE11.setBackground(new Color(255, 204, 255));
-            e10 = 0;
+            seat[34] = 0;
+            seat[35] = 0;
         }
-        else if (e10 == 0) {
+        else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
             btnE11.setBackground(Color.YELLOW);
-            e10 = 1;
+            seat[34] = 1;
+            seat[35] = 1;
         }
     }//GEN-LAST:event_btnE10ActionPerformed
 
     private void btnE11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE11ActionPerformed
-        if (e10 == 1) {
+        if (seat[34] == 1) {
             btnE10.setBackground(new Color(255, 204, 255));
             btnE11.setBackground(new Color(255, 204, 255));
-            e10 = 0;
+            seat[34] = 0;
+            seat[35] = 0;
         }
-        else if (e10 == 0) {
+        else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
             btnE11.setBackground(Color.YELLOW);
-            e10 = 1;
+            seat[34] = 1;
+            seat[35] = 1;
         }
     }//GEN-LAST:event_btnE11ActionPerformed
 
-    private void btnE13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE13ActionPerformed
-        if (e13 == 1) {
-            btnE13.setBackground(new Color(255, 204, 255));
-            btnE14.setBackground(new Color(255, 204, 255));
-            e13 = 0;
-        }
-        else if (e13 == 0) {
-            btnE13.setBackground(Color.YELLOW);
-            btnE14.setBackground(Color.YELLOW);
-            e13 = 1;
-        }
-    }//GEN-LAST:event_btnE13ActionPerformed
-
-    private void btnE14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE14ActionPerformed
-        if (e13 == 1) {
-            btnE13.setBackground(new Color(255, 204, 255));
-            btnE14.setBackground(new Color(255, 204, 255));
-            e13 = 0;
-        }
-        else if (e13 == 0) {
-            btnE13.setBackground(Color.YELLOW);
-            btnE14.setBackground(Color.YELLOW);
-            e13 = 1;
-        }
-    }//GEN-LAST:event_btnE14ActionPerformed
-
-    private void btnE16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE16ActionPerformed
-        if (e16 == 1) {
-            btnE16.setBackground(new Color(255, 204, 255));
-            btnE17.setBackground(new Color(255, 204, 255));
-            e16 = 0;
-        }
-        else if (e16 == 0) {
-            btnE16.setBackground(Color.YELLOW);
-            btnE17.setBackground(Color.YELLOW);
-            e16 = 1;
-        }
-    }//GEN-LAST:event_btnE16ActionPerformed
-
-    private void btnE17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE17ActionPerformed
-        if (e16 == 1) {
-            btnE16.setBackground(new Color(255, 204, 255));
-            btnE17.setBackground(new Color(255, 204, 255));
-            e16 = 0;
-        }
-        else if (e16 == 0) {
-            btnE16.setBackground(Color.YELLOW);
-            btnE17.setBackground(Color.YELLOW);
-            e16 = 1;
-        }
-    }//GEN-LAST:event_btnE17ActionPerformed
-
     private void btnF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF01ActionPerformed
-        if (f01 == 1) {
+        if (seat[36] == 1) {
             btnF01.setBackground(Color.WHITE);
-            f01 = 0;
+            seat[36] = 0;
         }
-        else if (f01 == 0) {
+        else if (seat[36] == 0) {
             btnF01.setBackground(Color.YELLOW);
-            f01 = 1;
+            seat[36] = 1;
         }
     }//GEN-LAST:event_btnF01ActionPerformed
 
     private void btnF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF03ActionPerformed
-        if (f03 == 1) {
+        if (seat[37] == 1) {
             btnF03.setBackground(Color.WHITE);
-            f03 = 0;
+            seat[37] = 0;
         }
-        else if (f03 == 0) {
+        else if (seat[37] == 0) {
             btnF03.setBackground(Color.YELLOW);
-            f03 = 1;
+            seat[37] = 1;
         }
     }//GEN-LAST:event_btnF03ActionPerformed
 
     private void btnF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF05ActionPerformed
-        if (f05 == 1) {
+        if (seat[38] == 1) {
             btnF05.setBackground(Color.WHITE);
-            f05 = 0;
+            seat[38] = 0;
         }
-        else if (f05 == 0) {
+        else if (seat[38] == 0) {
             btnF05.setBackground(Color.YELLOW);
-            f05 = 1;
+            seat[38] = 1;
         }
     }//GEN-LAST:event_btnF05ActionPerformed
 
     private void btnF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF07ActionPerformed
-        if (f07 == 1) {
+        if (seat[39] == 1) {
             btnF07.setBackground(Color.WHITE);
-            f07 = 0;
+            seat[39] = 0;
         }
-        else if (f07 == 0) {
+        else if (seat[39] == 0) {
             btnF07.setBackground(Color.YELLOW);
-            f07 = 1;
+            seat[39] = 1;
         }
     }//GEN-LAST:event_btnF07ActionPerformed
 
     private void btnF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF09ActionPerformed
-        if (f09 == 1) {
+        if (seat[40] == 1) {
             btnF09.setBackground(Color.WHITE);
-            f09 = 0;
+            seat[40] = 0;
         }
-        else if (f09 == 0) {
+        else if (seat[40] == 0) {
             btnF09.setBackground(Color.YELLOW);
-            f09 = 1;
+            seat[40] = 1;
         }
     }//GEN-LAST:event_btnF09ActionPerformed
 
     private void btnF11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF11ActionPerformed
-        if (f11 == 1) {
+        if (seat[41] == 1) {
             btnF11.setBackground(Color.WHITE);
-            f11 = 0;
+            seat[41] = 0;
         }
-        else if (f11 == 0) {
+        else if (seat[41] == 0) {
             btnF11.setBackground(Color.YELLOW);
-            f11 = 1;
+            seat[41] = 1;
         }
     }//GEN-LAST:event_btnF11ActionPerformed
 
-    private void btnF13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF13ActionPerformed
-        if (f13 == 1) {
-            btnF13.setBackground(Color.WHITE);
-            f13 = 0;
-        }
-        else if (f13 == 0) {
-            btnF13.setBackground(Color.YELLOW);
-            f13 = 1;
-        }
-    }//GEN-LAST:event_btnF13ActionPerformed
-
-    private void btnF15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF15ActionPerformed
-        if (f15 == 1) {
-            btnF15.setBackground(Color.WHITE);
-            f15 = 0;
-        }
-        else if (f15 == 0) {
-            btnF15.setBackground(Color.YELLOW);
-            f15 = 1;
-        }
-    }//GEN-LAST:event_btnF15ActionPerformed
-
-    private void btnF17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF17ActionPerformed
-        if (f17 == 1) {
-            btnF17.setBackground(Color.WHITE);
-            f17 = 0;
-        }
-        else if (f17 == 0) {
-            btnF17.setBackground(Color.YELLOW);
-            f17 = 1;
-        }
-    }//GEN-LAST:event_btnF17ActionPerformed
-
     private void btnG01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG01ActionPerformed
-        if (g01 == 1) {
+        if (seat[42] == 1) {
             btnG01.setBackground(new Color(255, 204, 255));
             btnG02.setBackground(new Color(255, 204, 255));
-            g01 = 0;
+            seat[42] = 0;
+            seat[43] = 0;
         }
-        else if (g01 == 0) {
+        else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
             btnG02.setBackground(Color.YELLOW);
-            g01 = 1;
+            seat[42] = 1;
+            seat[43] = 1;
         }
     }//GEN-LAST:event_btnG01ActionPerformed
 
     private void btnG02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG02ActionPerformed
-        if (g01 == 1) {
+        if (seat[42] == 1) {
             btnG01.setBackground(new Color(255, 204, 255));
             btnG02.setBackground(new Color(255, 204, 255));
-            g01 = 0;
+            seat[42] = 0;
+            seat[43] = 0;
         }
-        else if (g01 == 0) {
+        else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
             btnG02.setBackground(Color.YELLOW);
-            g01 = 1;
+            seat[42] = 1;
+            seat[43] = 1;
         }
     }//GEN-LAST:event_btnG02ActionPerformed
 
     private void btnG04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG04ActionPerformed
-        if (g04 == 1) {
+        if (seat[44] == 1) {
             btnG04.setBackground(new Color(255, 204, 255));
             btnG05.setBackground(new Color(255, 204, 255));
-            g04 = 0;
+            seat[44] = 0;
+            seat[45] = 0;
         }
-        else if (g04 == 0) {
+        else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
             btnG05.setBackground(Color.YELLOW);
-            g04 = 1;
+            seat[44] = 1;
+            seat[45] = 1;
         }
     }//GEN-LAST:event_btnG04ActionPerformed
 
     private void btnG05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG05ActionPerformed
-        if (g04 == 1) {
+        if (seat[44] == 1) {
             btnG04.setBackground(new Color(255, 204, 255));
             btnG05.setBackground(new Color(255, 204, 255));
-            g04 = 0;
+            seat[44] = 0;
+            seat[45] = 0;
         }
-        else if (g04 == 0) {
+        else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
             btnG05.setBackground(Color.YELLOW);
-            g04 = 1;
+            seat[44] = 1;
+            seat[45] = 1;
         }
     }//GEN-LAST:event_btnG05ActionPerformed
 
     private void btnG07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG07ActionPerformed
-        if (g07 == 1) {
+        if (seat[46] == 1) {
             btnG07.setBackground(new Color(255, 204, 255));
             btnG08.setBackground(new Color(255, 204, 255));
-            g07 = 0;
+            seat[46] = 0;
+            seat[47] = 0;
         }
-        else if (g07 == 0) {
+        else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
             btnG08.setBackground(Color.YELLOW);
-            g07 = 1;
+            seat[46] = 1;
+            seat[47] = 1;
         }
     }//GEN-LAST:event_btnG07ActionPerformed
 
     private void btnG08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG08ActionPerformed
-        if (g07 == 1) {
+        if (seat[46] == 1) {
             btnG07.setBackground(new Color(255, 204, 255));
             btnG08.setBackground(new Color(255, 204, 255));
-            g07 = 0;
+            seat[46] = 0;
+            seat[47] = 0;
         }
-        else if (g07 == 0) {
+        else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
             btnG08.setBackground(Color.YELLOW);
-            g07 = 1;
+            seat[46] = 1;
+            seat[47] = 1;
         }
     }//GEN-LAST:event_btnG08ActionPerformed
 
     private void btnG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG10ActionPerformed
-        if (g10 == 1) {
+        if (seat[48] == 1) {
             btnG10.setBackground(new Color(255, 204, 255));
             btnG11.setBackground(new Color(255, 204, 255));
-            g10 = 0;
+            seat[48] = 0;
+            seat[49] = 0;
         }
-        else if (g10 == 0) {
+        else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
             btnG11.setBackground(Color.YELLOW);
-            g10 = 1;
+            seat[48] = 1;
+            seat[49] = 1;
         }
     }//GEN-LAST:event_btnG10ActionPerformed
 
     private void btnG11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG11ActionPerformed
-        if (g10 == 1) {
+        if (seat[48] == 1) {
             btnG10.setBackground(new Color(255, 204, 255));
             btnG11.setBackground(new Color(255, 204, 255));
-            g10 = 0;
+            seat[48] = 0;
+            seat[49] = 0;
         }
-        else if (g10 == 0) {
+        else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
             btnG11.setBackground(Color.YELLOW);
-            g10 = 1;
+            seat[48] = 1;
+            seat[49] = 1;
         }
     }//GEN-LAST:event_btnG11ActionPerformed
 
-    private void btnG13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG13ActionPerformed
-        if (g13 == 1) {
-            btnG13.setBackground(new Color(255, 204, 255));
-            btnG14.setBackground(new Color(255, 204, 255));
-            g13 = 0;
-        }
-        else if (g13 == 0) {
-            btnG13.setBackground(Color.YELLOW);
-            btnG14.setBackground(Color.YELLOW);
-            g13 = 1;
-        }
-    }//GEN-LAST:event_btnG13ActionPerformed
-
-    private void btnG14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG14ActionPerformed
-        if (g13 == 1) {
-            btnG13.setBackground(new Color(255, 204, 255));
-            btnG14.setBackground(new Color(255, 204, 255));
-            g13 = 0;
-        }
-        else if (g13 == 0) {
-            btnG13.setBackground(Color.YELLOW);
-            btnG14.setBackground(Color.YELLOW);
-            g13 = 1;
-        }
-    }//GEN-LAST:event_btnG14ActionPerformed
-
-    private void btnG16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG16ActionPerformed
-        if (g16 == 1) {
-            btnG16.setBackground(new Color(255, 204, 255));
-            btnG17.setBackground(new Color(255, 204, 255));
-            g16 = 0;
-        }
-        else if (g16 == 0) {
-            btnG16.setBackground(Color.YELLOW);
-            btnG17.setBackground(Color.YELLOW);
-            g16 = 1;
-        }
-    }//GEN-LAST:event_btnG16ActionPerformed
-
-    private void btnG17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG17ActionPerformed
-        if (g16 == 1) {
-            btnG16.setBackground(new Color(255, 204, 255));
-            btnG17.setBackground(new Color(255, 204, 255));
-            g16 = 0;
-        }
-        else if (g16 == 0) {
-            btnG16.setBackground(Color.YELLOW);
-            btnG17.setBackground(Color.YELLOW);
-            g16 = 1;
-        }
-    }//GEN-LAST:event_btnG17ActionPerformed
-
     private void btnH01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH01ActionPerformed
-        if (h01 == 1) {
+        if (seat[50] == 1) {
             btnH01.setBackground(Color.WHITE);
-            h01 = 0;
+            seat[50] = 0;
         }
-        else if (h01 == 0) {
+        else if (seat[50] == 0) {
             btnH01.setBackground(Color.YELLOW);
-            h01 = 1;
+            seat[50] = 1;
         }
     }//GEN-LAST:event_btnH01ActionPerformed
 
     private void btnH03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH03ActionPerformed
-        if (h03 == 1) {
+        if (seat[51] == 1) {
             btnH03.setBackground(Color.WHITE);
-            h03 = 0;
+            seat[51] = 0;
         }
-        else if (h03 == 0) {
+        else if (seat[51] == 0) {
             btnH03.setBackground(Color.YELLOW);
-            h03 = 1;
+            seat[51] = 1;
         }
     }//GEN-LAST:event_btnH03ActionPerformed
 
     private void btnH05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH05ActionPerformed
-        if (h05 == 1) {
+        if (seat[52] == 1) {
             btnH05.setBackground(Color.WHITE);
-            h05 = 0;
+            seat[52] = 0;
         }
-        else if (h05 == 0) {
+        else if (seat[52] == 0) {
             btnH05.setBackground(Color.YELLOW);
-            h05 = 1;
+            seat[52] = 1;
         }
     }//GEN-LAST:event_btnH05ActionPerformed
 
     private void btnH07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH07ActionPerformed
-        if (h07 == 1) {
+        if (seat[53] == 1) {
             btnH07.setBackground(Color.WHITE);
-            h07 = 0;
+            seat[53] = 0;
         }
-        else if (h07 == 0) {
+        else if (seat[53] == 0) {
             btnH07.setBackground(Color.YELLOW);
-            h07 = 1;
+            seat[53] = 1;
         }
     }//GEN-LAST:event_btnH07ActionPerformed
 
     private void btnH09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH09ActionPerformed
-        if (h09 == 1) {
+        if (seat[54] == 1) {
             btnH09.setBackground(Color.WHITE);
-            h09 = 0;
+            seat[54] = 0;
         }
-        else if (h09 == 0) {
+        else if (seat[54] == 0) {
             btnH09.setBackground(Color.YELLOW);
-            h09 = 1;
+            seat[54] = 1;
         }
     }//GEN-LAST:event_btnH09ActionPerformed
 
     private void btnH11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH11ActionPerformed
-        if (h11 == 1) {
+        if (seat[55] == 1) {
             btnH11.setBackground(Color.WHITE);
-            h11 = 0;
+            seat[55] = 0;
         }
-        else if (h11 == 0) {
+        else if (seat[55] == 0) {
             btnH11.setBackground(Color.YELLOW);
-            h11 = 1;
+            seat[55] = 1;
         }
     }//GEN-LAST:event_btnH11ActionPerformed
 
-    private void btnH13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH13ActionPerformed
-        if (h13 == 1) {
-            btnH13.setBackground(Color.WHITE);
-            h13 = 0;
-        }
-        else if (h13 == 0) {
-            btnH13.setBackground(Color.YELLOW);
-            h13 = 1;
-        }
-    }//GEN-LAST:event_btnH13ActionPerformed
-
-    private void btnH15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH15ActionPerformed
-        if (h15 == 1) {
-            btnH15.setBackground(Color.WHITE);
-            h15 = 0;
-        }
-        else if (h15 == 0) {
-            btnH15.setBackground(Color.YELLOW);
-            h15 = 1;
-        }
-    }//GEN-LAST:event_btnH15ActionPerformed
-
-    private void btnH17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH17ActionPerformed
-        if (h17 == 1) {
-            btnH17.setBackground(Color.WHITE);
-            h17 = 0;
-        }
-        else if (h17 == 0) {
-            btnH17.setBackground(Color.YELLOW);
-            h17 = 1;
-        }
-    }//GEN-LAST:event_btnH17ActionPerformed
-
     private void btnI01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI01ActionPerformed
-        if (i01 == 1) {
+        if (seat[56] == 1) {
             btnI01.setBackground(new Color(255, 204, 255));
             btnI02.setBackground(new Color(255, 204, 255));
-            i01 = 0;
+            seat[56] = 0;
+            seat[57] = 0;
         }
-        else if (i01 == 0) {
+        else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
-            i01 = 1;
+            seat[56] = 1;
+            seat[57] = 1;
         }
     }//GEN-LAST:event_btnI01ActionPerformed
 
     private void btnI02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI02ActionPerformed
-        if (i01 == 1) {
+        if (seat[56] == 1) {
             btnI01.setBackground(new Color(255, 204, 255));
             btnI02.setBackground(new Color(255, 204, 255));
-            i01 = 0;
+            seat[56] = 0;
+            seat[57] = 0;
         }
-        else if (i01 == 0) {
+        else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
-            i01 = 1;
+            seat[56] = 1;
+            seat[57] = 1;
         }
     }//GEN-LAST:event_btnI02ActionPerformed
 
     private void btnI04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI04ActionPerformed
-        if (i04 == 1) {
+        if (seat[58] == 1) {
             btnI04.setBackground(new Color(255, 204, 255));
             btnI05.setBackground(new Color(255, 204, 255));
-            i04 = 0;
+            seat[58] = 0;
+            seat[59] = 0;
         }
-        else if (i04 == 0) {
+        else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
-            i04 = 1;
+            seat[58] = 1;
+            seat[59] = 1;
         }
     }//GEN-LAST:event_btnI04ActionPerformed
 
     private void btnI05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI05ActionPerformed
-        if (i04 == 1) {
+        if (seat[58] == 1) {
             btnI04.setBackground(new Color(255, 204, 255));
             btnI05.setBackground(new Color(255, 204, 255));
-            i04 = 0;
+            seat[58] = 0;
+            seat[59] = 0;
         }
-        else if (i04 == 0) {
+        else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
-            i04 = 1;
+            seat[58] = 1;
+            seat[59] = 1;
         }
     }//GEN-LAST:event_btnI05ActionPerformed
 
     private void btnI07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI07ActionPerformed
-        if (i07 == 1) {
+        if (seat[60] == 1) {
             btnI07.setBackground(new Color(255, 204, 255));
             btnI08.setBackground(new Color(255, 204, 255));
-            i07 = 0;
+            seat[60] = 0;
+            seat[61] = 0;
         }
-        else if (i07 == 0) {
+        else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
-            i07 = 1;
+            seat[60] = 1;
+            seat[61] = 1;
         }
     }//GEN-LAST:event_btnI07ActionPerformed
 
     private void btnI08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI08ActionPerformed
-        if (i07 == 1) {
+        if (seat[60] == 1) {
             btnI07.setBackground(new Color(255, 204, 255));
             btnI08.setBackground(new Color(255, 204, 255));
-            i07 = 0;
+            seat[60] = 0;
+            seat[61] = 0;
         }
-        else if (i07 == 0) {
+        else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
-            i07 = 1;
+            seat[60] = 1;
+            seat[61] = 1;
         }
     }//GEN-LAST:event_btnI08ActionPerformed
 
     private void btnI10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI10ActionPerformed
-        if (i10 == 1) {
+        if (seat[62] == 1) {
             btnI10.setBackground(new Color(255, 204, 255));
             btnI11.setBackground(new Color(255, 204, 255));
-            i10 = 0;
+            seat[62] = 0;
+            seat[63] = 0;
         }
-        else if (i10 == 0) {
+        else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
-            i10 = 1;
+            seat[62] = 1;
+            seat[63] = 1;
         }
     }//GEN-LAST:event_btnI10ActionPerformed
 
     private void btnI11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI11ActionPerformed
-        if (i10 == 1) {
+        if (seat[62] == 1) {
             btnI10.setBackground(new Color(255, 204, 255));
             btnI11.setBackground(new Color(255, 204, 255));
-            i10 = 0;
+            seat[62] = 0;
+            seat[63] = 0;
         }
-        else if (i10 == 0) {
+        else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
-            i10 = 1;
+            seat[62] = 1;
+            seat[63] = 1;
         }
     }//GEN-LAST:event_btnI11ActionPerformed
 
-    private void btnI13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI13ActionPerformed
-        if (i13 == 1) {
-            btnI13.setBackground(new Color(255, 204, 255));
-            btnI14.setBackground(new Color(255, 204, 255));
-            i13 = 0;
-        }
-        else if (i13 == 0) {
-            btnI13.setBackground(Color.YELLOW);
-            btnI14.setBackground(Color.YELLOW);
-            i13 = 1;
-        }
-    }//GEN-LAST:event_btnI13ActionPerformed
-
-    private void btnI14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI14ActionPerformed
-        if (i13 == 1) {
-            btnI13.setBackground(new Color(255, 204, 255));
-            btnI14.setBackground(new Color(255, 204, 255));
-            i13 = 0;
-        }
-        else if (i13 == 0) {
-            btnI13.setBackground(Color.YELLOW);
-            btnI14.setBackground(Color.YELLOW);
-            i13 = 1;
-        }
-    }//GEN-LAST:event_btnI14ActionPerformed
-
-    private void btnI16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI16ActionPerformed
-        if (i16 == 1) {
-            btnI16.setBackground(new Color(255, 204, 255));
-            btnI17.setBackground(new Color(255, 204, 255));
-            i16 = 0;
-        }
-        else if (i16 == 0) {
-            btnI16.setBackground(Color.YELLOW);
-            btnI17.setBackground(Color.YELLOW);
-            i16 = 1;
-        }
-    }//GEN-LAST:event_btnI16ActionPerformed
-
-    private void btnI17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI17ActionPerformed
-        if (i16 == 1) {
-            btnI16.setBackground(new Color(255, 204, 255));
-            btnI17.setBackground(new Color(255, 204, 255));
-            i16 = 0;
-        }
-        else if (i16 == 0) {
-            btnI16.setBackground(Color.YELLOW);
-            btnI17.setBackground(Color.YELLOW);
-            i16 = 1;
-        }
-    }//GEN-LAST:event_btnI17ActionPerformed
-
     private void btnJ01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ01ActionPerformed
-        if (j01 == 1) {
+        if (seat[64] == 1) {
             btnJ01.setBackground(Color.WHITE);
-            j01 = 0;
+            seat[64] = 0;
         }
-        else if (j01 == 0) {
+        else if (seat[64] == 0) {
             btnJ01.setBackground(Color.YELLOW);
-            j01 = 1;
+            seat[64] = 1;
         }
     }//GEN-LAST:event_btnJ01ActionPerformed
 
     private void btnJ03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ03ActionPerformed
-        if (j03 == 1) {
+        if (seat[65] == 1) {
             btnJ03.setBackground(Color.WHITE);
-            j03 = 0;
+            seat[65] = 0;
         }
-        else if (j03 == 0) {
+        else if (seat[65] == 0) {
             btnJ03.setBackground(Color.YELLOW);
-            j03 = 1;
+            seat[65] = 1;
         }
     }//GEN-LAST:event_btnJ03ActionPerformed
 
     private void btnJ05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ05ActionPerformed
-        if (j05 == 1) {
+        if (seat[66] == 1) {
             btnJ05.setBackground(Color.WHITE);
-            j05 = 0;
+            seat[66] = 0;
         }
-        else if (j05 == 0) {
+        else if (seat[66] == 0) {
             btnJ05.setBackground(Color.YELLOW);
-            j05 = 1;
+            seat[66] = 1;
         }
     }//GEN-LAST:event_btnJ05ActionPerformed
 
     private void btnJ07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ07ActionPerformed
-        if (j07 == 1) {
+        if (seat[67] == 1) {
             btnJ07.setBackground(Color.WHITE);
-            j07 = 0;
+            seat[67] = 0;
         }
-        else if (j07 == 0) {
+        else if (seat[67] == 0) {
             btnJ07.setBackground(Color.YELLOW);
-            j07 = 1;
+            seat[67] = 1;
         }
     }//GEN-LAST:event_btnJ07ActionPerformed
 
     private void btnJ09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ09ActionPerformed
-        if (j09 == 1) {
+        if (seat[68] == 1) {
             btnJ09.setBackground(Color.WHITE);
-            j09 = 0;
+            seat[68] = 0;
         }
-        else if (j09 == 0) {
+        else if (seat[68] == 0) {
             btnJ09.setBackground(Color.YELLOW);
-            j09 = 1;
+            seat[68] = 1;
         }
     }//GEN-LAST:event_btnJ09ActionPerformed
 
     private void btnJ11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ11ActionPerformed
-        if (j11 == 1) {
+        if (seat[69] == 1) {
             btnJ11.setBackground(Color.WHITE);
-            j11 = 0;
+            seat[69] = 0;
         }
-        else if (j11 == 0) {
+        else if (seat[69] == 0) {
             btnJ11.setBackground(Color.YELLOW);
-            j11 = 1;
+            seat[69] = 1;
         }
     }//GEN-LAST:event_btnJ11ActionPerformed
 
-    private void btnJ13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ13ActionPerformed
-        if (j13 == 1) {
-            btnJ13.setBackground(Color.WHITE);
-            j13 = 0;
-        }
-        else if (j13 == 0) {
-            btnJ13.setBackground(Color.YELLOW);
-            j13 = 1;
-        }
-    }//GEN-LAST:event_btnJ13ActionPerformed
-
-    private void btnJ15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ15ActionPerformed
-        if (j15 == 1) {
-            btnJ15.setBackground(Color.WHITE);
-            j15 = 0;
-        }
-        else if (j15 == 0) {
-            btnJ15.setBackground(Color.YELLOW);
-            j15 = 1;
-        }
-    }//GEN-LAST:event_btnJ15ActionPerformed
-
-    private void btnJ17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ17ActionPerformed
-        if (j17 == 1) {
-            btnJ17.setBackground(Color.WHITE);
-            j17 = 0;
-        }
-        else if (j17 == 0) {
-            btnJ17.setBackground(Color.YELLOW);
-            j17 = 1;
-        }
-    }//GEN-LAST:event_btnJ17ActionPerformed
-
     private void btnK01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK01ActionPerformed
-        if (k01 == 1) {
+        if (seat[70] == 1) {
             btnK01.setBackground(new Color(255, 204, 255));
             btnK02.setBackground(new Color(255, 204, 255));
-            k01 = 0;
+            seat[70] = 0;
+            seat[71] = 0;
         }
-        else if (k01 == 0) {
+        else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
-            k01 = 1;
+            seat[70] = 1;
+            seat[71] = 1;
         }
     }//GEN-LAST:event_btnK01ActionPerformed
 
     private void btnK02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK02ActionPerformed
-        if (k01 == 1) {
+        if (seat[70] == 1) {
             btnK01.setBackground(new Color(255, 204, 255));
             btnK02.setBackground(new Color(255, 204, 255));
-            k01 = 0;
+            seat[70] = 0;
+            seat[71] = 0;
         }
-        else if (k01 == 0) {
+        else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
-            k01 = 1;
+            seat[70] = 1;
+            seat[71] = 1;
         }
     }//GEN-LAST:event_btnK02ActionPerformed
 
     private void btnK04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK04ActionPerformed
-        if (k04 == 1) {
+        if (seat[72] == 1) {
             btnK04.setBackground(new Color(255, 204, 255));
             btnK05.setBackground(new Color(255, 204, 255));
-            k04 = 0;
+            seat[72] = 0;
+            seat[73] = 0;
         }
-        else if (k04 == 0) {
+        else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
-            k04 = 1;
+            seat[72] = 1;
+            seat[73] = 1;
         }
     }//GEN-LAST:event_btnK04ActionPerformed
 
     private void btnK05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK05ActionPerformed
-        if (k04 == 1) {
+        if (seat[72] == 1) {
             btnK04.setBackground(new Color(255, 204, 255));
             btnK05.setBackground(new Color(255, 204, 255));
-            k04 = 0;
+            seat[72] = 0;
+            seat[73] = 0;
         }
-        else if (k04 == 0) {
+        else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
-            k04 = 1;
+            seat[72] = 1;
+            seat[73] = 1;
         }
     }//GEN-LAST:event_btnK05ActionPerformed
 
     private void btnK07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK07ActionPerformed
-        if (k07 == 1) {
+        if (seat[74] == 1) {
             btnK07.setBackground(new Color(255, 204, 255));
             btnK08.setBackground(new Color(255, 204, 255));
-            k07 = 0;
+            seat[74] = 0;
+            seat[75] = 0;
         }
-        else if (k07 == 0) {
+        else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
-            k07 = 1;
+            seat[74] = 1;
+            seat[75] = 1;
         }
     }//GEN-LAST:event_btnK07ActionPerformed
 
     private void btnK08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK08ActionPerformed
-        if (k07 == 1) {
+        if (seat[74] == 1) {
             btnK07.setBackground(new Color(255, 204, 255));
             btnK08.setBackground(new Color(255, 204, 255));
-            k07 = 0;
+            seat[74] = 0;
+            seat[75] = 0;
         }
-        else if (k07 == 0) {
+        else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
-            k07 = 1;
+            seat[74] = 1;
+            seat[75] = 1;
         }
     }//GEN-LAST:event_btnK08ActionPerformed
 
     private void btnK10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK10ActionPerformed
-        if (k10 == 1) {
+        if (seat[76] == 1) {
             btnK10.setBackground(new Color(255, 204, 255));
             btnK11.setBackground(new Color(255, 204, 255));
-            k10 = 0;
+            seat[76] = 0;
+            seat[77] = 0;
         }
-        else if (k10 == 0) {
+        else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
-            k10 = 1;
+            seat[76] = 1;
+            seat[77] = 1;
         }
     }//GEN-LAST:event_btnK10ActionPerformed
 
     private void btnK11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK11ActionPerformed
-        if (k10 == 1) {
+        if (seat[76] == 1) {
             btnK10.setBackground(new Color(255, 204, 255));
             btnK11.setBackground(new Color(255, 204, 255));
-            k10 = 0;
+            seat[76] = 0;
+            seat[77] = 0;
         }
-        else if (k10 == 0) {
+        else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
-            k10 = 1;
+            seat[76] = 1;
+            seat[77] = 1;
         }
     }//GEN-LAST:event_btnK11ActionPerformed
 
-    private void btnK13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK13ActionPerformed
-        if (k13 == 1) {
-            btnK13.setBackground(new Color(255, 204, 255));
-            btnK14.setBackground(new Color(255, 204, 255));
-            k13 = 0;
+    private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
+        try {
+            for (int i = 0; i < seat.length; i++) {
+                if (seat[i] == 1) {
+                    String seat_id = id[i];
+                    API.bookSeat(Global.customer_email, seat_id);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-        else if (k13 == 0) {
-            btnK13.setBackground(Color.YELLOW);
-            btnK14.setBackground(Color.YELLOW);
-            k13 = 1;
-        }
-    }//GEN-LAST:event_btnK13ActionPerformed
 
-    private void btnK14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK14ActionPerformed
-        if (k13 == 1) {
-            btnK13.setBackground(new Color(255, 204, 255));
-            btnK14.setBackground(new Color(255, 204, 255));
-            k13 = 0;
-        }
-        else if (k13 == 0) {
-            btnK13.setBackground(Color.YELLOW);
-            btnK14.setBackground(Color.YELLOW);
-            k13 = 1;
-        }
-    }//GEN-LAST:event_btnK14ActionPerformed
-
-    private void btnK16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK16ActionPerformed
-        if (k16 == 1) {
-            btnK16.setBackground(new Color(255, 204, 255));
-            btnK17.setBackground(new Color(255, 204, 255));
-            k16 = 0;
-        }
-        else if (k16 == 0) {
-            btnK16.setBackground(Color.YELLOW);
-            btnK17.setBackground(Color.YELLOW);
-            k16 = 1;
-        }
-    }//GEN-LAST:event_btnK16ActionPerformed
-
-    private void btnK17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnK17ActionPerformed
+        MovieClass c = new MovieClass();
+        c.show();
+        this.dispose();
+    }//GEN-LAST:event_btnNextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2846,38 +2069,14 @@ public class Seat2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Seat2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MovieSeat1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Seat2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MovieSeat1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Seat2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MovieSeat1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Seat2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MovieSeat1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -2890,7 +2089,7 @@ public class Seat2 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Seat2().setVisible(true);
+                new MovieSeat1().setVisible(true);
             }
         });
     }
@@ -2904,10 +2103,6 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnA08;
     private javax.swing.JButton btnA10;
     private javax.swing.JButton btnA11;
-    private javax.swing.JButton btnA13;
-    private javax.swing.JButton btnA14;
-    private javax.swing.JButton btnA16;
-    private javax.swing.JButton btnA17;
     private javax.swing.JButton btnAvailable;
     private javax.swing.JButton btnB01;
     private javax.swing.JButton btnB03;
@@ -2915,9 +2110,6 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnB07;
     private javax.swing.JButton btnB09;
     private javax.swing.JButton btnB11;
-    private javax.swing.JButton btnB13;
-    private javax.swing.JButton btnB15;
-    private javax.swing.JButton btnB17;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnC01;
     private javax.swing.JButton btnC02;
@@ -2927,19 +2119,12 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnC08;
     private javax.swing.JButton btnC10;
     private javax.swing.JButton btnC11;
-    private javax.swing.JButton btnC13;
-    private javax.swing.JButton btnC14;
-    private javax.swing.JButton btnC16;
-    private javax.swing.JButton btnC17;
     private javax.swing.JButton btnD01;
     private javax.swing.JButton btnD03;
     private javax.swing.JButton btnD05;
     private javax.swing.JButton btnD07;
     private javax.swing.JButton btnD09;
     private javax.swing.JButton btnD11;
-    private javax.swing.JButton btnD13;
-    private javax.swing.JButton btnD15;
-    private javax.swing.JButton btnD17;
     private javax.swing.JButton btnE01;
     private javax.swing.JButton btnE02;
     private javax.swing.JButton btnE04;
@@ -2948,19 +2133,12 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnE08;
     private javax.swing.JButton btnE10;
     private javax.swing.JButton btnE11;
-    private javax.swing.JButton btnE13;
-    private javax.swing.JButton btnE14;
-    private javax.swing.JButton btnE16;
-    private javax.swing.JButton btnE17;
     private javax.swing.JButton btnF01;
     private javax.swing.JButton btnF03;
     private javax.swing.JButton btnF05;
     private javax.swing.JButton btnF07;
     private javax.swing.JButton btnF09;
     private javax.swing.JButton btnF11;
-    private javax.swing.JButton btnF13;
-    private javax.swing.JButton btnF15;
-    private javax.swing.JButton btnF17;
     private javax.swing.JButton btnG01;
     private javax.swing.JButton btnG02;
     private javax.swing.JButton btnG04;
@@ -2969,19 +2147,12 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnG08;
     private javax.swing.JButton btnG10;
     private javax.swing.JButton btnG11;
-    private javax.swing.JButton btnG13;
-    private javax.swing.JButton btnG14;
-    private javax.swing.JButton btnG16;
-    private javax.swing.JButton btnG17;
     private javax.swing.JButton btnH01;
     private javax.swing.JButton btnH03;
     private javax.swing.JButton btnH05;
     private javax.swing.JButton btnH07;
     private javax.swing.JButton btnH09;
     private javax.swing.JButton btnH11;
-    private javax.swing.JButton btnH13;
-    private javax.swing.JButton btnH15;
-    private javax.swing.JButton btnH17;
     private javax.swing.JButton btnI01;
     private javax.swing.JButton btnI02;
     private javax.swing.JButton btnI04;
@@ -2990,19 +2161,12 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnI08;
     private javax.swing.JButton btnI10;
     private javax.swing.JButton btnI11;
-    private javax.swing.JButton btnI13;
-    private javax.swing.JButton btnI14;
-    private javax.swing.JButton btnI16;
-    private javax.swing.JButton btnI17;
     private javax.swing.JButton btnJ01;
     private javax.swing.JButton btnJ03;
     private javax.swing.JButton btnJ05;
     private javax.swing.JButton btnJ07;
     private javax.swing.JButton btnJ09;
     private javax.swing.JButton btnJ11;
-    private javax.swing.JButton btnJ13;
-    private javax.swing.JButton btnJ15;
-    private javax.swing.JButton btnJ17;
     private javax.swing.JButton btnK01;
     private javax.swing.JButton btnK02;
     private javax.swing.JButton btnK04;
@@ -3011,10 +2175,6 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JButton btnK08;
     private javax.swing.JButton btnK10;
     private javax.swing.JButton btnK11;
-    private javax.swing.JButton btnK13;
-    private javax.swing.JButton btnK14;
-    private javax.swing.JButton btnK16;
-    private javax.swing.JButton btnK17;
     private javax.swing.JButton btnNext;
     private javax.swing.JButton btnSelected;
     private javax.swing.JButton btnTwin1;
@@ -3024,9 +2184,9 @@ public class Seat2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
