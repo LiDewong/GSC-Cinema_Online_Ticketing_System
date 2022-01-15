@@ -182,8 +182,8 @@ public class API {
             String name = (String) user.get("name");
             String email = (String) user.get("email");
             String phone_number = (String) user.get("phone_number");
-            Staff s = new Staff(name, email, phone_number);
-            list.add(s);
+//            Staff s = ;
+            list.add(new Staff(name, email, phone_number));
         }
 
         for (int i = 0; i < list.size(); i++) {
@@ -411,6 +411,7 @@ public class API {
 
             int statusCode = response.statusCode();
             String body = response.body();
+            
             System.out.println(body);
            
         } catch (IOException | InterruptedException e) {
