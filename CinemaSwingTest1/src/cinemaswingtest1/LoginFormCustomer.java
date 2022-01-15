@@ -110,6 +110,8 @@ public class LoginFormCustomer extends javax.swing.JFrame {
             System.out.println(x);
 
             if (x) {
+                Global.customer_email= email;
+                
                 MainMenu mm = new MainMenu();
                 mm.setVisible(true);
                 mm.pack();

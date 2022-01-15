@@ -150,12 +150,12 @@
     <Component class="javax.swing.JLabel" name="label8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/pic (1).jpg"/>
+          <Image iconType="3" name="/cinemaswingtest1/image/mainmenu/black 1.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+          <AbsoluteConstraints x="0" y="0" width="990" height="470"/>
         </Constraint>
       </Constraints>
     </Component>
