@@ -2037,11 +2037,10 @@ public class Seat1 extends javax.swing.JFrame {
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
         try {
-            String customer_email = "email";
             for (int i = 0; i < seat.length; i++) {
                 if (seat[i] == 1) {
                     String seat_id = id[i];
-                    API.bookSeat(customer_email, seat_id);
+                    API.bookSeat(Global.customer_email, seat_id);
                 }
             }
         } catch (Exception e) {
