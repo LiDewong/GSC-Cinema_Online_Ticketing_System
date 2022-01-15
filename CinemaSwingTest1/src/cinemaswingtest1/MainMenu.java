@@ -31,6 +31,11 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         label2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/OIP.jpg"))); // NOI18N
+        label2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                label2MouseClicked(evt);
+            }
+        });
         getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 148, 160, 190));
 
         label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop pic3.jpg"))); // NOI18N
@@ -42,6 +47,11 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 150, -1, -1));
 
         label3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop.jpg"))); // NOI18N
+        label3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                label3MouseClicked(evt);
+            }
+        });
         getContentPane().add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 156, 188));
 
         jLabel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
@@ -50,9 +60,19 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 250, 110));
 
         label4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic.jpg"))); // NOI18N
-        getContentPane().add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, -1, -1));
+        label4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                label4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, 150, -1));
 
         label5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/poster.jpg"))); // NOI18N
+        label5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                label5MouseClicked(evt);
+            }
+        });
         getContentPane().add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 150, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
@@ -91,6 +111,42 @@ public class MainMenu extends javax.swing.JFrame {
         movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_labelMouseClicked
+
+    private void label2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label2MouseClicked
+        Movie2Detail movie = new Movie2Detail();
+        movie.setVisible(true);
+        movie.pack();
+        movie.setLocationRelativeTo(null);
+        movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_label2MouseClicked
+
+    private void label3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label3MouseClicked
+        Movie3Detail movie = new Movie3Detail();
+        movie.setVisible(true);
+        movie.pack();
+        movie.setLocationRelativeTo(null);
+        movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_label3MouseClicked
+
+    private void label4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label4MouseClicked
+        Movie4Detail movie = new Movie4Detail();
+        movie.setVisible(true);
+        movie.pack();
+        movie.setLocationRelativeTo(null);
+        movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_label4MouseClicked
+
+    private void label5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label5MouseClicked
+        Movie5Detail movie = new Movie5Detail();
+        movie.setVisible(true);
+        movie.pack();
+        movie.setLocationRelativeTo(null);
+        movie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_label5MouseClicked
 
     /**
      * @param args the command line arguments
