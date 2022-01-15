@@ -4,12 +4,17 @@ import java.awt.Color;
 
 public class Seat2 extends javax.swing.JFrame {
 
-    private int a1,a2,a3,a4,a5,a6,
-            b1,b2,b3,b4,b5,b6,
-            c1,c2,c3,c4,c5,c6,
-            d1,d2,d3,d4,d5,d6,
-            e1,e2,e3,e4,e5,e6,
-            f1,f2,f3,f4,f5,f6;
+    private int a01,a02,a04,a05,a07,a08,a10,a11,a13,a14,a16,a17,
+            b01,b03,b05,b07,b09,b11,b13,b15,b17,
+            c01,c02,c04,c05,c07,c08,c10,c11,c13,c14,c16,c17,
+            d01,d03,d05,d07,d09,d11,d13,d15,d17,
+            e01,e02,e04,e05,e07,e08,e10,e11,e13,e14,e16,e17,
+            f01,f03,f05,f07,f09,f11,f13,f15,f17,
+            g01,g02,g04,g05,g07,g08,g10,g11,g13,g14,g16,g17,
+            h01,h03,h05,h07,h09,h11,h13,h15,h17,
+            i01,i02,i04,i05,i07,i08,i10,i11,i13,i14,i16,i17,
+            j01,j03,j05,j07,j09,j11,j13,j15,j17,
+            k01,k02,k04,k05,k07,k08,k10,k11,k13,k14,k16,k17;
 
     /**
      * Creates new form Seat
@@ -1356,467 +1361,1421 @@ public class Seat2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
-        // TODO add your handling code here:
+        if (a01 == 1) {
+            btnA01.setBackground(new Color(255, 204, 255));
+            btnA02.setBackground(new Color(255, 204, 255));
+            a01 = 0;
+        }
+        else if (a01 == 0) {
+            btnA01.setBackground(Color.YELLOW);
+            btnA02.setBackground(Color.YELLOW);
+            a01 = 1;
+        }
     }//GEN-LAST:event_btnA01ActionPerformed
 
     private void btnA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA02ActionPerformed
-        // TODO add your handling code here:
+        if (a01 == 1) {
+            btnA01.setBackground(new Color(255, 204, 255));
+            btnA02.setBackground(new Color(255, 204, 255));
+            a01 = 0;
+        }
+        else if (a01 == 0) {
+            btnA01.setBackground(Color.YELLOW);
+            btnA02.setBackground(Color.YELLOW);
+            a01 = 1;
+        }
     }//GEN-LAST:event_btnA02ActionPerformed
 
     private void btnA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA04ActionPerformed
-        // TODO add your handling code here:
+        if (a04 == 1) {
+            btnA04.setBackground(new Color(255, 204, 255));
+            btnA05.setBackground(new Color(255, 204, 255));
+            a04 = 0;
+        }
+        else if (a04 == 0) {
+            btnA04.setBackground(Color.YELLOW);
+            btnA05.setBackground(Color.YELLOW);
+            a04 = 1;
+        }
     }//GEN-LAST:event_btnA04ActionPerformed
 
     private void btnA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA05ActionPerformed
-        // TODO add your handling code here:
+        if (a04 == 1) {
+            btnA04.setBackground(new Color(255, 204, 255));
+            btnA05.setBackground(new Color(255, 204, 255));
+            a04 = 0;
+        }
+        else if (a04 == 0) {
+            btnA04.setBackground(Color.YELLOW);
+            btnA05.setBackground(Color.YELLOW);
+            a04 = 1;
+        }
     }//GEN-LAST:event_btnA05ActionPerformed
 
     private void btnA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA07ActionPerformed
-        // TODO add your handling code here:
+        if (a07 == 1) {
+            btnA07.setBackground(new Color(255, 204, 255));
+            btnA08.setBackground(new Color(255, 204, 255));
+            a07 = 0;
+        }
+        else if (a07 == 0) {
+            btnA07.setBackground(Color.YELLOW);
+            btnA08.setBackground(Color.YELLOW);
+            a07 = 1;
+        }
     }//GEN-LAST:event_btnA07ActionPerformed
 
     private void btnA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA08ActionPerformed
-        // TODO add your handling code here:
+        if (a07 == 1) {
+            btnA07.setBackground(new Color(255, 204, 255));
+            btnA08.setBackground(new Color(255, 204, 255));
+            a07 = 0;
+        }
+        else if (a07 == 0) {
+            btnA07.setBackground(Color.YELLOW);
+            btnA08.setBackground(Color.YELLOW);
+            a07 = 1;
+        }
     }//GEN-LAST:event_btnA08ActionPerformed
 
     private void btnA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA10ActionPerformed
-        // TODO add your handling code here:
+        if (a10 == 1) {
+            btnA10.setBackground(new Color(255, 204, 255));
+            btnA11.setBackground(new Color(255, 204, 255));
+            a10 = 0;
+        }
+        else if (a10 == 0) {
+            btnA10.setBackground(Color.YELLOW);
+            btnA11.setBackground(Color.YELLOW);
+            a10 = 1;
+        }
     }//GEN-LAST:event_btnA10ActionPerformed
 
     private void btnA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA11ActionPerformed
-        // TODO add your handling code here:
+        if (a10 == 1) {
+            btnA10.setBackground(new Color(255, 204, 255));
+            btnA11.setBackground(new Color(255, 204, 255));
+            a10 = 0;
+        }
+        else if (a10 == 0) {
+            btnA10.setBackground(Color.YELLOW);
+            btnA11.setBackground(Color.YELLOW);
+            a10 = 1;
+        }
     }//GEN-LAST:event_btnA11ActionPerformed
 
     private void btnA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA13ActionPerformed
-        // TODO add your handling code here:
+        if (a13 == 1) {
+            btnA13.setBackground(new Color(255, 204, 255));
+            btnA14.setBackground(new Color(255, 204, 255));
+            a13 = 0;
+        }
+        else if (a13 == 0) {
+            btnA13.setBackground(Color.YELLOW);
+            btnA14.setBackground(Color.YELLOW);
+            a13 = 1;
+        }
     }//GEN-LAST:event_btnA13ActionPerformed
 
     private void btnA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA14ActionPerformed
-        // TODO add your handling code here:
+        if (a13 == 1) {
+            btnA13.setBackground(new Color(255, 204, 255));
+            btnA14.setBackground(new Color(255, 204, 255));
+            a13 = 0;
+        }
+        else if (a13 == 0) {
+            btnA13.setBackground(Color.YELLOW);
+            btnA14.setBackground(Color.YELLOW);
+            a13 = 1;
+        }
     }//GEN-LAST:event_btnA14ActionPerformed
 
     private void btnA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA16ActionPerformed
-        // TODO add your handling code here:
+        if (a16 == 1) {
+            btnA16.setBackground(new Color(255, 204, 255));
+            btnA17.setBackground(new Color(255, 204, 255));
+            a16 = 0;
+        }
+        else if (a16 == 0) {
+            btnA16.setBackground(Color.YELLOW);
+            btnA17.setBackground(Color.YELLOW);
+            a16 = 1;
+        }
     }//GEN-LAST:event_btnA16ActionPerformed
 
     private void btnA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA17ActionPerformed
-        // TODO add your handling code here:
+        if (a16 == 1) {
+            btnA16.setBackground(new Color(255, 204, 255));
+            btnA17.setBackground(new Color(255, 204, 255));
+            a16 = 0;
+        }
+        else if (a16 == 0) {
+            btnA16.setBackground(Color.YELLOW);
+            btnA17.setBackground(Color.YELLOW);
+            a16 = 1;
+        }
     }//GEN-LAST:event_btnA17ActionPerformed
 
     private void btnB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB01ActionPerformed
-        // TODO add your handling code here:
+        if (b01 == 1) {
+            btnB01.setBackground(Color.LIGHT_GRAY);
+            b01 = 0;
+        }
+        else if (b01 == 0) {
+            btnB01.setBackground(Color.YELLOW);
+            b01 = 1;
+        }
     }//GEN-LAST:event_btnB01ActionPerformed
 
     private void btnB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB03ActionPerformed
-        // TODO add your handling code here:
+        if (b03 == 1) {
+            btnB03.setBackground(Color.LIGHT_GRAY);
+            b03 = 0;
+        }
+        else if (b03 == 0) {
+            btnB03.setBackground(Color.YELLOW);
+            b03 = 1;
+        }
     }//GEN-LAST:event_btnB03ActionPerformed
 
     private void btnB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB05ActionPerformed
-        // TODO add your handling code here:
+        if (b05 == 1) {
+            btnB05.setBackground(Color.LIGHT_GRAY);
+            b05 = 0;
+        }
+        else if (b05 == 0) {
+            btnB05.setBackground(Color.YELLOW);
+            b05 = 1;
+        }
     }//GEN-LAST:event_btnB05ActionPerformed
 
     private void btnB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB07ActionPerformed
-        // TODO add your handling code here:
+        if (b07 == 1) {
+            btnB07.setBackground(Color.LIGHT_GRAY);
+            b07 = 0;
+        }
+        else if (b07 == 0) {
+            btnB07.setBackground(Color.YELLOW);
+            b07 = 1;
+        }
     }//GEN-LAST:event_btnB07ActionPerformed
 
     private void btnB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB09ActionPerformed
-        // TODO add your handling code here:
+        if (b09 == 1) {
+            btnB09.setBackground(Color.LIGHT_GRAY);
+            b09 = 0;
+        }
+        else if (b09 == 0) {
+            btnB09.setBackground(Color.YELLOW);
+            b09 = 1;
+        }
     }//GEN-LAST:event_btnB09ActionPerformed
 
     private void btnB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB11ActionPerformed
-        // TODO add your handling code here:
+        if (b11 == 1) {
+            btnB11.setBackground(Color.LIGHT_GRAY);
+            b11 = 0;
+        }
+        else if (b11 == 0) {
+            btnB11.setBackground(Color.YELLOW);
+            b11 = 1;
+        }
     }//GEN-LAST:event_btnB11ActionPerformed
 
     private void btnB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB13ActionPerformed
-        // TODO add your handling code here:
+        if (b13 == 1) {
+            btnB13.setBackground(Color.LIGHT_GRAY);
+            b13 = 0;
+        }
+        else if (b13 == 0) {
+            btnB13.setBackground(Color.YELLOW);
+            b13 = 1;
+        }
     }//GEN-LAST:event_btnB13ActionPerformed
 
     private void btnB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB15ActionPerformed
-        // TODO add your handling code here:
+        if (b15 == 1) {
+            btnB15.setBackground(Color.LIGHT_GRAY);
+            b15 = 0;
+        }
+        else if (b15 == 0) {
+            btnB15.setBackground(Color.YELLOW);
+            b15 = 1;
+        }
     }//GEN-LAST:event_btnB15ActionPerformed
 
     private void btnB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB17ActionPerformed
-        // TODO add your handling code here:
+        if (b17 == 1) {
+            btnB17.setBackground(Color.LIGHT_GRAY);
+            b17 = 0;
+        }
+        else if (b17 == 0) {
+            btnB17.setBackground(Color.YELLOW);
+            b17 = 1;
+        }
     }//GEN-LAST:event_btnB17ActionPerformed
 
     private void btnC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC01ActionPerformed
-        // TODO add your handling code here:
+        if (c01 == 1) {
+            btnC01.setBackground(new Color(255, 204, 255));
+            btnC02.setBackground(new Color(255, 204, 255));
+            c01 = 0;
+        }
+        else if (c01 == 0) {
+            btnC01.setBackground(Color.YELLOW);
+            btnC02.setBackground(Color.YELLOW);
+            c01 = 1;
+        }
     }//GEN-LAST:event_btnC01ActionPerformed
 
     private void btnC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC02ActionPerformed
-        // TODO add your handling code here:
+        if (c01 == 1) {
+            btnC01.setBackground(new Color(255, 204, 255));
+            btnC02.setBackground(new Color(255, 204, 255));
+            c01 = 0;
+        }
+        else if (c01 == 0) {
+            btnC01.setBackground(Color.YELLOW);
+            btnC02.setBackground(Color.YELLOW);
+            c01 = 1;
+        }
     }//GEN-LAST:event_btnC02ActionPerformed
 
     private void btnC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC04ActionPerformed
-        // TODO add your handling code here:
+        if (c04 == 1) {
+            btnC04.setBackground(new Color(255, 204, 255));
+            btnC05.setBackground(new Color(255, 204, 255));
+            c04 = 0;
+        }
+        else if (c04 == 0) {
+            btnC04.setBackground(Color.YELLOW);
+            btnC05.setBackground(Color.YELLOW);
+            c04 = 1;
+        }
     }//GEN-LAST:event_btnC04ActionPerformed
 
     private void btnC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC05ActionPerformed
-        // TODO add your handling code here:
+        if (c04 == 1) {
+            btnC04.setBackground(new Color(255, 204, 255));
+            btnC05.setBackground(new Color(255, 204, 255));
+            c04 = 0;
+        }
+        else if (c04 == 0) {
+            btnC04.setBackground(Color.YELLOW);
+            btnC05.setBackground(Color.YELLOW);
+            c04 = 1;
+        }
     }//GEN-LAST:event_btnC05ActionPerformed
 
     private void btnC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC07ActionPerformed
-        // TODO add your handling code here:
+        if (c07 == 1) {
+            btnC07.setBackground(new Color(255, 204, 255));
+            btnC08.setBackground(new Color(255, 204, 255));
+            c07 = 0;
+        }
+        else if (c07 == 0) {
+            btnC07.setBackground(Color.YELLOW);
+            btnC08.setBackground(Color.YELLOW);
+            c07 = 1;
+        }
     }//GEN-LAST:event_btnC07ActionPerformed
 
     private void btnC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC08ActionPerformed
-        // TODO add your handling code here:
+        if (c07 == 1) {
+            btnC07.setBackground(new Color(255, 204, 255));
+            btnC08.setBackground(new Color(255, 204, 255));
+            c07 = 0;
+        }
+        else if (c07 == 0) {
+            btnC07.setBackground(Color.YELLOW);
+            btnC08.setBackground(Color.YELLOW);
+            c07 = 1;
+        }
     }//GEN-LAST:event_btnC08ActionPerformed
 
     private void btnC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC10ActionPerformed
-        // TODO add your handling code here:
+        if (c10 == 1) {
+            btnC10.setBackground(new Color(255, 204, 255));
+            btnC11.setBackground(new Color(255, 204, 255));
+            c10 = 0;
+        }
+        else if (c10 == 0) {
+            btnC10.setBackground(Color.YELLOW);
+            btnC11.setBackground(Color.YELLOW);
+            c10 = 1;
+        }
     }//GEN-LAST:event_btnC10ActionPerformed
 
     private void btnC11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC11ActionPerformed
-        // TODO add your handling code here:
+        if (c10 == 1) {
+            btnC10.setBackground(new Color(255, 204, 255));
+            btnC11.setBackground(new Color(255, 204, 255));
+            c10 = 0;
+        }
+        else if (c10 == 0) {
+            btnC10.setBackground(Color.YELLOW);
+            btnC11.setBackground(Color.YELLOW);
+            c10 = 1;
+        }
     }//GEN-LAST:event_btnC11ActionPerformed
 
     private void btnC13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC13ActionPerformed
-        // TODO add your handling code here:
+        if (c13 == 1) {
+            btnC13.setBackground(new Color(255, 204, 255));
+            btnC14.setBackground(new Color(255, 204, 255));
+            c13 = 0;
+        }
+        else if (c13 == 0) {
+            btnC13.setBackground(Color.YELLOW);
+            btnC14.setBackground(Color.YELLOW);
+            c13 = 1;
+        }
     }//GEN-LAST:event_btnC13ActionPerformed
 
     private void btnC14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC14ActionPerformed
-        // TODO add your handling code here:
+        if (c13 == 1) {
+            btnC13.setBackground(new Color(255, 204, 255));
+            btnC14.setBackground(new Color(255, 204, 255));
+            c13 = 0;
+        }
+        else if (c13 == 0) {
+            btnC13.setBackground(Color.YELLOW);
+            btnC14.setBackground(Color.YELLOW);
+            c13 = 1;
+        }
     }//GEN-LAST:event_btnC14ActionPerformed
 
     private void btnC16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC16ActionPerformed
-        // TODO add your handling code here:
+        if (c16 == 1) {
+            btnC16.setBackground(new Color(255, 204, 255));
+            btnC17.setBackground(new Color(255, 204, 255));
+            c16 = 0;
+        }
+        else if (c16 == 0) {
+            btnC16.setBackground(Color.YELLOW);
+            btnC17.setBackground(Color.YELLOW);
+            c16 = 1;
+        }
     }//GEN-LAST:event_btnC16ActionPerformed
 
     private void btnC17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC17ActionPerformed
-        // TODO add your handling code here:
+        if (c16 == 1) {
+            btnC16.setBackground(new Color(255, 204, 255));
+            btnC17.setBackground(new Color(255, 204, 255));
+            c16 = 0;
+        }
+        else if (c16 == 0) {
+            btnC16.setBackground(Color.YELLOW);
+            btnC17.setBackground(Color.YELLOW);
+            c16 = 1;
+        }
     }//GEN-LAST:event_btnC17ActionPerformed
 
     private void btnD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD01ActionPerformed
-        // TODO add your handling code here:
+        if (d01 == 1) {
+            btnD01.setBackground(Color.LIGHT_GRAY);
+            d01 = 0;
+        }
+        else if (d01 == 0) {
+            btnD01.setBackground(Color.YELLOW);
+            d01 = 1;
+        }
     }//GEN-LAST:event_btnD01ActionPerformed
 
     private void btnD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD03ActionPerformed
-        // TODO add your handling code here:
+        if (d03 == 1) {
+            btnD03.setBackground(Color.LIGHT_GRAY);
+            d03 = 0;
+        }
+        else if (d03 == 0) {
+            btnD03.setBackground(Color.YELLOW);
+            d03 = 1;
+        }
     }//GEN-LAST:event_btnD03ActionPerformed
 
     private void btnD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD05ActionPerformed
-        // TODO add your handling code here:
+        if (d05 == 1) {
+            btnD05.setBackground(Color.LIGHT_GRAY);
+            d05 = 0;
+        }
+        else if (d05 == 0) {
+            btnD05.setBackground(Color.YELLOW);
+            d05 = 1;
+        }
     }//GEN-LAST:event_btnD05ActionPerformed
 
     private void btnD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD07ActionPerformed
-        // TODO add your handling code here:
+        if (d07 == 1) {
+            btnD07.setBackground(Color.LIGHT_GRAY);
+            d07 = 0;
+        }
+        else if (d07 == 0) {
+            btnD07.setBackground(Color.YELLOW);
+            d07 = 1;
+        }
     }//GEN-LAST:event_btnD07ActionPerformed
 
     private void btnD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD09ActionPerformed
-        // TODO add your handling code here:
+        if (d09 == 1) {
+            btnD09.setBackground(Color.LIGHT_GRAY);
+            d09 = 0;
+        }
+        else if (d09 == 0) {
+            btnD09.setBackground(Color.YELLOW);
+            d09 = 1;
+        }
     }//GEN-LAST:event_btnD09ActionPerformed
 
     private void btnD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD11ActionPerformed
-        // TODO add your handling code here:
+        if (d11 == 1) {
+            btnD11.setBackground(Color.LIGHT_GRAY);
+            d11 = 0;
+        }
+        else if (d11 == 0) {
+            btnD11.setBackground(Color.YELLOW);
+            d11 = 1;
+        }
     }//GEN-LAST:event_btnD11ActionPerformed
 
     private void btnD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD13ActionPerformed
-        // TODO add your handling code here:
+        if (d13 == 1) {
+            btnD13.setBackground(Color.LIGHT_GRAY);
+            d13 = 0;
+        }
+        else if (d13 == 0) {
+            btnD13.setBackground(Color.YELLOW);
+            d13 = 1;
+        }
     }//GEN-LAST:event_btnD13ActionPerformed
 
     private void btnD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD15ActionPerformed
-        // TODO add your handling code here:
+        if (d15 == 1) {
+            btnD15.setBackground(Color.LIGHT_GRAY);
+            d15 = 0;
+        }
+        else if (d15 == 0) {
+            btnD15.setBackground(Color.YELLOW);
+            d15 = 1;
+        }
     }//GEN-LAST:event_btnD15ActionPerformed
 
     private void btnD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD17ActionPerformed
-        // TODO add your handling code here:
+        if (d17 == 1) {
+            btnD17.setBackground(Color.LIGHT_GRAY);
+            d17 = 0;
+        }
+        else if (d17 == 0) {
+            btnD17.setBackground(Color.YELLOW);
+            d17 = 1;
+        }
     }//GEN-LAST:event_btnD17ActionPerformed
 
     private void btnE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE01ActionPerformed
-        // TODO add your handling code here:
+        if (e01 == 1) {
+            btnE01.setBackground(new Color(255, 204, 255));
+            btnE02.setBackground(new Color(255, 204, 255));
+            e01 = 0;
+        }
+        else if (e01 == 0) {
+            btnE01.setBackground(Color.YELLOW);
+            btnE02.setBackground(Color.YELLOW);
+            e01 = 1;
+        }
     }//GEN-LAST:event_btnE01ActionPerformed
 
     private void btnE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE02ActionPerformed
-        // TODO add your handling code here:
+        if (e01 == 1) {
+            btnE01.setBackground(new Color(255, 204, 255));
+            btnE02.setBackground(new Color(255, 204, 255));
+            e01 = 0;
+        }
+        else if (e01 == 0) {
+            btnE01.setBackground(Color.YELLOW);
+            btnE02.setBackground(Color.YELLOW);
+            e01 = 1;
+        }
     }//GEN-LAST:event_btnE02ActionPerformed
 
     private void btnE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE04ActionPerformed
-        // TODO add your handling code here:
+        if (e04 == 1) {
+            btnE04.setBackground(new Color(255, 204, 255));
+            btnE05.setBackground(new Color(255, 204, 255));
+            e04 = 0;
+        }
+        else if (e04 == 0) {
+            btnE04.setBackground(Color.YELLOW);
+            btnE05.setBackground(Color.YELLOW);
+            e04 = 1;
+        }
     }//GEN-LAST:event_btnE04ActionPerformed
 
     private void btnE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE05ActionPerformed
-        // TODO add your handling code here:
+        if (e04 == 1) {
+            btnE04.setBackground(new Color(255, 204, 255));
+            btnE05.setBackground(new Color(255, 204, 255));
+            e04 = 0;
+        }
+        else if (e04 == 0) {
+            btnE04.setBackground(Color.YELLOW);
+            btnE05.setBackground(Color.YELLOW);
+            e04 = 1;
+        }
     }//GEN-LAST:event_btnE05ActionPerformed
 
     private void btnE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE07ActionPerformed
-        // TODO add your handling code here:
+        if (e07 == 1) {
+            btnE07.setBackground(new Color(255, 204, 255));
+            btnE08.setBackground(new Color(255, 204, 255));
+            e07 = 0;
+        }
+        else if (e07 == 0) {
+            btnE07.setBackground(Color.YELLOW);
+            btnE08.setBackground(Color.YELLOW);
+            e07 = 1;
+        }
     }//GEN-LAST:event_btnE07ActionPerformed
 
     private void btnE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE08ActionPerformed
-        // TODO add your handling code here:
+        if (e07 == 1) {
+            btnE07.setBackground(new Color(255, 204, 255));
+            btnE08.setBackground(new Color(255, 204, 255));
+            e07 = 0;
+        }
+        else if (e07 == 0) {
+            btnE07.setBackground(Color.YELLOW);
+            btnE08.setBackground(Color.YELLOW);
+            e07 = 1;
+        }
     }//GEN-LAST:event_btnE08ActionPerformed
 
     private void btnE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE10ActionPerformed
-        // TODO add your handling code here:
+        if (e10 == 1) {
+            btnE10.setBackground(new Color(255, 204, 255));
+            btnE11.setBackground(new Color(255, 204, 255));
+            e10 = 0;
+        }
+        else if (e10 == 0) {
+            btnE10.setBackground(Color.YELLOW);
+            btnE11.setBackground(Color.YELLOW);
+            e10 = 1;
+        }
     }//GEN-LAST:event_btnE10ActionPerformed
 
     private void btnE11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE11ActionPerformed
-        // TODO add your handling code here:
+        if (e10 == 1) {
+            btnE10.setBackground(new Color(255, 204, 255));
+            btnE11.setBackground(new Color(255, 204, 255));
+            e10 = 0;
+        }
+        else if (e10 == 0) {
+            btnE10.setBackground(Color.YELLOW);
+            btnE11.setBackground(Color.YELLOW);
+            e10 = 1;
+        }
     }//GEN-LAST:event_btnE11ActionPerformed
 
     private void btnE13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE13ActionPerformed
-        // TODO add your handling code here:
+        if (e13 == 1) {
+            btnE13.setBackground(new Color(255, 204, 255));
+            btnE14.setBackground(new Color(255, 204, 255));
+            e13 = 0;
+        }
+        else if (e13 == 0) {
+            btnE13.setBackground(Color.YELLOW);
+            btnE14.setBackground(Color.YELLOW);
+            e13 = 1;
+        }
     }//GEN-LAST:event_btnE13ActionPerformed
 
     private void btnE14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE14ActionPerformed
-        // TODO add your handling code here:
+        if (e13 == 1) {
+            btnE13.setBackground(new Color(255, 204, 255));
+            btnE14.setBackground(new Color(255, 204, 255));
+            e13 = 0;
+        }
+        else if (e13 == 0) {
+            btnE13.setBackground(Color.YELLOW);
+            btnE14.setBackground(Color.YELLOW);
+            e13 = 1;
+        }
     }//GEN-LAST:event_btnE14ActionPerformed
 
     private void btnE16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE16ActionPerformed
-        // TODO add your handling code here:
+        if (e16 == 1) {
+            btnE16.setBackground(new Color(255, 204, 255));
+            btnE17.setBackground(new Color(255, 204, 255));
+            e16 = 0;
+        }
+        else if (e16 == 0) {
+            btnE16.setBackground(Color.YELLOW);
+            btnE17.setBackground(Color.YELLOW);
+            e16 = 1;
+        }
     }//GEN-LAST:event_btnE16ActionPerformed
 
     private void btnE17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE17ActionPerformed
-        // TODO add your handling code here:
+        if (e16 == 1) {
+            btnE16.setBackground(new Color(255, 204, 255));
+            btnE17.setBackground(new Color(255, 204, 255));
+            e16 = 0;
+        }
+        else if (e16 == 0) {
+            btnE16.setBackground(Color.YELLOW);
+            btnE17.setBackground(Color.YELLOW);
+            e16 = 1;
+        }
     }//GEN-LAST:event_btnE17ActionPerformed
 
     private void btnF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF01ActionPerformed
-        // TODO add your handling code here:
+        if (f01 == 1) {
+            btnF01.setBackground(Color.LIGHT_GRAY);
+            f01 = 0;
+        }
+        else if (f01 == 0) {
+            btnF01.setBackground(Color.YELLOW);
+            f01 = 1;
+        }
     }//GEN-LAST:event_btnF01ActionPerformed
 
     private void btnF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF03ActionPerformed
-        // TODO add your handling code here:
+        if (f03 == 1) {
+            btnF03.setBackground(Color.LIGHT_GRAY);
+            f03 = 0;
+        }
+        else if (f03 == 0) {
+            btnF03.setBackground(Color.YELLOW);
+            f03 = 1;
+        }
     }//GEN-LAST:event_btnF03ActionPerformed
 
     private void btnF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF05ActionPerformed
-        // TODO add your handling code here:
+        if (f05 == 1) {
+            btnF05.setBackground(Color.LIGHT_GRAY);
+            f05 = 0;
+        }
+        else if (f05 == 0) {
+            btnF05.setBackground(Color.YELLOW);
+            f05 = 1;
+        }
     }//GEN-LAST:event_btnF05ActionPerformed
 
     private void btnF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF07ActionPerformed
-        // TODO add your handling code here:
+        if (f07 == 1) {
+            btnF07.setBackground(Color.LIGHT_GRAY);
+            f07 = 0;
+        }
+        else if (f07 == 0) {
+            btnF07.setBackground(Color.YELLOW);
+            f07 = 1;
+        }
     }//GEN-LAST:event_btnF07ActionPerformed
 
     private void btnF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF09ActionPerformed
-        // TODO add your handling code here:
+        if (f09 == 1) {
+            btnF09.setBackground(Color.LIGHT_GRAY);
+            f09 = 0;
+        }
+        else if (f09 == 0) {
+            btnF09.setBackground(Color.YELLOW);
+            f09 = 1;
+        }
     }//GEN-LAST:event_btnF09ActionPerformed
 
     private void btnF11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF11ActionPerformed
-        // TODO add your handling code here:
+        if (f11 == 1) {
+            btnF11.setBackground(Color.LIGHT_GRAY);
+            f11 = 0;
+        }
+        else if (f11 == 0) {
+            btnF11.setBackground(Color.YELLOW);
+            f11 = 1;
+        }
     }//GEN-LAST:event_btnF11ActionPerformed
 
     private void btnF13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF13ActionPerformed
-        // TODO add your handling code here:
+        if (f13 == 1) {
+            btnF13.setBackground(Color.LIGHT_GRAY);
+            f13 = 0;
+        }
+        else if (f13 == 0) {
+            btnF13.setBackground(Color.YELLOW);
+            f13 = 1;
+        }
     }//GEN-LAST:event_btnF13ActionPerformed
 
     private void btnF15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF15ActionPerformed
-        // TODO add your handling code here:
+        if (f15 == 1) {
+            btnF15.setBackground(Color.LIGHT_GRAY);
+            f15 = 0;
+        }
+        else if (f15 == 0) {
+            btnF15.setBackground(Color.YELLOW);
+            f15 = 1;
+        }
     }//GEN-LAST:event_btnF15ActionPerformed
 
     private void btnF17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF17ActionPerformed
-        // TODO add your handling code here:
+        if (f17 == 1) {
+            btnF17.setBackground(Color.LIGHT_GRAY);
+            f17 = 0;
+        }
+        else if (f17 == 0) {
+            btnF17.setBackground(Color.YELLOW);
+            f17 = 1;
+        }
     }//GEN-LAST:event_btnF17ActionPerformed
 
     private void btnG01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG01ActionPerformed
-        // TODO add your handling code here:
+        if (g01 == 1) {
+            btnG01.setBackground(new Color(255, 204, 255));
+            btnG02.setBackground(new Color(255, 204, 255));
+            g01 = 0;
+        }
+        else if (g01 == 0) {
+            btnG01.setBackground(Color.YELLOW);
+            btnG02.setBackground(Color.YELLOW);
+            g01 = 1;
+        }
     }//GEN-LAST:event_btnG01ActionPerformed
 
     private void btnG02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG02ActionPerformed
-        // TODO add your handling code here:
+        if (g01 == 1) {
+            btnG01.setBackground(new Color(255, 204, 255));
+            btnG02.setBackground(new Color(255, 204, 255));
+            g01 = 0;
+        }
+        else if (g01 == 0) {
+            btnG01.setBackground(Color.YELLOW);
+            btnG02.setBackground(Color.YELLOW);
+            g01 = 1;
+        }
     }//GEN-LAST:event_btnG02ActionPerformed
 
     private void btnG04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG04ActionPerformed
-        // TODO add your handling code here:
+        if (g04 == 1) {
+            btnG04.setBackground(new Color(255, 204, 255));
+            btnG05.setBackground(new Color(255, 204, 255));
+            g04 = 0;
+        }
+        else if (g04 == 0) {
+            btnG04.setBackground(Color.YELLOW);
+            btnG05.setBackground(Color.YELLOW);
+            g04 = 1;
+        }
     }//GEN-LAST:event_btnG04ActionPerformed
 
     private void btnG05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG05ActionPerformed
-        // TODO add your handling code here:
+        if (g04 == 1) {
+            btnG04.setBackground(new Color(255, 204, 255));
+            btnG05.setBackground(new Color(255, 204, 255));
+            g04 = 0;
+        }
+        else if (g04 == 0) {
+            btnG04.setBackground(Color.YELLOW);
+            btnG05.setBackground(Color.YELLOW);
+            g04 = 1;
+        }
     }//GEN-LAST:event_btnG05ActionPerformed
 
     private void btnG07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG07ActionPerformed
-        // TODO add your handling code here:
+        if (g07 == 1) {
+            btnG07.setBackground(new Color(255, 204, 255));
+            btnG08.setBackground(new Color(255, 204, 255));
+            g07 = 0;
+        }
+        else if (g07 == 0) {
+            btnG07.setBackground(Color.YELLOW);
+            btnG08.setBackground(Color.YELLOW);
+            g07 = 1;
+        }
     }//GEN-LAST:event_btnG07ActionPerformed
 
     private void btnG08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG08ActionPerformed
-        // TODO add your handling code here:
+        if (g07 == 1) {
+            btnG07.setBackground(new Color(255, 204, 255));
+            btnG08.setBackground(new Color(255, 204, 255));
+            g07 = 0;
+        }
+        else if (g07 == 0) {
+            btnG07.setBackground(Color.YELLOW);
+            btnG08.setBackground(Color.YELLOW);
+            g07 = 1;
+        }
     }//GEN-LAST:event_btnG08ActionPerformed
 
     private void btnG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG10ActionPerformed
-        // TODO add your handling code here:
+        if (g10 == 1) {
+            btnG10.setBackground(new Color(255, 204, 255));
+            btnG11.setBackground(new Color(255, 204, 255));
+            g10 = 0;
+        }
+        else if (g10 == 0) {
+            btnG10.setBackground(Color.YELLOW);
+            btnG11.setBackground(Color.YELLOW);
+            g10 = 1;
+        }
     }//GEN-LAST:event_btnG10ActionPerformed
 
     private void btnG11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG11ActionPerformed
-        // TODO add your handling code here:
+        if (g10 == 1) {
+            btnG10.setBackground(new Color(255, 204, 255));
+            btnG11.setBackground(new Color(255, 204, 255));
+            g10 = 0;
+        }
+        else if (g10 == 0) {
+            btnG10.setBackground(Color.YELLOW);
+            btnG11.setBackground(Color.YELLOW);
+            g10 = 1;
+        }
     }//GEN-LAST:event_btnG11ActionPerformed
 
     private void btnG13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG13ActionPerformed
-        // TODO add your handling code here:
+        if (g13 == 1) {
+            btnG13.setBackground(new Color(255, 204, 255));
+            btnG14.setBackground(new Color(255, 204, 255));
+            g13 = 0;
+        }
+        else if (g13 == 0) {
+            btnG13.setBackground(Color.YELLOW);
+            btnG14.setBackground(Color.YELLOW);
+            g13 = 1;
+        }
     }//GEN-LAST:event_btnG13ActionPerformed
 
     private void btnG14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG14ActionPerformed
-        // TODO add your handling code here:
+        if (g13 == 1) {
+            btnG13.setBackground(new Color(255, 204, 255));
+            btnG14.setBackground(new Color(255, 204, 255));
+            g13 = 0;
+        }
+        else if (g13 == 0) {
+            btnG13.setBackground(Color.YELLOW);
+            btnG14.setBackground(Color.YELLOW);
+            g13 = 1;
+        }
     }//GEN-LAST:event_btnG14ActionPerformed
 
     private void btnG16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG16ActionPerformed
-        // TODO add your handling code here:
+        if (g16 == 1) {
+            btnG16.setBackground(new Color(255, 204, 255));
+            btnG17.setBackground(new Color(255, 204, 255));
+            g16 = 0;
+        }
+        else if (g16 == 0) {
+            btnG16.setBackground(Color.YELLOW);
+            btnG17.setBackground(Color.YELLOW);
+            g16 = 1;
+        }
     }//GEN-LAST:event_btnG16ActionPerformed
 
     private void btnG17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG17ActionPerformed
-        // TODO add your handling code here:
+        if (g16 == 1) {
+            btnG16.setBackground(new Color(255, 204, 255));
+            btnG17.setBackground(new Color(255, 204, 255));
+            g16 = 0;
+        }
+        else if (g16 == 0) {
+            btnG16.setBackground(Color.YELLOW);
+            btnG17.setBackground(Color.YELLOW);
+            g16 = 1;
+        }
     }//GEN-LAST:event_btnG17ActionPerformed
 
     private void btnH01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH01ActionPerformed
-        // TODO add your handling code here:
+        if (h01 == 1) {
+            btnH01.setBackground(Color.LIGHT_GRAY);
+            h01 = 0;
+        }
+        else if (h01 == 0) {
+            btnH01.setBackground(Color.YELLOW);
+            h01 = 1;
+        }
     }//GEN-LAST:event_btnH01ActionPerformed
 
     private void btnH03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH03ActionPerformed
-        // TODO add your handling code here:
+        if (h03 == 1) {
+            btnH03.setBackground(Color.LIGHT_GRAY);
+            h03 = 0;
+        }
+        else if (h03 == 0) {
+            btnH03.setBackground(Color.YELLOW);
+            h03 = 1;
+        }
     }//GEN-LAST:event_btnH03ActionPerformed
 
     private void btnH05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH05ActionPerformed
-        // TODO add your handling code here:
+        if (h05 == 1) {
+            btnH05.setBackground(Color.LIGHT_GRAY);
+            h05 = 0;
+        }
+        else if (h05 == 0) {
+            btnH05.setBackground(Color.YELLOW);
+            h05 = 1;
+        }
     }//GEN-LAST:event_btnH05ActionPerformed
 
     private void btnH07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH07ActionPerformed
-        // TODO add your handling code here:
+        if (h07 == 1) {
+            btnH07.setBackground(Color.LIGHT_GRAY);
+            h07 = 0;
+        }
+        else if (h07 == 0) {
+            btnH07.setBackground(Color.YELLOW);
+            h07 = 1;
+        }
     }//GEN-LAST:event_btnH07ActionPerformed
 
     private void btnH09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH09ActionPerformed
-        // TODO add your handling code here:
+        if (h09 == 1) {
+            btnH09.setBackground(Color.LIGHT_GRAY);
+            h09 = 0;
+        }
+        else if (h09 == 0) {
+            btnH09.setBackground(Color.YELLOW);
+            h09 = 1;
+        }
     }//GEN-LAST:event_btnH09ActionPerformed
 
     private void btnH11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH11ActionPerformed
-        // TODO add your handling code here:
+        if (h11 == 1) {
+            btnH11.setBackground(Color.LIGHT_GRAY);
+            h11 = 0;
+        }
+        else if (h11 == 0) {
+            btnH11.setBackground(Color.YELLOW);
+            h11 = 1;
+        }
     }//GEN-LAST:event_btnH11ActionPerformed
 
     private void btnH13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH13ActionPerformed
-        // TODO add your handling code here:
+        if (h13 == 1) {
+            btnH13.setBackground(Color.LIGHT_GRAY);
+            h13 = 0;
+        }
+        else if (h13 == 0) {
+            btnH13.setBackground(Color.YELLOW);
+            h13 = 1;
+        }
     }//GEN-LAST:event_btnH13ActionPerformed
 
     private void btnH15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH15ActionPerformed
-        // TODO add your handling code here:
+        if (h15 == 1) {
+            btnH15.setBackground(Color.LIGHT_GRAY);
+            h15 = 0;
+        }
+        else if (h15 == 0) {
+            btnH15.setBackground(Color.YELLOW);
+            h15 = 1;
+        }
     }//GEN-LAST:event_btnH15ActionPerformed
 
     private void btnH17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH17ActionPerformed
-        // TODO add your handling code here:
+        if (h17 == 1) {
+            btnH17.setBackground(Color.LIGHT_GRAY);
+            h17 = 0;
+        }
+        else if (h17 == 0) {
+            btnH17.setBackground(Color.YELLOW);
+            h17 = 1;
+        }
     }//GEN-LAST:event_btnH17ActionPerformed
 
     private void btnI01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI01ActionPerformed
-        // TODO add your handling code here:
+        if (i01 == 1) {
+            btnI01.setBackground(new Color(255, 204, 255));
+            btnI02.setBackground(new Color(255, 204, 255));
+            i01 = 0;
+        }
+        else if (i01 == 0) {
+            btnI01.setBackground(Color.YELLOW);
+            btnI02.setBackground(Color.YELLOW);
+            i01 = 1;
+        }
     }//GEN-LAST:event_btnI01ActionPerformed
 
     private void btnI02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI02ActionPerformed
-        // TODO add your handling code here:
+        if (i01 == 1) {
+            btnI01.setBackground(new Color(255, 204, 255));
+            btnI02.setBackground(new Color(255, 204, 255));
+            i01 = 0;
+        }
+        else if (i01 == 0) {
+            btnI01.setBackground(Color.YELLOW);
+            btnI02.setBackground(Color.YELLOW);
+            i01 = 1;
+        }
     }//GEN-LAST:event_btnI02ActionPerformed
 
     private void btnI04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI04ActionPerformed
-        // TODO add your handling code here:
+        if (i04 == 1) {
+            btnI04.setBackground(new Color(255, 204, 255));
+            btnI05.setBackground(new Color(255, 204, 255));
+            i04 = 0;
+        }
+        else if (i04 == 0) {
+            btnI04.setBackground(Color.YELLOW);
+            btnI05.setBackground(Color.YELLOW);
+            i04 = 1;
+        }
     }//GEN-LAST:event_btnI04ActionPerformed
 
     private void btnI05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI05ActionPerformed
-        // TODO add your handling code here:
+        if (i04 == 1) {
+            btnI04.setBackground(new Color(255, 204, 255));
+            btnI05.setBackground(new Color(255, 204, 255));
+            i04 = 0;
+        }
+        else if (i04 == 0) {
+            btnI04.setBackground(Color.YELLOW);
+            btnI05.setBackground(Color.YELLOW);
+            i04 = 1;
+        }
     }//GEN-LAST:event_btnI05ActionPerformed
 
     private void btnI07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI07ActionPerformed
-        // TODO add your handling code here:
+        if (i07 == 1) {
+            btnI07.setBackground(new Color(255, 204, 255));
+            btnI08.setBackground(new Color(255, 204, 255));
+            i07 = 0;
+        }
+        else if (i07 == 0) {
+            btnI07.setBackground(Color.YELLOW);
+            btnI08.setBackground(Color.YELLOW);
+            i07 = 1;
+        }
     }//GEN-LAST:event_btnI07ActionPerformed
 
     private void btnI08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI08ActionPerformed
-        // TODO add your handling code here:
+        if (i07 == 1) {
+            btnI07.setBackground(new Color(255, 204, 255));
+            btnI08.setBackground(new Color(255, 204, 255));
+            i07 = 0;
+        }
+        else if (i07 == 0) {
+            btnI07.setBackground(Color.YELLOW);
+            btnI08.setBackground(Color.YELLOW);
+            i07 = 1;
+        }
     }//GEN-LAST:event_btnI08ActionPerformed
 
     private void btnI10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI10ActionPerformed
-        // TODO add your handling code here:
+        if (i10 == 1) {
+            btnI10.setBackground(new Color(255, 204, 255));
+            btnI11.setBackground(new Color(255, 204, 255));
+            i10 = 0;
+        }
+        else if (i10 == 0) {
+            btnI10.setBackground(Color.YELLOW);
+            btnI11.setBackground(Color.YELLOW);
+            i10 = 1;
+        }
     }//GEN-LAST:event_btnI10ActionPerformed
 
     private void btnI11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI11ActionPerformed
-        // TODO add your handling code here:
+        if (i10 == 1) {
+            btnI10.setBackground(new Color(255, 204, 255));
+            btnI11.setBackground(new Color(255, 204, 255));
+            i10 = 0;
+        }
+        else if (i10 == 0) {
+            btnI10.setBackground(Color.YELLOW);
+            btnI11.setBackground(Color.YELLOW);
+            i10 = 1;
+        }
     }//GEN-LAST:event_btnI11ActionPerformed
 
     private void btnI13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI13ActionPerformed
-        // TODO add your handling code here:
+        if (i13 == 1) {
+            btnI13.setBackground(new Color(255, 204, 255));
+            btnI14.setBackground(new Color(255, 204, 255));
+            i13 = 0;
+        }
+        else if (i13 == 0) {
+            btnI13.setBackground(Color.YELLOW);
+            btnI14.setBackground(Color.YELLOW);
+            i13 = 1;
+        }
     }//GEN-LAST:event_btnI13ActionPerformed
 
     private void btnI14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI14ActionPerformed
-        // TODO add your handling code here:
+        if (i13 == 1) {
+            btnI13.setBackground(new Color(255, 204, 255));
+            btnI14.setBackground(new Color(255, 204, 255));
+            i13 = 0;
+        }
+        else if (i13 == 0) {
+            btnI13.setBackground(Color.YELLOW);
+            btnI14.setBackground(Color.YELLOW);
+            i13 = 1;
+        }
     }//GEN-LAST:event_btnI14ActionPerformed
 
     private void btnI16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI16ActionPerformed
-        // TODO add your handling code here:
+        if (i16 == 1) {
+            btnI16.setBackground(new Color(255, 204, 255));
+            btnI17.setBackground(new Color(255, 204, 255));
+            i16 = 0;
+        }
+        else if (i16 == 0) {
+            btnI16.setBackground(Color.YELLOW);
+            btnI17.setBackground(Color.YELLOW);
+            i16 = 1;
+        }
     }//GEN-LAST:event_btnI16ActionPerformed
 
     private void btnI17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI17ActionPerformed
-        // TODO add your handling code here:
+        if (i16 == 1) {
+            btnI16.setBackground(new Color(255, 204, 255));
+            btnI17.setBackground(new Color(255, 204, 255));
+            i16 = 0;
+        }
+        else if (i16 == 0) {
+            btnI16.setBackground(Color.YELLOW);
+            btnI17.setBackground(Color.YELLOW);
+            i16 = 1;
+        }
     }//GEN-LAST:event_btnI17ActionPerformed
 
     private void btnJ01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ01ActionPerformed
-        // TODO add your handling code here:
+        if (j01 == 1) {
+            btnJ01.setBackground(Color.LIGHT_GRAY);
+            j01 = 0;
+        }
+        else if (j01 == 0) {
+            btnJ01.setBackground(Color.YELLOW);
+            j01 = 1;
+        }
     }//GEN-LAST:event_btnJ01ActionPerformed
 
     private void btnJ03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ03ActionPerformed
-        // TODO add your handling code here:
+        if (j03 == 1) {
+            btnJ03.setBackground(Color.LIGHT_GRAY);
+            j03 = 0;
+        }
+        else if (j03 == 0) {
+            btnJ03.setBackground(Color.YELLOW);
+            j03 = 1;
+        }
     }//GEN-LAST:event_btnJ03ActionPerformed
 
     private void btnJ05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ05ActionPerformed
-        // TODO add your handling code here:
+        if (j05 == 1) {
+            btnJ05.setBackground(Color.LIGHT_GRAY);
+            j05 = 0;
+        }
+        else if (j05 == 0) {
+            btnJ05.setBackground(Color.YELLOW);
+            j05 = 1;
+        }
     }//GEN-LAST:event_btnJ05ActionPerformed
 
     private void btnJ07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ07ActionPerformed
-        // TODO add your handling code here:
+        if (j07 == 1) {
+            btnJ07.setBackground(Color.LIGHT_GRAY);
+            j07 = 0;
+        }
+        else if (j07 == 0) {
+            btnJ07.setBackground(Color.YELLOW);
+            j07 = 1;
+        }
     }//GEN-LAST:event_btnJ07ActionPerformed
 
     private void btnJ09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ09ActionPerformed
-        // TODO add your handling code here:
+        if (j09 == 1) {
+            btnJ09.setBackground(Color.LIGHT_GRAY);
+            j09 = 0;
+        }
+        else if (j09 == 0) {
+            btnJ09.setBackground(Color.YELLOW);
+            j09 = 1;
+        }
     }//GEN-LAST:event_btnJ09ActionPerformed
 
     private void btnJ11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ11ActionPerformed
-        // TODO add your handling code here:
+        if (j11 == 1) {
+            btnJ11.setBackground(Color.LIGHT_GRAY);
+            j11 = 0;
+        }
+        else if (j11 == 0) {
+            btnJ11.setBackground(Color.YELLOW);
+            j11 = 1;
+        }
     }//GEN-LAST:event_btnJ11ActionPerformed
 
     private void btnJ13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ13ActionPerformed
-        // TODO add your handling code here:
+        if (j13 == 1) {
+            btnJ13.setBackground(Color.LIGHT_GRAY);
+            j13 = 0;
+        }
+        else if (j13 == 0) {
+            btnJ13.setBackground(Color.YELLOW);
+            j13 = 1;
+        }
     }//GEN-LAST:event_btnJ13ActionPerformed
 
     private void btnJ15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ15ActionPerformed
-        // TODO add your handling code here:
+        if (j15 == 1) {
+            btnJ15.setBackground(Color.LIGHT_GRAY);
+            j15 = 0;
+        }
+        else if (j15 == 0) {
+            btnJ15.setBackground(Color.YELLOW);
+            j15 = 1;
+        }
     }//GEN-LAST:event_btnJ15ActionPerformed
 
     private void btnJ17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ17ActionPerformed
-        // TODO add your handling code here:
+        if (j17 == 1) {
+            btnJ17.setBackground(Color.LIGHT_GRAY);
+            j17 = 0;
+        }
+        else if (j17 == 0) {
+            btnJ17.setBackground(Color.YELLOW);
+            j17 = 1;
+        }
     }//GEN-LAST:event_btnJ17ActionPerformed
 
     private void btnK01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK01ActionPerformed
-        // TODO add your handling code here:
+        if (k01 == 1) {
+            btnK01.setBackground(new Color(255, 204, 255));
+            btnK02.setBackground(new Color(255, 204, 255));
+            k01 = 0;
+        }
+        else if (k01 == 0) {
+            btnK01.setBackground(Color.YELLOW);
+            btnK02.setBackground(Color.YELLOW);
+            k01 = 1;
+        }
     }//GEN-LAST:event_btnK01ActionPerformed
 
     private void btnK02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK02ActionPerformed
-        // TODO add your handling code here:
+        if (k01 == 1) {
+            btnK01.setBackground(new Color(255, 204, 255));
+            btnK02.setBackground(new Color(255, 204, 255));
+            k01 = 0;
+        }
+        else if (k01 == 0) {
+            btnK01.setBackground(Color.YELLOW);
+            btnK02.setBackground(Color.YELLOW);
+            k01 = 1;
+        }
     }//GEN-LAST:event_btnK02ActionPerformed
 
     private void btnK04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK04ActionPerformed
-        // TODO add your handling code here:
+        if (k04 == 1) {
+            btnK04.setBackground(new Color(255, 204, 255));
+            btnK05.setBackground(new Color(255, 204, 255));
+            k04 = 0;
+        }
+        else if (k04 == 0) {
+            btnK04.setBackground(Color.YELLOW);
+            btnK05.setBackground(Color.YELLOW);
+            k04 = 1;
+        }
     }//GEN-LAST:event_btnK04ActionPerformed
 
     private void btnK05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK05ActionPerformed
-        // TODO add your handling code here:
+        if (k04 == 1) {
+            btnK04.setBackground(new Color(255, 204, 255));
+            btnK05.setBackground(new Color(255, 204, 255));
+            k04 = 0;
+        }
+        else if (k04 == 0) {
+            btnK04.setBackground(Color.YELLOW);
+            btnK05.setBackground(Color.YELLOW);
+            k04 = 1;
+        }
     }//GEN-LAST:event_btnK05ActionPerformed
 
     private void btnK07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK07ActionPerformed
-        // TODO add your handling code here:
+        if (k07 == 1) {
+            btnK07.setBackground(new Color(255, 204, 255));
+            btnK08.setBackground(new Color(255, 204, 255));
+            k07 = 0;
+        }
+        else if (k07 == 0) {
+            btnK07.setBackground(Color.YELLOW);
+            btnK08.setBackground(Color.YELLOW);
+            k07 = 1;
+        }
     }//GEN-LAST:event_btnK07ActionPerformed
 
     private void btnK08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK08ActionPerformed
-        // TODO add your handling code here:
+        if (k07 == 1) {
+            btnK07.setBackground(new Color(255, 204, 255));
+            btnK08.setBackground(new Color(255, 204, 255));
+            k07 = 0;
+        }
+        else if (k07 == 0) {
+            btnK07.setBackground(Color.YELLOW);
+            btnK08.setBackground(Color.YELLOW);
+            k07 = 1;
+        }
     }//GEN-LAST:event_btnK08ActionPerformed
 
     private void btnK10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK10ActionPerformed
-        // TODO add your handling code here:
+        if (k10 == 1) {
+            btnK10.setBackground(new Color(255, 204, 255));
+            btnK11.setBackground(new Color(255, 204, 255));
+            k10 = 0;
+        }
+        else if (k10 == 0) {
+            btnK10.setBackground(Color.YELLOW);
+            btnK11.setBackground(Color.YELLOW);
+            k10 = 1;
+        }
     }//GEN-LAST:event_btnK10ActionPerformed
 
     private void btnK11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK11ActionPerformed
-        // TODO add your handling code here:
+        if (k10 == 1) {
+            btnK10.setBackground(new Color(255, 204, 255));
+            btnK11.setBackground(new Color(255, 204, 255));
+            k10 = 0;
+        }
+        else if (k10 == 0) {
+            btnK10.setBackground(Color.YELLOW);
+            btnK11.setBackground(Color.YELLOW);
+            k10 = 1;
+        }
     }//GEN-LAST:event_btnK11ActionPerformed
 
     private void btnK13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK13ActionPerformed
-        // TODO add your handling code here:
+        if (k13 == 1) {
+            btnK13.setBackground(new Color(255, 204, 255));
+            btnK14.setBackground(new Color(255, 204, 255));
+            k13 = 0;
+        }
+        else if (k13 == 0) {
+            btnK13.setBackground(Color.YELLOW);
+            btnK14.setBackground(Color.YELLOW);
+            k13 = 1;
+        }
     }//GEN-LAST:event_btnK13ActionPerformed
 
     private void btnK14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK14ActionPerformed
-        // TODO add your handling code here:
+        if (k13 == 1) {
+            btnK13.setBackground(new Color(255, 204, 255));
+            btnK14.setBackground(new Color(255, 204, 255));
+            k13 = 0;
+        }
+        else if (k13 == 0) {
+            btnK13.setBackground(Color.YELLOW);
+            btnK14.setBackground(Color.YELLOW);
+            k13 = 1;
+        }
     }//GEN-LAST:event_btnK14ActionPerformed
 
     private void btnK16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK16ActionPerformed
-        // TODO add your handling code here:
+        if (k16 == 1) {
+            btnK16.setBackground(new Color(255, 204, 255));
+            btnK17.setBackground(new Color(255, 204, 255));
+            k16 = 0;
+        }
+        else if (k16 == 0) {
+            btnK16.setBackground(Color.YELLOW);
+            btnK17.setBackground(Color.YELLOW);
+            k16 = 1;
+        }
     }//GEN-LAST:event_btnK16ActionPerformed
 
     private void btnK17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK17ActionPerformed
