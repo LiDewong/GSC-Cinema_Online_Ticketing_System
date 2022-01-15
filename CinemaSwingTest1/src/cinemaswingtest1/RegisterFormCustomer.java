@@ -54,7 +54,7 @@ public class RegisterFormCustomer extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("CUSTOMER REGISTRATION FORM");
+        jLabel1.setText("Customer Registration Form");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 90, 653, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
