@@ -43,7 +43,7 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(270, 20, 462, 58);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(122, 161, 270, 30);
+        jTextField3.setBounds(500, 370, 270, 30);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
@@ -54,7 +54,7 @@ public class RegisterFormStaff extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(10, 247, 140, 40);
+        jButton1.setBounds(470, 550, 140, 40);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -70,7 +70,7 @@ public class RegisterFormStaff extends javax.swing.JFrame {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(576, 69, 270, 30);
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(122, 204, 270, 30);
+        jPasswordField1.setBounds(480, 450, 270, 30);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
