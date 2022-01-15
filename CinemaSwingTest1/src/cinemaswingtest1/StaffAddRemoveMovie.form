@@ -58,7 +58,7 @@
                   <Data value="02 Dec 2021"/>
                   <Data value="02 Dec 2021"/>
                 </Column>
-                <Column editable="true" title="Cast" type="java.lang.Object">
+                <Column editable="true" title="Casts" type="java.lang.Object">
                   <Data value="Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon"/>
                   <Data value="Daniel Craig, Rami Malek, Ana de Armas"/>
                   <Data value="Angelina Jolie, Salma Hayek, Richard Madden"/>
@@ -81,7 +81,7 @@
                   <Editor/>
                   <Renderer/>
                 </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="5" resizable="true">
+                <Column maxWidth="16" minWidth="-1" prefWidth="16" resizable="true">
                   <Title/>
                   <Editor/>
                   <Renderer/>

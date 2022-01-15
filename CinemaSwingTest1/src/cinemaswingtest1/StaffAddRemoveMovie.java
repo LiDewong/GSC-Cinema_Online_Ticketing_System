@@ -44,14 +44,15 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan."}
             },
             new String [] {
-                "Title", "Release Date", "Cast", "Synopsis"
+                "Title", "Release Date", "Casts", "Synopsis"
             }
         ));
         jTable1.setRowHeight(23);
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(20);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(5);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(16);
+            jTable1.getColumnModel().getColumn(1).setMaxWidth(16);
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(20);
         }
 
