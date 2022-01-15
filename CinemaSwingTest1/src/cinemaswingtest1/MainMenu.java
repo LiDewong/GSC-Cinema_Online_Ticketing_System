@@ -71,8 +71,8 @@ public class MainMenu extends javax.swing.JFrame {
         label7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic1.jpg"))); // NOI18N
         getContentPane().add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
 
-        label8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic (1).jpg"))); // NOI18N
-        getContentPane().add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        label8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 1.jpg"))); // NOI18N
+        getContentPane().add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 470));
 
         pack();
         setLocationRelativeTo(null);
