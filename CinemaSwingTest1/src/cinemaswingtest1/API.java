@@ -207,14 +207,15 @@ public class API {
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String name, String email, String password, String phone_number) throws Exception {
+    public static boolean staffSignUp(String id,String name, String email, String password) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
+            data.put("staff_id", id);
             data.put("name", name);
             data.put("email", email);
             data.put("password", password);
-            data.put("phone_number", phone_number);
+//            data.put("phone_number", phone_number);
 
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(buildFormDataFromMap(data))
@@ -390,6 +391,31 @@ public class API {
         }
 
         return list;
+    }
+    
+    public static void getAllSeat(String movie_id){
+        try {
+            // form parameters
+            Map<Object, Object> data = new HashMap<>();
+            
+            data.put("movie_id", movie_id);
+
+            HttpRequest request = HttpRequest.newBuilder()
+                    .POST(buildFormDataFromMap(data))
+                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/get_all_seat"))
+                    .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
+                    .header("Content-Type", "application/x-www-form-urlencoded")
+                    .build();
+
+            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+            int statusCode = response.statusCode();
+            String body = response.body();
+            System.out.println(body);
+           
+        } catch (IOException | InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
     }
     
     // Delete this if you have customer class
