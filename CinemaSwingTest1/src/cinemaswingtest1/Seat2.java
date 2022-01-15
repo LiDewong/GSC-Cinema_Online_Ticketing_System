@@ -4,12 +4,17 @@ import java.awt.Color;
 
 public class Seat2 extends javax.swing.JFrame {
 
-    private int a1,a2,a3,a4,a5,a6,
-            b1,b2,b3,b4,b5,b6,
-            c1,c2,c3,c4,c5,c6,
-            d1,d2,d3,d4,d5,d6,
-            e1,e2,e3,e4,e5,e6,
-            f1,f2,f3,f4,f5,f6;
+    private int a01,a02,a04,a05,a07,a08,a10,a11,a13,a14,a16,a17,
+            b01,b03,b05,b07,b09,b11,b13,b15,b17,
+            c01,c02,c04,c05,c07,c08,c10,c11,c13,c14,c16,c17,
+            d01,d03,d05,d07,d09,d11,d13,d15,d17,
+            e01,e02,e04,e05,e07,e08,e10,e11,e13,e14,e16,e17,
+            f01,f03,f05,f07,f09,f11,f13,f15,f17,
+            g01,g02,g04,g05,g07,g08,g10,g11,g13,g14,g16,g17,
+            h01,h03,h05,h07,h09,h11,h13,h15,h17,
+            i01,i02,i04,i05,i07,i08,i10,i11,i13,i14,i16,i17,
+            j01,j03,j05,j07,j09,j11,j13,j15,j17,
+            k01,k02,k04,k05,k07,k08,k10,k11,k13,k14,k16,k17;
 
     /**
      * Creates new form Seat
@@ -29,133 +34,139 @@ public class Seat2 extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
+        btnNext = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
-        jButton33 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
-        jButton35 = new javax.swing.JButton();
-        jButton36 = new javax.swing.JButton();
-        jButton37 = new javax.swing.JButton();
-        jButton38 = new javax.swing.JButton();
-        jButton39 = new javax.swing.JButton();
-        jButton40 = new javax.swing.JButton();
-        jButton41 = new javax.swing.JButton();
-        jButton42 = new javax.swing.JButton();
-        jButton43 = new javax.swing.JButton();
-        jButton44 = new javax.swing.JButton();
-        jButton45 = new javax.swing.JButton();
-        jButton46 = new javax.swing.JButton();
-        jButton47 = new javax.swing.JButton();
-        jButton48 = new javax.swing.JButton();
-        jButton49 = new javax.swing.JButton();
-        jButton50 = new javax.swing.JButton();
-        jButton51 = new javax.swing.JButton();
-        jButton52 = new javax.swing.JButton();
-        jButton53 = new javax.swing.JButton();
-        jButton54 = new javax.swing.JButton();
-        jButton55 = new javax.swing.JButton();
-        jButton56 = new javax.swing.JButton();
-        jButton57 = new javax.swing.JButton();
-        jButton58 = new javax.swing.JButton();
-        jButton59 = new javax.swing.JButton();
-        jButton60 = new javax.swing.JButton();
-        jButton61 = new javax.swing.JButton();
-        jButton62 = new javax.swing.JButton();
-        jButton63 = new javax.swing.JButton();
-        jButton64 = new javax.swing.JButton();
-        jButton65 = new javax.swing.JButton();
-        jButton66 = new javax.swing.JButton();
-        jButton67 = new javax.swing.JButton();
-        jButton68 = new javax.swing.JButton();
-        jButton69 = new javax.swing.JButton();
-        jButton70 = new javax.swing.JButton();
-        jButton71 = new javax.swing.JButton();
-        jButton72 = new javax.swing.JButton();
-        jButton73 = new javax.swing.JButton();
-        jButton74 = new javax.swing.JButton();
-        jButton75 = new javax.swing.JButton();
-        jButton76 = new javax.swing.JButton();
-        jButton77 = new javax.swing.JButton();
-        jButton78 = new javax.swing.JButton();
-        jButton79 = new javax.swing.JButton();
-        jButton80 = new javax.swing.JButton();
-        jButton81 = new javax.swing.JButton();
-        jButton82 = new javax.swing.JButton();
-        jButton83 = new javax.swing.JButton();
-        jButton84 = new javax.swing.JButton();
-        jButton85 = new javax.swing.JButton();
-        jButton86 = new javax.swing.JButton();
-        jButton87 = new javax.swing.JButton();
-        jButton88 = new javax.swing.JButton();
-        jButton89 = new javax.swing.JButton();
+        btnA01 = new javax.swing.JButton();
+        btnA02 = new javax.swing.JButton();
+        btnA05 = new javax.swing.JButton();
+        btnA04 = new javax.swing.JButton();
+        btnA08 = new javax.swing.JButton();
+        btnA07 = new javax.swing.JButton();
+        btnA11 = new javax.swing.JButton();
+        btnA10 = new javax.swing.JButton();
+        btnB01 = new javax.swing.JButton();
+        btnB11 = new javax.swing.JButton();
+        btnB03 = new javax.swing.JButton();
+        btnB05 = new javax.swing.JButton();
+        btnB07 = new javax.swing.JButton();
+        btnB09 = new javax.swing.JButton();
+        btnC10 = new javax.swing.JButton();
+        btnC01 = new javax.swing.JButton();
+        btnC02 = new javax.swing.JButton();
+        btnD01 = new javax.swing.JButton();
+        btnD11 = new javax.swing.JButton();
+        btnC05 = new javax.swing.JButton();
+        btnD03 = new javax.swing.JButton();
+        btnD05 = new javax.swing.JButton();
+        btnC04 = new javax.swing.JButton();
+        btnD07 = new javax.swing.JButton();
+        btnC08 = new javax.swing.JButton();
+        btnD09 = new javax.swing.JButton();
+        btnC07 = new javax.swing.JButton();
+        btnC11 = new javax.swing.JButton();
+        btnE10 = new javax.swing.JButton();
+        btnE01 = new javax.swing.JButton();
+        btnE02 = new javax.swing.JButton();
+        btnF01 = new javax.swing.JButton();
+        btnF11 = new javax.swing.JButton();
+        btnE05 = new javax.swing.JButton();
+        btnF03 = new javax.swing.JButton();
+        btnF05 = new javax.swing.JButton();
+        btnE04 = new javax.swing.JButton();
+        btnF07 = new javax.swing.JButton();
+        btnE08 = new javax.swing.JButton();
+        btnF09 = new javax.swing.JButton();
+        btnE07 = new javax.swing.JButton();
+        btnE11 = new javax.swing.JButton();
+        btnG10 = new javax.swing.JButton();
+        btnG01 = new javax.swing.JButton();
+        btnG02 = new javax.swing.JButton();
+        btnH01 = new javax.swing.JButton();
+        btnH11 = new javax.swing.JButton();
+        btnG05 = new javax.swing.JButton();
+        btnH03 = new javax.swing.JButton();
+        btnH05 = new javax.swing.JButton();
+        btnG04 = new javax.swing.JButton();
+        btnH07 = new javax.swing.JButton();
+        btnG08 = new javax.swing.JButton();
+        btnH09 = new javax.swing.JButton();
+        btnG07 = new javax.swing.JButton();
+        btnG11 = new javax.swing.JButton();
+        btnI10 = new javax.swing.JButton();
+        btnI01 = new javax.swing.JButton();
+        btnI02 = new javax.swing.JButton();
+        btnJ01 = new javax.swing.JButton();
+        btnJ11 = new javax.swing.JButton();
+        btnI05 = new javax.swing.JButton();
+        btnJ03 = new javax.swing.JButton();
+        btnJ05 = new javax.swing.JButton();
+        btnI04 = new javax.swing.JButton();
+        btnJ07 = new javax.swing.JButton();
+        btnI08 = new javax.swing.JButton();
+        btnJ09 = new javax.swing.JButton();
+        btnI07 = new javax.swing.JButton();
+        btnI11 = new javax.swing.JButton();
+        btnK10 = new javax.swing.JButton();
+        btnK01 = new javax.swing.JButton();
+        btnK02 = new javax.swing.JButton();
+        btnK05 = new javax.swing.JButton();
+        btnK04 = new javax.swing.JButton();
+        btnK08 = new javax.swing.JButton();
+        btnK07 = new javax.swing.JButton();
+        btnK11 = new javax.swing.JButton();
+        btnTwin1 = new javax.swing.JButton();
+        btnTwin2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton90 = new javax.swing.JButton();
+        btnAvailable = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jButton91 = new javax.swing.JButton();
-        jButton92 = new javax.swing.JButton();
-        jButton93 = new javax.swing.JButton();
-        jButton94 = new javax.swing.JButton();
-        jButton95 = new javax.swing.JButton();
-        jButton96 = new javax.swing.JButton();
-        jButton97 = new javax.swing.JButton();
-        jButton98 = new javax.swing.JButton();
-        jButton99 = new javax.swing.JButton();
-        jButton100 = new javax.swing.JButton();
-        jButton101 = new javax.swing.JButton();
-        jButton102 = new javax.swing.JButton();
-        jButton103 = new javax.swing.JButton();
-        jButton104 = new javax.swing.JButton();
-        jButton105 = new javax.swing.JButton();
-        jButton106 = new javax.swing.JButton();
-        jButton107 = new javax.swing.JButton();
-        jButton108 = new javax.swing.JButton();
-        jButton109 = new javax.swing.JButton();
-        jButton110 = new javax.swing.JButton();
-        jButton111 = new javax.swing.JButton();
-        jButton112 = new javax.swing.JButton();
-        jButton113 = new javax.swing.JButton();
-        jButton114 = new javax.swing.JButton();
-        jButton115 = new javax.swing.JButton();
-        jButton116 = new javax.swing.JButton();
-        jButton117 = new javax.swing.JButton();
-        jButton118 = new javax.swing.JButton();
-        jButton119 = new javax.swing.JButton();
-        jButton120 = new javax.swing.JButton();
-        jButton121 = new javax.swing.JButton();
-        jButton122 = new javax.swing.JButton();
-        jButton123 = new javax.swing.JButton();
-        jButton124 = new javax.swing.JButton();
-        jButton125 = new javax.swing.JButton();
-        jButton126 = new javax.swing.JButton();
-        jButton127 = new javax.swing.JButton();
-        jButton128 = new javax.swing.JButton();
-        jButton129 = new javax.swing.JButton();
+        btnJ17 = new javax.swing.JButton();
+        btnJ13 = new javax.swing.JButton();
+        btnI14 = new javax.swing.JButton();
+        btnJ15 = new javax.swing.JButton();
+        btnI13 = new javax.swing.JButton();
+        btnI17 = new javax.swing.JButton();
+        btnK16 = new javax.swing.JButton();
+        btnK14 = new javax.swing.JButton();
+        btnK13 = new javax.swing.JButton();
+        btnK17 = new javax.swing.JButton();
+        btnA14 = new javax.swing.JButton();
+        btnA13 = new javax.swing.JButton();
+        btnA17 = new javax.swing.JButton();
+        btnA16 = new javax.swing.JButton();
+        btnB17 = new javax.swing.JButton();
+        btnB13 = new javax.swing.JButton();
+        btnB15 = new javax.swing.JButton();
+        btnC16 = new javax.swing.JButton();
+        btnD17 = new javax.swing.JButton();
+        btnD13 = new javax.swing.JButton();
+        btnC14 = new javax.swing.JButton();
+        btnD15 = new javax.swing.JButton();
+        btnC13 = new javax.swing.JButton();
+        btnC17 = new javax.swing.JButton();
+        btnE16 = new javax.swing.JButton();
+        btnF17 = new javax.swing.JButton();
+        btnF13 = new javax.swing.JButton();
+        btnE14 = new javax.swing.JButton();
+        btnF15 = new javax.swing.JButton();
+        btnE13 = new javax.swing.JButton();
+        btnE17 = new javax.swing.JButton();
+        btnG16 = new javax.swing.JButton();
+        btnH17 = new javax.swing.JButton();
+        btnH13 = new javax.swing.JButton();
+        btnG14 = new javax.swing.JButton();
+        btnH15 = new javax.swing.JButton();
+        btnG13 = new javax.swing.JButton();
+        btnG17 = new javax.swing.JButton();
+        btnI16 = new javax.swing.JButton();
+        btnSelected = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        btnUnavailable = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1050, 640));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
@@ -172,577 +183,2604 @@ public class Seat2 extends javax.swing.JFrame {
         jLabel2.setText("S C R E E N");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, 1031, -1));
 
-        jButton10.setText("NEXT");
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(982, 602, -1, 25));
+        btnNext.setText("NEXT");
+        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 600, 60, 25));
 
-        jButton18.setText("BACK");
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 602, -1, 25));
+        btnBack.setText("BACK");
+        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 602, -1, 25));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 90, -1));
 
-        jButton8.setBackground(new java.awt.Color(255, 204, 255));
-        jButton8.setText("A01");
-        jButton8.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-
-        jButton9.setBackground(new java.awt.Color(255, 204, 255));
-        jButton9.setText("A02");
-        jButton9.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 90, -1, -1));
-
-        jButton11.setBackground(new java.awt.Color(255, 204, 255));
-        jButton11.setText("A05");
-        jButton11.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 90, -1, -1));
-
-        jButton12.setBackground(new java.awt.Color(255, 204, 255));
-        jButton12.setText("A04");
-        jButton12.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 90, -1, -1));
-
-        jButton13.setBackground(new java.awt.Color(255, 204, 255));
-        jButton13.setText("A08");
-        jButton13.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 90, -1, -1));
-
-        jButton14.setBackground(new java.awt.Color(255, 204, 255));
-        jButton14.setText("A07");
-        jButton14.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 90, -1, -1));
-
-        jButton15.setBackground(new java.awt.Color(255, 204, 255));
-        jButton15.setText("A11");
-        jButton15.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
-
-        jButton16.setBackground(new java.awt.Color(255, 204, 255));
-        jButton16.setText("A10");
-        jButton16.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 90, -1, -1));
-
-        jButton17.setText("B01");
-        jButton17.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 133, -1, -1));
-
-        jButton19.setText("B11");
-        jButton19.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 133, -1, -1));
-
-        jButton20.setText("B03");
-        jButton20.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 133, -1, -1));
-
-        jButton21.setText("B05");
-        jButton21.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 133, -1, -1));
-
-        jButton22.setText("B07");
-        jButton22.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 133, -1, -1));
-
-        jButton23.setText("B09");
-        jButton23.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 133, -1, -1));
-
-        jButton24.setBackground(new java.awt.Color(255, 204, 255));
-        jButton24.setText("C10");
-        jButton24.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 176, -1, -1));
-
-        jButton25.setBackground(new java.awt.Color(255, 204, 255));
-        jButton25.setText("C01");
-        jButton25.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 176, -1, -1));
-
-        jButton26.setBackground(new java.awt.Color(255, 204, 255));
-        jButton26.setText("C02");
-        jButton26.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 176, -1, -1));
-
-        jButton27.setText("D01");
-        jButton27.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 219, -1, -1));
-
-        jButton28.setText("D11");
-        jButton28.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 219, -1, -1));
-
-        jButton29.setBackground(new java.awt.Color(255, 204, 255));
-        jButton29.setText("C05");
-        jButton29.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 176, -1, -1));
-
-        jButton30.setText("D03");
-        jButton30.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 219, -1, -1));
-
-        jButton31.setText("D05");
-        jButton31.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 219, -1, -1));
-
-        jButton32.setBackground(new java.awt.Color(255, 204, 255));
-        jButton32.setText("C04");
-        jButton32.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 176, -1, -1));
-
-        jButton33.setText("D07");
-        jButton33.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 219, -1, -1));
-
-        jButton34.setBackground(new java.awt.Color(255, 204, 255));
-        jButton34.setText("C08");
-        jButton34.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 176, -1, -1));
-
-        jButton35.setText("D09");
-        jButton35.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 219, -1, -1));
-
-        jButton36.setBackground(new java.awt.Color(255, 204, 255));
-        jButton36.setText("C07");
-        jButton36.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 176, -1, -1));
-
-        jButton37.setBackground(new java.awt.Color(255, 204, 255));
-        jButton37.setText("C11");
-        jButton37.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 176, -1, -1));
-
-        jButton38.setBackground(new java.awt.Color(255, 204, 255));
-        jButton38.setText("E10");
-        jButton38.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 262, -1, -1));
-
-        jButton39.setBackground(new java.awt.Color(255, 204, 255));
-        jButton39.setText("E01");
-        jButton39.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 262, -1, -1));
-
-        jButton40.setBackground(new java.awt.Color(255, 204, 255));
-        jButton40.setText("E02");
-        jButton40.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 262, -1, -1));
-
-        jButton41.setText("F01");
-        jButton41.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 305, -1, -1));
-
-        jButton42.setText("F11");
-        jButton42.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 305, -1, -1));
-
-        jButton43.setBackground(new java.awt.Color(255, 204, 255));
-        jButton43.setText("E05");
-        jButton43.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 262, -1, -1));
-
-        jButton44.setText("F03");
-        jButton44.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 305, -1, -1));
-
-        jButton45.setText("F05");
-        jButton45.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 305, -1, -1));
-
-        jButton46.setBackground(new java.awt.Color(255, 204, 255));
-        jButton46.setText("E04");
-        jButton46.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 262, -1, -1));
-
-        jButton47.setText("F07");
-        jButton47.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 305, -1, -1));
-
-        jButton48.setBackground(new java.awt.Color(255, 204, 255));
-        jButton48.setText("E08");
-        jButton48.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 262, -1, -1));
-
-        jButton49.setText("F09");
-        jButton49.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 305, -1, -1));
-
-        jButton50.setBackground(new java.awt.Color(255, 204, 255));
-        jButton50.setText("E07");
-        jButton50.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 262, -1, -1));
-
-        jButton51.setBackground(new java.awt.Color(255, 204, 255));
-        jButton51.setText("E11");
-        jButton51.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 262, -1, -1));
-
-        jButton52.setBackground(new java.awt.Color(255, 204, 255));
-        jButton52.setText("G10");
-        jButton52.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 348, -1, -1));
-
-        jButton53.setBackground(new java.awt.Color(255, 204, 255));
-        jButton53.setText("G01");
-        jButton53.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 348, -1, -1));
-
-        jButton54.setBackground(new java.awt.Color(255, 204, 255));
-        jButton54.setText("G02");
-        jButton54.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 348, -1, -1));
-
-        jButton55.setText("H01");
-        jButton55.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 391, -1, -1));
-
-        jButton56.setText("H11");
-        jButton56.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 391, -1, -1));
-
-        jButton57.setBackground(new java.awt.Color(255, 204, 255));
-        jButton57.setText("G05");
-        jButton57.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 348, -1, -1));
-
-        jButton58.setText("H03");
-        jButton58.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 391, -1, -1));
-
-        jButton59.setText("H05");
-        jButton59.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 391, -1, -1));
-
-        jButton60.setBackground(new java.awt.Color(255, 204, 255));
-        jButton60.setText("G04");
-        jButton60.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 348, -1, -1));
-
-        jButton61.setText("H07");
-        jButton61.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 391, -1, -1));
-
-        jButton62.setBackground(new java.awt.Color(255, 204, 255));
-        jButton62.setText("G08");
-        jButton62.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 348, -1, -1));
-
-        jButton63.setText("H09");
-        jButton63.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 391, -1, -1));
-
-        jButton64.setBackground(new java.awt.Color(255, 204, 255));
-        jButton64.setText("G07");
-        jButton64.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 348, -1, -1));
-
-        jButton65.setBackground(new java.awt.Color(255, 204, 255));
-        jButton65.setText("G11");
-        jButton65.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 348, -1, -1));
-
-        jButton66.setBackground(new java.awt.Color(255, 204, 255));
-        jButton66.setText("I10");
-        jButton66.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 434, -1, -1));
-
-        jButton67.setBackground(new java.awt.Color(255, 204, 255));
-        jButton67.setText("I01");
-        jButton67.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 434, -1, -1));
-
-        jButton68.setBackground(new java.awt.Color(255, 204, 255));
-        jButton68.setText("I02");
-        jButton68.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 434, -1, -1));
-
-        jButton69.setText("J01");
-        jButton69.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 477, -1, -1));
-
-        jButton70.setText("J11");
-        jButton70.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton70, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 477, -1, -1));
-
-        jButton71.setBackground(new java.awt.Color(255, 204, 255));
-        jButton71.setText("I05");
-        jButton71.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton71, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 434, -1, -1));
-
-        jButton72.setText("J03");
-        jButton72.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton72, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 477, -1, -1));
-
-        jButton73.setText("J05");
-        jButton73.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 477, -1, -1));
-
-        jButton74.setBackground(new java.awt.Color(255, 204, 255));
-        jButton74.setText("I04");
-        jButton74.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton74, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 434, -1, -1));
-
-        jButton75.setText("J07");
-        jButton75.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton75, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 477, -1, -1));
-
-        jButton76.setBackground(new java.awt.Color(255, 204, 255));
-        jButton76.setText("I08");
-        jButton76.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton76, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 434, -1, -1));
-
-        jButton77.setText("J09");
-        jButton77.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton77, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 477, -1, -1));
-
-        jButton78.setBackground(new java.awt.Color(255, 204, 255));
-        jButton78.setText("I07");
-        jButton78.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton78, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 434, -1, -1));
-
-        jButton79.setBackground(new java.awt.Color(255, 204, 255));
-        jButton79.setText("I11");
-        jButton79.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton79, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 434, -1, -1));
-
-        jButton80.setBackground(new java.awt.Color(255, 204, 255));
-        jButton80.setText("K10");
-        jButton80.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton80, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 520, -1, -1));
-
-        jButton81.setBackground(new java.awt.Color(255, 204, 255));
-        jButton81.setText("K01");
-        jButton81.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton81, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
-
-        jButton82.setBackground(new java.awt.Color(255, 204, 255));
-        jButton82.setText("K02");
-        jButton82.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton82, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 520, -1, -1));
-
-        jButton83.setBackground(new java.awt.Color(255, 204, 255));
-        jButton83.setText("K05");
-        jButton83.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton83, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 520, -1, -1));
-
-        jButton84.setBackground(new java.awt.Color(255, 204, 255));
-        jButton84.setText("K04");
-        jButton84.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton84, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 520, -1, -1));
-
-        jButton85.setBackground(new java.awt.Color(255, 204, 255));
-        jButton85.setText("K08");
-        jButton85.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton85, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 520, -1, -1));
-
-        jButton86.setBackground(new java.awt.Color(255, 204, 255));
-        jButton86.setText("K07");
-        jButton86.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton86, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 520, -1, -1));
-
-        jButton87.setBackground(new java.awt.Color(255, 204, 255));
-        jButton87.setText("K11");
-        jButton87.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton87, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 520, -1, -1));
-
-        jButton88.setBackground(new java.awt.Color(255, 204, 255));
-        jButton88.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton88, new org.netbeans.lib.awtextra.AbsoluteConstraints(386, 602, -1, -1));
-
-        jButton89.setBackground(new java.awt.Color(255, 204, 255));
-        jButton89.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton89, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 602, -1, -1));
+        btnA01.setBackground(new java.awt.Color(255, 204, 255));
+        btnA01.setText("A01");
+        btnA01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        btnA02.setBackground(new java.awt.Color(255, 204, 255));
+        btnA02.setText("A02");
+        btnA02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 90, -1, -1));
+
+        btnA05.setBackground(new java.awt.Color(255, 204, 255));
+        btnA05.setText("A05");
+        btnA05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 90, -1, -1));
+
+        btnA04.setBackground(new java.awt.Color(255, 204, 255));
+        btnA04.setText("A04");
+        btnA04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 90, -1, -1));
+
+        btnA08.setBackground(new java.awt.Color(255, 204, 255));
+        btnA08.setText("A08");
+        btnA08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 90, -1, -1));
+
+        btnA07.setBackground(new java.awt.Color(255, 204, 255));
+        btnA07.setText("A07");
+        btnA07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 90, -1, -1));
+
+        btnA11.setBackground(new java.awt.Color(255, 204, 255));
+        btnA11.setText("A11");
+        btnA11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
+
+        btnA10.setBackground(new java.awt.Color(255, 204, 255));
+        btnA10.setText("A10");
+        btnA10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 90, -1, -1));
+
+        btnB01.setText("B01");
+        btnB01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 133, -1, -1));
+
+        btnB11.setText("B11");
+        btnB11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 133, -1, -1));
+
+        btnB03.setText("B03");
+        btnB03.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB03ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 133, -1, -1));
+
+        btnB05.setText("B05");
+        btnB05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 133, -1, -1));
+
+        btnB07.setText("B07");
+        btnB07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 133, -1, -1));
+
+        btnB09.setText("B09");
+        btnB09.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB09ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 133, -1, -1));
+
+        btnC10.setBackground(new java.awt.Color(255, 204, 255));
+        btnC10.setText("C10");
+        btnC10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 176, -1, -1));
+
+        btnC01.setBackground(new java.awt.Color(255, 204, 255));
+        btnC01.setText("C01");
+        btnC01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 176, -1, -1));
+
+        btnC02.setBackground(new java.awt.Color(255, 204, 255));
+        btnC02.setText("C02");
+        btnC02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 176, -1, -1));
+
+        btnD01.setText("D01");
+        btnD01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 219, -1, -1));
+
+        btnD11.setText("D11");
+        btnD11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 219, -1, -1));
+
+        btnC05.setBackground(new java.awt.Color(255, 204, 255));
+        btnC05.setText("C05");
+        btnC05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 176, -1, -1));
+
+        btnD03.setText("D03");
+        btnD03.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD03ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 219, -1, -1));
+
+        btnD05.setText("D05");
+        btnD05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 219, -1, -1));
+
+        btnC04.setBackground(new java.awt.Color(255, 204, 255));
+        btnC04.setText("C04");
+        btnC04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 176, -1, -1));
+
+        btnD07.setText("D07");
+        btnD07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 219, -1, -1));
+
+        btnC08.setBackground(new java.awt.Color(255, 204, 255));
+        btnC08.setText("C08");
+        btnC08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 176, -1, -1));
+
+        btnD09.setText("D09");
+        btnD09.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD09ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 219, -1, -1));
+
+        btnC07.setBackground(new java.awt.Color(255, 204, 255));
+        btnC07.setText("C07");
+        btnC07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 176, -1, -1));
+
+        btnC11.setBackground(new java.awt.Color(255, 204, 255));
+        btnC11.setText("C11");
+        btnC11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 176, -1, -1));
+
+        btnE10.setBackground(new java.awt.Color(255, 204, 255));
+        btnE10.setText("E10");
+        btnE10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 262, -1, -1));
+
+        btnE01.setBackground(new java.awt.Color(255, 204, 255));
+        btnE01.setText("E01");
+        btnE01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 262, -1, -1));
+
+        btnE02.setBackground(new java.awt.Color(255, 204, 255));
+        btnE02.setText("E02");
+        btnE02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 262, -1, -1));
+
+        btnF01.setText("F01");
+        btnF01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 305, -1, -1));
+
+        btnF11.setText("F11");
+        btnF11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 305, -1, -1));
+
+        btnE05.setBackground(new java.awt.Color(255, 204, 255));
+        btnE05.setText("E05");
+        btnE05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 262, -1, -1));
+
+        btnF03.setText("F03");
+        btnF03.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF03ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 305, -1, -1));
+
+        btnF05.setText("F05");
+        btnF05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 305, -1, -1));
+
+        btnE04.setBackground(new java.awt.Color(255, 204, 255));
+        btnE04.setText("E04");
+        btnE04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 262, -1, -1));
+
+        btnF07.setText("F07");
+        btnF07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 305, -1, -1));
+
+        btnE08.setBackground(new java.awt.Color(255, 204, 255));
+        btnE08.setText("E08");
+        btnE08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 262, -1, -1));
+
+        btnF09.setText("F09");
+        btnF09.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF09ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 305, -1, -1));
+
+        btnE07.setBackground(new java.awt.Color(255, 204, 255));
+        btnE07.setText("E07");
+        btnE07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 262, -1, -1));
+
+        btnE11.setBackground(new java.awt.Color(255, 204, 255));
+        btnE11.setText("E11");
+        btnE11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 262, -1, -1));
+
+        btnG10.setBackground(new java.awt.Color(255, 204, 255));
+        btnG10.setText("G10");
+        btnG10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 348, -1, -1));
+
+        btnG01.setBackground(new java.awt.Color(255, 204, 255));
+        btnG01.setText("G01");
+        btnG01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 348, -1, -1));
+
+        btnG02.setBackground(new java.awt.Color(255, 204, 255));
+        btnG02.setText("G02");
+        btnG02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 348, -1, -1));
+
+        btnH01.setText("H01");
+        btnH01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 391, -1, -1));
+
+        btnH11.setText("H11");
+        btnH11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 391, -1, -1));
+
+        btnG05.setBackground(new java.awt.Color(255, 204, 255));
+        btnG05.setText("G05");
+        btnG05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 348, -1, -1));
+
+        btnH03.setText("H03");
+        btnH03.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH03ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 391, -1, -1));
+
+        btnH05.setText("H05");
+        btnH05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 391, -1, -1));
+
+        btnG04.setBackground(new java.awt.Color(255, 204, 255));
+        btnG04.setText("G04");
+        btnG04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 348, -1, -1));
+
+        btnH07.setText("H07");
+        btnH07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 391, -1, -1));
+
+        btnG08.setBackground(new java.awt.Color(255, 204, 255));
+        btnG08.setText("G08");
+        btnG08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 348, -1, -1));
+
+        btnH09.setText("H09");
+        btnH09.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH09ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 391, -1, -1));
+
+        btnG07.setBackground(new java.awt.Color(255, 204, 255));
+        btnG07.setText("G07");
+        btnG07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 348, -1, -1));
+
+        btnG11.setBackground(new java.awt.Color(255, 204, 255));
+        btnG11.setText("G11");
+        btnG11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 348, -1, -1));
+
+        btnI10.setBackground(new java.awt.Color(255, 204, 255));
+        btnI10.setText("I10");
+        btnI10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI10, new org.netbeans.lib.awtextra.AbsoluteConstraints(559, 434, -1, -1));
+
+        btnI01.setBackground(new java.awt.Color(255, 204, 255));
+        btnI01.setText("I01");
+        btnI01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 434, -1, -1));
+
+        btnI02.setBackground(new java.awt.Color(255, 204, 255));
+        btnI02.setText("I02");
+        btnI02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 434, -1, -1));
+
+        btnJ01.setText("J01");
+        btnJ01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 477, -1, -1));
+
+        btnJ11.setText("J11");
+        btnJ11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 477, -1, -1));
+
+        btnI05.setBackground(new java.awt.Color(255, 204, 255));
+        btnI05.setText("I05");
+        btnI05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 434, -1, -1));
+
+        btnJ03.setText("J03");
+        btnJ03.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ03ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ03, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 477, -1, -1));
+
+        btnJ05.setText("J05");
+        btnJ05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 477, -1, -1));
+
+        btnI04.setBackground(new java.awt.Color(255, 204, 255));
+        btnI04.setText("I04");
+        btnI04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 434, -1, -1));
+
+        btnJ07.setText("J07");
+        btnJ07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 477, -1, -1));
+
+        btnI08.setBackground(new java.awt.Color(255, 204, 255));
+        btnI08.setText("I08");
+        btnI08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 434, -1, -1));
+
+        btnJ09.setText("J09");
+        btnJ09.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ09ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ09, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 477, -1, -1));
+
+        btnI07.setBackground(new java.awt.Color(255, 204, 255));
+        btnI07.setText("I07");
+        btnI07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 434, -1, -1));
+
+        btnI11.setBackground(new java.awt.Color(255, 204, 255));
+        btnI11.setText("I11");
+        btnI11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 434, -1, -1));
+
+        btnK10.setBackground(new java.awt.Color(255, 204, 255));
+        btnK10.setText("K10");
+        btnK10.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 520, -1, -1));
+
+        btnK01.setBackground(new java.awt.Color(255, 204, 255));
+        btnK01.setText("K01");
+        btnK01.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
+
+        btnK02.setBackground(new java.awt.Color(255, 204, 255));
+        btnK02.setText("K02");
+        btnK02.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK02ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK02, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 520, -1, -1));
+
+        btnK05.setBackground(new java.awt.Color(255, 204, 255));
+        btnK05.setText("K05");
+        btnK05.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK05ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK05, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 520, -1, -1));
+
+        btnK04.setBackground(new java.awt.Color(255, 204, 255));
+        btnK04.setText("K04");
+        btnK04.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK04ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK04, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 520, -1, -1));
+
+        btnK08.setBackground(new java.awt.Color(255, 204, 255));
+        btnK08.setText("K08");
+        btnK08.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK08ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK08, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 520, -1, -1));
+
+        btnK07.setBackground(new java.awt.Color(255, 204, 255));
+        btnK07.setText("K07");
+        btnK07.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK07ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK07, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 520, -1, -1));
+
+        btnK11.setBackground(new java.awt.Color(255, 204, 255));
+        btnK11.setText("K11");
+        btnK11.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 520, -1, -1));
+
+        btnTwin1.setBackground(new java.awt.Color(255, 204, 255));
+        btnTwin1.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnTwin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 602, -1, -1));
+
+        btnTwin2.setBackground(new java.awt.Color(255, 204, 255));
+        btnTwin2.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnTwin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 602, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Twin");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(512, 602, -1, 25));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 602, -1, 25));
 
-        jButton90.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton90, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 602, -1, -1));
+        btnAvailable.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 602, -1, -1));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Single");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 602, -1, 25));
+        jLabel5.setText("Available");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 602, 50, 25));
 
-        jButton91.setText("J11");
-        jButton91.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton91, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 477, -1, -1));
+        btnJ17.setText("J17");
+        btnJ17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 477, -1, -1));
 
-        jButton92.setText("J07");
-        jButton92.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton92, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 477, -1, -1));
+        btnJ13.setText("J13");
+        btnJ13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 477, -1, -1));
 
-        jButton93.setBackground(new java.awt.Color(255, 204, 255));
-        jButton93.setText("I08");
-        jButton93.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton93, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 434, -1, -1));
+        btnI14.setBackground(new java.awt.Color(255, 204, 255));
+        btnI14.setText("I14");
+        btnI14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 434, -1, -1));
 
-        jButton94.setText("J09");
-        jButton94.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton94, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 477, -1, -1));
+        btnJ15.setText("J15");
+        btnJ15.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnJ15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJ15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJ15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 477, -1, -1));
 
-        jButton95.setBackground(new java.awt.Color(255, 204, 255));
-        jButton95.setText("I07");
-        jButton95.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton95, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 434, -1, -1));
+        btnI13.setBackground(new java.awt.Color(255, 204, 255));
+        btnI13.setText("I13");
+        btnI13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 434, -1, -1));
 
-        jButton96.setBackground(new java.awt.Color(255, 204, 255));
-        jButton96.setText("I11");
-        jButton96.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton96, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 434, -1, -1));
+        btnI17.setBackground(new java.awt.Color(255, 204, 255));
+        btnI17.setText("I17");
+        btnI17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 434, -1, -1));
 
-        jButton97.setBackground(new java.awt.Color(255, 204, 255));
-        jButton97.setText("K10");
-        jButton97.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton97, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 520, -1, -1));
+        btnK16.setBackground(new java.awt.Color(255, 204, 255));
+        btnK16.setText("K16");
+        btnK16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 520, -1, -1));
 
-        jButton98.setBackground(new java.awt.Color(255, 204, 255));
-        jButton98.setText("K08");
-        jButton98.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton98, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 520, -1, -1));
+        btnK14.setBackground(new java.awt.Color(255, 204, 255));
+        btnK14.setText("K14");
+        btnK14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 520, -1, -1));
 
-        jButton99.setBackground(new java.awt.Color(255, 204, 255));
-        jButton99.setText("K07");
-        jButton99.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton99, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 520, -1, -1));
+        btnK13.setBackground(new java.awt.Color(255, 204, 255));
+        btnK13.setText("K13");
+        btnK13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 520, -1, -1));
 
-        jButton100.setBackground(new java.awt.Color(255, 204, 255));
-        jButton100.setText("K11");
-        jButton100.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton100, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 520, -1, -1));
+        btnK17.setBackground(new java.awt.Color(255, 204, 255));
+        btnK17.setText("K17");
+        btnK17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnK17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnK17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnK17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 520, -1, -1));
 
-        jButton101.setBackground(new java.awt.Color(255, 204, 255));
-        jButton101.setText("A08");
-        jButton101.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton101, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 90, -1, -1));
+        btnA14.setBackground(new java.awt.Color(255, 204, 255));
+        btnA14.setText("A14");
+        btnA14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 90, -1, -1));
 
-        jButton102.setBackground(new java.awt.Color(255, 204, 255));
-        jButton102.setText("A07");
-        jButton102.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton102, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 90, -1, -1));
+        btnA13.setBackground(new java.awt.Color(255, 204, 255));
+        btnA13.setText("A13");
+        btnA13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 90, -1, -1));
 
-        jButton103.setBackground(new java.awt.Color(255, 204, 255));
-        jButton103.setText("A11");
-        jButton103.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton103, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 90, -1, -1));
+        btnA17.setBackground(new java.awt.Color(255, 204, 255));
+        btnA17.setText("A17");
+        btnA17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 90, -1, -1));
 
-        jButton104.setBackground(new java.awt.Color(255, 204, 255));
-        jButton104.setText("A10");
-        jButton104.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton104, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 90, -1, -1));
+        btnA16.setBackground(new java.awt.Color(255, 204, 255));
+        btnA16.setText("A16");
+        btnA16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnA16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 90, -1, -1));
 
-        jButton105.setText("B11");
-        jButton105.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton105, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 133, -1, -1));
+        btnB17.setText("B17");
+        btnB17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 133, -1, -1));
 
-        jButton106.setText("B07");
-        jButton106.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton106, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 133, -1, -1));
+        btnB13.setText("B13");
+        btnB13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 133, -1, -1));
 
-        jButton107.setText("B09");
-        jButton107.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton107, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 133, -1, -1));
+        btnB15.setText("B15");
+        btnB15.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnB15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnB15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 133, -1, -1));
 
-        jButton108.setBackground(new java.awt.Color(255, 204, 255));
-        jButton108.setText("C10");
-        jButton108.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton108, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 176, -1, -1));
+        btnC16.setBackground(new java.awt.Color(255, 204, 255));
+        btnC16.setText("C16");
+        btnC16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 176, -1, -1));
 
-        jButton109.setText("D11");
-        jButton109.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton109, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 219, -1, -1));
+        btnD17.setText("D17");
+        btnD17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 219, -1, -1));
 
-        jButton110.setText("D07");
-        jButton110.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton110, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 219, -1, -1));
+        btnD13.setText("D13");
+        btnD13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 219, -1, -1));
 
-        jButton111.setBackground(new java.awt.Color(255, 204, 255));
-        jButton111.setText("C08");
-        jButton111.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton111, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 176, -1, -1));
+        btnC14.setBackground(new java.awt.Color(255, 204, 255));
+        btnC14.setText("C14");
+        btnC14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 176, -1, -1));
 
-        jButton112.setText("D09");
-        jButton112.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton112, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 219, -1, -1));
+        btnD15.setText("D15");
+        btnD15.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnD15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnD15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 219, -1, -1));
 
-        jButton113.setBackground(new java.awt.Color(255, 204, 255));
-        jButton113.setText("C07");
-        jButton113.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton113, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 176, -1, -1));
+        btnC13.setBackground(new java.awt.Color(255, 204, 255));
+        btnC13.setText("C13");
+        btnC13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 176, -1, -1));
 
-        jButton114.setBackground(new java.awt.Color(255, 204, 255));
-        jButton114.setText("C11");
-        jButton114.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton114, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 176, -1, -1));
+        btnC17.setBackground(new java.awt.Color(255, 204, 255));
+        btnC17.setText("C17");
+        btnC17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnC17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnC17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 176, -1, -1));
 
-        jButton115.setBackground(new java.awt.Color(255, 204, 255));
-        jButton115.setText("E10");
-        jButton115.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton115, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 262, -1, -1));
+        btnE16.setBackground(new java.awt.Color(255, 204, 255));
+        btnE16.setText("E16");
+        btnE16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 262, -1, -1));
 
-        jButton116.setText("F11");
-        jButton116.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton116, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 305, -1, -1));
+        btnF17.setText("F17");
+        btnF17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 305, -1, -1));
 
-        jButton117.setText("F07");
-        jButton117.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton117, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 305, -1, -1));
+        btnF13.setText("F13");
+        btnF13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 305, -1, -1));
 
-        jButton118.setBackground(new java.awt.Color(255, 204, 255));
-        jButton118.setText("E08");
-        jButton118.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton118, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 262, -1, -1));
+        btnE14.setBackground(new java.awt.Color(255, 204, 255));
+        btnE14.setText("E14");
+        btnE14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 262, -1, -1));
 
-        jButton119.setText("F09");
-        jButton119.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton119, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 305, -1, -1));
+        btnF15.setText("F15");
+        btnF15.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnF15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnF15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 305, -1, -1));
 
-        jButton120.setBackground(new java.awt.Color(255, 204, 255));
-        jButton120.setText("E07");
-        jButton120.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton120, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 262, -1, -1));
+        btnE13.setBackground(new java.awt.Color(255, 204, 255));
+        btnE13.setText("E13");
+        btnE13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 262, -1, -1));
 
-        jButton121.setBackground(new java.awt.Color(255, 204, 255));
-        jButton121.setText("E11");
-        jButton121.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton121, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 262, -1, -1));
+        btnE17.setBackground(new java.awt.Color(255, 204, 255));
+        btnE17.setText("E17");
+        btnE17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnE17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnE17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 262, -1, -1));
 
-        jButton122.setBackground(new java.awt.Color(255, 204, 255));
-        jButton122.setText("G10");
-        jButton122.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton122, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 348, -1, -1));
+        btnG16.setBackground(new java.awt.Color(255, 204, 255));
+        btnG16.setText("G16");
+        btnG16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 348, -1, -1));
 
-        jButton123.setText("H11");
-        jButton123.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton123, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 391, -1, -1));
+        btnH17.setText("H17");
+        btnH17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 391, -1, -1));
 
-        jButton124.setText("H07");
-        jButton124.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton124, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 391, -1, -1));
+        btnH13.setText("H13");
+        btnH13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 391, -1, -1));
 
-        jButton125.setBackground(new java.awt.Color(255, 204, 255));
-        jButton125.setText("G08");
-        jButton125.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton125, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 348, -1, -1));
+        btnG14.setBackground(new java.awt.Color(255, 204, 255));
+        btnG14.setText("G14");
+        btnG14.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG14, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 348, -1, -1));
 
-        jButton126.setText("H09");
-        jButton126.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton126, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 391, -1, -1));
+        btnH15.setText("H15");
+        btnH15.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnH15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnH15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnH15, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 391, -1, -1));
 
-        jButton127.setBackground(new java.awt.Color(255, 204, 255));
-        jButton127.setText("G07");
-        jButton127.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton127, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 348, -1, -1));
+        btnG13.setBackground(new java.awt.Color(255, 204, 255));
+        btnG13.setText("G13");
+        btnG13.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG13, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 348, -1, -1));
 
-        jButton128.setBackground(new java.awt.Color(255, 204, 255));
-        jButton128.setText("G11");
-        jButton128.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton128, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 348, -1, -1));
+        btnG17.setBackground(new java.awt.Color(255, 204, 255));
+        btnG17.setText("G17");
+        btnG17.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnG17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnG17, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 348, -1, -1));
 
-        jButton129.setBackground(new java.awt.Color(255, 204, 255));
-        jButton129.setText("I10");
-        jButton129.setPreferredSize(new java.awt.Dimension(55, 25));
-        getContentPane().add(jButton129, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 434, -1, -1));
+        btnI16.setBackground(new java.awt.Color(255, 204, 255));
+        btnI16.setText("I16");
+        btnI16.setPreferredSize(new java.awt.Dimension(55, 25));
+        btnI16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnI16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnI16, new org.netbeans.lib.awtextra.AbsoluteConstraints(925, 434, -1, -1));
+
+        btnSelected.setBackground(new java.awt.Color(255, 255, 0));
+        btnSelected.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnSelected, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 602, -1, -1));
+
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Selected");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 50, 30));
+
+        btnUnavailable.setBackground(new java.awt.Color(102, 102, 102));
+        btnUnavailable.setPreferredSize(new java.awt.Dimension(55, 25));
+        getContentPane().add(btnUnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 600, -1, -1));
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Unavailable");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 600, 60, 25));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
+        jLabel8.setText("jLabel8");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
+        if (a01 == 1) {
+            btnA01.setBackground(new Color(255, 204, 255));
+            btnA02.setBackground(new Color(255, 204, 255));
+            a01 = 0;
+        }
+        else if (a01 == 0) {
+            btnA01.setBackground(Color.YELLOW);
+            btnA02.setBackground(Color.YELLOW);
+            a01 = 1;
+        }
+    }//GEN-LAST:event_btnA01ActionPerformed
+
+    private void btnA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA02ActionPerformed
+        if (a01 == 1) {
+            btnA01.setBackground(new Color(255, 204, 255));
+            btnA02.setBackground(new Color(255, 204, 255));
+            a01 = 0;
+        }
+        else if (a01 == 0) {
+            btnA01.setBackground(Color.YELLOW);
+            btnA02.setBackground(Color.YELLOW);
+            a01 = 1;
+        }
+    }//GEN-LAST:event_btnA02ActionPerformed
+
+    private void btnA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA04ActionPerformed
+        if (a04 == 1) {
+            btnA04.setBackground(new Color(255, 204, 255));
+            btnA05.setBackground(new Color(255, 204, 255));
+            a04 = 0;
+        }
+        else if (a04 == 0) {
+            btnA04.setBackground(Color.YELLOW);
+            btnA05.setBackground(Color.YELLOW);
+            a04 = 1;
+        }
+    }//GEN-LAST:event_btnA04ActionPerformed
+
+    private void btnA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA05ActionPerformed
+        if (a04 == 1) {
+            btnA04.setBackground(new Color(255, 204, 255));
+            btnA05.setBackground(new Color(255, 204, 255));
+            a04 = 0;
+        }
+        else if (a04 == 0) {
+            btnA04.setBackground(Color.YELLOW);
+            btnA05.setBackground(Color.YELLOW);
+            a04 = 1;
+        }
+    }//GEN-LAST:event_btnA05ActionPerformed
+
+    private void btnA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA07ActionPerformed
+        if (a07 == 1) {
+            btnA07.setBackground(new Color(255, 204, 255));
+            btnA08.setBackground(new Color(255, 204, 255));
+            a07 = 0;
+        }
+        else if (a07 == 0) {
+            btnA07.setBackground(Color.YELLOW);
+            btnA08.setBackground(Color.YELLOW);
+            a07 = 1;
+        }
+    }//GEN-LAST:event_btnA07ActionPerformed
+
+    private void btnA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA08ActionPerformed
+        if (a07 == 1) {
+            btnA07.setBackground(new Color(255, 204, 255));
+            btnA08.setBackground(new Color(255, 204, 255));
+            a07 = 0;
+        }
+        else if (a07 == 0) {
+            btnA07.setBackground(Color.YELLOW);
+            btnA08.setBackground(Color.YELLOW);
+            a07 = 1;
+        }
+    }//GEN-LAST:event_btnA08ActionPerformed
+
+    private void btnA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA10ActionPerformed
+        if (a10 == 1) {
+            btnA10.setBackground(new Color(255, 204, 255));
+            btnA11.setBackground(new Color(255, 204, 255));
+            a10 = 0;
+        }
+        else if (a10 == 0) {
+            btnA10.setBackground(Color.YELLOW);
+            btnA11.setBackground(Color.YELLOW);
+            a10 = 1;
+        }
+    }//GEN-LAST:event_btnA10ActionPerformed
+
+    private void btnA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA11ActionPerformed
+        if (a10 == 1) {
+            btnA10.setBackground(new Color(255, 204, 255));
+            btnA11.setBackground(new Color(255, 204, 255));
+            a10 = 0;
+        }
+        else if (a10 == 0) {
+            btnA10.setBackground(Color.YELLOW);
+            btnA11.setBackground(Color.YELLOW);
+            a10 = 1;
+        }
+    }//GEN-LAST:event_btnA11ActionPerformed
+
+    private void btnA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA13ActionPerformed
+        if (a13 == 1) {
+            btnA13.setBackground(new Color(255, 204, 255));
+            btnA14.setBackground(new Color(255, 204, 255));
+            a13 = 0;
+        }
+        else if (a13 == 0) {
+            btnA13.setBackground(Color.YELLOW);
+            btnA14.setBackground(Color.YELLOW);
+            a13 = 1;
+        }
+    }//GEN-LAST:event_btnA13ActionPerformed
+
+    private void btnA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA14ActionPerformed
+        if (a13 == 1) {
+            btnA13.setBackground(new Color(255, 204, 255));
+            btnA14.setBackground(new Color(255, 204, 255));
+            a13 = 0;
+        }
+        else if (a13 == 0) {
+            btnA13.setBackground(Color.YELLOW);
+            btnA14.setBackground(Color.YELLOW);
+            a13 = 1;
+        }
+    }//GEN-LAST:event_btnA14ActionPerformed
+
+    private void btnA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA16ActionPerformed
+        if (a16 == 1) {
+            btnA16.setBackground(new Color(255, 204, 255));
+            btnA17.setBackground(new Color(255, 204, 255));
+            a16 = 0;
+        }
+        else if (a16 == 0) {
+            btnA16.setBackground(Color.YELLOW);
+            btnA17.setBackground(Color.YELLOW);
+            a16 = 1;
+        }
+    }//GEN-LAST:event_btnA16ActionPerformed
+
+    private void btnA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA17ActionPerformed
+        if (a16 == 1) {
+            btnA16.setBackground(new Color(255, 204, 255));
+            btnA17.setBackground(new Color(255, 204, 255));
+            a16 = 0;
+        }
+        else if (a16 == 0) {
+            btnA16.setBackground(Color.YELLOW);
+            btnA17.setBackground(Color.YELLOW);
+            a16 = 1;
+        }
+    }//GEN-LAST:event_btnA17ActionPerformed
+
+    private void btnB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB01ActionPerformed
+        if (b01 == 1) {
+            btnB01.setBackground(Color.LIGHT_GRAY);
+            b01 = 0;
+        }
+        else if (b01 == 0) {
+            btnB01.setBackground(Color.YELLOW);
+            b01 = 1;
+        }
+    }//GEN-LAST:event_btnB01ActionPerformed
+
+    private void btnB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB03ActionPerformed
+        if (b03 == 1) {
+            btnB03.setBackground(Color.LIGHT_GRAY);
+            b03 = 0;
+        }
+        else if (b03 == 0) {
+            btnB03.setBackground(Color.YELLOW);
+            b03 = 1;
+        }
+    }//GEN-LAST:event_btnB03ActionPerformed
+
+    private void btnB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB05ActionPerformed
+        if (b05 == 1) {
+            btnB05.setBackground(Color.LIGHT_GRAY);
+            b05 = 0;
+        }
+        else if (b05 == 0) {
+            btnB05.setBackground(Color.YELLOW);
+            b05 = 1;
+        }
+    }//GEN-LAST:event_btnB05ActionPerformed
+
+    private void btnB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB07ActionPerformed
+        if (b07 == 1) {
+            btnB07.setBackground(Color.LIGHT_GRAY);
+            b07 = 0;
+        }
+        else if (b07 == 0) {
+            btnB07.setBackground(Color.YELLOW);
+            b07 = 1;
+        }
+    }//GEN-LAST:event_btnB07ActionPerformed
+
+    private void btnB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB09ActionPerformed
+        if (b09 == 1) {
+            btnB09.setBackground(Color.LIGHT_GRAY);
+            b09 = 0;
+        }
+        else if (b09 == 0) {
+            btnB09.setBackground(Color.YELLOW);
+            b09 = 1;
+        }
+    }//GEN-LAST:event_btnB09ActionPerformed
+
+    private void btnB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB11ActionPerformed
+        if (b11 == 1) {
+            btnB11.setBackground(Color.LIGHT_GRAY);
+            b11 = 0;
+        }
+        else if (b11 == 0) {
+            btnB11.setBackground(Color.YELLOW);
+            b11 = 1;
+        }
+    }//GEN-LAST:event_btnB11ActionPerformed
+
+    private void btnB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB13ActionPerformed
+        if (b13 == 1) {
+            btnB13.setBackground(Color.LIGHT_GRAY);
+            b13 = 0;
+        }
+        else if (b13 == 0) {
+            btnB13.setBackground(Color.YELLOW);
+            b13 = 1;
+        }
+    }//GEN-LAST:event_btnB13ActionPerformed
+
+    private void btnB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB15ActionPerformed
+        if (b15 == 1) {
+            btnB15.setBackground(Color.LIGHT_GRAY);
+            b15 = 0;
+        }
+        else if (b15 == 0) {
+            btnB15.setBackground(Color.YELLOW);
+            b15 = 1;
+        }
+    }//GEN-LAST:event_btnB15ActionPerformed
+
+    private void btnB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB17ActionPerformed
+        if (b17 == 1) {
+            btnB17.setBackground(Color.LIGHT_GRAY);
+            b17 = 0;
+        }
+        else if (b17 == 0) {
+            btnB17.setBackground(Color.YELLOW);
+            b17 = 1;
+        }
+    }//GEN-LAST:event_btnB17ActionPerformed
+
+    private void btnC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC01ActionPerformed
+        if (c01 == 1) {
+            btnC01.setBackground(new Color(255, 204, 255));
+            btnC02.setBackground(new Color(255, 204, 255));
+            c01 = 0;
+        }
+        else if (c01 == 0) {
+            btnC01.setBackground(Color.YELLOW);
+            btnC02.setBackground(Color.YELLOW);
+            c01 = 1;
+        }
+    }//GEN-LAST:event_btnC01ActionPerformed
+
+    private void btnC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC02ActionPerformed
+        if (c01 == 1) {
+            btnC01.setBackground(new Color(255, 204, 255));
+            btnC02.setBackground(new Color(255, 204, 255));
+            c01 = 0;
+        }
+        else if (c01 == 0) {
+            btnC01.setBackground(Color.YELLOW);
+            btnC02.setBackground(Color.YELLOW);
+            c01 = 1;
+        }
+    }//GEN-LAST:event_btnC02ActionPerformed
+
+    private void btnC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC04ActionPerformed
+        if (c04 == 1) {
+            btnC04.setBackground(new Color(255, 204, 255));
+            btnC05.setBackground(new Color(255, 204, 255));
+            c04 = 0;
+        }
+        else if (c04 == 0) {
+            btnC04.setBackground(Color.YELLOW);
+            btnC05.setBackground(Color.YELLOW);
+            c04 = 1;
+        }
+    }//GEN-LAST:event_btnC04ActionPerformed
+
+    private void btnC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC05ActionPerformed
+        if (c04 == 1) {
+            btnC04.setBackground(new Color(255, 204, 255));
+            btnC05.setBackground(new Color(255, 204, 255));
+            c04 = 0;
+        }
+        else if (c04 == 0) {
+            btnC04.setBackground(Color.YELLOW);
+            btnC05.setBackground(Color.YELLOW);
+            c04 = 1;
+        }
+    }//GEN-LAST:event_btnC05ActionPerformed
+
+    private void btnC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC07ActionPerformed
+        if (c07 == 1) {
+            btnC07.setBackground(new Color(255, 204, 255));
+            btnC08.setBackground(new Color(255, 204, 255));
+            c07 = 0;
+        }
+        else if (c07 == 0) {
+            btnC07.setBackground(Color.YELLOW);
+            btnC08.setBackground(Color.YELLOW);
+            c07 = 1;
+        }
+    }//GEN-LAST:event_btnC07ActionPerformed
+
+    private void btnC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC08ActionPerformed
+        if (c07 == 1) {
+            btnC07.setBackground(new Color(255, 204, 255));
+            btnC08.setBackground(new Color(255, 204, 255));
+            c07 = 0;
+        }
+        else if (c07 == 0) {
+            btnC07.setBackground(Color.YELLOW);
+            btnC08.setBackground(Color.YELLOW);
+            c07 = 1;
+        }
+    }//GEN-LAST:event_btnC08ActionPerformed
+
+    private void btnC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC10ActionPerformed
+        if (c10 == 1) {
+            btnC10.setBackground(new Color(255, 204, 255));
+            btnC11.setBackground(new Color(255, 204, 255));
+            c10 = 0;
+        }
+        else if (c10 == 0) {
+            btnC10.setBackground(Color.YELLOW);
+            btnC11.setBackground(Color.YELLOW);
+            c10 = 1;
+        }
+    }//GEN-LAST:event_btnC10ActionPerformed
+
+    private void btnC11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC11ActionPerformed
+        if (c10 == 1) {
+            btnC10.setBackground(new Color(255, 204, 255));
+            btnC11.setBackground(new Color(255, 204, 255));
+            c10 = 0;
+        }
+        else if (c10 == 0) {
+            btnC10.setBackground(Color.YELLOW);
+            btnC11.setBackground(Color.YELLOW);
+            c10 = 1;
+        }
+    }//GEN-LAST:event_btnC11ActionPerformed
+
+    private void btnC13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC13ActionPerformed
+        if (c13 == 1) {
+            btnC13.setBackground(new Color(255, 204, 255));
+            btnC14.setBackground(new Color(255, 204, 255));
+            c13 = 0;
+        }
+        else if (c13 == 0) {
+            btnC13.setBackground(Color.YELLOW);
+            btnC14.setBackground(Color.YELLOW);
+            c13 = 1;
+        }
+    }//GEN-LAST:event_btnC13ActionPerformed
+
+    private void btnC14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC14ActionPerformed
+        if (c13 == 1) {
+            btnC13.setBackground(new Color(255, 204, 255));
+            btnC14.setBackground(new Color(255, 204, 255));
+            c13 = 0;
+        }
+        else if (c13 == 0) {
+            btnC13.setBackground(Color.YELLOW);
+            btnC14.setBackground(Color.YELLOW);
+            c13 = 1;
+        }
+    }//GEN-LAST:event_btnC14ActionPerformed
+
+    private void btnC16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC16ActionPerformed
+        if (c16 == 1) {
+            btnC16.setBackground(new Color(255, 204, 255));
+            btnC17.setBackground(new Color(255, 204, 255));
+            c16 = 0;
+        }
+        else if (c16 == 0) {
+            btnC16.setBackground(Color.YELLOW);
+            btnC17.setBackground(Color.YELLOW);
+            c16 = 1;
+        }
+    }//GEN-LAST:event_btnC16ActionPerformed
+
+    private void btnC17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC17ActionPerformed
+        if (c16 == 1) {
+            btnC16.setBackground(new Color(255, 204, 255));
+            btnC17.setBackground(new Color(255, 204, 255));
+            c16 = 0;
+        }
+        else if (c16 == 0) {
+            btnC16.setBackground(Color.YELLOW);
+            btnC17.setBackground(Color.YELLOW);
+            c16 = 1;
+        }
+    }//GEN-LAST:event_btnC17ActionPerformed
+
+    private void btnD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD01ActionPerformed
+        if (d01 == 1) {
+            btnD01.setBackground(Color.LIGHT_GRAY);
+            d01 = 0;
+        }
+        else if (d01 == 0) {
+            btnD01.setBackground(Color.YELLOW);
+            d01 = 1;
+        }
+    }//GEN-LAST:event_btnD01ActionPerformed
+
+    private void btnD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD03ActionPerformed
+        if (d03 == 1) {
+            btnD03.setBackground(Color.LIGHT_GRAY);
+            d03 = 0;
+        }
+        else if (d03 == 0) {
+            btnD03.setBackground(Color.YELLOW);
+            d03 = 1;
+        }
+    }//GEN-LAST:event_btnD03ActionPerformed
+
+    private void btnD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD05ActionPerformed
+        if (d05 == 1) {
+            btnD05.setBackground(Color.LIGHT_GRAY);
+            d05 = 0;
+        }
+        else if (d05 == 0) {
+            btnD05.setBackground(Color.YELLOW);
+            d05 = 1;
+        }
+    }//GEN-LAST:event_btnD05ActionPerformed
+
+    private void btnD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD07ActionPerformed
+        if (d07 == 1) {
+            btnD07.setBackground(Color.LIGHT_GRAY);
+            d07 = 0;
+        }
+        else if (d07 == 0) {
+            btnD07.setBackground(Color.YELLOW);
+            d07 = 1;
+        }
+    }//GEN-LAST:event_btnD07ActionPerformed
+
+    private void btnD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD09ActionPerformed
+        if (d09 == 1) {
+            btnD09.setBackground(Color.LIGHT_GRAY);
+            d09 = 0;
+        }
+        else if (d09 == 0) {
+            btnD09.setBackground(Color.YELLOW);
+            d09 = 1;
+        }
+    }//GEN-LAST:event_btnD09ActionPerformed
+
+    private void btnD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD11ActionPerformed
+        if (d11 == 1) {
+            btnD11.setBackground(Color.LIGHT_GRAY);
+            d11 = 0;
+        }
+        else if (d11 == 0) {
+            btnD11.setBackground(Color.YELLOW);
+            d11 = 1;
+        }
+    }//GEN-LAST:event_btnD11ActionPerformed
+
+    private void btnD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD13ActionPerformed
+        if (d13 == 1) {
+            btnD13.setBackground(Color.LIGHT_GRAY);
+            d13 = 0;
+        }
+        else if (d13 == 0) {
+            btnD13.setBackground(Color.YELLOW);
+            d13 = 1;
+        }
+    }//GEN-LAST:event_btnD13ActionPerformed
+
+    private void btnD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD15ActionPerformed
+        if (d15 == 1) {
+            btnD15.setBackground(Color.LIGHT_GRAY);
+            d15 = 0;
+        }
+        else if (d15 == 0) {
+            btnD15.setBackground(Color.YELLOW);
+            d15 = 1;
+        }
+    }//GEN-LAST:event_btnD15ActionPerformed
+
+    private void btnD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD17ActionPerformed
+        if (d17 == 1) {
+            btnD17.setBackground(Color.LIGHT_GRAY);
+            d17 = 0;
+        }
+        else if (d17 == 0) {
+            btnD17.setBackground(Color.YELLOW);
+            d17 = 1;
+        }
+    }//GEN-LAST:event_btnD17ActionPerformed
+
+    private void btnE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE01ActionPerformed
+        if (e01 == 1) {
+            btnE01.setBackground(new Color(255, 204, 255));
+            btnE02.setBackground(new Color(255, 204, 255));
+            e01 = 0;
+        }
+        else if (e01 == 0) {
+            btnE01.setBackground(Color.YELLOW);
+            btnE02.setBackground(Color.YELLOW);
+            e01 = 1;
+        }
+    }//GEN-LAST:event_btnE01ActionPerformed
+
+    private void btnE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE02ActionPerformed
+        if (e01 == 1) {
+            btnE01.setBackground(new Color(255, 204, 255));
+            btnE02.setBackground(new Color(255, 204, 255));
+            e01 = 0;
+        }
+        else if (e01 == 0) {
+            btnE01.setBackground(Color.YELLOW);
+            btnE02.setBackground(Color.YELLOW);
+            e01 = 1;
+        }
+    }//GEN-LAST:event_btnE02ActionPerformed
+
+    private void btnE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE04ActionPerformed
+        if (e04 == 1) {
+            btnE04.setBackground(new Color(255, 204, 255));
+            btnE05.setBackground(new Color(255, 204, 255));
+            e04 = 0;
+        }
+        else if (e04 == 0) {
+            btnE04.setBackground(Color.YELLOW);
+            btnE05.setBackground(Color.YELLOW);
+            e04 = 1;
+        }
+    }//GEN-LAST:event_btnE04ActionPerformed
+
+    private void btnE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE05ActionPerformed
+        if (e04 == 1) {
+            btnE04.setBackground(new Color(255, 204, 255));
+            btnE05.setBackground(new Color(255, 204, 255));
+            e04 = 0;
+        }
+        else if (e04 == 0) {
+            btnE04.setBackground(Color.YELLOW);
+            btnE05.setBackground(Color.YELLOW);
+            e04 = 1;
+        }
+    }//GEN-LAST:event_btnE05ActionPerformed
+
+    private void btnE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE07ActionPerformed
+        if (e07 == 1) {
+            btnE07.setBackground(new Color(255, 204, 255));
+            btnE08.setBackground(new Color(255, 204, 255));
+            e07 = 0;
+        }
+        else if (e07 == 0) {
+            btnE07.setBackground(Color.YELLOW);
+            btnE08.setBackground(Color.YELLOW);
+            e07 = 1;
+        }
+    }//GEN-LAST:event_btnE07ActionPerformed
+
+    private void btnE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE08ActionPerformed
+        if (e07 == 1) {
+            btnE07.setBackground(new Color(255, 204, 255));
+            btnE08.setBackground(new Color(255, 204, 255));
+            e07 = 0;
+        }
+        else if (e07 == 0) {
+            btnE07.setBackground(Color.YELLOW);
+            btnE08.setBackground(Color.YELLOW);
+            e07 = 1;
+        }
+    }//GEN-LAST:event_btnE08ActionPerformed
+
+    private void btnE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE10ActionPerformed
+        if (e10 == 1) {
+            btnE10.setBackground(new Color(255, 204, 255));
+            btnE11.setBackground(new Color(255, 204, 255));
+            e10 = 0;
+        }
+        else if (e10 == 0) {
+            btnE10.setBackground(Color.YELLOW);
+            btnE11.setBackground(Color.YELLOW);
+            e10 = 1;
+        }
+    }//GEN-LAST:event_btnE10ActionPerformed
+
+    private void btnE11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE11ActionPerformed
+        if (e10 == 1) {
+            btnE10.setBackground(new Color(255, 204, 255));
+            btnE11.setBackground(new Color(255, 204, 255));
+            e10 = 0;
+        }
+        else if (e10 == 0) {
+            btnE10.setBackground(Color.YELLOW);
+            btnE11.setBackground(Color.YELLOW);
+            e10 = 1;
+        }
+    }//GEN-LAST:event_btnE11ActionPerformed
+
+    private void btnE13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE13ActionPerformed
+        if (e13 == 1) {
+            btnE13.setBackground(new Color(255, 204, 255));
+            btnE14.setBackground(new Color(255, 204, 255));
+            e13 = 0;
+        }
+        else if (e13 == 0) {
+            btnE13.setBackground(Color.YELLOW);
+            btnE14.setBackground(Color.YELLOW);
+            e13 = 1;
+        }
+    }//GEN-LAST:event_btnE13ActionPerformed
+
+    private void btnE14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE14ActionPerformed
+        if (e13 == 1) {
+            btnE13.setBackground(new Color(255, 204, 255));
+            btnE14.setBackground(new Color(255, 204, 255));
+            e13 = 0;
+        }
+        else if (e13 == 0) {
+            btnE13.setBackground(Color.YELLOW);
+            btnE14.setBackground(Color.YELLOW);
+            e13 = 1;
+        }
+    }//GEN-LAST:event_btnE14ActionPerformed
+
+    private void btnE16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE16ActionPerformed
+        if (e16 == 1) {
+            btnE16.setBackground(new Color(255, 204, 255));
+            btnE17.setBackground(new Color(255, 204, 255));
+            e16 = 0;
+        }
+        else if (e16 == 0) {
+            btnE16.setBackground(Color.YELLOW);
+            btnE17.setBackground(Color.YELLOW);
+            e16 = 1;
+        }
+    }//GEN-LAST:event_btnE16ActionPerformed
+
+    private void btnE17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE17ActionPerformed
+        if (e16 == 1) {
+            btnE16.setBackground(new Color(255, 204, 255));
+            btnE17.setBackground(new Color(255, 204, 255));
+            e16 = 0;
+        }
+        else if (e16 == 0) {
+            btnE16.setBackground(Color.YELLOW);
+            btnE17.setBackground(Color.YELLOW);
+            e16 = 1;
+        }
+    }//GEN-LAST:event_btnE17ActionPerformed
+
+    private void btnF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF01ActionPerformed
+        if (f01 == 1) {
+            btnF01.setBackground(Color.LIGHT_GRAY);
+            f01 = 0;
+        }
+        else if (f01 == 0) {
+            btnF01.setBackground(Color.YELLOW);
+            f01 = 1;
+        }
+    }//GEN-LAST:event_btnF01ActionPerformed
+
+    private void btnF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF03ActionPerformed
+        if (f03 == 1) {
+            btnF03.setBackground(Color.LIGHT_GRAY);
+            f03 = 0;
+        }
+        else if (f03 == 0) {
+            btnF03.setBackground(Color.YELLOW);
+            f03 = 1;
+        }
+    }//GEN-LAST:event_btnF03ActionPerformed
+
+    private void btnF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF05ActionPerformed
+        if (f05 == 1) {
+            btnF05.setBackground(Color.LIGHT_GRAY);
+            f05 = 0;
+        }
+        else if (f05 == 0) {
+            btnF05.setBackground(Color.YELLOW);
+            f05 = 1;
+        }
+    }//GEN-LAST:event_btnF05ActionPerformed
+
+    private void btnF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF07ActionPerformed
+        if (f07 == 1) {
+            btnF07.setBackground(Color.LIGHT_GRAY);
+            f07 = 0;
+        }
+        else if (f07 == 0) {
+            btnF07.setBackground(Color.YELLOW);
+            f07 = 1;
+        }
+    }//GEN-LAST:event_btnF07ActionPerformed
+
+    private void btnF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF09ActionPerformed
+        if (f09 == 1) {
+            btnF09.setBackground(Color.LIGHT_GRAY);
+            f09 = 0;
+        }
+        else if (f09 == 0) {
+            btnF09.setBackground(Color.YELLOW);
+            f09 = 1;
+        }
+    }//GEN-LAST:event_btnF09ActionPerformed
+
+    private void btnF11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF11ActionPerformed
+        if (f11 == 1) {
+            btnF11.setBackground(Color.LIGHT_GRAY);
+            f11 = 0;
+        }
+        else if (f11 == 0) {
+            btnF11.setBackground(Color.YELLOW);
+            f11 = 1;
+        }
+    }//GEN-LAST:event_btnF11ActionPerformed
+
+    private void btnF13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF13ActionPerformed
+        if (f13 == 1) {
+            btnF13.setBackground(Color.LIGHT_GRAY);
+            f13 = 0;
+        }
+        else if (f13 == 0) {
+            btnF13.setBackground(Color.YELLOW);
+            f13 = 1;
+        }
+    }//GEN-LAST:event_btnF13ActionPerformed
+
+    private void btnF15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF15ActionPerformed
+        if (f15 == 1) {
+            btnF15.setBackground(Color.LIGHT_GRAY);
+            f15 = 0;
+        }
+        else if (f15 == 0) {
+            btnF15.setBackground(Color.YELLOW);
+            f15 = 1;
+        }
+    }//GEN-LAST:event_btnF15ActionPerformed
+
+    private void btnF17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF17ActionPerformed
+        if (f17 == 1) {
+            btnF17.setBackground(Color.LIGHT_GRAY);
+            f17 = 0;
+        }
+        else if (f17 == 0) {
+            btnF17.setBackground(Color.YELLOW);
+            f17 = 1;
+        }
+    }//GEN-LAST:event_btnF17ActionPerformed
+
+    private void btnG01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG01ActionPerformed
+        if (g01 == 1) {
+            btnG01.setBackground(new Color(255, 204, 255));
+            btnG02.setBackground(new Color(255, 204, 255));
+            g01 = 0;
+        }
+        else if (g01 == 0) {
+            btnG01.setBackground(Color.YELLOW);
+            btnG02.setBackground(Color.YELLOW);
+            g01 = 1;
+        }
+    }//GEN-LAST:event_btnG01ActionPerformed
+
+    private void btnG02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG02ActionPerformed
+        if (g01 == 1) {
+            btnG01.setBackground(new Color(255, 204, 255));
+            btnG02.setBackground(new Color(255, 204, 255));
+            g01 = 0;
+        }
+        else if (g01 == 0) {
+            btnG01.setBackground(Color.YELLOW);
+            btnG02.setBackground(Color.YELLOW);
+            g01 = 1;
+        }
+    }//GEN-LAST:event_btnG02ActionPerformed
+
+    private void btnG04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG04ActionPerformed
+        if (g04 == 1) {
+            btnG04.setBackground(new Color(255, 204, 255));
+            btnG05.setBackground(new Color(255, 204, 255));
+            g04 = 0;
+        }
+        else if (g04 == 0) {
+            btnG04.setBackground(Color.YELLOW);
+            btnG05.setBackground(Color.YELLOW);
+            g04 = 1;
+        }
+    }//GEN-LAST:event_btnG04ActionPerformed
+
+    private void btnG05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG05ActionPerformed
+        if (g04 == 1) {
+            btnG04.setBackground(new Color(255, 204, 255));
+            btnG05.setBackground(new Color(255, 204, 255));
+            g04 = 0;
+        }
+        else if (g04 == 0) {
+            btnG04.setBackground(Color.YELLOW);
+            btnG05.setBackground(Color.YELLOW);
+            g04 = 1;
+        }
+    }//GEN-LAST:event_btnG05ActionPerformed
+
+    private void btnG07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG07ActionPerformed
+        if (g07 == 1) {
+            btnG07.setBackground(new Color(255, 204, 255));
+            btnG08.setBackground(new Color(255, 204, 255));
+            g07 = 0;
+        }
+        else if (g07 == 0) {
+            btnG07.setBackground(Color.YELLOW);
+            btnG08.setBackground(Color.YELLOW);
+            g07 = 1;
+        }
+    }//GEN-LAST:event_btnG07ActionPerformed
+
+    private void btnG08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG08ActionPerformed
+        if (g07 == 1) {
+            btnG07.setBackground(new Color(255, 204, 255));
+            btnG08.setBackground(new Color(255, 204, 255));
+            g07 = 0;
+        }
+        else if (g07 == 0) {
+            btnG07.setBackground(Color.YELLOW);
+            btnG08.setBackground(Color.YELLOW);
+            g07 = 1;
+        }
+    }//GEN-LAST:event_btnG08ActionPerformed
+
+    private void btnG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG10ActionPerformed
+        if (g10 == 1) {
+            btnG10.setBackground(new Color(255, 204, 255));
+            btnG11.setBackground(new Color(255, 204, 255));
+            g10 = 0;
+        }
+        else if (g10 == 0) {
+            btnG10.setBackground(Color.YELLOW);
+            btnG11.setBackground(Color.YELLOW);
+            g10 = 1;
+        }
+    }//GEN-LAST:event_btnG10ActionPerformed
+
+    private void btnG11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG11ActionPerformed
+        if (g10 == 1) {
+            btnG10.setBackground(new Color(255, 204, 255));
+            btnG11.setBackground(new Color(255, 204, 255));
+            g10 = 0;
+        }
+        else if (g10 == 0) {
+            btnG10.setBackground(Color.YELLOW);
+            btnG11.setBackground(Color.YELLOW);
+            g10 = 1;
+        }
+    }//GEN-LAST:event_btnG11ActionPerformed
+
+    private void btnG13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG13ActionPerformed
+        if (g13 == 1) {
+            btnG13.setBackground(new Color(255, 204, 255));
+            btnG14.setBackground(new Color(255, 204, 255));
+            g13 = 0;
+        }
+        else if (g13 == 0) {
+            btnG13.setBackground(Color.YELLOW);
+            btnG14.setBackground(Color.YELLOW);
+            g13 = 1;
+        }
+    }//GEN-LAST:event_btnG13ActionPerformed
+
+    private void btnG14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG14ActionPerformed
+        if (g13 == 1) {
+            btnG13.setBackground(new Color(255, 204, 255));
+            btnG14.setBackground(new Color(255, 204, 255));
+            g13 = 0;
+        }
+        else if (g13 == 0) {
+            btnG13.setBackground(Color.YELLOW);
+            btnG14.setBackground(Color.YELLOW);
+            g13 = 1;
+        }
+    }//GEN-LAST:event_btnG14ActionPerformed
+
+    private void btnG16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG16ActionPerformed
+        if (g16 == 1) {
+            btnG16.setBackground(new Color(255, 204, 255));
+            btnG17.setBackground(new Color(255, 204, 255));
+            g16 = 0;
+        }
+        else if (g16 == 0) {
+            btnG16.setBackground(Color.YELLOW);
+            btnG17.setBackground(Color.YELLOW);
+            g16 = 1;
+        }
+    }//GEN-LAST:event_btnG16ActionPerformed
+
+    private void btnG17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG17ActionPerformed
+        if (g16 == 1) {
+            btnG16.setBackground(new Color(255, 204, 255));
+            btnG17.setBackground(new Color(255, 204, 255));
+            g16 = 0;
+        }
+        else if (g16 == 0) {
+            btnG16.setBackground(Color.YELLOW);
+            btnG17.setBackground(Color.YELLOW);
+            g16 = 1;
+        }
+    }//GEN-LAST:event_btnG17ActionPerformed
+
+    private void btnH01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH01ActionPerformed
+        if (h01 == 1) {
+            btnH01.setBackground(Color.LIGHT_GRAY);
+            h01 = 0;
+        }
+        else if (h01 == 0) {
+            btnH01.setBackground(Color.YELLOW);
+            h01 = 1;
+        }
+    }//GEN-LAST:event_btnH01ActionPerformed
+
+    private void btnH03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH03ActionPerformed
+        if (h03 == 1) {
+            btnH03.setBackground(Color.LIGHT_GRAY);
+            h03 = 0;
+        }
+        else if (h03 == 0) {
+            btnH03.setBackground(Color.YELLOW);
+            h03 = 1;
+        }
+    }//GEN-LAST:event_btnH03ActionPerformed
+
+    private void btnH05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH05ActionPerformed
+        if (h05 == 1) {
+            btnH05.setBackground(Color.LIGHT_GRAY);
+            h05 = 0;
+        }
+        else if (h05 == 0) {
+            btnH05.setBackground(Color.YELLOW);
+            h05 = 1;
+        }
+    }//GEN-LAST:event_btnH05ActionPerformed
+
+    private void btnH07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH07ActionPerformed
+        if (h07 == 1) {
+            btnH07.setBackground(Color.LIGHT_GRAY);
+            h07 = 0;
+        }
+        else if (h07 == 0) {
+            btnH07.setBackground(Color.YELLOW);
+            h07 = 1;
+        }
+    }//GEN-LAST:event_btnH07ActionPerformed
+
+    private void btnH09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH09ActionPerformed
+        if (h09 == 1) {
+            btnH09.setBackground(Color.LIGHT_GRAY);
+            h09 = 0;
+        }
+        else if (h09 == 0) {
+            btnH09.setBackground(Color.YELLOW);
+            h09 = 1;
+        }
+    }//GEN-LAST:event_btnH09ActionPerformed
+
+    private void btnH11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH11ActionPerformed
+        if (h11 == 1) {
+            btnH11.setBackground(Color.LIGHT_GRAY);
+            h11 = 0;
+        }
+        else if (h11 == 0) {
+            btnH11.setBackground(Color.YELLOW);
+            h11 = 1;
+        }
+    }//GEN-LAST:event_btnH11ActionPerformed
+
+    private void btnH13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH13ActionPerformed
+        if (h13 == 1) {
+            btnH13.setBackground(Color.LIGHT_GRAY);
+            h13 = 0;
+        }
+        else if (h13 == 0) {
+            btnH13.setBackground(Color.YELLOW);
+            h13 = 1;
+        }
+    }//GEN-LAST:event_btnH13ActionPerformed
+
+    private void btnH15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH15ActionPerformed
+        if (h15 == 1) {
+            btnH15.setBackground(Color.LIGHT_GRAY);
+            h15 = 0;
+        }
+        else if (h15 == 0) {
+            btnH15.setBackground(Color.YELLOW);
+            h15 = 1;
+        }
+    }//GEN-LAST:event_btnH15ActionPerformed
+
+    private void btnH17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnH17ActionPerformed
+        if (h17 == 1) {
+            btnH17.setBackground(Color.LIGHT_GRAY);
+            h17 = 0;
+        }
+        else if (h17 == 0) {
+            btnH17.setBackground(Color.YELLOW);
+            h17 = 1;
+        }
+    }//GEN-LAST:event_btnH17ActionPerformed
+
+    private void btnI01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI01ActionPerformed
+        if (i01 == 1) {
+            btnI01.setBackground(new Color(255, 204, 255));
+            btnI02.setBackground(new Color(255, 204, 255));
+            i01 = 0;
+        }
+        else if (i01 == 0) {
+            btnI01.setBackground(Color.YELLOW);
+            btnI02.setBackground(Color.YELLOW);
+            i01 = 1;
+        }
+    }//GEN-LAST:event_btnI01ActionPerformed
+
+    private void btnI02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI02ActionPerformed
+        if (i01 == 1) {
+            btnI01.setBackground(new Color(255, 204, 255));
+            btnI02.setBackground(new Color(255, 204, 255));
+            i01 = 0;
+        }
+        else if (i01 == 0) {
+            btnI01.setBackground(Color.YELLOW);
+            btnI02.setBackground(Color.YELLOW);
+            i01 = 1;
+        }
+    }//GEN-LAST:event_btnI02ActionPerformed
+
+    private void btnI04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI04ActionPerformed
+        if (i04 == 1) {
+            btnI04.setBackground(new Color(255, 204, 255));
+            btnI05.setBackground(new Color(255, 204, 255));
+            i04 = 0;
+        }
+        else if (i04 == 0) {
+            btnI04.setBackground(Color.YELLOW);
+            btnI05.setBackground(Color.YELLOW);
+            i04 = 1;
+        }
+    }//GEN-LAST:event_btnI04ActionPerformed
+
+    private void btnI05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI05ActionPerformed
+        if (i04 == 1) {
+            btnI04.setBackground(new Color(255, 204, 255));
+            btnI05.setBackground(new Color(255, 204, 255));
+            i04 = 0;
+        }
+        else if (i04 == 0) {
+            btnI04.setBackground(Color.YELLOW);
+            btnI05.setBackground(Color.YELLOW);
+            i04 = 1;
+        }
+    }//GEN-LAST:event_btnI05ActionPerformed
+
+    private void btnI07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI07ActionPerformed
+        if (i07 == 1) {
+            btnI07.setBackground(new Color(255, 204, 255));
+            btnI08.setBackground(new Color(255, 204, 255));
+            i07 = 0;
+        }
+        else if (i07 == 0) {
+            btnI07.setBackground(Color.YELLOW);
+            btnI08.setBackground(Color.YELLOW);
+            i07 = 1;
+        }
+    }//GEN-LAST:event_btnI07ActionPerformed
+
+    private void btnI08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI08ActionPerformed
+        if (i07 == 1) {
+            btnI07.setBackground(new Color(255, 204, 255));
+            btnI08.setBackground(new Color(255, 204, 255));
+            i07 = 0;
+        }
+        else if (i07 == 0) {
+            btnI07.setBackground(Color.YELLOW);
+            btnI08.setBackground(Color.YELLOW);
+            i07 = 1;
+        }
+    }//GEN-LAST:event_btnI08ActionPerformed
+
+    private void btnI10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI10ActionPerformed
+        if (i10 == 1) {
+            btnI10.setBackground(new Color(255, 204, 255));
+            btnI11.setBackground(new Color(255, 204, 255));
+            i10 = 0;
+        }
+        else if (i10 == 0) {
+            btnI10.setBackground(Color.YELLOW);
+            btnI11.setBackground(Color.YELLOW);
+            i10 = 1;
+        }
+    }//GEN-LAST:event_btnI10ActionPerformed
+
+    private void btnI11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI11ActionPerformed
+        if (i10 == 1) {
+            btnI10.setBackground(new Color(255, 204, 255));
+            btnI11.setBackground(new Color(255, 204, 255));
+            i10 = 0;
+        }
+        else if (i10 == 0) {
+            btnI10.setBackground(Color.YELLOW);
+            btnI11.setBackground(Color.YELLOW);
+            i10 = 1;
+        }
+    }//GEN-LAST:event_btnI11ActionPerformed
+
+    private void btnI13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI13ActionPerformed
+        if (i13 == 1) {
+            btnI13.setBackground(new Color(255, 204, 255));
+            btnI14.setBackground(new Color(255, 204, 255));
+            i13 = 0;
+        }
+        else if (i13 == 0) {
+            btnI13.setBackground(Color.YELLOW);
+            btnI14.setBackground(Color.YELLOW);
+            i13 = 1;
+        }
+    }//GEN-LAST:event_btnI13ActionPerformed
+
+    private void btnI14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI14ActionPerformed
+        if (i13 == 1) {
+            btnI13.setBackground(new Color(255, 204, 255));
+            btnI14.setBackground(new Color(255, 204, 255));
+            i13 = 0;
+        }
+        else if (i13 == 0) {
+            btnI13.setBackground(Color.YELLOW);
+            btnI14.setBackground(Color.YELLOW);
+            i13 = 1;
+        }
+    }//GEN-LAST:event_btnI14ActionPerformed
+
+    private void btnI16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI16ActionPerformed
+        if (i16 == 1) {
+            btnI16.setBackground(new Color(255, 204, 255));
+            btnI17.setBackground(new Color(255, 204, 255));
+            i16 = 0;
+        }
+        else if (i16 == 0) {
+            btnI16.setBackground(Color.YELLOW);
+            btnI17.setBackground(Color.YELLOW);
+            i16 = 1;
+        }
+    }//GEN-LAST:event_btnI16ActionPerformed
+
+    private void btnI17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnI17ActionPerformed
+        if (i16 == 1) {
+            btnI16.setBackground(new Color(255, 204, 255));
+            btnI17.setBackground(new Color(255, 204, 255));
+            i16 = 0;
+        }
+        else if (i16 == 0) {
+            btnI16.setBackground(Color.YELLOW);
+            btnI17.setBackground(Color.YELLOW);
+            i16 = 1;
+        }
+    }//GEN-LAST:event_btnI17ActionPerformed
+
+    private void btnJ01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ01ActionPerformed
+        if (j01 == 1) {
+            btnJ01.setBackground(Color.LIGHT_GRAY);
+            j01 = 0;
+        }
+        else if (j01 == 0) {
+            btnJ01.setBackground(Color.YELLOW);
+            j01 = 1;
+        }
+    }//GEN-LAST:event_btnJ01ActionPerformed
+
+    private void btnJ03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ03ActionPerformed
+        if (j03 == 1) {
+            btnJ03.setBackground(Color.LIGHT_GRAY);
+            j03 = 0;
+        }
+        else if (j03 == 0) {
+            btnJ03.setBackground(Color.YELLOW);
+            j03 = 1;
+        }
+    }//GEN-LAST:event_btnJ03ActionPerformed
+
+    private void btnJ05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ05ActionPerformed
+        if (j05 == 1) {
+            btnJ05.setBackground(Color.LIGHT_GRAY);
+            j05 = 0;
+        }
+        else if (j05 == 0) {
+            btnJ05.setBackground(Color.YELLOW);
+            j05 = 1;
+        }
+    }//GEN-LAST:event_btnJ05ActionPerformed
+
+    private void btnJ07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ07ActionPerformed
+        if (j07 == 1) {
+            btnJ07.setBackground(Color.LIGHT_GRAY);
+            j07 = 0;
+        }
+        else if (j07 == 0) {
+            btnJ07.setBackground(Color.YELLOW);
+            j07 = 1;
+        }
+    }//GEN-LAST:event_btnJ07ActionPerformed
+
+    private void btnJ09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ09ActionPerformed
+        if (j09 == 1) {
+            btnJ09.setBackground(Color.LIGHT_GRAY);
+            j09 = 0;
+        }
+        else if (j09 == 0) {
+            btnJ09.setBackground(Color.YELLOW);
+            j09 = 1;
+        }
+    }//GEN-LAST:event_btnJ09ActionPerformed
+
+    private void btnJ11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ11ActionPerformed
+        if (j11 == 1) {
+            btnJ11.setBackground(Color.LIGHT_GRAY);
+            j11 = 0;
+        }
+        else if (j11 == 0) {
+            btnJ11.setBackground(Color.YELLOW);
+            j11 = 1;
+        }
+    }//GEN-LAST:event_btnJ11ActionPerformed
+
+    private void btnJ13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ13ActionPerformed
+        if (j13 == 1) {
+            btnJ13.setBackground(Color.LIGHT_GRAY);
+            j13 = 0;
+        }
+        else if (j13 == 0) {
+            btnJ13.setBackground(Color.YELLOW);
+            j13 = 1;
+        }
+    }//GEN-LAST:event_btnJ13ActionPerformed
+
+    private void btnJ15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ15ActionPerformed
+        if (j15 == 1) {
+            btnJ15.setBackground(Color.LIGHT_GRAY);
+            j15 = 0;
+        }
+        else if (j15 == 0) {
+            btnJ15.setBackground(Color.YELLOW);
+            j15 = 1;
+        }
+    }//GEN-LAST:event_btnJ15ActionPerformed
+
+    private void btnJ17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJ17ActionPerformed
+        if (j17 == 1) {
+            btnJ17.setBackground(Color.LIGHT_GRAY);
+            j17 = 0;
+        }
+        else if (j17 == 0) {
+            btnJ17.setBackground(Color.YELLOW);
+            j17 = 1;
+        }
+    }//GEN-LAST:event_btnJ17ActionPerformed
+
+    private void btnK01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK01ActionPerformed
+        if (k01 == 1) {
+            btnK01.setBackground(new Color(255, 204, 255));
+            btnK02.setBackground(new Color(255, 204, 255));
+            k01 = 0;
+        }
+        else if (k01 == 0) {
+            btnK01.setBackground(Color.YELLOW);
+            btnK02.setBackground(Color.YELLOW);
+            k01 = 1;
+        }
+    }//GEN-LAST:event_btnK01ActionPerformed
+
+    private void btnK02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK02ActionPerformed
+        if (k01 == 1) {
+            btnK01.setBackground(new Color(255, 204, 255));
+            btnK02.setBackground(new Color(255, 204, 255));
+            k01 = 0;
+        }
+        else if (k01 == 0) {
+            btnK01.setBackground(Color.YELLOW);
+            btnK02.setBackground(Color.YELLOW);
+            k01 = 1;
+        }
+    }//GEN-LAST:event_btnK02ActionPerformed
+
+    private void btnK04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK04ActionPerformed
+        if (k04 == 1) {
+            btnK04.setBackground(new Color(255, 204, 255));
+            btnK05.setBackground(new Color(255, 204, 255));
+            k04 = 0;
+        }
+        else if (k04 == 0) {
+            btnK04.setBackground(Color.YELLOW);
+            btnK05.setBackground(Color.YELLOW);
+            k04 = 1;
+        }
+    }//GEN-LAST:event_btnK04ActionPerformed
+
+    private void btnK05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK05ActionPerformed
+        if (k04 == 1) {
+            btnK04.setBackground(new Color(255, 204, 255));
+            btnK05.setBackground(new Color(255, 204, 255));
+            k04 = 0;
+        }
+        else if (k04 == 0) {
+            btnK04.setBackground(Color.YELLOW);
+            btnK05.setBackground(Color.YELLOW);
+            k04 = 1;
+        }
+    }//GEN-LAST:event_btnK05ActionPerformed
+
+    private void btnK07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK07ActionPerformed
+        if (k07 == 1) {
+            btnK07.setBackground(new Color(255, 204, 255));
+            btnK08.setBackground(new Color(255, 204, 255));
+            k07 = 0;
+        }
+        else if (k07 == 0) {
+            btnK07.setBackground(Color.YELLOW);
+            btnK08.setBackground(Color.YELLOW);
+            k07 = 1;
+        }
+    }//GEN-LAST:event_btnK07ActionPerformed
+
+    private void btnK08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK08ActionPerformed
+        if (k07 == 1) {
+            btnK07.setBackground(new Color(255, 204, 255));
+            btnK08.setBackground(new Color(255, 204, 255));
+            k07 = 0;
+        }
+        else if (k07 == 0) {
+            btnK07.setBackground(Color.YELLOW);
+            btnK08.setBackground(Color.YELLOW);
+            k07 = 1;
+        }
+    }//GEN-LAST:event_btnK08ActionPerformed
+
+    private void btnK10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK10ActionPerformed
+        if (k10 == 1) {
+            btnK10.setBackground(new Color(255, 204, 255));
+            btnK11.setBackground(new Color(255, 204, 255));
+            k10 = 0;
+        }
+        else if (k10 == 0) {
+            btnK10.setBackground(Color.YELLOW);
+            btnK11.setBackground(Color.YELLOW);
+            k10 = 1;
+        }
+    }//GEN-LAST:event_btnK10ActionPerformed
+
+    private void btnK11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK11ActionPerformed
+        if (k10 == 1) {
+            btnK10.setBackground(new Color(255, 204, 255));
+            btnK11.setBackground(new Color(255, 204, 255));
+            k10 = 0;
+        }
+        else if (k10 == 0) {
+            btnK10.setBackground(Color.YELLOW);
+            btnK11.setBackground(Color.YELLOW);
+            k10 = 1;
+        }
+    }//GEN-LAST:event_btnK11ActionPerformed
+
+    private void btnK13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK13ActionPerformed
+        if (k13 == 1) {
+            btnK13.setBackground(new Color(255, 204, 255));
+            btnK14.setBackground(new Color(255, 204, 255));
+            k13 = 0;
+        }
+        else if (k13 == 0) {
+            btnK13.setBackground(Color.YELLOW);
+            btnK14.setBackground(Color.YELLOW);
+            k13 = 1;
+        }
+    }//GEN-LAST:event_btnK13ActionPerformed
+
+    private void btnK14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK14ActionPerformed
+        if (k13 == 1) {
+            btnK13.setBackground(new Color(255, 204, 255));
+            btnK14.setBackground(new Color(255, 204, 255));
+            k13 = 0;
+        }
+        else if (k13 == 0) {
+            btnK13.setBackground(Color.YELLOW);
+            btnK14.setBackground(Color.YELLOW);
+            k13 = 1;
+        }
+    }//GEN-LAST:event_btnK14ActionPerformed
+
+    private void btnK16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK16ActionPerformed
+        if (k16 == 1) {
+            btnK16.setBackground(new Color(255, 204, 255));
+            btnK17.setBackground(new Color(255, 204, 255));
+            k16 = 0;
+        }
+        else if (k16 == 0) {
+            btnK16.setBackground(Color.YELLOW);
+            btnK17.setBackground(Color.YELLOW);
+            k16 = 1;
+        }
+    }//GEN-LAST:event_btnK16ActionPerformed
+
+    private void btnK17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnK17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnK17ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -811,132 +2849,137 @@ public class Seat2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton100;
-    private javax.swing.JButton jButton101;
-    private javax.swing.JButton jButton102;
-    private javax.swing.JButton jButton103;
-    private javax.swing.JButton jButton104;
-    private javax.swing.JButton jButton105;
-    private javax.swing.JButton jButton106;
-    private javax.swing.JButton jButton107;
-    private javax.swing.JButton jButton108;
-    private javax.swing.JButton jButton109;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton110;
-    private javax.swing.JButton jButton111;
-    private javax.swing.JButton jButton112;
-    private javax.swing.JButton jButton113;
-    private javax.swing.JButton jButton114;
-    private javax.swing.JButton jButton115;
-    private javax.swing.JButton jButton116;
-    private javax.swing.JButton jButton117;
-    private javax.swing.JButton jButton118;
-    private javax.swing.JButton jButton119;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton120;
-    private javax.swing.JButton jButton121;
-    private javax.swing.JButton jButton122;
-    private javax.swing.JButton jButton123;
-    private javax.swing.JButton jButton124;
-    private javax.swing.JButton jButton125;
-    private javax.swing.JButton jButton126;
-    private javax.swing.JButton jButton127;
-    private javax.swing.JButton jButton128;
-    private javax.swing.JButton jButton129;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton35;
-    private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
-    private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
-    private javax.swing.JButton jButton40;
-    private javax.swing.JButton jButton41;
-    private javax.swing.JButton jButton42;
-    private javax.swing.JButton jButton43;
-    private javax.swing.JButton jButton44;
-    private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton47;
-    private javax.swing.JButton jButton48;
-    private javax.swing.JButton jButton49;
-    private javax.swing.JButton jButton50;
-    private javax.swing.JButton jButton51;
-    private javax.swing.JButton jButton52;
-    private javax.swing.JButton jButton53;
-    private javax.swing.JButton jButton54;
-    private javax.swing.JButton jButton55;
-    private javax.swing.JButton jButton56;
-    private javax.swing.JButton jButton57;
-    private javax.swing.JButton jButton58;
-    private javax.swing.JButton jButton59;
-    private javax.swing.JButton jButton60;
-    private javax.swing.JButton jButton61;
-    private javax.swing.JButton jButton62;
-    private javax.swing.JButton jButton63;
-    private javax.swing.JButton jButton64;
-    private javax.swing.JButton jButton65;
-    private javax.swing.JButton jButton66;
-    private javax.swing.JButton jButton67;
-    private javax.swing.JButton jButton68;
-    private javax.swing.JButton jButton69;
-    private javax.swing.JButton jButton70;
-    private javax.swing.JButton jButton71;
-    private javax.swing.JButton jButton72;
-    private javax.swing.JButton jButton73;
-    private javax.swing.JButton jButton74;
-    private javax.swing.JButton jButton75;
-    private javax.swing.JButton jButton76;
-    private javax.swing.JButton jButton77;
-    private javax.swing.JButton jButton78;
-    private javax.swing.JButton jButton79;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton80;
-    private javax.swing.JButton jButton81;
-    private javax.swing.JButton jButton82;
-    private javax.swing.JButton jButton83;
-    private javax.swing.JButton jButton84;
-    private javax.swing.JButton jButton85;
-    private javax.swing.JButton jButton86;
-    private javax.swing.JButton jButton87;
-    private javax.swing.JButton jButton88;
-    private javax.swing.JButton jButton89;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JButton jButton90;
-    private javax.swing.JButton jButton91;
-    private javax.swing.JButton jButton92;
-    private javax.swing.JButton jButton93;
-    private javax.swing.JButton jButton94;
-    private javax.swing.JButton jButton95;
-    private javax.swing.JButton jButton96;
-    private javax.swing.JButton jButton97;
-    private javax.swing.JButton jButton98;
-    private javax.swing.JButton jButton99;
+    private javax.swing.JButton btnA01;
+    private javax.swing.JButton btnA02;
+    private javax.swing.JButton btnA04;
+    private javax.swing.JButton btnA05;
+    private javax.swing.JButton btnA07;
+    private javax.swing.JButton btnA08;
+    private javax.swing.JButton btnA10;
+    private javax.swing.JButton btnA11;
+    private javax.swing.JButton btnA13;
+    private javax.swing.JButton btnA14;
+    private javax.swing.JButton btnA16;
+    private javax.swing.JButton btnA17;
+    private javax.swing.JButton btnAvailable;
+    private javax.swing.JButton btnB01;
+    private javax.swing.JButton btnB03;
+    private javax.swing.JButton btnB05;
+    private javax.swing.JButton btnB07;
+    private javax.swing.JButton btnB09;
+    private javax.swing.JButton btnB11;
+    private javax.swing.JButton btnB13;
+    private javax.swing.JButton btnB15;
+    private javax.swing.JButton btnB17;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnC01;
+    private javax.swing.JButton btnC02;
+    private javax.swing.JButton btnC04;
+    private javax.swing.JButton btnC05;
+    private javax.swing.JButton btnC07;
+    private javax.swing.JButton btnC08;
+    private javax.swing.JButton btnC10;
+    private javax.swing.JButton btnC11;
+    private javax.swing.JButton btnC13;
+    private javax.swing.JButton btnC14;
+    private javax.swing.JButton btnC16;
+    private javax.swing.JButton btnC17;
+    private javax.swing.JButton btnD01;
+    private javax.swing.JButton btnD03;
+    private javax.swing.JButton btnD05;
+    private javax.swing.JButton btnD07;
+    private javax.swing.JButton btnD09;
+    private javax.swing.JButton btnD11;
+    private javax.swing.JButton btnD13;
+    private javax.swing.JButton btnD15;
+    private javax.swing.JButton btnD17;
+    private javax.swing.JButton btnE01;
+    private javax.swing.JButton btnE02;
+    private javax.swing.JButton btnE04;
+    private javax.swing.JButton btnE05;
+    private javax.swing.JButton btnE07;
+    private javax.swing.JButton btnE08;
+    private javax.swing.JButton btnE10;
+    private javax.swing.JButton btnE11;
+    private javax.swing.JButton btnE13;
+    private javax.swing.JButton btnE14;
+    private javax.swing.JButton btnE16;
+    private javax.swing.JButton btnE17;
+    private javax.swing.JButton btnF01;
+    private javax.swing.JButton btnF03;
+    private javax.swing.JButton btnF05;
+    private javax.swing.JButton btnF07;
+    private javax.swing.JButton btnF09;
+    private javax.swing.JButton btnF11;
+    private javax.swing.JButton btnF13;
+    private javax.swing.JButton btnF15;
+    private javax.swing.JButton btnF17;
+    private javax.swing.JButton btnG01;
+    private javax.swing.JButton btnG02;
+    private javax.swing.JButton btnG04;
+    private javax.swing.JButton btnG05;
+    private javax.swing.JButton btnG07;
+    private javax.swing.JButton btnG08;
+    private javax.swing.JButton btnG10;
+    private javax.swing.JButton btnG11;
+    private javax.swing.JButton btnG13;
+    private javax.swing.JButton btnG14;
+    private javax.swing.JButton btnG16;
+    private javax.swing.JButton btnG17;
+    private javax.swing.JButton btnH01;
+    private javax.swing.JButton btnH03;
+    private javax.swing.JButton btnH05;
+    private javax.swing.JButton btnH07;
+    private javax.swing.JButton btnH09;
+    private javax.swing.JButton btnH11;
+    private javax.swing.JButton btnH13;
+    private javax.swing.JButton btnH15;
+    private javax.swing.JButton btnH17;
+    private javax.swing.JButton btnI01;
+    private javax.swing.JButton btnI02;
+    private javax.swing.JButton btnI04;
+    private javax.swing.JButton btnI05;
+    private javax.swing.JButton btnI07;
+    private javax.swing.JButton btnI08;
+    private javax.swing.JButton btnI10;
+    private javax.swing.JButton btnI11;
+    private javax.swing.JButton btnI13;
+    private javax.swing.JButton btnI14;
+    private javax.swing.JButton btnI16;
+    private javax.swing.JButton btnI17;
+    private javax.swing.JButton btnJ01;
+    private javax.swing.JButton btnJ03;
+    private javax.swing.JButton btnJ05;
+    private javax.swing.JButton btnJ07;
+    private javax.swing.JButton btnJ09;
+    private javax.swing.JButton btnJ11;
+    private javax.swing.JButton btnJ13;
+    private javax.swing.JButton btnJ15;
+    private javax.swing.JButton btnJ17;
+    private javax.swing.JButton btnK01;
+    private javax.swing.JButton btnK02;
+    private javax.swing.JButton btnK04;
+    private javax.swing.JButton btnK05;
+    private javax.swing.JButton btnK07;
+    private javax.swing.JButton btnK08;
+    private javax.swing.JButton btnK10;
+    private javax.swing.JButton btnK11;
+    private javax.swing.JButton btnK13;
+    private javax.swing.JButton btnK14;
+    private javax.swing.JButton btnK16;
+    private javax.swing.JButton btnK17;
+    private javax.swing.JButton btnNext;
+    private javax.swing.JButton btnSelected;
+    private javax.swing.JButton btnTwin1;
+    private javax.swing.JButton btnTwin2;
+    private javax.swing.JButton btnUnavailable;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }
