@@ -65,6 +65,7 @@ public class TicketClass1 extends javax.swing.JFrame {
         jLabel6.setText("Premium");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 100, -1));
 
+        btnBack.setBackground(new java.awt.Color(255, 255, 0));
         btnBack.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnBack.setText("BACK");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -74,6 +75,7 @@ public class TicketClass1 extends javax.swing.JFrame {
         });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 592, 90, -1));
 
+        btnNext.setBackground(new java.awt.Color(255, 255, 51));
         btnNext.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnNext.setText("NEXT");
         btnNext.addActionListener(new java.awt.event.ActionListener() {
