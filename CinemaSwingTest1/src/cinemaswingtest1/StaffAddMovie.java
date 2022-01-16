@@ -122,11 +122,12 @@ public class StaffAddMovie extends javax.swing.JFrame {
         else{
             //successfully added message
             JOptionPane.showMessageDialog(this,"Add Date Successfully !");
-        }
+        
         StaffAddRemoveMovie mainMenu=new StaffAddRemoveMovie();
         mainMenu.show();     
         
         dispose(); 
+        }
         
         StaffAddRemoveMovie.AddRowToJTable(new Object[]{
                                                         txtTitle.getText(),

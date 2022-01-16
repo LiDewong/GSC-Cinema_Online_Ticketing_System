@@ -51,8 +51,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(20);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(16);
-            jTable1.getColumnModel().getColumn(1).setMaxWidth(16);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(20);
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(20);
         }
 

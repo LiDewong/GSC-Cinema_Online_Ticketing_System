@@ -22,7 +22,6 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel = new javax.swing.JLabel();
         label4 = new javax.swing.JLabel();
         label5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         label6 = new javax.swing.JLabel();
         label7 = new javax.swing.JLabel();
         label8 = new javax.swing.JLabel();
@@ -36,7 +35,7 @@ public class MainMenu extends javax.swing.JFrame {
                 label2MouseClicked(evt);
             }
         });
-        getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 148, 160, 190));
+        getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 160, 190));
 
         label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop pic3.jpg"))); // NOI18N
         label.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -44,7 +43,7 @@ public class MainMenu extends javax.swing.JFrame {
                 labelMouseClicked(evt);
             }
         });
-        getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 150, -1, -1));
+        getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
         label3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/fop.jpg"))); // NOI18N
         label3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -52,12 +51,12 @@ public class MainMenu extends javax.swing.JFrame {
                 label3MouseClicked(evt);
             }
         });
-        getContentPane().add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 156, 188));
+        getContentPane().add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, 156, 188));
 
         jLabel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
         jLabel.setForeground(new java.awt.Color(255, 255, 255));
         jLabel.setText("Now Showing");
-        getContentPane().add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 250, 110));
+        getContentPane().add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, 250, 110));
 
         label4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic.jpg"))); // NOI18N
         label4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -65,7 +64,7 @@ public class MainMenu extends javax.swing.JFrame {
                 label4MouseClicked(evt);
             }
         });
-        getContentPane().add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, 150, -1));
+        getContentPane().add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, 150, -1));
 
         label5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/poster.jpg"))); // NOI18N
         label5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -73,23 +72,13 @@ public class MainMenu extends javax.swing.JFrame {
                 label5MouseClicked(evt);
             }
         });
-        getContentPane().add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 150, -1, -1));
-
-        jButton1.setBackground(new java.awt.Color(255, 255, 0));
-        jButton1.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 24)); // NOI18N
-        jButton1.setText("Buy Now");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, -1));
+        getContentPane().add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, -1, -1));
 
         label6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo.png"))); // NOI18N
         getContentPane().add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
 
         label7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/pic1.jpg"))); // NOI18N
-        getContentPane().add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+        getContentPane().add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
 
         label8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 1.jpg"))); // NOI18N
         getContentPane().add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 470));
@@ -97,11 +86,6 @@ public class MainMenu extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // after click Buy Now
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void labelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMouseClicked
         Movie1Detail movie = new Movie1Detail();
@@ -185,7 +169,6 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel;
     private javax.swing.JLabel label;
     private javax.swing.JLabel label2;
