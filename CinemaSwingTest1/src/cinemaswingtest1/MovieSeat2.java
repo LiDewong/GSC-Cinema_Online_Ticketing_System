@@ -3232,10 +3232,11 @@ public class MovieSeat2 extends javax.swing.JFrame {
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
         try {
+            Global.seat_no = "";
             for (int i = 0; i < seat.length; i++) {
                 if (seat[i] == 1) {
-                    String seat_id = id[i];
-                    API.bookSeat(Global.customer_email, seat_id);
+                    Global.seat_no += id[i] + " ";
+//                    API.bookSeat(Global.customer_email, seat_id);
                 }
             }
         } catch (Exception e) {
