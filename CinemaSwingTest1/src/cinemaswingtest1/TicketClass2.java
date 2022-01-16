@@ -1,17 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package cinemaswingtest1;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author Sengko
- */
 public class TicketClass2 extends javax.swing.JFrame {
-    
+    int cnt;
     /**
      * Creates new form MovieClass
      */
@@ -144,19 +138,27 @@ public class TicketClass2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-        
+        if(cnt==0){
+            JOptionPane.showMessageDialog(this, "Please Select Your Class");
+        }
+        else{
+            //move to next page F&B 
+        }
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
         Global.ticket_class = "Student";
+        cnt+=1;
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnClassicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClassicActionPerformed
         Global.ticket_class = "Classic";
+        cnt+=1;
     }//GEN-LAST:event_btnClassicActionPerformed
 
     private void btnPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPremiumActionPerformed
         Global.ticket_class = "Premium";
+        cnt+=1;
     }//GEN-LAST:event_btnPremiumActionPerformed
 
     /**
