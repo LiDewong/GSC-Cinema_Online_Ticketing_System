@@ -1,5 +1,7 @@
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
+
 public class CustomerPayment extends javax.swing.JFrame {
 
     /**
@@ -44,6 +46,11 @@ public class CustomerPayment extends javax.swing.JFrame {
         jLabel2.setText("MOVIE SELECTED");
 
         jButton1.setText("PAY NOW");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("jLabel3");
 
@@ -131,7 +138,7 @@ public class CustomerPayment extends javax.swing.JFrame {
                     .addComponent(jLabel10))
                 .addGap(77, 77, 77)
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
@@ -151,6 +158,17 @@ public class CustomerPayment extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        PaymentPage pp = new PaymentPage();
+        pp.setVisible(true);
+        pp.pack();
+        pp.setLocationRelativeTo(null);
+        pp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
