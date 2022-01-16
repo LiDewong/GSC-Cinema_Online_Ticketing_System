@@ -37,14 +37,14 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Spider-Man: No Way Home", "16 Dec 2021", "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon", "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange's help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who've ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. "},
-                {"No Time To Die", "25 Nov 2021", "Daniel Craig, Rami Malek, Ana de Armas", "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology."},
-                {"Eternals", "04 Nov 2021", "Angelina Jolie, Salma Hayek, Richard Madden", "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations."},
-                {"The Medium", "02 Dec 2021", " Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan", "A horrifying story of a shaman's inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be."},
-                {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan."}
+                {"Spider-Man: No Way Home", "16 Dec 2021", "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon", "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange's help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who've ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. ", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "117"},
+                {"No Time To Die", "25 Nov 2021", "Daniel Craig, Rami Malek, Ana de Armas", "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"},
+                {"Eternals", "04 Nov 2021", "Angelina Jolie, Salma Hayek, Richard Madden", "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "117"},
+                {"The Medium", "02 Dec 2021", " Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan", "A horrifying story of a shaman's inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"},
+                {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"}
             },
             new String [] {
-                "Title", "Release Date", "Casts", "Synopsis"
+                "Title", "Release Date", "Casts", "Synopsis", "Day", "Time", "Total Seat"
             }
         ));
         jTable1.setRowHeight(23);
@@ -53,9 +53,10 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(20);
             jTable1.getColumnModel().getColumn(1).setPreferredWidth(20);
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(20);
+            jTable1.getColumnModel().getColumn(6).setMaxWidth(100);
         }
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 890, 300));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1000, 300));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jButton1.setText("Back To Option");

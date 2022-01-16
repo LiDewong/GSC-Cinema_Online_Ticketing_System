@@ -31,7 +31,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="80" y="320" width="890" height="300"/>
+          <AbsoluteConstraints x="30" y="320" width="1000" height="300"/>
         </Constraint>
       </Constraints>
 
@@ -43,7 +43,7 @@
               <Font name="Tahoma" size="14" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="4" rowCount="5">
+              <Table columnCount="7" rowCount="5">
                 <Column editable="true" title="Title" type="java.lang.Object">
                   <Data value="Spider-Man: No Way Home"/>
                   <Data value="No Time To Die"/>
@@ -72,6 +72,27 @@
                   <Data value="A horrifying story of a shaman&apos;s inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be."/>
                   <Data value="From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan."/>
                 </Column>
+                <Column editable="true" title="Day" type="java.lang.Object">
+                  <Data value="20, 21, 22"/>
+                  <Data value="20, 21, 22"/>
+                  <Data value="20, 21, 22"/>
+                  <Data value="20, 21, 22"/>
+                  <Data value="20, 21, 22"/>
+                </Column>
+                <Column editable="true" title="Time" type="java.lang.Object">
+                  <Data value="9:00AM, 3:00PM, 9:00 PM"/>
+                  <Data value="9:00AM, 3:00PM, 9:00 PM"/>
+                  <Data value="9:00AM, 3:00PM, 9:00 PM"/>
+                  <Data value="9:00AM, 3:00PM, 9:00 PM"/>
+                  <Data value="9:00AM, 3:00PM, 9:00 PM"/>
+                </Column>
+                <Column editable="true" title="Total Seat" type="java.lang.Object">
+                  <Data value="117"/>
+                  <Data value="78"/>
+                  <Data value="117"/>
+                  <Data value="78"/>
+                  <Data value="78"/>
+                </Column>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -92,6 +113,21 @@
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="100" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
                   <Renderer/>
