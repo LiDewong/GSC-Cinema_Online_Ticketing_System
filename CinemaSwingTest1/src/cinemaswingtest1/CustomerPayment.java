@@ -16,7 +16,7 @@ public class CustomerPayment extends javax.swing.JFrame {
             ticket_price = 9 * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Classic"))
             ticket_price = 18 * Integer.parseInt(Global.cnt_seat);
-        else
+        else if (Global.ticket_class.equals("Premium"))
             ticket_price = 27 * Integer.parseInt(Global.cnt_seat);
         jTextField3.setText(String.format("RM %.2f", ticket_price));
         
