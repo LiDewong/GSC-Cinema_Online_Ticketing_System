@@ -1,6 +1,9 @@
 package cinemaswingtest1;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -23,9 +26,167 @@ public class MovieSeat2 extends javax.swing.JFrame {
     /**
      * Creates new form Seat
      */
+    private List<JButton> btn = new ArrayList<>();
+    List<API.Seat> seats;
+    List<String> seat_id = new ArrayList<>();
+    List<Integer> booked_idx = new ArrayList<>();
+    List<Integer> havent_book_idx = new ArrayList<>();
+    List<Integer> to_book_seat_idx = new ArrayList<>();
+    
     public MovieSeat2() {
         initComponents();
-//        if (customer_email != null) {btnA01.setEnabled(false);}
+        initBtn();
+
+        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
+
+        for (int i = 0; i < seats.size(); i++) {
+            seat_id.add(seats.get(i).id);
+            if (seats.get(i).customer_id == "") {
+                havent_book_idx.add(i);
+            } else {
+                booked_idx.add(i);
+            }
+        }
+
+        for (int i = 0; i < booked_idx.size(); i++) {
+            btn.get(i).setEnabled(false);
+        }
+
+        for (int i = 0; i < havent_book_idx.size(); i++) {
+            btn.get(i).setEnabled(true);
+        }
+
+    }
+    public void confirm() {
+        System.out.println("confirm");
+        for (int i = 0; i < to_book_seat_idx.size(); i++) {
+            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
+        }
+    }
+  
+    public void initBtn() {
+        btn.add(btnA01);
+btn.add(btnA02);
+btn.add(btnA04);
+btn.add(btnA05);
+btn.add(btnA07);
+btn.add(btnA08);
+btn.add(btnA10);
+btn.add(btnA11);
+btn.add(btnA13);
+btn.add(btnA14);
+btn.add(btnA16);
+btn.add(btnA17);
+btn.add(btnB01);
+btn.add(btnB03);
+btn.add(btnB05);
+btn.add(btnB07);
+btn.add(btnB09);
+btn.add(btnB11);
+btn.add(btnB13);
+btn.add(btnB15);
+btn.add(btnB17);
+btn.add(btnC01);
+btn.add(btnC02);
+btn.add(btnC04);
+btn.add(btnC05);
+btn.add(btnC07);
+btn.add(btnC08);
+btn.add(btnC10);
+btn.add(btnC11);
+btn.add(btnC13);
+btn.add(btnC14);
+btn.add(btnC16);
+btn.add(btnC17);
+btn.add(btnD01);
+btn.add(btnD03);
+btn.add(btnD05);
+btn.add(btnD07);
+btn.add(btnD09);
+btn.add(btnD11);
+btn.add(btnD13);
+btn.add(btnD15);
+btn.add(btnD17);
+btn.add(btnE01);
+btn.add(btnE02);
+btn.add(btnE04);
+btn.add(btnE05);
+btn.add(btnE07);
+btn.add(btnE08);
+btn.add(btnE10);
+btn.add(btnE11);
+btn.add(btnE13);
+btn.add(btnE14);
+btn.add(btnE16);
+btn.add(btnE17);
+btn.add(btnF01);
+btn.add(btnF03);
+btn.add(btnF05);
+btn.add(btnF07);
+btn.add(btnF09);
+btn.add(btnF11);
+btn.add(btnF13);
+btn.add(btnF15);
+btn.add(btnF17);
+btn.add(btnG01);
+btn.add(btnG02);
+btn.add(btnG04);
+btn.add(btnG05);
+btn.add(btnG07);
+btn.add(btnG08);
+btn.add(btnG10);
+btn.add(btnG11);
+btn.add(btnG13);
+btn.add(btnG14);
+btn.add(btnG16);
+btn.add(btnG17);
+btn.add(btnH01);
+btn.add(btnH03);
+btn.add(btnH05);
+btn.add(btnH07);
+btn.add(btnH09);
+btn.add(btnH11);
+btn.add(btnH13);
+btn.add(btnH15);
+btn.add(btnH17);
+btn.add(btnI01);
+btn.add(btnI02);
+btn.add(btnI04);
+btn.add(btnI05);
+btn.add(btnI07);
+btn.add(btnI08);
+btn.add(btnI10);
+btn.add(btnI11);
+btn.add(btnI13);
+btn.add(btnI14);
+btn.add(btnI16);
+btn.add(btnI17);
+btn.add(btnJ01);
+btn.add(btnJ03);
+btn.add(btnJ05);
+btn.add(btnJ07);
+btn.add(btnJ09);
+btn.add(btnJ11);
+btn.add(btnJ13);
+btn.add(btnJ15);
+btn.add(btnJ17);
+btn.add(btnK01);
+btn.add(btnK02);
+btn.add(btnK04);
+btn.add(btnK05);
+btn.add(btnK07);
+btn.add(btnK08);
+btn.add(btnK10);
+btn.add(btnK11);
+btn.add(btnK13);
+btn.add(btnK14);
+btn.add(btnK16);
+btn.add(btnK17);
+
+    }
+    
+public void unused(){
+    //        if (customer_email != null) {btnA01.setEnabled(false);}
 //        if (customer_email != null) {btnA02.setEnabled(false);}
 //        if (customer_email != null) {btnA04.setEnabled(false);}
 //        if (customer_email != null) {btnA05.setEnabled(false);}
@@ -142,8 +303,7 @@ public class MovieSeat2 extends javax.swing.JFrame {
 //        if (customer_email != null) {btnK14.setEnabled(false);}
 //        if (customer_email != null) {btnK16.setEnabled(false);}
 //        if (customer_email != null) {btnK17.setEnabled(false);}
-    }
-
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
