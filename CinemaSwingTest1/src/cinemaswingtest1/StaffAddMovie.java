@@ -157,7 +157,10 @@ public class StaffAddMovie extends javax.swing.JFrame {
                                                         txtTitle.getText(),
                                                         txtDate.getText(),
                                                         txtCast.getText(),
-                                                        txtSynopsis.getText()
+                                                        txtSynopsis.getText(),
+                                                        txtDay.getText(),
+                                                        txtTime.getText(),
+                                                        txtSeat.getText()
         });
         
         
