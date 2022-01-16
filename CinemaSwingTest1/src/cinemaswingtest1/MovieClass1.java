@@ -11,7 +11,7 @@ import javax.swing.JFrame;
  * @author Sengko
  */
 public class MovieClass1 extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form MovieClass
      */
@@ -38,9 +38,9 @@ public class MovieClass1 extends javax.swing.JFrame {
         btnBack = new javax.swing.JButton();
         btnNext = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        btnStudent = new javax.swing.JRadioButton();
+        btnClassic = new javax.swing.JRadioButton();
+        btnPremium = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -99,17 +99,32 @@ public class MovieClass1 extends javax.swing.JFrame {
         jLabel8.setText(Global.cnt_seat);
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, -1, 50));
 
-        jRadioButton1.setBackground(new java.awt.Color(34, 34, 34));
-        buttonGroup1.add(jRadioButton1);
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 300, 93, -1));
+        btnStudent.setBackground(new java.awt.Color(34, 34, 34));
+        buttonGroup1.add(btnStudent);
+        btnStudent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStudentActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 300, 93, -1));
 
-        jRadioButton2.setBackground(new java.awt.Color(34, 34, 34));
-        buttonGroup1.add(jRadioButton2);
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 93, 30));
+        btnClassic.setBackground(new java.awt.Color(34, 34, 34));
+        buttonGroup1.add(btnClassic);
+        btnClassic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClassicActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnClassic, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 93, 30));
 
-        jRadioButton3.setBackground(new java.awt.Color(34, 34, 34));
-        buttonGroup1.add(jRadioButton3);
-        getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 480, 93, 30));
+        btnPremium.setBackground(new java.awt.Color(34, 34, 34));
+        buttonGroup1.add(btnPremium);
+        btnPremium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPremiumActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 480, 93, 30));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
@@ -131,6 +146,18 @@ public class MovieClass1 extends javax.swing.JFrame {
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
         
     }//GEN-LAST:event_btnNextActionPerformed
+
+    private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
+        Global.movie_class = "Student";
+    }//GEN-LAST:event_btnStudentActionPerformed
+
+    private void btnClassicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClassicActionPerformed
+        Global.movie_class = "Classic";
+    }//GEN-LAST:event_btnClassicActionPerformed
+
+    private void btnPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPremiumActionPerformed
+        Global.movie_class = "Premium";
+    }//GEN-LAST:event_btnPremiumActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,7 +197,10 @@ public class MovieClass1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
+    private javax.swing.JRadioButton btnClassic;
     private javax.swing.JButton btnNext;
+    private javax.swing.JRadioButton btnPremium;
+    private javax.swing.JRadioButton btnStudent;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -180,8 +210,5 @@ public class MovieClass1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     // End of variables declaration//GEN-END:variables
 }
