@@ -207,7 +207,7 @@ public class API {
      * @return true if staff can sign up (no duplicate email), false if any
      * errors
      */
-    public static boolean staffSignUp(String id,String name, String email, String password, String phone_number) throws Exception {
+    public static boolean staffSignUp(String id, String name, String email, String password) throws Exception {
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
@@ -215,7 +215,7 @@ public class API {
             data.put("name", name);
             data.put("email", email);
             data.put("password", password);
-            data.put("phone_number", phone_number);
+//            data.put("phone_number", phone_number);
 
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(buildFormDataFromMap(data))
