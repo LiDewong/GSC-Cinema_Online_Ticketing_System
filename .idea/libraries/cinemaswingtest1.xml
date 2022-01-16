@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cinemaswingtest1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CinemaSwingTest1/src/cinemaswingtest1/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CinemaSwingTest1/src/cinemaswingtest1/json-20211205.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
