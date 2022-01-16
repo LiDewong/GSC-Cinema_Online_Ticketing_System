@@ -39,7 +39,7 @@ public class API {
      */
     public static List<Customer> getAllCustomer() throws Exception {
         List<Customer> list = new ArrayList<>();
-        
+
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
                 .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/customer/get_all"))
@@ -298,7 +298,7 @@ public class API {
 
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(buildFormDataFromMap(data))
-//                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/create"))
+                    //                    .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/create"))
                     .uri(URI.create("https://cinema-db-schema-1.vercel.app/api/movie/create"))
                     .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
                     .header("Content-Type", "application/x-www-form-urlencoded")
@@ -308,7 +308,7 @@ public class API {
 
             int statusCode = response.statusCode();
             String body = response.body();
-            
+
             JSONObject json = new JSONObject(body);
             return statusCode == 200;
         } catch (IOException | InterruptedException e) {
@@ -359,11 +359,14 @@ public class API {
         int statusCode = response.statusCode();
         String body = response.body();
 
+//        System.out.println(body);
         JSONObject json = new JSONObject(body);
         JSONArray movies = json.getJSONArray("movie");
 
         for (int i = 0; i < movies.length(); i++) {
             JSONObject movie = (JSONObject) movies.get(i);
+
+            String id = (String) movie.get("id");
             String name = (String) movie.get("name");
             String release_date = (String) movie.get("release_date");
             String cast = (String) movie.get("cast");
@@ -372,11 +375,12 @@ public class API {
             String time = (String) movie.get("time");
             int total_seat = (int) movie.get("total_seat");
             String image_url = (String) movie.get("image_url");
-            Movie c = new Movie(name, release_date, cast, synopsis, day, time, total_seat, image_url);
+            Movie c = new Movie(id, name, release_date, cast, synopsis, day, time, total_seat, image_url);
             list.add(c);
         }
 
         for (int i = 0; i < list.size(); i++) {
+            String id = list.get(i).id;
             String name = list.get(i).name;
             String release_date = list.get(i).release_date;
             String cast = list.get(i).cast;
@@ -385,19 +389,21 @@ public class API {
             String time = list.get(i).time;
             int total_seat = list.get(i).total_seat;
             String image_url = list.get(i).image_url;
-            
+
+            System.out.println(i + " " + id + " " + name + " " + day + " " + time);
 
 //            System.out.println("Customer " + (i + 1) + ": " + name + " " + email + " " + phone_number);
         }
 
         return list;
     }
-    
-    public static void getAllSeat(String movie_id){
+
+    public static List<Seat> getAllSeat(String movie_id) {
+        List<Seat> list = new ArrayList<>();
         try {
             // form parameters
             Map<Object, Object> data = new HashMap<>();
-            
+
             data.put("movie_id", movie_id);
 
             HttpRequest request = HttpRequest.newBuilder()
@@ -411,14 +417,40 @@ public class API {
 
             int statusCode = response.statusCode();
             String body = response.body();
-            
-            System.out.println(body);
-           
-        } catch (IOException | InterruptedException e) {
+
+//            System.out.println(body);
+            JSONObject json = new JSONObject(body);
+            JSONArray seats = json.getJSONArray("seat");
+
+            for (int i = 0; i < seats.length(); i++) {
+                JSONObject seat = (JSONObject) seats.get(i);
+//                System.out.println(seat);
+
+                String id = (String) seat.get("id");
+                String mov_id = (String) seat.get("movie_id");
+                String customer_id = ((seat.has("customer_id") && !seat.isNull("customer_id"))) ? seat.getString("customer_id") : "";
+                String ticket_price = ((seat.has("ticket_price") && !seat.isNull("ticket_price"))) ? seat.getString("ticket_price") : "";
+
+                Seat s = new Seat(id, mov_id, customer_id, ticket_price);
+                list.add(s);
+            }
+
+            for (int i = 0; i < list.size(); i++) {
+                String id = list.get(i).id;
+                String _movie_id = list.get(i).movie_id;
+                String customer_id = list.get(i).customer_id;
+                String ticket_price = list.get(i).ticket_price;
+
+//                System.out.println(id + " " + ("".equals(customer_id) ? "Seat Not Book Yet" : "Seat has been booked") + " " + ("".equals(ticket_price) ? "0" : ticket_price));
+            }
+
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+        return list;
     }
-    
+
     // Delete this if you have customer class
     private static class Customer {
 
@@ -481,8 +513,9 @@ public class API {
         }
     }
 
-    private static class Movie {
+    public static class Movie {
 
+        String id;
         String name;
         String release_date;
         String cast;
@@ -492,7 +525,8 @@ public class API {
         int total_seat;
         String image_url;
 
-        public Movie(String name, String release_date, String cast, String synopsis, String day, String time, int total_seat, String image_url) {
+        public Movie(String id, String name, String release_date, String cast, String synopsis, String day, String time, int total_seat, String image_url) {
+            this.id = id;
             this.name = name;
             this.release_date = release_date;
             this.cast = cast;
@@ -502,6 +536,22 @@ public class API {
             this.total_seat = total_seat;
             this.image_url = image_url;
         }
+    }
+
+    public static class Seat {
+
+        String id;
+        String movie_id;
+        String customer_id;
+        String ticket_price;
+
+        public Seat(String id, String movie_id, String customer_id, String ticket_price) {
+            this.id = id;
+            this.movie_id = movie_id;
+            this.customer_id = customer_id;
+            this.ticket_price = ticket_price;
+        }
+
     }
 
     // Utility Method (no need to see)

@@ -1,109 +1,386 @@
 package cinemaswingtest1;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
+//import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JButton;
 
 public class MovieSeat1 extends javax.swing.JFrame {
-    
+
     private int[] seat = new int[78];
-    private String[] id = {"A01","A02","A04","A05","A07","A08","A10","A11",
-                            "B01","B03","B05","B07","B09","B11",
-                            "C01","C02","C04","C05","C07","C08","C10","C11",
-                            "D01","D03","D05","D07","D09","D11",
-                            "E01","E02","E04","E05","E07","E08","E10","E11",
-                            "F01","F03","F05","F07","F09","F11",
-                            "G01","G02","G04","G05","G07","G08","G10","G11",
-                            "H01","H03","H05","H07","H09","H11",
-                            "I01","I02","I04","I05","I07","I08","I10","I11",
-                            "J01","J03","J05","J07","J09","J11",
-                            "K01","K02","K04","K05","K07","K08","K10","K11"};
+    private String[] id = {"A01", "A02", "A04", "A05", "A07", "A08", "A10", "A11",
+        "B01", "B03", "B05", "B07", "B09", "B11",
+        "C01", "C02", "C04", "C05", "C07", "C08", "C10", "C11",
+        "D01", "D03", "D05", "D07", "D09", "D11",
+        "E01", "E02", "E04", "E05", "E07", "E08", "E10", "E11",
+        "F01", "F03", "F05", "F07", "F09", "F11",
+        "G01", "G02", "G04", "G05", "G07", "G08", "G10", "G11",
+        "H01", "H03", "H05", "H07", "H09", "H11",
+        "I01", "I02", "I04", "I05", "I07", "I08", "I10", "I11",
+        "J01", "J03", "J05", "J07", "J09", "J11",
+        "K01", "K02", "K04", "K05", "K07", "K08", "K10", "K11"};
     private int cnt;
+    private List<JButton> btn = new ArrayList<>();
+    List<API.Seat> seats;
+    List<String> seat_id = new ArrayList<>();
+    List<Integer> booked_idx = new ArrayList<>();
+    List<Integer> havent_book_idx = new ArrayList<>();
+    List<Integer> to_book_seat_idx = new ArrayList<>();
 
     /**
      * Creates new form Seat
      */
     public MovieSeat1() {
         initComponents();
-        if (customer_email != null) {btnA01.setEnabled(false);}
-        if (customer_email != null) {btnA02.setEnabled(false);}
-        if (customer_email != null) {btnA04.setEnabled(false);}
-        if (customer_email != null) {btnA05.setEnabled(false);}
-        if (customer_email != null) {btnA07.setEnabled(false);}
-        if (customer_email != null) {btnA08.setEnabled(false);}
-        if (customer_email != null) {btnA10.setEnabled(false);}
-        if (customer_email != null) {btnA11.setEnabled(false);}
-        if (customer_email != null) {btnB01.setEnabled(false);}
-        if (customer_email != null) {btnB03.setEnabled(false);}
-        if (customer_email != null) {btnB05.setEnabled(false);}
-        if (customer_email != null) {btnB07.setEnabled(false);}
-        if (customer_email != null) {btnB09.setEnabled(false);}
-        if (customer_email != null) {btnB11.setEnabled(false);}
-        if (customer_email != null) {btnC01.setEnabled(false);}
-        if (customer_email != null) {btnC02.setEnabled(false);}
-        if (customer_email != null) {btnC04.setEnabled(false);}
-        if (customer_email != null) {btnC05.setEnabled(false);}
-        if (customer_email != null) {btnC07.setEnabled(false);}
-        if (customer_email != null) {btnC08.setEnabled(false);}
-        if (customer_email != null) {btnC10.setEnabled(false);}
-        if (customer_email != null) {btnC11.setEnabled(false);}
-        if (customer_email != null) {btnD01.setEnabled(false);}
-        if (customer_email != null) {btnD03.setEnabled(false);}
-        if (customer_email != null) {btnD05.setEnabled(false);}
-        if (customer_email != null) {btnD07.setEnabled(false);}
-        if (customer_email != null) {btnD09.setEnabled(false);}
-        if (customer_email != null) {btnD11.setEnabled(false);}
-        if (customer_email != null) {btnE01.setEnabled(false);}
-        if (customer_email != null) {btnE02.setEnabled(false);}
-        if (customer_email != null) {btnE04.setEnabled(false);}
-        if (customer_email != null) {btnE05.setEnabled(false);}
-        if (customer_email != null) {btnE07.setEnabled(false);}
-        if (customer_email != null) {btnE08.setEnabled(false);}
-        if (customer_email != null) {btnE10.setEnabled(false);}
-        if (customer_email != null) {btnE11.setEnabled(false);}
-        if (customer_email != null) {btnF01.setEnabled(false);}
-        if (customer_email != null) {btnF03.setEnabled(false);}
-        if (customer_email != null) {btnF05.setEnabled(false);}
-        if (customer_email != null) {btnF07.setEnabled(false);}
-        if (customer_email != null) {btnF09.setEnabled(false);}
-        if (customer_email != null) {btnF11.setEnabled(false);}
-        if (customer_email != null) {btnG01.setEnabled(false);}
-        if (customer_email != null) {btnG02.setEnabled(false);}
-        if (customer_email != null) {btnG04.setEnabled(false);}
-        if (customer_email != null) {btnG05.setEnabled(false);}
-        if (customer_email != null) {btnG07.setEnabled(false);}
-        if (customer_email != null) {btnG08.setEnabled(false);}
-        if (customer_email != null) {btnG10.setEnabled(false);}
-        if (customer_email != null) {btnG11.setEnabled(false);}
-        if (customer_email != null) {btnH01.setEnabled(false);}
-        if (customer_email != null) {btnH03.setEnabled(false);}
-        if (customer_email != null) {btnH05.setEnabled(false);}
-        if (customer_email != null) {btnH07.setEnabled(false);}
-        if (customer_email != null) {btnH09.setEnabled(false);}
-        if (customer_email != null) {btnH11.setEnabled(false);}
-        if (customer_email != null) {btnI01.setEnabled(false);}
-        if (customer_email != null) {btnI02.setEnabled(false);}
-        if (customer_email != null) {btnI04.setEnabled(false);}
-        if (customer_email != null) {btnI05.setEnabled(false);}
-        if (customer_email != null) {btnI07.setEnabled(false);}
-        if (customer_email != null) {btnI08.setEnabled(false);}
-        if (customer_email != null) {btnI10.setEnabled(false);}
-        if (customer_email != null) {btnI11.setEnabled(false);}
-        if (customer_email != null) {btnJ01.setEnabled(false);}
-        if (customer_email != null) {btnJ03.setEnabled(false);}
-        if (customer_email != null) {btnJ05.setEnabled(false);}
-        if (customer_email != null) {btnJ07.setEnabled(false);}
-        if (customer_email != null) {btnJ09.setEnabled(false);}
-        if (customer_email != null) {btnJ11.setEnabled(false);}
-        if (customer_email != null) {btnK01.setEnabled(false);}
-        if (customer_email != null) {btnK02.setEnabled(false);}
-        if (customer_email != null) {btnK04.setEnabled(false);}
-        if (customer_email != null) {btnK05.setEnabled(false);}
-        if (customer_email != null) {btnK07.setEnabled(false);}
-        if (customer_email != null) {btnK08.setEnabled(false);}
-        if (customer_email != null) {btnK10.setEnabled(false);}
-        if (customer_email != null) {btnK11.setEnabled(false);}
-    }    
+        initBtn();
+
+        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
+
+        for (int i = 0; i < seats.size(); i++) {
+            seat_id.add(seats.get(i).id);
+            if (seats.get(i).customer_id == "") {
+                havent_book_idx.add(i);
+            } else {
+                booked_idx.add(i);
+            }
+        }
+
+        for (int i = 0; i < booked_idx.size(); i++) {
+            btn.get(i).setEnabled(false);
+        }
+
+        for (int i = 0; i < havent_book_idx.size(); i++) {
+            btn.get(i).setEnabled(true);
+        }
+
+    }
+
+    public void confirm() {
+        System.out.println("confirm");
+        for (int i = 0; i < to_book_seat_idx.size(); i++) {
+            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
+        }
+    }
+
+//    public void unused() {
+//        if (havent_book_idx.get(0) != "") {
+//            btnA01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnA11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB03.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB09.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnB11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnC11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD03.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD09.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnD11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnE11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF03.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF09.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnF11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnG11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH03.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH09.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnH11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnI11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ03.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ09.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnJ11.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK01.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK02.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK04.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK05.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK07.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK08.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK10.setEnabled(false);
+//        }
+//        if (customer_email != null) {
+//            btnK11.setEnabled(false);
+//        }
+//    }
+    public void initBtn() {
+        btn.add(btnA01);
+        btn.add(btnA02);
+        btn.add(btnA04);
+        btn.add(btnA05);
+        btn.add(btnA07);
+        btn.add(btnA08);
+        btn.add(btnA10);
+        btn.add(btnA11);
+        btn.add(btnB01);
+        btn.add(btnB03);
+        btn.add(btnB05);
+        btn.add(btnB07);
+        btn.add(btnB09);
+        btn.add(btnB11);
+        btn.add(btnC01);
+        btn.add(btnC02);
+        btn.add(btnC04);
+        btn.add(btnC05);
+        btn.add(btnC07);
+        btn.add(btnC08);
+        btn.add(btnC10);
+        btn.add(btnC11);
+        btn.add(btnD01);
+        btn.add(btnD03);
+        btn.add(btnD05);
+        btn.add(btnD07);
+        btn.add(btnD09);
+        btn.add(btnD11);
+        btn.add(btnE01);
+        btn.add(btnE02);
+        btn.add(btnE04);
+        btn.add(btnE05);
+        btn.add(btnE07);
+        btn.add(btnE08);
+        btn.add(btnE10);
+        btn.add(btnE11);
+        btn.add(btnF01);
+        btn.add(btnF03);
+        btn.add(btnF05);
+        btn.add(btnF07);
+        btn.add(btnF09);
+        btn.add(btnF11);
+        btn.add(btnG01);
+        btn.add(btnG02);
+        btn.add(btnG04);
+        btn.add(btnG05);
+        btn.add(btnG07);
+        btn.add(btnG08);
+        btn.add(btnG10);
+        btn.add(btnG11);
+        btn.add(btnH01);
+        btn.add(btnH03);
+        btn.add(btnH05);
+        btn.add(btnH07);
+        btn.add(btnH09);
+        btn.add(btnH11);
+        btn.add(btnI01);
+        btn.add(btnI02);
+        btn.add(btnI04);
+        btn.add(btnI05);
+        btn.add(btnI07);
+        btn.add(btnI08);
+        btn.add(btnI10);
+        btn.add(btnI11);
+        btn.add(btnJ01);
+        btn.add(btnJ03);
+        btn.add(btnJ05);
+        btn.add(btnJ07);
+        btn.add(btnJ09);
+        btn.add(btnJ11);
+        btn.add(btnK01);
+        btn.add(btnK02);
+        btn.add(btnK04);
+        btn.add(btnK05);
+        btn.add(btnK07);
+        btn.add(btnK08);
+        btn.add(btnK10);
+        btn.add(btnK11);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1076,15 +1353,15 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA02.setBackground(new Color(255, 204, 255));
             seat[0] = 0;
             seat[1] = 0;
-            cnt-=2;
-        }
-        else if (seat[0] == 0) {
+            cnt -= 2;
+        } else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
             btnA02.setBackground(Color.YELLOW);
             seat[0] = 1;
             seat[1] = 1;
-            cnt+=2;
+            cnt += 2;
         }
+        to_book_seat_idx.add(0);
     }//GEN-LAST:event_btnA01ActionPerformed
 
     private void btnA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA02ActionPerformed
@@ -1093,15 +1370,15 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA02.setBackground(new Color(255, 204, 255));
             seat[0] = 0;
             seat[1] = 0;
-            cnt-=2;
-        }
-        else if (seat[0] == 0) {
+            cnt -= 2;
+        } else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
             btnA02.setBackground(Color.YELLOW);
             seat[0] = 1;
             seat[1] = 1;
-            cnt+=2;
+            cnt += 2;
         }
+        to_book_seat_idx.add(1);
     }//GEN-LAST:event_btnA02ActionPerformed
 
     private void btnA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA04ActionPerformed
@@ -1110,14 +1387,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA05.setBackground(new Color(255, 204, 255));
             seat[2] = 0;
             seat[3] = 0;
-            cnt-=2;
-        }
-        else if (seat[2] == 0) {
+            cnt -= 2;
+        } else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
             btnA05.setBackground(Color.YELLOW);
             seat[2] = 1;
             seat[3] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA04ActionPerformed
 
@@ -1127,14 +1403,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA05.setBackground(new Color(255, 204, 255));
             seat[2] = 0;
             seat[3] = 0;
-            cnt-=2;
-        }
-        else if (seat[2] == 0) {
+            cnt -= 2;
+        } else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
             btnA05.setBackground(Color.YELLOW);
             seat[2] = 1;
             seat[3] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA05ActionPerformed
 
@@ -1144,14 +1419,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA08.setBackground(new Color(255, 204, 255));
             seat[4] = 0;
             seat[5] = 0;
-            cnt-=2;
-        }
-        else if (seat[4] == 0) {
+            cnt -= 2;
+        } else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
             btnA08.setBackground(Color.YELLOW);
             seat[4] = 1;
             seat[5] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA07ActionPerformed
 
@@ -1161,14 +1435,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA08.setBackground(new Color(255, 204, 255));
             seat[4] = 0;
             seat[5] = 0;
-            cnt-=2;
-        }
-        else if (seat[4] == 0) {
+            cnt -= 2;
+        } else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
             btnA08.setBackground(Color.YELLOW);
             seat[4] = 1;
             seat[5] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA08ActionPerformed
 
@@ -1178,14 +1451,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA11.setBackground(new Color(255, 204, 255));
             seat[6] = 0;
             seat[7] = 0;
-            cnt-=2;
-        }
-        else if (seat[6] == 0) {
+            cnt -= 2;
+        } else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
             btnA11.setBackground(Color.YELLOW);
             seat[6] = 1;
             seat[7] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA10ActionPerformed
 
@@ -1195,14 +1467,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA11.setBackground(new Color(255, 204, 255));
             seat[6] = 0;
             seat[7] = 0;
-            cnt-=2;
-        }
-        else if (seat[6] == 0) {
+            cnt -= 2;
+        } else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
             btnA11.setBackground(Color.YELLOW);
             seat[6] = 1;
             seat[7] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnA11ActionPerformed
 
@@ -1210,25 +1481,24 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[8] == 1) {
             btnB01.setBackground(Color.WHITE);
             seat[8] = 0;
-            cnt-=1;
-        }
-        else if (seat[8] == 0) {
+            cnt -= 1;
+        } else if (seat[8] == 0) {
             btnB01.setBackground(Color.YELLOW);
             seat[8] = 1;
-            cnt+=1;
+            cnt += 1;
         }
+        to_book_seat_idx.add(8);
     }//GEN-LAST:event_btnB01ActionPerformed
 
     private void btnB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB03ActionPerformed
         if (seat[9] == 1) {
             btnB03.setBackground(Color.WHITE);
             seat[9] = 0;
-            cnt-=1;
-        }
-        else if (seat[9] == 0) {
+            cnt -= 1;
+        } else if (seat[9] == 0) {
             btnB03.setBackground(Color.YELLOW);
             seat[9] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnB03ActionPerformed
 
@@ -1236,12 +1506,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[10] == 1) {
             btnB05.setBackground(Color.WHITE);
             seat[10] = 0;
-            cnt-=1;
-        }
-        else if (seat[10] == 0) {
+            cnt -= 1;
+        } else if (seat[10] == 0) {
             btnB05.setBackground(Color.YELLOW);
             seat[10] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnB05ActionPerformed
 
@@ -1249,12 +1518,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[11] == 1) {
             btnB07.setBackground(Color.WHITE);
             seat[11] = 0;
-            cnt-=1;
-        }
-        else if (seat[11] == 0) {
+            cnt -= 1;
+        } else if (seat[11] == 0) {
             btnB07.setBackground(Color.YELLOW);
             seat[11] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnB07ActionPerformed
 
@@ -1262,12 +1530,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[12] == 1) {
             btnB09.setBackground(Color.WHITE);
             seat[12] = 0;
-            cnt-=1;
-        }
-        else if (seat[12] == 0) {
+            cnt -= 1;
+        } else if (seat[12] == 0) {
             btnB09.setBackground(Color.YELLOW);
             seat[12] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnB09ActionPerformed
 
@@ -1275,12 +1542,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[13] == 1) {
             btnB11.setBackground(Color.WHITE);
             seat[13] = 0;
-            cnt-=1;
-        }
-        else if (seat[13] == 0) {
+            cnt -= 1;
+        } else if (seat[13] == 0) {
             btnB11.setBackground(Color.YELLOW);
             seat[13] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnB11ActionPerformed
 
@@ -1290,14 +1556,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC02.setBackground(new Color(255, 204, 255));
             seat[14] = 0;
             seat[15] = 0;
-            cnt-=2;
-        }
-        else if (seat[14] == 0) {
+            cnt -= 2;
+        } else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
             btnC02.setBackground(Color.YELLOW);
             seat[14] = 1;
             seat[15] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC01ActionPerformed
 
@@ -1307,14 +1572,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC02.setBackground(new Color(255, 204, 255));
             seat[14] = 0;
             seat[15] = 0;
-            cnt-=2;
-        }
-        else if (seat[14] == 0) {
+            cnt -= 2;
+        } else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
             btnC02.setBackground(Color.YELLOW);
             seat[14] = 1;
             seat[15] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC02ActionPerformed
 
@@ -1324,14 +1588,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC05.setBackground(new Color(255, 204, 255));
             seat[16] = 0;
             seat[17] = 0;
-            cnt-=2;
-        }
-        else if (seat[16] == 0) {
+            cnt -= 2;
+        } else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
             btnC05.setBackground(Color.YELLOW);
             seat[16] = 1;
             seat[17] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC04ActionPerformed
 
@@ -1341,14 +1604,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC05.setBackground(new Color(255, 204, 255));
             seat[16] = 0;
             seat[17] = 0;
-            cnt-=2;
-        }
-        else if (seat[16] == 0) {
+            cnt -= 2;
+        } else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
             btnC05.setBackground(Color.YELLOW);
             seat[16] = 1;
             seat[17] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC05ActionPerformed
 
@@ -1358,14 +1620,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC08.setBackground(new Color(255, 204, 255));
             seat[18] = 0;
             seat[19] = 0;
-            cnt-=2;
-        }
-        else if (seat[18] == 0) {
+            cnt -= 2;
+        } else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
             btnC08.setBackground(Color.YELLOW);
             seat[18] = 1;
             seat[19] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC07ActionPerformed
 
@@ -1375,14 +1636,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC08.setBackground(new Color(255, 204, 255));
             seat[18] = 0;
             seat[19] = 0;
-            cnt-=2;
-        }
-        else if (seat[18] == 0) {
+            cnt -= 2;
+        } else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
             btnC08.setBackground(Color.YELLOW);
             seat[18] = 1;
             seat[19] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC08ActionPerformed
 
@@ -1392,14 +1652,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC11.setBackground(new Color(255, 204, 255));
             seat[20] = 0;
             seat[21] = 0;
-            cnt-=2;
-        }
-        else if (seat[20] == 0) {
+            cnt -= 2;
+        } else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
             btnC11.setBackground(Color.YELLOW);
             seat[20] = 1;
             seat[21] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC10ActionPerformed
 
@@ -1409,14 +1668,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC11.setBackground(new Color(255, 204, 255));
             seat[20] = 0;
             seat[21] = 0;
-            cnt-=2;
-        }
-        else if (seat[20] == 0) {
+            cnt -= 2;
+        } else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
             btnC11.setBackground(Color.YELLOW);
             seat[20] = 1;
             seat[21] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnC11ActionPerformed
 
@@ -1424,12 +1682,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[22] == 1) {
             btnD01.setBackground(Color.WHITE);
             seat[22] = 0;
-            cnt-=1;
-        }
-        else if (seat[22] == 0) {
+            cnt -= 1;
+        } else if (seat[22] == 0) {
             btnD01.setBackground(Color.YELLOW);
             seat[22] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD01ActionPerformed
 
@@ -1437,12 +1694,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[23] == 1) {
             btnD03.setBackground(Color.WHITE);
             seat[23] = 0;
-            cnt-=1;
-        }
-        else if (seat[23] == 0) {
+            cnt -= 1;
+        } else if (seat[23] == 0) {
             btnD03.setBackground(Color.YELLOW);
             seat[23] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD03ActionPerformed
 
@@ -1450,12 +1706,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[24] == 1) {
             btnD05.setBackground(Color.WHITE);
             seat[24] = 0;
-            cnt-=1;
-        }
-        else if (seat[24] == 0) {
+            cnt -= 1;
+        } else if (seat[24] == 0) {
             btnD05.setBackground(Color.YELLOW);
             seat[24] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD05ActionPerformed
 
@@ -1463,12 +1718,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[25] == 1) {
             btnD07.setBackground(Color.WHITE);
             seat[25] = 0;
-            cnt-=1;
-        }
-        else if (seat[25] == 0) {
+            cnt -= 1;
+        } else if (seat[25] == 0) {
             btnD07.setBackground(Color.YELLOW);
             seat[25] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD07ActionPerformed
 
@@ -1476,12 +1730,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[26] == 1) {
             btnD09.setBackground(Color.WHITE);
             seat[26] = 0;
-            cnt-=1;
-        }
-        else if (seat[26] == 0) {
+            cnt -= 1;
+        } else if (seat[26] == 0) {
             btnD09.setBackground(Color.YELLOW);
             seat[26] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD09ActionPerformed
 
@@ -1489,12 +1742,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[27] == 1) {
             btnD11.setBackground(Color.WHITE);
             seat[27] = 0;
-            cnt-=1;
-        }
-        else if (seat[27] == 0) {
+            cnt -= 1;
+        } else if (seat[27] == 0) {
             btnD11.setBackground(Color.YELLOW);
             seat[27] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnD11ActionPerformed
 
@@ -1504,14 +1756,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE02.setBackground(new Color(255, 204, 255));
             seat[28] = 0;
             seat[29] = 0;
-            cnt-=2;
-        }
-        else if (seat[28] == 0) {
+            cnt -= 2;
+        } else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
             btnE02.setBackground(Color.YELLOW);
             seat[28] = 1;
             seat[29] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE01ActionPerformed
 
@@ -1521,14 +1772,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE02.setBackground(new Color(255, 204, 255));
             seat[28] = 0;
             seat[29] = 0;
-            cnt-=2;
-        }
-        else if (seat[28] == 0) {
+            cnt -= 2;
+        } else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
             btnE02.setBackground(Color.YELLOW);
             seat[28] = 1;
             seat[29] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE02ActionPerformed
 
@@ -1538,14 +1788,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE05.setBackground(new Color(255, 204, 255));
             seat[30] = 0;
             seat[31] = 0;
-            cnt-=2;
-        }
-        else if (seat[30] == 0) {
+            cnt -= 2;
+        } else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
             btnE05.setBackground(Color.YELLOW);
             seat[30] = 1;
             seat[31] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE04ActionPerformed
 
@@ -1555,14 +1804,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE05.setBackground(new Color(255, 204, 255));
             seat[30] = 0;
             seat[31] = 0;
-            cnt-=2;
-        }
-        else if (seat[30] == 0) {
+            cnt -= 2;
+        } else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
             btnE05.setBackground(Color.YELLOW);
             seat[30] = 1;
             seat[31] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE05ActionPerformed
 
@@ -1572,14 +1820,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE08.setBackground(new Color(255, 204, 255));
             seat[32] = 0;
             seat[33] = 0;
-            cnt-=2;
-        }
-        else if (seat[32] == 0) {
+            cnt -= 2;
+        } else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
             btnE08.setBackground(Color.YELLOW);
             seat[32] = 1;
             seat[33] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE07ActionPerformed
 
@@ -1589,14 +1836,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE08.setBackground(new Color(255, 204, 255));
             seat[32] = 0;
             seat[33] = 0;
-            cnt-=2;
-        }
-        else if (seat[32] == 0) {
+            cnt -= 2;
+        } else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
             btnE08.setBackground(Color.YELLOW);
             seat[32] = 1;
             seat[33] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE08ActionPerformed
 
@@ -1606,14 +1852,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE11.setBackground(new Color(255, 204, 255));
             seat[34] = 0;
             seat[35] = 0;
-            cnt-=2;
-        }
-        else if (seat[34] == 0) {
+            cnt -= 2;
+        } else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
             btnE11.setBackground(Color.YELLOW);
             seat[34] = 1;
             seat[35] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE10ActionPerformed
 
@@ -1623,14 +1868,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE11.setBackground(new Color(255, 204, 255));
             seat[34] = 0;
             seat[35] = 0;
-            cnt-=2;
-        }
-        else if (seat[34] == 0) {
+            cnt -= 2;
+        } else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
             btnE11.setBackground(Color.YELLOW);
             seat[34] = 1;
             seat[35] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnE11ActionPerformed
 
@@ -1638,12 +1882,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[36] == 1) {
             btnF01.setBackground(Color.WHITE);
             seat[36] = 0;
-            cnt-=1;
-        }
-        else if (seat[36] == 0) {
+            cnt -= 1;
+        } else if (seat[36] == 0) {
             btnF01.setBackground(Color.YELLOW);
             seat[36] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF01ActionPerformed
 
@@ -1651,12 +1894,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[37] == 1) {
             btnF03.setBackground(Color.WHITE);
             seat[37] = 0;
-            cnt-=1;
-        }
-        else if (seat[37] == 0) {
+            cnt -= 1;
+        } else if (seat[37] == 0) {
             btnF03.setBackground(Color.YELLOW);
             seat[37] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF03ActionPerformed
 
@@ -1664,12 +1906,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[38] == 1) {
             btnF05.setBackground(Color.WHITE);
             seat[38] = 0;
-            cnt-=1;
-        }
-        else if (seat[38] == 0) {
+            cnt -= 1;
+        } else if (seat[38] == 0) {
             btnF05.setBackground(Color.YELLOW);
             seat[38] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF05ActionPerformed
 
@@ -1677,12 +1918,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[39] == 1) {
             btnF07.setBackground(Color.WHITE);
             seat[39] = 0;
-            cnt-=1;
-        }
-        else if (seat[39] == 0) {
+            cnt -= 1;
+        } else if (seat[39] == 0) {
             btnF07.setBackground(Color.YELLOW);
             seat[39] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF07ActionPerformed
 
@@ -1690,12 +1930,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[40] == 1) {
             btnF09.setBackground(Color.WHITE);
             seat[40] = 0;
-            cnt-=1;
-        }
-        else if (seat[40] == 0) {
+            cnt -= 1;
+        } else if (seat[40] == 0) {
             btnF09.setBackground(Color.YELLOW);
             seat[40] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF09ActionPerformed
 
@@ -1703,12 +1942,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[41] == 1) {
             btnF11.setBackground(Color.WHITE);
             seat[41] = 0;
-            cnt-=1;
-        }
-        else if (seat[41] == 0) {
+            cnt -= 1;
+        } else if (seat[41] == 0) {
             btnF11.setBackground(Color.YELLOW);
             seat[41] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnF11ActionPerformed
 
@@ -1718,14 +1956,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG02.setBackground(new Color(255, 204, 255));
             seat[42] = 0;
             seat[43] = 0;
-            cnt-=2;
-        }
-        else if (seat[42] == 0) {
+            cnt -= 2;
+        } else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
             btnG02.setBackground(Color.YELLOW);
             seat[42] = 1;
             seat[43] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG01ActionPerformed
 
@@ -1735,14 +1972,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG02.setBackground(new Color(255, 204, 255));
             seat[42] = 0;
             seat[43] = 0;
-            cnt-=2;
-        }
-        else if (seat[42] == 0) {
+            cnt -= 2;
+        } else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
             btnG02.setBackground(Color.YELLOW);
             seat[42] = 1;
             seat[43] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG02ActionPerformed
 
@@ -1752,14 +1988,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG05.setBackground(new Color(255, 204, 255));
             seat[44] = 0;
             seat[45] = 0;
-            cnt-=2;
-        }
-        else if (seat[44] == 0) {
+            cnt -= 2;
+        } else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
             btnG05.setBackground(Color.YELLOW);
             seat[44] = 1;
             seat[45] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG04ActionPerformed
 
@@ -1769,14 +2004,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG05.setBackground(new Color(255, 204, 255));
             seat[44] = 0;
             seat[45] = 0;
-            cnt-=2;
-        }
-        else if (seat[44] == 0) {
+            cnt -= 2;
+        } else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
             btnG05.setBackground(Color.YELLOW);
             seat[44] = 1;
             seat[45] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG05ActionPerformed
 
@@ -1786,14 +2020,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG08.setBackground(new Color(255, 204, 255));
             seat[46] = 0;
             seat[47] = 0;
-            cnt-=2;
-        }
-        else if (seat[46] == 0) {
+            cnt -= 2;
+        } else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
             btnG08.setBackground(Color.YELLOW);
             seat[46] = 1;
             seat[47] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG07ActionPerformed
 
@@ -1803,14 +2036,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG08.setBackground(new Color(255, 204, 255));
             seat[46] = 0;
             seat[47] = 0;
-            cnt-=2;
-        }
-        else if (seat[46] == 0) {
+            cnt -= 2;
+        } else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
             btnG08.setBackground(Color.YELLOW);
             seat[46] = 1;
             seat[47] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG08ActionPerformed
 
@@ -1820,14 +2052,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG11.setBackground(new Color(255, 204, 255));
             seat[48] = 0;
             seat[49] = 0;
-            cnt-=2;
-        }
-        else if (seat[48] == 0) {
+            cnt -= 2;
+        } else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
             btnG11.setBackground(Color.YELLOW);
             seat[48] = 1;
             seat[49] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG10ActionPerformed
 
@@ -1837,14 +2068,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG11.setBackground(new Color(255, 204, 255));
             seat[48] = 0;
             seat[49] = 0;
-            cnt-=2;
-        }
-        else if (seat[48] == 0) {
+            cnt -= 2;
+        } else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
             btnG11.setBackground(Color.YELLOW);
             seat[48] = 1;
             seat[49] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnG11ActionPerformed
 
@@ -1852,12 +2082,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[50] == 1) {
             btnH01.setBackground(Color.WHITE);
             seat[50] = 0;
-            cnt-=1;
-        }
-        else if (seat[50] == 0) {
+            cnt -= 1;
+        } else if (seat[50] == 0) {
             btnH01.setBackground(Color.YELLOW);
             seat[50] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH01ActionPerformed
 
@@ -1865,12 +2094,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[51] == 1) {
             btnH03.setBackground(Color.WHITE);
             seat[51] = 0;
-            cnt-=1;
-        }
-        else if (seat[51] == 0) {
+            cnt -= 1;
+        } else if (seat[51] == 0) {
             btnH03.setBackground(Color.YELLOW);
             seat[51] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH03ActionPerformed
 
@@ -1878,12 +2106,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[52] == 1) {
             btnH05.setBackground(Color.WHITE);
             seat[52] = 0;
-            cnt-=1;
-        }
-        else if (seat[52] == 0) {
+            cnt -= 1;
+        } else if (seat[52] == 0) {
             btnH05.setBackground(Color.YELLOW);
             seat[52] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH05ActionPerformed
 
@@ -1891,12 +2118,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[53] == 1) {
             btnH07.setBackground(Color.WHITE);
             seat[53] = 0;
-            cnt-=1;
-        }
-        else if (seat[53] == 0) {
+            cnt -= 1;
+        } else if (seat[53] == 0) {
             btnH07.setBackground(Color.YELLOW);
             seat[53] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH07ActionPerformed
 
@@ -1904,12 +2130,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[54] == 1) {
             btnH09.setBackground(Color.WHITE);
             seat[54] = 0;
-            cnt-=1;
-        }
-        else if (seat[54] == 0) {
+            cnt -= 1;
+        } else if (seat[54] == 0) {
             btnH09.setBackground(Color.YELLOW);
             seat[54] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH09ActionPerformed
 
@@ -1917,12 +2142,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[55] == 1) {
             btnH11.setBackground(Color.WHITE);
             seat[55] = 0;
-            cnt-=1;
-        }
-        else if (seat[55] == 0) {
+            cnt -= 1;
+        } else if (seat[55] == 0) {
             btnH11.setBackground(Color.YELLOW);
             seat[55] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnH11ActionPerformed
 
@@ -1932,14 +2156,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI02.setBackground(new Color(255, 204, 255));
             seat[56] = 0;
             seat[57] = 0;
-            cnt-=2;
-        }
-        else if (seat[56] == 0) {
+            cnt -= 2;
+        } else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
             seat[56] = 1;
             seat[57] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI01ActionPerformed
 
@@ -1949,14 +2172,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI02.setBackground(new Color(255, 204, 255));
             seat[56] = 0;
             seat[57] = 0;
-            cnt-=2;
-        }
-        else if (seat[56] == 0) {
+            cnt -= 2;
+        } else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
             seat[56] = 1;
             seat[57] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI02ActionPerformed
 
@@ -1966,14 +2188,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI05.setBackground(new Color(255, 204, 255));
             seat[58] = 0;
             seat[59] = 0;
-            cnt-=2;
-        }
-        else if (seat[58] == 0) {
+            cnt -= 2;
+        } else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
             seat[58] = 1;
             seat[59] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI04ActionPerformed
 
@@ -1983,14 +2204,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI05.setBackground(new Color(255, 204, 255));
             seat[58] = 0;
             seat[59] = 0;
-            cnt-=2;
-        }
-        else if (seat[58] == 0) {
+            cnt -= 2;
+        } else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
             seat[58] = 1;
             seat[59] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI05ActionPerformed
 
@@ -2000,14 +2220,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI08.setBackground(new Color(255, 204, 255));
             seat[60] = 0;
             seat[61] = 0;
-            cnt-=2;
-        }
-        else if (seat[60] == 0) {
+            cnt -= 2;
+        } else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
             seat[60] = 1;
             seat[61] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI07ActionPerformed
 
@@ -2017,14 +2236,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI08.setBackground(new Color(255, 204, 255));
             seat[60] = 0;
             seat[61] = 0;
-            cnt-=2;
-        }
-        else if (seat[60] == 0) {
+            cnt -= 2;
+        } else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
             seat[60] = 1;
             seat[61] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI08ActionPerformed
 
@@ -2034,14 +2252,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI11.setBackground(new Color(255, 204, 255));
             seat[62] = 0;
             seat[63] = 0;
-            cnt-=2;
-        }
-        else if (seat[62] == 0) {
+            cnt -= 2;
+        } else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
             seat[62] = 1;
             seat[63] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI10ActionPerformed
 
@@ -2051,14 +2268,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI11.setBackground(new Color(255, 204, 255));
             seat[62] = 0;
             seat[63] = 0;
-            cnt-=2;
-        }
-        else if (seat[62] == 0) {
+            cnt -= 2;
+        } else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
             seat[62] = 1;
             seat[63] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnI11ActionPerformed
 
@@ -2066,12 +2282,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[64] == 1) {
             btnJ01.setBackground(Color.WHITE);
             seat[64] = 0;
-            cnt-=1;
-        }
-        else if (seat[64] == 0) {
+            cnt -= 1;
+        } else if (seat[64] == 0) {
             btnJ01.setBackground(Color.YELLOW);
             seat[64] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ01ActionPerformed
 
@@ -2079,12 +2294,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[65] == 1) {
             btnJ03.setBackground(Color.WHITE);
             seat[65] = 0;
-            cnt-=1;
-        }
-        else if (seat[65] == 0) {
+            cnt -= 1;
+        } else if (seat[65] == 0) {
             btnJ03.setBackground(Color.YELLOW);
             seat[65] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ03ActionPerformed
 
@@ -2092,12 +2306,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[66] == 1) {
             btnJ05.setBackground(Color.WHITE);
             seat[66] = 0;
-            cnt-=1;
-        }
-        else if (seat[66] == 0) {
+            cnt -= 1;
+        } else if (seat[66] == 0) {
             btnJ05.setBackground(Color.YELLOW);
             seat[66] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ05ActionPerformed
 
@@ -2105,12 +2318,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[67] == 1) {
             btnJ07.setBackground(Color.WHITE);
             seat[67] = 0;
-            cnt-=1;
-        }
-        else if (seat[67] == 0) {
+            cnt -= 1;
+        } else if (seat[67] == 0) {
             btnJ07.setBackground(Color.YELLOW);
             seat[67] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ07ActionPerformed
 
@@ -2118,12 +2330,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[68] == 1) {
             btnJ09.setBackground(Color.WHITE);
             seat[68] = 0;
-            cnt-=1;
-        }
-        else if (seat[68] == 0) {
+            cnt -= 1;
+        } else if (seat[68] == 0) {
             btnJ09.setBackground(Color.YELLOW);
             seat[68] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ09ActionPerformed
 
@@ -2131,12 +2342,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[69] == 1) {
             btnJ11.setBackground(Color.WHITE);
             seat[69] = 0;
-            cnt-=1;
-        }
-        else if (seat[69] == 0) {
+            cnt -= 1;
+        } else if (seat[69] == 0) {
             btnJ11.setBackground(Color.YELLOW);
             seat[69] = 1;
-            cnt+=1;
+            cnt += 1;
         }
     }//GEN-LAST:event_btnJ11ActionPerformed
 
@@ -2146,14 +2356,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK02.setBackground(new Color(255, 204, 255));
             seat[70] = 0;
             seat[71] = 0;
-            cnt-=2;
-        }
-        else if (seat[70] == 0) {
+            cnt -= 2;
+        } else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
             seat[70] = 1;
             seat[71] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK01ActionPerformed
 
@@ -2163,14 +2372,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK02.setBackground(new Color(255, 204, 255));
             seat[70] = 0;
             seat[71] = 0;
-            cnt-=2;
-        }
-        else if (seat[70] == 0) {
+            cnt -= 2;
+        } else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
             seat[70] = 1;
             seat[71] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK02ActionPerformed
 
@@ -2180,14 +2388,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK05.setBackground(new Color(255, 204, 255));
             seat[72] = 0;
             seat[73] = 0;
-            cnt-=2;
-        }
-        else if (seat[72] == 0) {
+            cnt -= 2;
+        } else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
             seat[72] = 1;
             seat[73] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK04ActionPerformed
 
@@ -2197,14 +2404,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK05.setBackground(new Color(255, 204, 255));
             seat[72] = 0;
             seat[73] = 0;
-            cnt-=2;
-        }
-        else if (seat[72] == 0) {
+            cnt -= 2;
+        } else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
             seat[72] = 1;
             seat[73] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK05ActionPerformed
 
@@ -2214,14 +2420,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK08.setBackground(new Color(255, 204, 255));
             seat[74] = 0;
             seat[75] = 0;
-            cnt-=2;
-        }
-        else if (seat[74] == 0) {
+            cnt -= 2;
+        } else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
             seat[74] = 1;
             seat[75] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK07ActionPerformed
 
@@ -2231,14 +2436,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK08.setBackground(new Color(255, 204, 255));
             seat[74] = 0;
             seat[75] = 0;
-            cnt-=2;
-        }
-        else if (seat[74] == 0) {
+            cnt -= 2;
+        } else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
             seat[74] = 1;
             seat[75] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK08ActionPerformed
 
@@ -2248,14 +2452,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK11.setBackground(new Color(255, 204, 255));
             seat[76] = 0;
             seat[77] = 0;
-            cnt-=2;
-        }
-        else if (seat[76] == 0) {
+            cnt -= 2;
+        } else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
             seat[76] = 1;
             seat[77] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK10ActionPerformed
 
@@ -2265,14 +2468,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK11.setBackground(new Color(255, 204, 255));
             seat[76] = 0;
             seat[77] = 0;
-            cnt-=2;
-        }
-        else if (seat[76] == 0) {
+            cnt -= 2;
+        } else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
             seat[76] = 1;
             seat[77] = 1;
-            cnt+=2;
+            cnt += 2;
         }
     }//GEN-LAST:event_btnK11ActionPerformed
 
@@ -2283,19 +2485,20 @@ public class MovieSeat1 extends javax.swing.JFrame {
                 if (seat[i] == 1) {
                     Global.seat_no += id[i] + " ";
 //                    API.bookSeat(Global.customer_email, seat_id);
+//                    confirm();
                 }
             }
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
-        if (cnt==0){
+        if (cnt == 0) {
             JOptionPane.showMessageDialog(this, "Please Select Your Seat !");
-        }
-        else{
-            JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
+        } else {
+            JOptionPane.showMessageDialog(this, "You Have Selected " + cnt + " Seat(s)");
             Global.cnt_seat = String.valueOf(cnt);
-            
+            confirm();
             TicketClass1 tc1 = new TicketClass1();
             tc1.setVisible(true);
             tc1.pack();

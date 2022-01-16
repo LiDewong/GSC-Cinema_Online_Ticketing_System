@@ -1,11 +1,14 @@
 package cinemaswingtest1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CinemaSwingTest1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 //        API.createMovie("lide", "12345", "lide and his team", "lide", "monday", "1234", 10, "c/s");
 //    API.bookSeat(customer_email, seat_id)
-API.getAllSeat("ckyfkw43g000008o4wz5fpykk");
+//API.getAllSeat("ckyfkw43g000008o4wz5fpykk");
 //int total =78;
 //API.createMovie("lide", "12345", "lide and his team", "lide", "monday", "1234", total, "c/s");
 
@@ -29,6 +32,28 @@ API.getAllSeat("ckyfkw43g000008o4wz5fpykk");
 //        API.createMovie("Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan.", day, time, totalseat5, image_url5);
 //    
 //    
+//        List<API.Movie> movie_list = API.getAllMovie();
+//        String id = movie_list.get(0).id;
+        
+        System.out.println("------");
+
+//        List<API.Seat> seat_list = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
+//        seat_list.get(0).id;
+//        ArrayList<String> arr = new ArrayList<>();
+//        
+//        for (int i = 0; i < seat_list.size(); i++) {
+//            if (seat_list.get(i).customer_id != "") {
+//                arr.add(seat_list.get(i).customer_id);
+//            }
+//        }
+//        ArrayList<String> seatIDs = new ArrayList<>();
+//        seatIDs.add(id);
+//        
+//        //next
+//        for (int i = 0; i < seatIDs.size(); i++) {
+//            API.bookSeat(Global.customer_email, seatIDs.get(i));
+//        }
+
     }
-    
+
 }
