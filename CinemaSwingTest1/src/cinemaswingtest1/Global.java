@@ -11,5 +11,5 @@ package cinemaswingtest1;
 public class Global {
     public static String customer_email ="";
     public static String cnt_seat;
-    public static String movie_class;
+    public static String ticket_class;
 }

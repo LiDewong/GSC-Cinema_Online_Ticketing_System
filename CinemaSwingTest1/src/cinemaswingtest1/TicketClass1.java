@@ -10,12 +10,12 @@ import javax.swing.JFrame;
  *
  * @author Sengko
  */
-public class MovieClass1 extends javax.swing.JFrame {
+public class TicketClass1 extends javax.swing.JFrame {
     
     /**
      * Creates new form MovieClass
      */
-    public MovieClass1() {
+    public TicketClass1() {
         initComponents();
     }
 
@@ -53,7 +53,7 @@ public class MovieClass1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Movie Class");
+        jLabel2.setText("Ticket Class");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 69, 1030, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -148,15 +148,15 @@ public class MovieClass1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
-        Global.movie_class = "Student";
+        Global.ticket_class = "Student";
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnClassicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClassicActionPerformed
-        Global.movie_class = "Classic";
+        Global.ticket_class = "Classic";
     }//GEN-LAST:event_btnClassicActionPerformed
 
     private void btnPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPremiumActionPerformed
-        Global.movie_class = "Premium";
+        Global.ticket_class = "Premium";
     }//GEN-LAST:event_btnPremiumActionPerformed
 
     /**
@@ -176,21 +176,23 @@ public class MovieClass1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MovieClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MovieClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MovieClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MovieClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketClass1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MovieClass1().setVisible(true);
+                new TicketClass1().setVisible(true);
             }
         });
     }

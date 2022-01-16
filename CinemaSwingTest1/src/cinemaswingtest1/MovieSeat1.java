@@ -2212,11 +2212,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
             Global.cnt_seat = String.valueOf(cnt);
             
-            MovieClass1 mc1 = new MovieClass1();
-            mc1.setVisible(true);
-            mc1.pack();
-            mc1.setLocationRelativeTo(null);
-            mc1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            TicketClass1 tc1 = new TicketClass1();
+            tc1.setVisible(true);
+            tc1.pack();
+            tc1.setLocationRelativeTo(null);
+            tc1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.dispose();
         }
     }//GEN-LAST:event_btnNextActionPerformed
