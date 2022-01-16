@@ -1,6 +1,7 @@
 package cinemaswingtest1;
 
 import java.awt.Color;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class MovieSeat1 extends javax.swing.JFrame {
@@ -992,6 +993,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA02.setBackground(new Color(255, 204, 255));
             seat[0] = 0;
             seat[1] = 0;
+            cnt-=2;
         }
         else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
@@ -1008,6 +1010,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA02.setBackground(new Color(255, 204, 255));
             seat[0] = 0;
             seat[1] = 0;
+            cnt-=2;
         }
         else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
@@ -1024,6 +1027,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA05.setBackground(new Color(255, 204, 255));
             seat[2] = 0;
             seat[3] = 0;
+            cnt-=2;
         }
         else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
@@ -1040,6 +1044,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA05.setBackground(new Color(255, 204, 255));
             seat[2] = 0;
             seat[3] = 0;
+            cnt-=2;
         }
         else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
@@ -1056,6 +1061,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA08.setBackground(new Color(255, 204, 255));
             seat[4] = 0;
             seat[5] = 0;
+            cnt-=2;
         }
         else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
@@ -1072,6 +1078,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA08.setBackground(new Color(255, 204, 255));
             seat[4] = 0;
             seat[5] = 0;
+            cnt-=2;
         }
         else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
@@ -1088,6 +1095,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA11.setBackground(new Color(255, 204, 255));
             seat[6] = 0;
             seat[7] = 0;
+            cnt-=2;
         }
         else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
@@ -1104,6 +1112,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnA11.setBackground(new Color(255, 204, 255));
             seat[6] = 0;
             seat[7] = 0;
+            cnt-=2;
         }
         else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
@@ -1118,6 +1127,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[8] == 1) {
             btnB01.setBackground(Color.WHITE);
             seat[8] = 0;
+            cnt-=1;
         }
         else if (seat[8] == 0) {
             btnB01.setBackground(Color.YELLOW);
@@ -1130,6 +1140,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[9] == 1) {
             btnB03.setBackground(Color.WHITE);
             seat[9] = 0;
+            cnt-=1;
         }
         else if (seat[9] == 0) {
             btnB03.setBackground(Color.YELLOW);
@@ -1142,6 +1153,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[10] == 1) {
             btnB05.setBackground(Color.WHITE);
             seat[10] = 0;
+            cnt-=1;
         }
         else if (seat[10] == 0) {
             btnB05.setBackground(Color.YELLOW);
@@ -1154,6 +1166,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[11] == 1) {
             btnB07.setBackground(Color.WHITE);
             seat[11] = 0;
+            cnt-=1;
         }
         else if (seat[11] == 0) {
             btnB07.setBackground(Color.YELLOW);
@@ -1166,6 +1179,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[12] == 1) {
             btnB09.setBackground(Color.WHITE);
             seat[12] = 0;
+            cnt-=1;
         }
         else if (seat[12] == 0) {
             btnB09.setBackground(Color.YELLOW);
@@ -1178,6 +1192,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[13] == 1) {
             btnB11.setBackground(Color.WHITE);
             seat[13] = 0;
+            cnt-=1;
         }
         else if (seat[13] == 0) {
             btnB11.setBackground(Color.YELLOW);
@@ -1192,6 +1207,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC02.setBackground(new Color(255, 204, 255));
             seat[14] = 0;
             seat[15] = 0;
+            cnt-=2;
         }
         else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
@@ -1208,6 +1224,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC02.setBackground(new Color(255, 204, 255));
             seat[14] = 0;
             seat[15] = 0;
+            cnt-=2;
         }
         else if (seat[14] == 0) {
             btnC01.setBackground(Color.YELLOW);
@@ -1224,6 +1241,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC05.setBackground(new Color(255, 204, 255));
             seat[16] = 0;
             seat[17] = 0;
+            cnt-=2;
         }
         else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
@@ -1240,6 +1258,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC05.setBackground(new Color(255, 204, 255));
             seat[16] = 0;
             seat[17] = 0;
+            cnt-=2;
         }
         else if (seat[16] == 0) {
             btnC04.setBackground(Color.YELLOW);
@@ -1256,6 +1275,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC08.setBackground(new Color(255, 204, 255));
             seat[18] = 0;
             seat[19] = 0;
+            cnt-=2;
         }
         else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
@@ -1272,6 +1292,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC08.setBackground(new Color(255, 204, 255));
             seat[18] = 0;
             seat[19] = 0;
+            cnt-=2;
         }
         else if (seat[18] == 0) {
             btnC07.setBackground(Color.YELLOW);
@@ -1288,6 +1309,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC11.setBackground(new Color(255, 204, 255));
             seat[20] = 0;
             seat[21] = 0;
+            cnt-=2;
         }
         else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
@@ -1304,6 +1326,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnC11.setBackground(new Color(255, 204, 255));
             seat[20] = 0;
             seat[21] = 0;
+            cnt-=2;
         }
         else if (seat[20] == 0) {
             btnC10.setBackground(Color.YELLOW);
@@ -1318,6 +1341,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[22] == 1) {
             btnD01.setBackground(Color.WHITE);
             seat[22] = 0;
+            cnt-=1;
         }
         else if (seat[22] == 0) {
             btnD01.setBackground(Color.YELLOW);
@@ -1330,6 +1354,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[23] == 1) {
             btnD03.setBackground(Color.WHITE);
             seat[23] = 0;
+            cnt-=1;
         }
         else if (seat[23] == 0) {
             btnD03.setBackground(Color.YELLOW);
@@ -1342,6 +1367,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[24] == 1) {
             btnD05.setBackground(Color.WHITE);
             seat[24] = 0;
+            cnt-=1;
         }
         else if (seat[24] == 0) {
             btnD05.setBackground(Color.YELLOW);
@@ -1354,6 +1380,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[25] == 1) {
             btnD07.setBackground(Color.WHITE);
             seat[25] = 0;
+            cnt-=1;
         }
         else if (seat[25] == 0) {
             btnD07.setBackground(Color.YELLOW);
@@ -1366,6 +1393,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[26] == 1) {
             btnD09.setBackground(Color.WHITE);
             seat[26] = 0;
+            cnt-=1;
         }
         else if (seat[26] == 0) {
             btnD09.setBackground(Color.YELLOW);
@@ -1378,6 +1406,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[27] == 1) {
             btnD11.setBackground(Color.WHITE);
             seat[27] = 0;
+            cnt-=1;
         }
         else if (seat[27] == 0) {
             btnD11.setBackground(Color.YELLOW);
@@ -1392,6 +1421,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE02.setBackground(new Color(255, 204, 255));
             seat[28] = 0;
             seat[29] = 0;
+            cnt-=2;
         }
         else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
@@ -1408,6 +1438,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE02.setBackground(new Color(255, 204, 255));
             seat[28] = 0;
             seat[29] = 0;
+            cnt-=2;
         }
         else if (seat[28] == 0) {
             btnE01.setBackground(Color.YELLOW);
@@ -1424,6 +1455,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE05.setBackground(new Color(255, 204, 255));
             seat[30] = 0;
             seat[31] = 0;
+            cnt-=2;
         }
         else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
@@ -1440,6 +1472,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE05.setBackground(new Color(255, 204, 255));
             seat[30] = 0;
             seat[31] = 0;
+            cnt-=2;
         }
         else if (seat[30] == 0) {
             btnE04.setBackground(Color.YELLOW);
@@ -1456,6 +1489,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE08.setBackground(new Color(255, 204, 255));
             seat[32] = 0;
             seat[33] = 0;
+            cnt-=2;
         }
         else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
@@ -1472,6 +1506,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE08.setBackground(new Color(255, 204, 255));
             seat[32] = 0;
             seat[33] = 0;
+            cnt-=2;
         }
         else if (seat[32] == 0) {
             btnE07.setBackground(Color.YELLOW);
@@ -1488,6 +1523,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE11.setBackground(new Color(255, 204, 255));
             seat[34] = 0;
             seat[35] = 0;
+            cnt-=2;
         }
         else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
@@ -1504,6 +1540,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnE11.setBackground(new Color(255, 204, 255));
             seat[34] = 0;
             seat[35] = 0;
+            cnt-=2;
         }
         else if (seat[34] == 0) {
             btnE10.setBackground(Color.YELLOW);
@@ -1518,6 +1555,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[36] == 1) {
             btnF01.setBackground(Color.WHITE);
             seat[36] = 0;
+            cnt-=1;
         }
         else if (seat[36] == 0) {
             btnF01.setBackground(Color.YELLOW);
@@ -1530,6 +1568,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[37] == 1) {
             btnF03.setBackground(Color.WHITE);
             seat[37] = 0;
+            cnt-=1;
         }
         else if (seat[37] == 0) {
             btnF03.setBackground(Color.YELLOW);
@@ -1542,6 +1581,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[38] == 1) {
             btnF05.setBackground(Color.WHITE);
             seat[38] = 0;
+            cnt-=1;
         }
         else if (seat[38] == 0) {
             btnF05.setBackground(Color.YELLOW);
@@ -1554,6 +1594,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[39] == 1) {
             btnF07.setBackground(Color.WHITE);
             seat[39] = 0;
+            cnt-=1;
         }
         else if (seat[39] == 0) {
             btnF07.setBackground(Color.YELLOW);
@@ -1566,6 +1607,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[40] == 1) {
             btnF09.setBackground(Color.WHITE);
             seat[40] = 0;
+            cnt-=1;
         }
         else if (seat[40] == 0) {
             btnF09.setBackground(Color.YELLOW);
@@ -1578,6 +1620,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[41] == 1) {
             btnF11.setBackground(Color.WHITE);
             seat[41] = 0;
+            cnt-=1;
         }
         else if (seat[41] == 0) {
             btnF11.setBackground(Color.YELLOW);
@@ -1592,6 +1635,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG02.setBackground(new Color(255, 204, 255));
             seat[42] = 0;
             seat[43] = 0;
+            cnt-=2;
         }
         else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
@@ -1608,6 +1652,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG02.setBackground(new Color(255, 204, 255));
             seat[42] = 0;
             seat[43] = 0;
+            cnt-=2;
         }
         else if (seat[42] == 0) {
             btnG01.setBackground(Color.YELLOW);
@@ -1624,6 +1669,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG05.setBackground(new Color(255, 204, 255));
             seat[44] = 0;
             seat[45] = 0;
+            cnt-=2;
         }
         else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
@@ -1640,6 +1686,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG05.setBackground(new Color(255, 204, 255));
             seat[44] = 0;
             seat[45] = 0;
+            cnt-=2;
         }
         else if (seat[44] == 0) {
             btnG04.setBackground(Color.YELLOW);
@@ -1656,6 +1703,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG08.setBackground(new Color(255, 204, 255));
             seat[46] = 0;
             seat[47] = 0;
+            cnt-=2;
         }
         else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
@@ -1672,6 +1720,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG08.setBackground(new Color(255, 204, 255));
             seat[46] = 0;
             seat[47] = 0;
+            cnt-=2;
         }
         else if (seat[46] == 0) {
             btnG07.setBackground(Color.YELLOW);
@@ -1688,6 +1737,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG11.setBackground(new Color(255, 204, 255));
             seat[48] = 0;
             seat[49] = 0;
+            cnt-=2;
         }
         else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
@@ -1704,6 +1754,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnG11.setBackground(new Color(255, 204, 255));
             seat[48] = 0;
             seat[49] = 0;
+            cnt-=2;
         }
         else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
@@ -1718,6 +1769,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[50] == 1) {
             btnH01.setBackground(Color.WHITE);
             seat[50] = 0;
+            cnt-=1;
         }
         else if (seat[50] == 0) {
             btnH01.setBackground(Color.YELLOW);
@@ -1730,6 +1782,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[51] == 1) {
             btnH03.setBackground(Color.WHITE);
             seat[51] = 0;
+            cnt-=1;
         }
         else if (seat[51] == 0) {
             btnH03.setBackground(Color.YELLOW);
@@ -1742,6 +1795,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[52] == 1) {
             btnH05.setBackground(Color.WHITE);
             seat[52] = 0;
+            cnt-=1;
         }
         else if (seat[52] == 0) {
             btnH05.setBackground(Color.YELLOW);
@@ -1754,6 +1808,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[53] == 1) {
             btnH07.setBackground(Color.WHITE);
             seat[53] = 0;
+            cnt-=1;
         }
         else if (seat[53] == 0) {
             btnH07.setBackground(Color.YELLOW);
@@ -1766,6 +1821,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[54] == 1) {
             btnH09.setBackground(Color.WHITE);
             seat[54] = 0;
+            cnt-=1;
         }
         else if (seat[54] == 0) {
             btnH09.setBackground(Color.YELLOW);
@@ -1778,6 +1834,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[55] == 1) {
             btnH11.setBackground(Color.WHITE);
             seat[55] = 0;
+            cnt-=1;
         }
         else if (seat[55] == 0) {
             btnH11.setBackground(Color.YELLOW);
@@ -1792,6 +1849,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI02.setBackground(new Color(255, 204, 255));
             seat[56] = 0;
             seat[57] = 0;
+            cnt-=2;
         }
         else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
@@ -1808,6 +1866,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI02.setBackground(new Color(255, 204, 255));
             seat[56] = 0;
             seat[57] = 0;
+            cnt-=2;
         }
         else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
@@ -1824,6 +1883,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI05.setBackground(new Color(255, 204, 255));
             seat[58] = 0;
             seat[59] = 0;
+            cnt-=2;
         }
         else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
@@ -1840,6 +1900,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI05.setBackground(new Color(255, 204, 255));
             seat[58] = 0;
             seat[59] = 0;
+            cnt-=2;
         }
         else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
@@ -1856,6 +1917,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI08.setBackground(new Color(255, 204, 255));
             seat[60] = 0;
             seat[61] = 0;
+            cnt-=2;
         }
         else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
@@ -1872,6 +1934,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI08.setBackground(new Color(255, 204, 255));
             seat[60] = 0;
             seat[61] = 0;
+            cnt-=2;
         }
         else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
@@ -1888,6 +1951,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI11.setBackground(new Color(255, 204, 255));
             seat[62] = 0;
             seat[63] = 0;
+            cnt-=2;
         }
         else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
@@ -1904,6 +1968,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnI11.setBackground(new Color(255, 204, 255));
             seat[62] = 0;
             seat[63] = 0;
+            cnt-=2;
         }
         else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
@@ -1918,6 +1983,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[64] == 1) {
             btnJ01.setBackground(Color.WHITE);
             seat[64] = 0;
+            cnt-=1;
         }
         else if (seat[64] == 0) {
             btnJ01.setBackground(Color.YELLOW);
@@ -1930,6 +1996,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[65] == 1) {
             btnJ03.setBackground(Color.WHITE);
             seat[65] = 0;
+            cnt-=1;
         }
         else if (seat[65] == 0) {
             btnJ03.setBackground(Color.YELLOW);
@@ -1942,6 +2009,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[66] == 1) {
             btnJ05.setBackground(Color.WHITE);
             seat[66] = 0;
+            cnt-=1;
         }
         else if (seat[66] == 0) {
             btnJ05.setBackground(Color.YELLOW);
@@ -1954,6 +2022,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[67] == 1) {
             btnJ07.setBackground(Color.WHITE);
             seat[67] = 0;
+            cnt-=1;
         }
         else if (seat[67] == 0) {
             btnJ07.setBackground(Color.YELLOW);
@@ -1966,6 +2035,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[68] == 1) {
             btnJ09.setBackground(Color.WHITE);
             seat[68] = 0;
+            cnt-=1;
         }
         else if (seat[68] == 0) {
             btnJ09.setBackground(Color.YELLOW);
@@ -1978,6 +2048,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         if (seat[69] == 1) {
             btnJ11.setBackground(Color.WHITE);
             seat[69] = 0;
+            cnt-=1;
         }
         else if (seat[69] == 0) {
             btnJ11.setBackground(Color.YELLOW);
@@ -1992,6 +2063,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK02.setBackground(new Color(255, 204, 255));
             seat[70] = 0;
             seat[71] = 0;
+            cnt-=2;
         }
         else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
@@ -2008,6 +2080,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK02.setBackground(new Color(255, 204, 255));
             seat[70] = 0;
             seat[71] = 0;
+            cnt-=2;
         }
         else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
@@ -2024,6 +2097,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK05.setBackground(new Color(255, 204, 255));
             seat[72] = 0;
             seat[73] = 0;
+            cnt-=2;
         }
         else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
@@ -2040,6 +2114,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK05.setBackground(new Color(255, 204, 255));
             seat[72] = 0;
             seat[73] = 0;
+            cnt-=2;
         }
         else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
@@ -2056,6 +2131,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK08.setBackground(new Color(255, 204, 255));
             seat[74] = 0;
             seat[75] = 0;
+            cnt-=2;
         }
         else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
@@ -2072,6 +2148,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK08.setBackground(new Color(255, 204, 255));
             seat[74] = 0;
             seat[75] = 0;
+            cnt-=2;
         }
         else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
@@ -2088,6 +2165,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK11.setBackground(new Color(255, 204, 255));
             seat[76] = 0;
             seat[77] = 0;
+            cnt-=2;
         }
         else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
@@ -2104,6 +2182,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnK11.setBackground(new Color(255, 204, 255));
             seat[76] = 0;
             seat[77] = 0;
+            cnt-=2;
         }
         else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
@@ -2131,11 +2210,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
         }
         else{
             JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
-
         
-        MovieClass c = new MovieClass();
-        c.show();
-        this.dispose();
+            MovieClass1 mc1 = new MovieClass1();
+            mc1.setVisible(true);
+            mc1.pack();
+            mc1.setLocationRelativeTo(null);
+            mc1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
         }
     }//GEN-LAST:event_btnNextActionPerformed
 
