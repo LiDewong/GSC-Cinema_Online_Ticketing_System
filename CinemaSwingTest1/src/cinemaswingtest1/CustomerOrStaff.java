@@ -68,7 +68,7 @@ public class CustomerOrStaff extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        LoginFormCustomer lfc = new LoginFormCustomer();
+        CustomerLogin lfc = new CustomerLogin();
         lfc.setVisible(true);
         lfc.pack();
         lfc.setLocationRelativeTo(null);
@@ -77,7 +77,7 @@ public class CustomerOrStaff extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        LoginFormStaff lfs = new LoginFormStaff();
+        StaffLogin lfs = new StaffLogin();
         lfs.setVisible(true);
         lfs.pack();
         lfs.setLocationRelativeTo(null);

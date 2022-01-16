@@ -2,12 +2,12 @@ package cinemaswingtest1;
 
 import javax.swing.JFrame;
 
-public class RegisterFormCustomer extends javax.swing.JFrame {
+public class CustomerRegister extends javax.swing.JFrame {
 
     /**
      * Creates new form RegisterFormCustomer2
      */
-    public RegisterFormCustomer() {
+    public CustomerRegister() {
         initComponents();
     }
 
@@ -98,7 +98,7 @@ public class RegisterFormCustomer extends javax.swing.JFrame {
             System.out.println(e.getMessage());
         }
 
-        LoginFormCustomer lfc = new LoginFormCustomer();
+        CustomerLogin lfc = new CustomerLogin();
         lfc.setVisible(true);
         lfc.pack();
         lfc.setLocationRelativeTo(null);
@@ -123,21 +123,23 @@ public class RegisterFormCustomer extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegisterFormCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CustomerRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegisterFormCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CustomerRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegisterFormCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CustomerRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RegisterFormCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CustomerRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RegisterFormCustomer().setVisible(true);
+                new CustomerRegister().setVisible(true);
             }
         });
     }
