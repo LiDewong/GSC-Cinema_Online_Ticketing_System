@@ -3242,6 +3242,7 @@ public class MovieSeat2 extends javax.swing.JFrame {
         }
         else{
             JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
+            Global.cnt_seat = String.valueOf(cnt);
 
             MovieClass2 mc2 = new MovieClass2();
             mc2.setVisible(true);

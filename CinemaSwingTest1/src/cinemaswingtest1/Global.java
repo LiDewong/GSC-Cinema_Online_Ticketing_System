@@ -10,5 +10,5 @@ package cinemaswingtest1;
  */
 public class Global {
     public static String customer_email ="";
-    
+    public static String cnt_seat = "5";
 }
