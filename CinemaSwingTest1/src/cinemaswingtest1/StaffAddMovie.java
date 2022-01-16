@@ -35,7 +35,13 @@ public class StaffAddMovie extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btnAdd = new javax.swing.JButton();
         txtSynopsis = new javax.swing.JTextField();
+        label1 = new javax.swing.JLabel();
+        label2 = new javax.swing.JLabel();
+        txtSeat = new javax.swing.JTextField();
+        label3 = new javax.swing.JLabel();
+        txtDay = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        txtTime = new javax.swing.JTextField();
         label = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -44,26 +50,26 @@ public class StaffAddMovie extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Title");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 114, -1));
-        getContentPane().add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 320, 30));
+        jLabel2.setText("Total Seat");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 114, -1));
+        getContentPane().add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 290, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Release Date");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 114, -1));
-        getContentPane().add(txtDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 320, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 114, -1));
+        getContentPane().add(txtDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 290, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Cast");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, 103, -1));
-        getContentPane().add(txtCast, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 390, 320, 30));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 103, -1));
+        getContentPane().add(txtCast, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 290, 30));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Synopsis");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 114, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 114, -1));
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -74,7 +80,24 @@ public class StaffAddMovie extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 140, 37));
-        getContentPane().add(txtSynopsis, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, 320, 30));
+        getContentPane().add(txtSynopsis, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 290, 30));
+
+        label1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label1.setForeground(new java.awt.Color(255, 255, 255));
+        label1.setText("Title");
+        getContentPane().add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 114, -1));
+
+        label2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label2.setForeground(new java.awt.Color(255, 255, 255));
+        label2.setText("Day");
+        getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, 114, -1));
+        getContentPane().add(txtSeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, 290, 30));
+
+        label3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label3.setForeground(new java.awt.Color(255, 255, 255));
+        label3.setText("Time");
+        getContentPane().add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, 114, -1));
+        getContentPane().add(txtDay, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, 290, 30));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton1.setText("Upload Image");
@@ -84,6 +107,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 157, -1));
+        getContentPane().add(txtTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, 290, 30));
         getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, 165, 204));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
@@ -115,7 +139,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         //code to load date into table
         //validation for not leave blank data
-        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")||label.getIcon().equals("")){
+        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")||label.getIcon().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||txtSeat.getText().equals("")){
             //if any of four field left blank then show message
             JOptionPane.showMessageDialog(this, "Please Enter All Data !");
         }
@@ -183,9 +207,15 @@ public class StaffAddMovie extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel label;
+    private javax.swing.JLabel label1;
+    private javax.swing.JLabel label2;
+    private javax.swing.JLabel label3;
     private javax.swing.JTextField txtCast;
     private javax.swing.JTextField txtDate;
+    private javax.swing.JTextField txtDay;
+    private javax.swing.JTextField txtSeat;
     private javax.swing.JTextField txtSynopsis;
+    private javax.swing.JTextField txtTime;
     private javax.swing.JTextField txtTitle;
     // End of variables declaration//GEN-END:variables
 }
