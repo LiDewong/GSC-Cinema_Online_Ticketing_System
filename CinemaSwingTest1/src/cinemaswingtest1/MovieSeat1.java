@@ -25,7 +25,85 @@ public class MovieSeat1 extends javax.swing.JFrame {
      */
     public MovieSeat1() {
         initComponents();
-    }
+        if (customer_email != null) {btnA01.setEnabled(false);}
+        if (customer_email != null) {btnA02.setEnabled(false);}
+        if (customer_email != null) {btnA04.setEnabled(false);}
+        if (customer_email != null) {btnA05.setEnabled(false);}
+        if (customer_email != null) {btnA07.setEnabled(false);}
+        if (customer_email != null) {btnA08.setEnabled(false);}
+        if (customer_email != null) {btnA10.setEnabled(false);}
+        if (customer_email != null) {btnA11.setEnabled(false);}
+        if (customer_email != null) {btnB01.setEnabled(false);}
+        if (customer_email != null) {btnB03.setEnabled(false);}
+        if (customer_email != null) {btnB05.setEnabled(false);}
+        if (customer_email != null) {btnB07.setEnabled(false);}
+        if (customer_email != null) {btnB09.setEnabled(false);}
+        if (customer_email != null) {btnB11.setEnabled(false);}
+        if (customer_email != null) {btnC01.setEnabled(false);}
+        if (customer_email != null) {btnC02.setEnabled(false);}
+        if (customer_email != null) {btnC04.setEnabled(false);}
+        if (customer_email != null) {btnC05.setEnabled(false);}
+        if (customer_email != null) {btnC07.setEnabled(false);}
+        if (customer_email != null) {btnC08.setEnabled(false);}
+        if (customer_email != null) {btnC10.setEnabled(false);}
+        if (customer_email != null) {btnC11.setEnabled(false);}
+        if (customer_email != null) {btnD01.setEnabled(false);}
+        if (customer_email != null) {btnD03.setEnabled(false);}
+        if (customer_email != null) {btnD05.setEnabled(false);}
+        if (customer_email != null) {btnD07.setEnabled(false);}
+        if (customer_email != null) {btnD09.setEnabled(false);}
+        if (customer_email != null) {btnD11.setEnabled(false);}
+        if (customer_email != null) {btnE01.setEnabled(false);}
+        if (customer_email != null) {btnE02.setEnabled(false);}
+        if (customer_email != null) {btnE04.setEnabled(false);}
+        if (customer_email != null) {btnE05.setEnabled(false);}
+        if (customer_email != null) {btnE07.setEnabled(false);}
+        if (customer_email != null) {btnE08.setEnabled(false);}
+        if (customer_email != null) {btnE10.setEnabled(false);}
+        if (customer_email != null) {btnE11.setEnabled(false);}
+        if (customer_email != null) {btnF01.setEnabled(false);}
+        if (customer_email != null) {btnF03.setEnabled(false);}
+        if (customer_email != null) {btnF05.setEnabled(false);}
+        if (customer_email != null) {btnF07.setEnabled(false);}
+        if (customer_email != null) {btnF09.setEnabled(false);}
+        if (customer_email != null) {btnF11.setEnabled(false);}
+        if (customer_email != null) {btnG01.setEnabled(false);}
+        if (customer_email != null) {btnG02.setEnabled(false);}
+        if (customer_email != null) {btnG04.setEnabled(false);}
+        if (customer_email != null) {btnG05.setEnabled(false);}
+        if (customer_email != null) {btnG07.setEnabled(false);}
+        if (customer_email != null) {btnG08.setEnabled(false);}
+        if (customer_email != null) {btnG10.setEnabled(false);}
+        if (customer_email != null) {btnG11.setEnabled(false);}
+        if (customer_email != null) {btnH01.setEnabled(false);}
+        if (customer_email != null) {btnH03.setEnabled(false);}
+        if (customer_email != null) {btnH05.setEnabled(false);}
+        if (customer_email != null) {btnH07.setEnabled(false);}
+        if (customer_email != null) {btnH09.setEnabled(false);}
+        if (customer_email != null) {btnH11.setEnabled(false);}
+        if (customer_email != null) {btnI01.setEnabled(false);}
+        if (customer_email != null) {btnI02.setEnabled(false);}
+        if (customer_email != null) {btnI04.setEnabled(false);}
+        if (customer_email != null) {btnI05.setEnabled(false);}
+        if (customer_email != null) {btnI07.setEnabled(false);}
+        if (customer_email != null) {btnI08.setEnabled(false);}
+        if (customer_email != null) {btnI10.setEnabled(false);}
+        if (customer_email != null) {btnI11.setEnabled(false);}
+        if (customer_email != null) {btnJ01.setEnabled(false);}
+        if (customer_email != null) {btnJ03.setEnabled(false);}
+        if (customer_email != null) {btnJ05.setEnabled(false);}
+        if (customer_email != null) {btnJ07.setEnabled(false);}
+        if (customer_email != null) {btnJ09.setEnabled(false);}
+        if (customer_email != null) {btnJ11.setEnabled(false);}
+        if (customer_email != null) {btnK01.setEnabled(false);}
+        if (customer_email != null) {btnK02.setEnabled(false);}
+        if (customer_email != null) {btnK04.setEnabled(false);}
+        if (customer_email != null) {btnK05.setEnabled(false);}
+        if (customer_email != null) {btnK07.setEnabled(false);}
+        if (customer_email != null) {btnK08.setEnabled(false);}
+        if (customer_email != null) {btnK10.setEnabled(false);}
+        if (customer_email != null) {btnK11.setEnabled(false);}
+    }    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -993,25 +1071,19 @@ public class MovieSeat1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
-        if (Global.customer_email != null) {
-            btnA01.setEnabled(false);
-            btnA02.setEnabled(false);
+        if (seat[0] == 1) {
+            btnA01.setBackground(new Color(255, 204, 255));
+            btnA02.setBackground(new Color(255, 204, 255));
+            seat[0] = 0;
+            seat[1] = 0;
+            cnt-=2;
         }
-        else {
-            if (seat[0] == 1) {
-                btnA01.setBackground(new Color(255, 204, 255));
-                btnA02.setBackground(new Color(255, 204, 255));
-                seat[0] = 0;
-                seat[1] = 0;
-                cnt-=2;
-            }
-            else if (seat[0] == 0) {
-                btnA01.setBackground(Color.YELLOW);
-                btnA02.setBackground(Color.YELLOW);
-                seat[0] = 1;
-                seat[1] = 1;
-                cnt+=2;
-            }
+        else if (seat[0] == 0) {
+            btnA01.setBackground(Color.YELLOW);
+            btnA02.setBackground(Color.YELLOW);
+            seat[0] = 1;
+            seat[1] = 1;
+            cnt+=2;
         }
     }//GEN-LAST:event_btnA01ActionPerformed
 
