@@ -4,6 +4,8 @@
  */
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author YEZP
@@ -73,6 +75,11 @@ public class Movie2Detail extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(255, 255, 51));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Buy Now");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 490, 200, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
@@ -86,6 +93,15 @@ public class Movie2Detail extends javax.swing.JFrame {
         c.show();
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        MovieTime mt = new MovieTime();
+        mt.setVisible(true);
+        mt.pack();
+        mt.setLocationRelativeTo(null);
+        mt.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

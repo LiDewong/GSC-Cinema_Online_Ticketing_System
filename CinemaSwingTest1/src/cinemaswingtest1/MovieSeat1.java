@@ -993,19 +993,25 @@ public class MovieSeat1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA01ActionPerformed
-        if (seat[0] == 1) {
-            btnA01.setBackground(new Color(255, 204, 255));
-            btnA02.setBackground(new Color(255, 204, 255));
-            seat[0] = 0;
-            seat[1] = 0;
-            cnt-=2;
+        if (Global.customer_email != null) {
+            btnA01.setEnabled(false);
+            btnA02.setEnabled(false);
         }
-        else if (seat[0] == 0) {
-            btnA01.setBackground(Color.YELLOW);
-            btnA02.setBackground(Color.YELLOW);
-            seat[0] = 1;
-            seat[1] = 1;
-            cnt+=2;
+        else {
+            if (seat[0] == 1) {
+                btnA01.setBackground(new Color(255, 204, 255));
+                btnA02.setBackground(new Color(255, 204, 255));
+                seat[0] = 0;
+                seat[1] = 0;
+                cnt-=2;
+            }
+            else if (seat[0] == 0) {
+                btnA01.setBackground(Color.YELLOW);
+                btnA02.setBackground(Color.YELLOW);
+                seat[0] = 1;
+                seat[1] = 1;
+                cnt+=2;
+            }
         }
     }//GEN-LAST:event_btnA01ActionPerformed
 
