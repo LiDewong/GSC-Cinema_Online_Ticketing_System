@@ -156,6 +156,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
         getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(978, 602, 60, 25));
 
         btnBack.setText("BACK");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 602, -1, 25));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo (1).png"))); // NOI18N
@@ -2220,6 +2225,15 @@ public class MovieSeat1 extends javax.swing.JFrame {
             this.dispose();
         }
     }//GEN-LAST:event_btnNextActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        MovieTime mt = new MovieTime();
+        mt.setVisible(true);
+        mt.pack();
+        mt.setLocationRelativeTo(null);
+        mt.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments

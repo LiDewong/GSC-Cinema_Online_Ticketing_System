@@ -4,7 +4,9 @@
  */
 package cinemaswingtest1;
 
+import java.awt.Color;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,6 +14,8 @@ import javax.swing.JFrame;
  */
 public class MovieTime extends javax.swing.JFrame {
 
+    private String day = "", time;
+    
     /**
      * Creates new form MovieTime
      */
@@ -30,19 +34,18 @@ public class MovieTime extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
         jLabel9am = new javax.swing.JLabel();
         jLabel3pm = new javax.swing.JLabel();
         jLabel9pm = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
-        btnNext = new javax.swing.JButton();
+        btn20 = new javax.swing.JButton();
+        btn21 = new javax.swing.JButton();
+        btn22 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,26 +62,6 @@ public class MovieTime extends javax.swing.JFrame {
         jLabel3.setText("Select Date");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 145, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("20");
-        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 253, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("21");
-        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel21MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 253, -1, -1));
-
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Select Time");
@@ -88,29 +71,19 @@ public class MovieTime extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Thu");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 213, 40, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 213, 73, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Fri");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 213, 40, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 213, 73, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Sat");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 213, 40, -1));
-
-        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("22");
-        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel22MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 253, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 213, 73, -1));
 
         jLabel9am.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel9am.setForeground(new java.awt.Color(255, 255, 255));
@@ -148,6 +121,7 @@ public class MovieTime extends javax.swing.JFrame {
         jLabel2.setText("Date & Time");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 69, 1030, -1));
 
+        btnBack.setBackground(new java.awt.Color(255, 255, 0));
         btnBack.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnBack.setText("BACK");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -157,17 +131,42 @@ public class MovieTime extends javax.swing.JFrame {
         });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 590, 90, -1));
 
-        btnNext.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnNext.setText("NEXT");
-        btnNext.addActionListener(new java.awt.event.ActionListener() {
+        btn20.setBackground(new java.awt.Color(0, 0, 0));
+        btn20.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btn20.setForeground(new java.awt.Color(255, 255, 255));
+        btn20.setText("20");
+        btn20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNextActionPerformed(evt);
+                btn20ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(948, 592, 90, -1));
+        getContentPane().add(btn20, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 253, -1, -1));
+
+        btn21.setBackground(new java.awt.Color(0, 0, 0));
+        btn21.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btn21.setForeground(new java.awt.Color(255, 255, 255));
+        btn21.setText("21");
+        btn21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn21, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 253, -1, -1));
+
+        btn22.setBackground(new java.awt.Color(0, 0, 0));
+        btn22.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btn22.setForeground(new java.awt.Color(255, 255, 255));
+        btn22.setText("22");
+        btn22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn22, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 253, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -182,13 +181,22 @@ public class MovieTime extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
-    private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-        MovieSeat1 ms1 = new MovieSeat1();
-        ms1.setVisible(true);
-        ms1.pack();
-        ms1.setLocationRelativeTo(null);
-        ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.dispose();
+    private void jLabel9amMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9amMouseClicked
+        if (day == "") {
+            JOptionPane.showMessageDialog(this, "Please Select Your Date !");
+        }
+        
+        else {
+            Global.day = day;
+            Global.time = "9:00AM";
+            
+            MovieSeat1 ms1 = new MovieSeat1();
+            ms1.setVisible(true);
+            ms1.pack();
+            ms1.setLocationRelativeTo(null);
+            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }
         
 //        MovieSeat2 ms2 = new MovieSeat2();
 //        ms2.setVisible(true);
@@ -196,31 +204,99 @@ public class MovieTime extends javax.swing.JFrame {
 //        ms2.setLocationRelativeTo(null);
 //        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        this.dispose();
-    }//GEN-LAST:event_btnNextActionPerformed
-
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel20MouseClicked
-
-    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel21MouseClicked
-
-    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel22MouseClicked
-
-    private void jLabel9amMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9amMouseClicked
-        // TODO add your handling code here:
     }//GEN-LAST:event_jLabel9amMouseClicked
 
     private void jLabel3pmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3pmMouseClicked
-        // TODO add your handling code here:
+        if (day == "") {
+            JOptionPane.showMessageDialog(this, "Please Select Your Date !");
+        }
+        
+        else {
+            Global.day = day;
+            Global.time = "3:00PM";
+            
+            MovieSeat1 ms1 = new MovieSeat1();
+            ms1.setVisible(true);
+            ms1.pack();
+            ms1.setLocationRelativeTo(null);
+            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }
+        
+//        MovieSeat2 ms2 = new MovieSeat2();
+//        ms2.setVisible(true);
+//        ms2.pack();
+//        ms2.setLocationRelativeTo(null);
+//        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.dispose();
     }//GEN-LAST:event_jLabel3pmMouseClicked
 
     private void jLabel9pmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9pmMouseClicked
-        // TODO add your handling code here:
+        if (day == "") {
+            JOptionPane.showMessageDialog(this, "Please Select Your Date !");
+        }
+        
+        else {
+            Global.day = day;
+            Global.time = "9:00PM";
+            
+            MovieSeat1 ms1 = new MovieSeat1();
+            ms1.setVisible(true);
+            ms1.pack();
+            ms1.setLocationRelativeTo(null);
+            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }
+        
+//        MovieSeat2 ms2 = new MovieSeat2();
+//        ms2.setVisible(true);
+//        ms2.pack();
+//        ms2.setLocationRelativeTo(null);
+//        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.dispose();
     }//GEN-LAST:event_jLabel9pmMouseClicked
+
+    private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
+        btn20.setBackground(Color.yellow);
+        btn20.setForeground(Color.black);
+        if (day.equals("21")) {
+            btn21.setBackground(Color.black);
+            btn21.setForeground(Color.white);
+        }
+        else if (day.equals("22")) {
+            btn22.setBackground(Color.black);
+            btn22.setForeground(Color.white);
+        }
+        day = "20";
+    }//GEN-LAST:event_btn20ActionPerformed
+
+    private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
+        btn21.setBackground(Color.yellow);
+        btn21.setForeground(Color.black);
+        if (day.equals("20")) {
+            btn20.setBackground(Color.black);
+            btn20.setForeground(Color.white);
+        }
+        else if (day.equals("22")) {
+            btn22.setBackground(Color.black);
+            btn22.setForeground(Color.white);
+        }
+        day = "21";
+    }//GEN-LAST:event_btn21ActionPerformed
+
+    private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
+        btn22.setBackground(Color.yellow);
+        btn22.setForeground(Color.black);
+        if (day.equals("20")) {
+            btn20.setBackground(Color.black);
+            btn20.setForeground(Color.white);
+        }
+        else if (day.equals("21")) {
+            btn21.setBackground(Color.black);
+            btn21.setForeground(Color.white);
+        }
+        day = "22";
+    }//GEN-LAST:event_btn22ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -258,16 +334,15 @@ public class MovieTime extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn20;
+    private javax.swing.JButton btn21;
+    private javax.swing.JButton btn22;
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnNext;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel3pm;
     private javax.swing.JLabel jLabel4;

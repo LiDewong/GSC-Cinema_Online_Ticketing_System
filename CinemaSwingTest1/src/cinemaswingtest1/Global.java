@@ -12,4 +12,6 @@ public class Global {
     public static String customer_email ="";
     public static String cnt_seat;
     public static String ticket_class;
+    public static String day;
+    public static String time;
 }
