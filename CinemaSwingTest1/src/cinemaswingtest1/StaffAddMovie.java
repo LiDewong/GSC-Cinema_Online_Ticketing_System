@@ -134,8 +134,9 @@ public class StaffAddMovie extends javax.swing.JFrame {
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         //code to load date into table
         //validation for not leave blank data
-        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")||
-                label.getIcon().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||txtSeat.getText().equals("")){
+        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||
+                txtSynopsis.getText().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||
+                txtSeat.getText().equals("")||label.getIcon().equals("")){
             //if any field left blank then show message
             JOptionPane.showMessageDialog(this, "Please Enter All Data !");
         }
