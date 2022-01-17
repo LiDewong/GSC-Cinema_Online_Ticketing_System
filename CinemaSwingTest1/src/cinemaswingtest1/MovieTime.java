@@ -190,6 +190,7 @@ public class MovieTime extends javax.swing.JFrame {
             
             if (Global.movie_name.equals("Spider-Man: No Way Home")) {
                 if (Global.seat_movie1 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -198,6 +199,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -208,6 +210,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("No Time To Die")) {
                 if (Global.seat_movie2 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -216,6 +219,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -226,6 +230,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Eternals")) {
                 if (Global.seat_movie3 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -234,6 +239,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -244,6 +250,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("The Medium")) {
                 if (Global.seat_movie4 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -252,6 +259,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -262,6 +270,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
                 if (Global.seat_movie5 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -270,6 +279,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -295,6 +305,7 @@ public class MovieTime extends javax.swing.JFrame {
             
             if (Global.movie_name.equals("Spider-Man: No Way Home")) {
                 if (Global.seat_movie1 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -303,6 +314,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -313,6 +325,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("No Time To Die")) {
                 if (Global.seat_movie2 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -321,6 +334,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -331,6 +345,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Eternals")) {
                 if (Global.seat_movie3 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -339,6 +354,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -349,6 +365,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("The Medium")) {
                 if (Global.seat_movie4 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -357,6 +374,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -367,6 +385,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
                 if (Global.seat_movie5 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -375,6 +394,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -400,6 +420,7 @@ public class MovieTime extends javax.swing.JFrame {
             
             if (Global.movie_name.equals("Spider-Man: No Way Home")) {
                 if (Global.seat_movie1 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -408,6 +429,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -418,6 +440,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("No Time To Die")) {
                 if (Global.seat_movie2 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -426,6 +449,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -436,6 +460,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Eternals")) {
                 if (Global.seat_movie3 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -444,6 +469,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -454,6 +480,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("The Medium")) {
                 if (Global.seat_movie4 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -462,6 +489,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
@@ -472,6 +500,7 @@ public class MovieTime extends javax.swing.JFrame {
             }
             if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
                 if (Global.seat_movie5 == 78) {
+                    Global.hall = 1;
                     MovieSeat1 ms1 = new MovieSeat1();
                     ms1.setVisible(true);
                     ms1.pack();
@@ -480,6 +509,7 @@ public class MovieTime extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else {
+                    Global.hall = 2;
                     MovieSeat2 ms2 = new MovieSeat2();
                     ms2.setVisible(true);
                     ms2.pack();
