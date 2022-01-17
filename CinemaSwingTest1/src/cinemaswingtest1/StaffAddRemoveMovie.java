@@ -99,39 +99,12 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        StaffAddMovie addmovie=new StaffAddMovie();
-        addmovie.setVisible(true);
-        addmovie.pack();
-        addmovie.setLocationRelativeTo(null);
-        addmovie.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
         StaffAddMovie mainMenu=new StaffAddMovie();
         mainMenu.show();     //display Main Menu here
         
         dispose(); 
         
-        
-//        //code to load date into table
-//        //validation for not leave blank data
-//        if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||txtSynopsis.getText().equals("")){
-//            //if any of four field left blank then show message
-//            JOptionPane.showMessageDialog(this, "Please Enter All Data !");
-//        }
-//        else{
-//            //if all data field then...
-//            //store enter data into String array
-//            String data[]={txtTitle.getText(),txtDate.getText(),txtCast.getText(),txtSynopsis.getText()};
-//        
-//            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
-//            tblModel.addRow(data); //row added
-//            //successfully added message
-//            JOptionPane.showMessageDialog(this,"Add Date Successfully !");
-//            //clear textfield for new entry
-//            txtTitle.setText("");
-//            txtDate.setText("");
-//            txtCast.setText("");
-//            txtSynopsis.setText("");
-//        }
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
