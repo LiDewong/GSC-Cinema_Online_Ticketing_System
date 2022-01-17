@@ -37,7 +37,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
         initComponents();
         initBtn();
 
-        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
+        seats = API.getAllSeat("ckyil1zlx000007qoe5on5kk1");
 
         for (int i = 0; i < seats.size(); i++) {
             seat_id.add(seats.get(i).id);
