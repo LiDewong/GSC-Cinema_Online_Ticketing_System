@@ -84,6 +84,8 @@ public class Movie5Detail extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void label5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label5MouseClicked
+        Global.movie_name = "Ghostbusters: Afterlife";
+        
         Movie5Detail movie = new Movie5Detail();
         movie.setVisible(true);
         movie.pack();
