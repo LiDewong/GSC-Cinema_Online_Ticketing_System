@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package cinemaswingtest1;
 
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Sengko
- */
 public class MovieTime extends javax.swing.JFrame {
 
     private String day = "", time;
@@ -21,6 +13,10 @@ public class MovieTime extends javax.swing.JFrame {
      */
     public MovieTime() {
         initComponents();
+        
+        btnDay1.setText("21");
+        btnDay2.setText("22");
+        btnDay3.setText("23");
     }
 
     /**
@@ -43,9 +39,9 @@ public class MovieTime extends javax.swing.JFrame {
         jLabel9pm = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
-        btn20 = new javax.swing.JButton();
-        btn21 = new javax.swing.JButton();
-        btn22 = new javax.swing.JButton();
+        btnDay1 = new javax.swing.JButton();
+        btnDay2 = new javax.swing.JButton();
+        btnDay3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -131,38 +127,35 @@ public class MovieTime extends javax.swing.JFrame {
         });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 590, 90, -1));
 
-        btn20.setBackground(new java.awt.Color(0, 0, 0));
-        btn20.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        btn20.setForeground(new java.awt.Color(255, 255, 255));
-        btn20.setText("20");
-        btn20.addActionListener(new java.awt.event.ActionListener() {
+        btnDay1.setBackground(new java.awt.Color(0, 0, 0));
+        btnDay1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btnDay1.setForeground(new java.awt.Color(255, 255, 255));
+        btnDay1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn20ActionPerformed(evt);
+                btnDay1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn20, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 253, -1, -1));
+        getContentPane().add(btnDay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 253, -1, -1));
 
-        btn21.setBackground(new java.awt.Color(0, 0, 0));
-        btn21.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        btn21.setForeground(new java.awt.Color(255, 255, 255));
-        btn21.setText("21");
-        btn21.addActionListener(new java.awt.event.ActionListener() {
+        btnDay2.setBackground(new java.awt.Color(0, 0, 0));
+        btnDay2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btnDay2.setForeground(new java.awt.Color(255, 255, 255));
+        btnDay2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn21ActionPerformed(evt);
+                btnDay2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn21, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 253, -1, -1));
+        getContentPane().add(btnDay2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 253, -1, -1));
 
-        btn22.setBackground(new java.awt.Color(0, 0, 0));
-        btn22.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        btn22.setForeground(new java.awt.Color(255, 255, 255));
-        btn22.setText("22");
-        btn22.addActionListener(new java.awt.event.ActionListener() {
+        btnDay3.setBackground(new java.awt.Color(0, 0, 0));
+        btnDay3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        btnDay3.setForeground(new java.awt.Color(255, 255, 255));
+        btnDay3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn22ActionPerformed(evt);
+                btnDay3ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn22, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 253, -1, -1));
+        getContentPane().add(btnDay3, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 253, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -256,47 +249,47 @@ public class MovieTime extends javax.swing.JFrame {
 //        this.dispose();
     }//GEN-LAST:event_jLabel9pmMouseClicked
 
-    private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-        btn20.setBackground(Color.yellow);
-        btn20.setForeground(Color.black);
+    private void btnDay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay1ActionPerformed
+        btnDay1.setBackground(Color.yellow);
+        btnDay1.setForeground(Color.black);
         if (day.equals("21")) {
-            btn21.setBackground(Color.black);
-            btn21.setForeground(Color.white);
+            btnDay2.setBackground(Color.black);
+            btnDay2.setForeground(Color.white);
         }
         else if (day.equals("22")) {
-            btn22.setBackground(Color.black);
-            btn22.setForeground(Color.white);
+            btnDay3.setBackground(Color.black);
+            btnDay3.setForeground(Color.white);
         }
         day = "20";
-    }//GEN-LAST:event_btn20ActionPerformed
+    }//GEN-LAST:event_btnDay1ActionPerformed
 
-    private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-        btn21.setBackground(Color.yellow);
-        btn21.setForeground(Color.black);
+    private void btnDay2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay2ActionPerformed
+        btnDay2.setBackground(Color.yellow);
+        btnDay2.setForeground(Color.black);
         if (day.equals("20")) {
-            btn20.setBackground(Color.black);
-            btn20.setForeground(Color.white);
+            btnDay1.setBackground(Color.black);
+            btnDay1.setForeground(Color.white);
         }
         else if (day.equals("22")) {
-            btn22.setBackground(Color.black);
-            btn22.setForeground(Color.white);
+            btnDay3.setBackground(Color.black);
+            btnDay3.setForeground(Color.white);
         }
         day = "21";
-    }//GEN-LAST:event_btn21ActionPerformed
+    }//GEN-LAST:event_btnDay2ActionPerformed
 
-    private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-        btn22.setBackground(Color.yellow);
-        btn22.setForeground(Color.black);
+    private void btnDay3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay3ActionPerformed
+        btnDay3.setBackground(Color.yellow);
+        btnDay3.setForeground(Color.black);
         if (day.equals("20")) {
-            btn20.setBackground(Color.black);
-            btn20.setForeground(Color.white);
+            btnDay1.setBackground(Color.black);
+            btnDay1.setForeground(Color.white);
         }
         else if (day.equals("21")) {
-            btn21.setBackground(Color.black);
-            btn21.setForeground(Color.white);
+            btnDay2.setBackground(Color.black);
+            btnDay2.setForeground(Color.white);
         }
         day = "22";
-    }//GEN-LAST:event_btn22ActionPerformed
+    }//GEN-LAST:event_btnDay3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -334,10 +327,10 @@ public class MovieTime extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn20;
-    private javax.swing.JButton btn21;
-    private javax.swing.JButton btn22;
     private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnDay1;
+    private javax.swing.JButton btnDay2;
+    private javax.swing.JButton btnDay3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

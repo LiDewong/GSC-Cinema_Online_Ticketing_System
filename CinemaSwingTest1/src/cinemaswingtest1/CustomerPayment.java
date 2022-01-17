@@ -18,10 +18,10 @@ public class CustomerPayment extends javax.swing.JFrame {
             ticket_price = 18 * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Premium"))
             ticket_price = 27 * Integer.parseInt(Global.cnt_seat);
-        jTextField3.setText(String.format("RM %.2f", ticket_price));
+        txtPriceTicket.setText(String.format("RM %.2f", ticket_price));
         
-        jTextFieldDate.setText(String.format("%s/01/2022", Global.day));
-        jTextFieldTime.setText(Global.time);
+        txtDate.setText(String.format("%s/01/2022", Global.day));
+        txtTime.setText(Global.time);
     }
 
     /**
@@ -36,9 +36,9 @@ public class CustomerPayment extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnPay = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -47,14 +47,14 @@ public class CustomerPayment extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextFieldDate = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextFieldTime = new javax.swing.JTextField();
+        txtCntSeat = new javax.swing.JTextField();
+        txtCntFnB = new javax.swing.JTextField();
+        txtPriceTicket = new javax.swing.JTextField();
+        txtPriceFnB = new javax.swing.JTextField();
+        txtPriceTotal = new javax.swing.JTextField();
+        txtDate = new javax.swing.JTextField();
+        txtMovie = new javax.swing.JTextField();
+        txtTime = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -68,19 +68,24 @@ public class CustomerPayment extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(240, 240, 240));
         jLabel2.setText("MOVIE SELECTED");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setText("PAY NOW");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPay.setBackground(new java.awt.Color(255, 255, 0));
+        btnPay.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnPay.setText("PAY NOW");
+        btnPay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPayActionPerformed(evt);
             }
         });
 
         jLabel3.setText("jLabel3");
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton2.setText("CANCEL");
+        btnCancel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnCancel.setText("CANCEL");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -115,46 +120,46 @@ public class CustomerPayment extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Payment");
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText(Global.cnt_seat);
-        jTextField1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField1.setEnabled(false);
+        txtCntSeat.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtCntSeat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtCntSeat.setText(Global.cnt_seat);
+        txtCntSeat.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtCntSeat.setEnabled(false);
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField2.setEnabled(false);
+        txtCntFnB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtCntFnB.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtCntFnB.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtCntFnB.setEnabled(false);
 
-        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField3.setEnabled(false);
+        txtPriceTicket.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtPriceTicket.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPriceTicket.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtPriceTicket.setEnabled(false);
 
-        jTextField4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField4.setEnabled(false);
+        txtPriceFnB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtPriceFnB.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPriceFnB.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtPriceFnB.setEnabled(false);
 
-        jTextField5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField5.setEnabled(false);
+        txtPriceTotal.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtPriceTotal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPriceTotal.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtPriceTotal.setEnabled(false);
 
-        jTextFieldDate.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextFieldDate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextFieldDate.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextFieldDate.setEnabled(false);
+        txtDate.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtDate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtDate.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtDate.setEnabled(false);
 
-        jTextField8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField8.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextField8.setEnabled(false);
+        txtMovie.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtMovie.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtMovie.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtMovie.setEnabled(false);
 
-        jTextFieldTime.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextFieldTime.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextFieldTime.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextFieldTime.setEnabled(false);
+        txtTime.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtTime.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtTime.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtTime.setEnabled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -165,9 +170,9 @@ public class CustomerPayment extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(btnPay)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2))
+                        .addComponent(btnCancel))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(340, 340, 340)
@@ -188,19 +193,19 @@ public class CustomerPayment extends javax.swing.JFrame {
                                                     .addComponent(jLabel2)
                                                     .addGap(81, 81, 81)
                                                     .addComponent(jLabel3))
-                                                .addComponent(jTextField8))
+                                                .addComponent(txtMovie))
                                             .addGap(48, 48, 48)
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel4)
-                                                        .addComponent(jTextFieldDate, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGap(66, 66, 66)
                                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel5)
-                                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addComponent(jTextFieldTime, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(txtCntSeat, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtCntFnB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
@@ -209,9 +214,9 @@ public class CustomerPayment extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtPriceTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPriceFnB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPriceTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(77, 77, 77)))
                 .addContainerGap())
         );
@@ -234,15 +239,15 @@ public class CustomerPayment extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMovie, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextFieldDate, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtDate, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txtCntSeat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtPriceTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextFieldTime, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(119, 119, 119)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
@@ -250,16 +255,16 @@ public class CustomerPayment extends javax.swing.JFrame {
                     .addComponent(jLabel10))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCntFnB, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPriceFnB, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(75, 75, 75)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPriceTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(btnCancel)
+                    .addComponent(btnPay))
                 .addContainerGap())
         );
 
@@ -278,16 +283,18 @@ public class CustomerPayment extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void btnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayActionPerformed
         PaymentPage pp = new PaymentPage();
         pp.setVisible(true);
         pp.pack();
         pp.setLocationRelativeTo(null);
         pp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
+    }//GEN-LAST:event_btnPayActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,8 +332,8 @@ public class CustomerPayment extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnCancel;
+    private javax.swing.JButton btnPay;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -339,13 +346,13 @@ public class CustomerPayment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextFieldDate;
-    private javax.swing.JTextField jTextFieldTime;
+    private javax.swing.JTextField txtCntFnB;
+    private javax.swing.JTextField txtCntSeat;
+    private javax.swing.JTextField txtDate;
+    private javax.swing.JTextField txtMovie;
+    private javax.swing.JTextField txtPriceFnB;
+    private javax.swing.JTextField txtPriceTicket;
+    private javax.swing.JTextField txtPriceTotal;
+    private javax.swing.JTextField txtTime;
     // End of variables declaration//GEN-END:variables
 }
