@@ -14,9 +14,9 @@ public class MovieTime extends javax.swing.JFrame {
     public MovieTime() {
         initComponents();
         
-        btnDay1.setText("21");
-        btnDay2.setText("22");
-        btnDay3.setText("23");
+        btnDay1.setText("20/01/22");
+        btnDay2.setText("21/01/22");
+        btnDay3.setText("22/01/22");
     }
 
     /**
@@ -67,19 +67,19 @@ public class MovieTime extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Thu");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 213, 73, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 73, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Fri");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 213, 73, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, 73, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Sat");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 213, 73, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, 73, -1));
 
         jLabel9am.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel9am.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,7 +89,7 @@ public class MovieTime extends javax.swing.JFrame {
                 jLabel9amMouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9am, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 437, -1, -1));
+        getContentPane().add(jLabel9am, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, -1, -1));
 
         jLabel3pm.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel3pm.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,7 +99,7 @@ public class MovieTime extends javax.swing.JFrame {
                 jLabel3pmMouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel3pm, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 437, -1, -1));
+        getContentPane().add(jLabel3pm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, -1, -1));
 
         jLabel9pm.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel9pm.setForeground(new java.awt.Color(255, 255, 255));
@@ -109,7 +109,7 @@ public class MovieTime extends javax.swing.JFrame {
                 jLabel9pmMouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9pm, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 437, -1, -1));
+        getContentPane().add(jLabel9pm, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 440, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,7 +135,7 @@ public class MovieTime extends javax.swing.JFrame {
                 btnDay1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 253, -1, -1));
+        getContentPane().add(btnDay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
 
         btnDay2.setBackground(new java.awt.Color(0, 0, 0));
         btnDay2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -145,7 +145,7 @@ public class MovieTime extends javax.swing.JFrame {
                 btnDay2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDay2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 253, -1, -1));
+        getContentPane().add(btnDay2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
 
         btnDay3.setBackground(new java.awt.Color(0, 0, 0));
         btnDay3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -155,7 +155,7 @@ public class MovieTime extends javax.swing.JFrame {
                 btnDay3ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDay3, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 253, -1, -1));
+        getContentPane().add(btnDay3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 250, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
