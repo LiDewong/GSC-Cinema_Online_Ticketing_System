@@ -2778,6 +2778,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        
         MovieTime mt = new MovieTime();
         mt.setVisible(true);
         mt.pack();
