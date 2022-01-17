@@ -26,7 +26,6 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         btnAdd = new javax.swing.JButton();
         btnRemove = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -37,14 +36,14 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Spider-Man: No Way Home", "16 Dec 2021", "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon", "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange's help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who've ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. ", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "117"},
-                {"No Time To Die", "25 Nov 2021", "Daniel Craig, Rami Malek, Ana de Armas", "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"},
-                {"Eternals", "04 Nov 2021", "Angelina Jolie, Salma Hayek, Richard Madden", "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "117"},
-                {"The Medium", "02 Dec 2021", " Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan", "A horrifying story of a shaman's inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"},
-                {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM", "78"}
+                {"Spider-Man: No Way Home", "16 Dec 2021", "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon", "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange's help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who've ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse. ", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM"},
+                {"No Time To Die", "25 Nov 2021", "Daniel Craig, Rami Malek, Ana de Armas", "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnappted scientist turns out to be far more treachrous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM"},
+                {"Eternals", "04 Nov 2021", "Angelina Jolie, Salma Hayek, Richard Madden", "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM"},
+                {"The Medium", "02 Dec 2021", " Narilya Gulmongkolpech, Sawanee Utoomma, Sirani Yankittikan", "A horrifying story of a shaman's inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM"},
+                {"Ghostbusters: Afterlife", "02 Dec 2021", "Carrie Coon, Mckenna Grace, Finn Wolfhard, Paul Rudd", "From director Jason Reitman and producer Ivan Reitman, comes the next chapter in the original Ghostbusters universe in Ghostbusters Afterlife, when a single mom and her two kids arrive in a small town, they begin to discover their connection to the original ghostbusters and the secret legacy their grandfather left behind. The film is written by Jason Reitman Gil Kenan.", "20, 21, 22", "9:00AM, 3:00PM, 9:00 PM"}
             },
             new String [] {
-                "Title", "Release Date", "Casts", "Synopsis", "Day", "Time", "Total Seat"
+                "Title", "Release Date", "Casts", "Synopsis", "Day", "Time"
             }
         ));
         jTable1.setRowHeight(23);
@@ -53,7 +52,6 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(20);
             jTable1.getColumnModel().getColumn(1).setPreferredWidth(20);
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(20);
-            jTable1.getColumnModel().getColumn(6).setMaxWidth(100);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1000, 300));
@@ -65,11 +63,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 140, 37));
-
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("Save");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 140, 37));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 140, 37));
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -79,7 +73,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnAddActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 140, 37));
+        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 140, 37));
 
         btnRemove.setBackground(new java.awt.Color(255, 255, 51));
         btnRemove.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -89,7 +83,7 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
                 btnRemoveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, 140, 37));
+        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 140, 37));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -177,7 +171,6 @@ public class StaffAddRemoveMovie extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnRemove;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private static javax.swing.JTable jTable1;
