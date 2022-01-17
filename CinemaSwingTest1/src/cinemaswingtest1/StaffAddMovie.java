@@ -135,7 +135,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
         //validation for not leave blank data
         if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||
                 txtSynopsis.getText().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||
-                txtSeat.getText().equals("")||label.getIcon()==null){
+                label.getIcon()==null){
             //if any field left blank then show message
             JOptionPane.showMessageDialog(this, "Please Enter All Data !");
         }
@@ -155,8 +155,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
                                                         txtCast.getText(),
                                                         txtSynopsis.getText(),
                                                         txtDay.getText(),
-                                                        txtTime.getText(),
-                                                        txtSeat.getText()
+                                                        txtTime.getText()
         });
                 
         
@@ -167,10 +166,9 @@ public class StaffAddMovie extends javax.swing.JFrame {
             String synopsis = txtSynopsis.getText();
             String day =txtDay.getText();
             String time =txtTime.getText();
-            int seat =Integer.parseInt(txtSeat.getText());
             String url = Global.Url;
             
-            API.createMovie(title, date, cast, synopsis, day, time, seat, url);
+            API.createMovie(title, date, cast, synopsis, day, time, url);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
