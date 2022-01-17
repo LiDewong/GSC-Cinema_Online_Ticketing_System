@@ -2221,8 +2221,8 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[48] = 1;
             seat[49] = 1;
             cnt += 2;
-            to_book_seat_idx.remove(48);
-            to_book_seat_idx.remove(49);
+            to_book_seat_idx.add(48);
+            to_book_seat_idx.add(49);
         }
     }//GEN-LAST:event_btnG10ActionPerformed
 
@@ -2233,12 +2233,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[48] = 0;
             seat[49] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(48);
+            to_book_seat_idx.remove(49);
         } else if (seat[48] == 0) {
             btnG10.setBackground(Color.YELLOW);
             btnG11.setBackground(Color.YELLOW);
             seat[48] = 1;
             seat[49] = 1;
             cnt += 2;
+            to_book_seat_idx.add(48);
+            to_book_seat_idx.add(49);
         }
     }//GEN-LAST:event_btnG11ActionPerformed
 
@@ -2247,10 +2251,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH01.setBackground(Color.WHITE);
             seat[50] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(50);
         } else if (seat[50] == 0) {
             btnH01.setBackground(Color.YELLOW);
             seat[50] = 1;
             cnt += 1;
+            to_book_seat_idx.add(50);
         }
     }//GEN-LAST:event_btnH01ActionPerformed
 
@@ -2259,10 +2265,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH03.setBackground(Color.WHITE);
             seat[51] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(51);
         } else if (seat[51] == 0) {
             btnH03.setBackground(Color.YELLOW);
             seat[51] = 1;
             cnt += 1;
+            to_book_seat_idx.add(51);
         }
     }//GEN-LAST:event_btnH03ActionPerformed
 
@@ -2271,10 +2279,13 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH05.setBackground(Color.WHITE);
             seat[52] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(52);
         } else if (seat[52] == 0) {
             btnH05.setBackground(Color.YELLOW);
             seat[52] = 1;
             cnt += 1;
+            to_book_seat_idx.add(52);
+
         }
     }//GEN-LAST:event_btnH05ActionPerformed
 
@@ -2283,10 +2294,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH07.setBackground(Color.WHITE);
             seat[53] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(53);
         } else if (seat[53] == 0) {
             btnH07.setBackground(Color.YELLOW);
             seat[53] = 1;
             cnt += 1;
+            to_book_seat_idx.add(53);
         }
     }//GEN-LAST:event_btnH07ActionPerformed
 
@@ -2295,10 +2308,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH09.setBackground(Color.WHITE);
             seat[54] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(54);
         } else if (seat[54] == 0) {
             btnH09.setBackground(Color.YELLOW);
             seat[54] = 1;
             cnt += 1;
+            to_book_seat_idx.add(54);
         }
     }//GEN-LAST:event_btnH09ActionPerformed
 
@@ -2307,10 +2322,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnH11.setBackground(Color.WHITE);
             seat[55] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(55);
         } else if (seat[55] == 0) {
             btnH11.setBackground(Color.YELLOW);
             seat[55] = 1;
             cnt += 1;
+            to_book_seat_idx.add(55);
         }
     }//GEN-LAST:event_btnH11ActionPerformed
 
@@ -2321,12 +2338,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[56] = 0;
             seat[57] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(56);
+            to_book_seat_idx.remove(57);
         } else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
             seat[56] = 1;
             seat[57] = 1;
             cnt += 2;
+            to_book_seat_idx.add(56);
+            to_book_seat_idx.add(57);
         }
     }//GEN-LAST:event_btnI01ActionPerformed
 
@@ -2337,12 +2358,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[56] = 0;
             seat[57] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(56);
+            to_book_seat_idx.remove(57);
         } else if (seat[56] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
             seat[56] = 1;
             seat[57] = 1;
             cnt += 2;
+            to_book_seat_idx.add(56);
+            to_book_seat_idx.add(57);
         }
     }//GEN-LAST:event_btnI02ActionPerformed
 
@@ -2353,12 +2378,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[58] = 0;
             seat[59] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(58);
+            to_book_seat_idx.remove(59);
         } else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
             seat[58] = 1;
             seat[59] = 1;
             cnt += 2;
+            to_book_seat_idx.remove(58);
+            to_book_seat_idx.remove(59);
         }
     }//GEN-LAST:event_btnI04ActionPerformed
 
@@ -2369,12 +2398,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[58] = 0;
             seat[59] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(58);
+            to_book_seat_idx.remove(59);
         } else if (seat[58] == 0) {
             btnI04.setBackground(Color.YELLOW);
             btnI05.setBackground(Color.YELLOW);
             seat[58] = 1;
             seat[59] = 1;
             cnt += 2;
+            to_book_seat_idx.add(58);
+            to_book_seat_idx.add(59);
         }
     }//GEN-LAST:event_btnI05ActionPerformed
 
@@ -2385,12 +2418,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[60] = 0;
             seat[61] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(60);
+            to_book_seat_idx.remove(61);
         } else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
             seat[60] = 1;
             seat[61] = 1;
             cnt += 2;
+            to_book_seat_idx.add(60);
+            to_book_seat_idx.add(61);
         }
     }//GEN-LAST:event_btnI07ActionPerformed
 
@@ -2401,12 +2438,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[60] = 0;
             seat[61] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(60);
+            to_book_seat_idx.remove(61);
         } else if (seat[60] == 0) {
             btnI07.setBackground(Color.YELLOW);
             btnI08.setBackground(Color.YELLOW);
             seat[60] = 1;
             seat[61] = 1;
             cnt += 2;
+            to_book_seat_idx.add(60);
+            to_book_seat_idx.add(61);
         }
     }//GEN-LAST:event_btnI08ActionPerformed
 
@@ -2417,12 +2458,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[62] = 0;
             seat[63] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(62);
+            to_book_seat_idx.remove(63);
         } else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
             seat[62] = 1;
             seat[63] = 1;
             cnt += 2;
+            to_book_seat_idx.add(62);
+            to_book_seat_idx.add(63);
         }
     }//GEN-LAST:event_btnI10ActionPerformed
 
@@ -2433,12 +2478,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[62] = 0;
             seat[63] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(62);
+            to_book_seat_idx.remove(63);
         } else if (seat[62] == 0) {
             btnI10.setBackground(Color.YELLOW);
             btnI11.setBackground(Color.YELLOW);
             seat[62] = 1;
             seat[63] = 1;
             cnt += 2;
+            to_book_seat_idx.add(62);
+            to_book_seat_idx.add(63);
         }
     }//GEN-LAST:event_btnI11ActionPerformed
 
@@ -2447,10 +2496,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ01.setBackground(Color.WHITE);
             seat[64] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(64);
         } else if (seat[64] == 0) {
             btnJ01.setBackground(Color.YELLOW);
             seat[64] = 1;
             cnt += 1;
+            to_book_seat_idx.add(64);
         }
     }//GEN-LAST:event_btnJ01ActionPerformed
 
@@ -2459,10 +2510,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ03.setBackground(Color.WHITE);
             seat[65] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(65);
         } else if (seat[65] == 0) {
             btnJ03.setBackground(Color.YELLOW);
             seat[65] = 1;
             cnt += 1;
+            to_book_seat_idx.add(65);
         }
     }//GEN-LAST:event_btnJ03ActionPerformed
 
@@ -2471,10 +2524,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ05.setBackground(Color.WHITE);
             seat[66] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(66);
         } else if (seat[66] == 0) {
             btnJ05.setBackground(Color.YELLOW);
             seat[66] = 1;
             cnt += 1;
+            to_book_seat_idx.add(66);
         }
     }//GEN-LAST:event_btnJ05ActionPerformed
 
@@ -2483,10 +2538,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ07.setBackground(Color.WHITE);
             seat[67] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(67);
         } else if (seat[67] == 0) {
             btnJ07.setBackground(Color.YELLOW);
             seat[67] = 1;
             cnt += 1;
+            to_book_seat_idx.add(67);
         }
     }//GEN-LAST:event_btnJ07ActionPerformed
 
@@ -2495,10 +2552,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ09.setBackground(Color.WHITE);
             seat[68] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(68);
         } else if (seat[68] == 0) {
             btnJ09.setBackground(Color.YELLOW);
             seat[68] = 1;
             cnt += 1;
+            to_book_seat_idx.add(68);
         }
     }//GEN-LAST:event_btnJ09ActionPerformed
 
@@ -2507,10 +2566,12 @@ public class MovieSeat1 extends javax.swing.JFrame {
             btnJ11.setBackground(Color.WHITE);
             seat[69] = 0;
             cnt -= 1;
+            to_book_seat_idx.remove(69);
         } else if (seat[69] == 0) {
             btnJ11.setBackground(Color.YELLOW);
             seat[69] = 1;
             cnt += 1;
+            to_book_seat_idx.add(69);
         }
     }//GEN-LAST:event_btnJ11ActionPerformed
 
@@ -2521,12 +2582,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[70] = 0;
             seat[71] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(70);
+            to_book_seat_idx.remove(71);
         } else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
             seat[70] = 1;
             seat[71] = 1;
             cnt += 2;
+            to_book_seat_idx.add(70);
+            to_book_seat_idx.add(71);
         }
     }//GEN-LAST:event_btnK01ActionPerformed
 
@@ -2537,12 +2602,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[70] = 0;
             seat[71] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(70);
+            to_book_seat_idx.remove(71);
         } else if (seat[70] == 0) {
             btnK01.setBackground(Color.YELLOW);
             btnK02.setBackground(Color.YELLOW);
             seat[70] = 1;
             seat[71] = 1;
             cnt += 2;
+            to_book_seat_idx.add(70);
+            to_book_seat_idx.add(71);
         }
     }//GEN-LAST:event_btnK02ActionPerformed
 
@@ -2553,12 +2622,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[72] = 0;
             seat[73] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(72);
+            to_book_seat_idx.remove(73
         } else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
             seat[72] = 1;
             seat[73] = 1;
             cnt += 2;
+            to_book_seat_idx.add(72);
+            to_book_seat_idx.add(73);
         }
     }//GEN-LAST:event_btnK04ActionPerformed
 
@@ -2569,12 +2642,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[72] = 0;
             seat[73] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(72);
+            to_book_seat_idx.remove(73);
         } else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
             seat[72] = 1;
             seat[73] = 1;
             cnt += 2;
+            to_book_seat_idx.add(72);
+            to_book_seat_idx.add(73);
         }
     }//GEN-LAST:event_btnK05ActionPerformed
 
@@ -2585,12 +2662,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[74] = 0;
             seat[75] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(74);
+            to_book_seat_idx.remove(75);
         } else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
             seat[74] = 1;
             seat[75] = 1;
             cnt += 2;
+            to_book_seat_idx.add(74);
+            to_book_seat_idx.add(75);
         }
     }//GEN-LAST:event_btnK07ActionPerformed
 
@@ -2601,12 +2682,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[74] = 0;
             seat[75] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(74);
+            to_book_seat_idx.remove(75);
         } else if (seat[74] == 0) {
             btnK07.setBackground(Color.YELLOW);
             btnK08.setBackground(Color.YELLOW);
             seat[74] = 1;
             seat[75] = 1;
             cnt += 2;
+            to_book_seat_idx.add(74);
+            to_book_seat_idx.add(75);
         }
     }//GEN-LAST:event_btnK08ActionPerformed
 
@@ -2617,12 +2702,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[76] = 0;
             seat[77] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(76);
+            to_book_seat_idx.remove(77);
         } else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
             seat[76] = 1;
             seat[77] = 1;
             cnt += 2;
+            to_book_seat_idx.add(76);
+            to_book_seat_idx.add(77);
         }
     }//GEN-LAST:event_btnK10ActionPerformed
 
@@ -2633,12 +2722,16 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[76] = 0;
             seat[77] = 0;
             cnt -= 2;
+            to_book_seat_idx.remove(76);
+            to_book_seat_idx.remove(77);
         } else if (seat[76] == 0) {
             btnK10.setBackground(Color.YELLOW);
             btnK11.setBackground(Color.YELLOW);
             seat[76] = 1;
             seat[77] = 1;
             cnt += 2;
+            to_book_seat_idx.add(76);
+            to_book_seat_idx.add(77);
         }
     }//GEN-LAST:event_btnK11ActionPerformed
 
