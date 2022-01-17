@@ -166,6 +166,7 @@ public class MovieTime extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        Global.movie_idx=0;
         MainMenu mm = new MainMenu();
         mm.setVisible(true);
         mm.pack();
@@ -180,6 +181,7 @@ public class MovieTime extends javax.swing.JFrame {
         }
         
         else {
+            Global.movie_idx=+0;
             Global.day = day;
             Global.time = "9:00AM";
             
@@ -205,6 +207,7 @@ public class MovieTime extends javax.swing.JFrame {
         }
         
         else {
+            Global.movie_idx=+5;
             Global.day = day;
             Global.time = "3:00PM";
             
@@ -230,6 +233,7 @@ public class MovieTime extends javax.swing.JFrame {
         }
         
         else {
+            Global.movie_idx=+10;
             Global.day = day;
             Global.time = "9:00PM";
             
@@ -250,6 +254,7 @@ public class MovieTime extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel9pmMouseClicked
 
     private void btnDay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay1ActionPerformed
+        Global.movie_idx=+0;
         btnDay1.setBackground(Color.yellow);
         btnDay1.setForeground(Color.black);
         if (day.equals("21/01/22")) {
@@ -264,6 +269,7 @@ public class MovieTime extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDay1ActionPerformed
 
     private void btnDay2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay2ActionPerformed
+        Global.movie_idx=+15;
         btnDay2.setBackground(Color.yellow);
         btnDay2.setForeground(Color.black);
         if (day.equals("20/01/22")) {
@@ -278,6 +284,7 @@ public class MovieTime extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDay2ActionPerformed
 
     private void btnDay3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay3ActionPerformed
+        Global.movie_idx=+30;
         btnDay3.setBackground(Color.yellow);
         btnDay3.setForeground(Color.black);
         if (day.equals("20/01/22")) {

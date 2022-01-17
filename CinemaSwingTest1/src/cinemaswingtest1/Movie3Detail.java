@@ -103,6 +103,8 @@ public class Movie3Detail extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Global.movie_idx=2;
+        System.out.println(Global.movie_idx);
         MovieTime mt = new MovieTime();
         mt.setVisible(true);
         mt.pack();
