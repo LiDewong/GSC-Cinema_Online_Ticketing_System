@@ -207,4 +207,7 @@ public class Global {
             add(booked_seat44L);
         }
     };
+    public static String ticket_student;
+    public static String ticket_classic;
+    public static String ticket_premium;
 }
