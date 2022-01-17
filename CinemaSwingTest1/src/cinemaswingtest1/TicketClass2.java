@@ -144,7 +144,12 @@ public class TicketClass2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Please Select Your Class");
         }
         else{
-            //move to next page F&B 
+            FoodAndBeverages fnb = new FoodAndBeverages();
+            fnb.setVisible(true);
+            fnb.pack();
+            fnb.setLocationRelativeTo(null);
+            fnb.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
         }
     }//GEN-LAST:event_btnNextActionPerformed
 
