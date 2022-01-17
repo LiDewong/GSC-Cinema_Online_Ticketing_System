@@ -4,6 +4,8 @@
  */
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author huawei
@@ -69,6 +71,11 @@ public class PaymentPage extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setText("SUBMIT PAYMENT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/logo.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -186,6 +193,15 @@ public class PaymentPage extends javax.swing.JFrame {
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Ticket t = new Ticket();
+        t.setVisible(true);
+        t.pack();
+        t.setLocationRelativeTo(null);
+        t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

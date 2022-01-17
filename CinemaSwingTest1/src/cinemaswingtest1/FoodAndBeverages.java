@@ -4,6 +4,9 @@
  */
 package cinemaswingtest1;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author chuwe
@@ -29,6 +32,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
     double browniePrice = 6.30;
     double cupcakePrice = 4.00;
     double candyPrice = 3.00;
+    double totalPrice;
     
     double[] itemcost = new double[19];
     
@@ -124,8 +128,10 @@ public class FoodAndBeverages extends javax.swing.JFrame {
         jLblTotal = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         label5 = new java.awt.Label();
-        jLabel20 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -769,6 +775,10 @@ public class FoodAndBeverages extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
 
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jTextField1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        jTextField1.setEnabled(false);
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -779,20 +789,27 @@ public class FoodAndBeverages extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel19)
-                .addContainerGap(293, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLblTotal)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel19)
                     .addComponent(jButton1))
-                .addGap(0, 75, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLblTotal))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 670, -1));
@@ -803,9 +820,19 @@ public class FoodAndBeverages extends javax.swing.JFrame {
         label5.setText("*All prices are inclusive of tax");
         getContentPane().add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 600, -1, -1));
 
-        jLabel20.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/black 2.jpg"))); // NOI18N
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jButton2.setBackground(new java.awt.Color(255, 255, 0));
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setText("NEXT");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(967, 605, 70, 30));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
+        jLabel21.setText("jLabel21");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 640));
 
         pack();
         setLocationRelativeTo(null);
@@ -932,14 +959,40 @@ public class FoodAndBeverages extends javax.swing.JFrame {
 //        totalPrice += 4*(double)jSpinner9.getValue();
 //
 //        totalPrice += 6*(double)jSpinner2.getValue();
+        if(jComboBox1.getSelectedItem().equals("Small"))    //popcorn
+            itemcost[0] =  5.0* Double.parseDouble(String.valueOf(jSpinner1.getValue()));
+        else if(jComboBox1.getSelectedItem().equals("Medium"))
+            itemcost[0] =  7.0* Double.parseDouble(String.valueOf(jSpinner1.getValue()));
+        else if(jComboBox1.getSelectedItem().equals("Large"))
+            itemcost[0] =  9.0* Double.parseDouble(String.valueOf(jSpinner1.getValue()));        
 
+        itemcost[1] =  5.5*Double.parseDouble(String.valueOf(jSpinner4.getValue()));    //nachos
+        itemcost[2] =  6.0*Double.parseDouble(String.valueOf(jSpinner2.getValue()));      //hotdog
+        itemcost[3] =  8.0*Double.parseDouble(String.valueOf(jSpinner3.getValue()));      //sandwich
+        itemcost[4] =  10.0*Double.parseDouble(String.valueOf(jSpinner5.getValue()));     //chicken tenders
+        itemcost[5] =  9.0*Double.parseDouble(String.valueOf(jSpinner6.getValue()));      //nuggets
+        itemcost[6] =  5.5*Double.parseDouble(String.valueOf(jSpinner7.getValue()));    //?(fries)
+        itemcost[7] =  5.8*Double.parseDouble(String.valueOf(jSpinner11.getValue()));   //coffee
+        itemcost[8] =  4.0*Double.parseDouble(String.valueOf(jSpinner9.getValue()));      //iced tea
+        itemcost[9] =  7.0*Double.parseDouble(String.valueOf(jSpinner10.getValue()));     //fruit juice
+        itemcost[10] =  4.0*Double.parseDouble(String.valueOf(jSpinner12.getValue()));    //soft drink
+        itemcost[11] =  3.0*Double.parseDouble(String.valueOf(jSpinner13.getValue()));    //?(mineral water)
+        itemcost[12] =  8.0*Double.parseDouble(String.valueOf(jSpinner14.getValue()));    //cake
+        itemcost[13] =  5.0*Double.parseDouble(String.valueOf(jSpinner15.getValue()));    //choc bar
+        itemcost[14] =  6.0*Double.parseDouble(String.valueOf(jSpinner16.getValue()));    //brownie    
+        itemcost[15] =  4.0*Double.parseDouble(String.valueOf(jSpinner17.getValue()));    //cupcake
+        itemcost[16] =  3.0*Double.parseDouble(String.valueOf(jSpinner18.getValue()));    //candy
+
+
+
+            
         
-
-        itemcost[0] =  5* (double) jSpinner1.getValue();
-        itemcost[1] =  5.5*(double)jSpinner4.getValue();
+        totalPrice = itemcost[0] + itemcost[1] + itemcost[2] + itemcost[3] + 
+                itemcost[4] + itemcost[5] + itemcost[6] + itemcost[7] + itemcost[8] + 
+                itemcost[9] + itemcost[10] + itemcost[11] + itemcost[12] + itemcost[13] + 
+                itemcost[14] + itemcost[15] + itemcost[16] ;
         
-        double totalPrice = itemcost[0] + itemcost[1];
-
+        jTextField1.setText(Double.toString(totalPrice));
         
         //totalPrice = itemcost[0];
         String totalFB = String.format("RM %.2f", totalPrice);
@@ -1030,6 +1083,18 @@ public class FoodAndBeverages extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jChkPopcornActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if (totalPrice!=0)
+            JOptionPane.showMessageDialog(this, "Purchase Food And Beverages Successfully !");
+
+            CustomerPayment cp=  new CustomerPayment();
+            cp.setVisible(true);
+            cp.pack();
+            cp.setLocationRelativeTo(null);
+            cp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1068,6 +1133,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jChkBrownie;
     private javax.swing.JCheckBox jChkCake;
     private javax.swing.JCheckBox jChkCandy;
@@ -1098,7 +1164,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1129,6 +1195,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner6;
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JTextField jTextField1;
     private java.awt.Label label1;
     private java.awt.Label label2;
     private java.awt.Label label3;
