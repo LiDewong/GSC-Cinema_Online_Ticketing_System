@@ -156,8 +156,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
                                                         txtSynopsis.getText(),
                                                         txtDay.getText(),
                                                         txtTime.getText()
-        });
-                
+        }); 
         
         try {
             String title = txtTitle.getText();
@@ -178,7 +177,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void txtTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTitleActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtTitleActionPerformed
 
     public static void main(String args[]) {
