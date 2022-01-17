@@ -207,9 +207,10 @@ public class PaymentPage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
-            boolean x = jTextField1.getText()!=null &&jTextField2.getText()!=null&& jTextField3.getText()!=null&&jTextField4.getText()!=null ;
-            System.out.println(x);
-            if (x) {
+            boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jTextField4.getText().equals("") ;
+            System.out.println("a"+jTextField1.getText()+"a");
+            System.out.println("hello");
+            if (!x) {
                 TicketGenerate tt = new TicketGenerate();
                 tt.generateTicket();
                 Ticket t = new Ticket();
