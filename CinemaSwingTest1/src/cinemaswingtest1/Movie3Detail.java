@@ -86,6 +86,8 @@ public class Movie3Detail extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void label3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label3MouseClicked
+        Global.movie_name = "Eternals";
+
         Movie3Detail movie = new Movie3Detail();
         movie.setVisible(true);
         movie.pack();

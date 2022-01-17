@@ -83,6 +83,8 @@ public class Movie4Detail extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void label4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label4MouseClicked
+        Global.movie_name = "The Medium";
+        
         Movie4Detail movie = new Movie4Detail();
         movie.setVisible(true);
         movie.pack();
