@@ -1,11 +1,9 @@
 package cinemaswingtest1;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class StaffRegister extends javax.swing.JFrame {
-    /**
-     * Creates new form RegisterFormStaff
-     */
     public StaffRegister() {
         initComponents();
     }
@@ -95,28 +93,33 @@ public class StaffRegister extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         try {
+            boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jPasswordField1.getText().equals("") ;
+            if(!x){
             String name = jTextField1.getText();
             String id = jTextField2.getText();
             String email = jTextField3.getText();
             String password = String.valueOf(jPasswordField1.getPassword());
             
             API.staffSignUp(id, name, email, password);
+            StaffLogin sl = new StaffLogin();
+            sl.setVisible(true);
+            sl.pack();
+            sl.setLocationRelativeTo(null);
+            sl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            this.dispose();}
+            else{
+                JOptionPane.showMessageDialog(this, "Please Enter All Data !");
+            }
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
-        StaffLogin sl = new StaffLogin();
-        sl.setVisible(true);
-        sl.pack();
-        sl.setLocationRelativeTo(null);
-        sl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        this.dispose();
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     public static void main(String args[]) {
