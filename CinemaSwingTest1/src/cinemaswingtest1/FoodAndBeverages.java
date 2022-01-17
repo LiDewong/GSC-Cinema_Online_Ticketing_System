@@ -948,6 +948,8 @@ public class FoodAndBeverages extends javax.swing.JFrame {
                 itemcost[4] + itemcost[5] + itemcost[6] + itemcost[7] + itemcost[8] + 
                 itemcost[9] + itemcost[10] + itemcost[11] + itemcost[12] + itemcost[13] + 
                 itemcost[14] + itemcost[15] + itemcost[16] ;
+        Global.fnb_price = String.valueOf(totalPrice);
+        System.out.println(Global.fnb_price);
         
         jTextField1.setText(Double.toString(totalPrice));
         
@@ -1029,7 +1031,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (totalPrice!=0)
             JOptionPane.showMessageDialog(this, "Purchase Food And Beverages Successfully !");
-            Global.fnb_price = String.valueOf(totalPrice);
+            
             CustomerPayment cp = new CustomerPayment();
             cp.setVisible(true);
             cp.pack();
