@@ -3927,6 +3927,7 @@ public void unused(){
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         Global.movie_idx=-Global.remove_movie_idx;
+        System.out.println(Global.movie_idx);
         MovieTime mt = new MovieTime();
         mt.setVisible(true);
         mt.pack();

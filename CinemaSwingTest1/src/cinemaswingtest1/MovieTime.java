@@ -167,6 +167,7 @@ public class MovieTime extends javax.swing.JFrame {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         Global.movie_idx=0;
+        System.out.println(Global.movie_idx);
         MainMenu mm = new MainMenu();
         mm.setVisible(true);
         mm.pack();
@@ -182,6 +183,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+0;
+            System.out.println(Global.movie_idx);
             Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "9:00AM";
@@ -209,6 +211,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+5;
+            System.out.println(Global.movie_idx);
             Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "3:00PM";
@@ -236,6 +239,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+10;
+            System.out.println(Global.movie_idx);
             Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "9:00PM";
