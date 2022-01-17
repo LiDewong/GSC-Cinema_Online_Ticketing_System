@@ -37,38 +37,47 @@ public class MovieSeat1 extends javax.swing.JFrame {
         initComponents();
         initBtn();
 
-        seats = API.getAllSeat("ckyil1zlx000007qoe5on5kk1");
-
-        for (int i = 0; i < seats.size(); i++) {
-            seat_id.add(seats.get(i).id);
-            if (seats.get(i).customer_id == "") {
-                havent_book_idx.add(i);
-            } else {
-                booked_idx.add(i);
-            }
-        }
-
-        for (int i = 0; i < booked_idx.size(); i++) {
+//        seats = API.getAllSeat("ckyil1zlx000007qoe5on5kk1");
+        
+//        for (int i = 0; i < seats.size(); i++) {
+//            seat_id.add(seats.get(i).id);
+//            if (seats.get(i).customer_id == "") {
+//                havent_book_idx.add(i);
+//            } else {
+//                booked_idx.add(i);
+//            }
+//        }
+//
+//        for (int i = 0; i < booked_idx.size(); i++) {
+//            
+//            btn.get(booked_idx.get(i)).setEnabled(false);
+//            
+//        }
+//
+//        for (int i = 0; i < havent_book_idx.size(); i++) {
+//            
+//            btn.get(havent_book_idx.get(i)).setEnabled(true);
+//        }
+        int m =Global.movie_idx;
+        for (int i = 0; i < Global.list.get(m).size(); i++) {
             
-            btn.get(booked_idx.get(i)).setEnabled(false);
+            btn.get(Global.list.get(m).get(i)).setEnabled(false);
             
         }
-
-        for (int i = 0; i < havent_book_idx.size(); i++) {
-            
-            btn.get(havent_book_idx.get(i)).setEnabled(true);
-        }
-
     }
+    
 
     public void confirm() {
+        int m =Global.movie_idx;
         System.out.println("confirm");
-        String email= Global.customer_email;
-        System.out.println(email+"global");
-            System.out.println(to_book_seat_idx.size());
+//        String email= Global.customer_email;
+//        System.out.println(email+"global");
+//            System.out.println(to_book_seat_idx.size());
         for (int i = 0; i < to_book_seat_idx.size(); i++) {
-            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
-            System.out.println(Global.customer_email + "global");
+            Global.list.get(m).add(to_book_seat_idx.get(i));
+            System.out.println(Global.list.get(m).get(i));
+//            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
+//            System.out.println(Global.customer_email + "global");
         }
     }
 
