@@ -49,11 +49,14 @@ public class MovieSeat1 extends javax.swing.JFrame {
         }
 
         for (int i = 0; i < booked_idx.size(); i++) {
-            btn.get(i).setEnabled(false);
+            
+            btn.get(booked_idx.get(i)).setEnabled(false);
+            System.out.println(booked_idx.get(i));
         }
 
         for (int i = 0; i < havent_book_idx.size(); i++) {
-            btn.get(i).setEnabled(true);
+            
+            btn.get(havent_book_idx.get(i)).setEnabled(true);
         }
 
     }
