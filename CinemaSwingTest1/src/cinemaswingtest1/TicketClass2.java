@@ -35,7 +35,10 @@ public class TicketClass2 extends javax.swing.JFrame {
         btnStudent = new javax.swing.JRadioButton();
         btnClassic = new javax.swing.JRadioButton();
         btnPremium = new javax.swing.JRadioButton();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -102,7 +105,7 @@ public class TicketClass2 extends javax.swing.JFrame {
                 btnStudentActionPerformed(evt);
             }
         });
-        getContentPane().add(btnStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 93, -1));
+        getContentPane().add(btnStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 20, 30));
 
         btnClassic.setBackground(new java.awt.Color(34, 34, 34));
         buttonGroup1.add(btnClassic);
@@ -111,7 +114,7 @@ public class TicketClass2 extends javax.swing.JFrame {
                 btnClassicActionPerformed(evt);
             }
         });
-        getContentPane().add(btnClassic, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 93, 30));
+        getContentPane().add(btnClassic, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 20, 30));
 
         btnPremium.setBackground(new java.awt.Color(34, 34, 34));
         buttonGroup1.add(btnPremium);
@@ -120,11 +123,26 @@ public class TicketClass2 extends javax.swing.JFrame {
                 btnPremiumActionPerformed(evt);
             }
         });
-        getContentPane().add(btnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 480, 93, 30));
+        getContentPane().add(btnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 480, 20, 30));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
-        jLabel7.setText("jLabel7");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("RM10.00/ticket");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 220, -1));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("RM17.00/ticket");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 170, 30));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("RM25.00/ticket");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 170, 30));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
+        jLabel13.setText("jLabel13");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -218,12 +236,15 @@ public class TicketClass2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton btnStudent;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }
