@@ -36,31 +36,42 @@ public class MovieSeat2 extends javax.swing.JFrame {
     public MovieSeat2() {
         initComponents();
         initBtn();
-
-        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
-
-        for (int i = 0; i < seats.size(); i++) {
-            seat_id.add(seats.get(i).id);
-            if (seats.get(i).customer_id == "") {
-                havent_book_idx.add(i);
-            } else {
-                booked_idx.add(i);
-            }
+        int m =Global.movie_idx;
+        for (int i = 0; i < Global.listL.get(m).size(); i++) {
+            
+            btn.get(Global.listL.get(m).get(i)).setEnabled(false);
+            
         }
 
-        for (int i = 0; i < booked_idx.size(); i++) {
-            btn.get(i).setEnabled(false);
-        }
-
-        for (int i = 0; i < havent_book_idx.size(); i++) {
-            btn.get(i).setEnabled(true);
-        }
+//        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
+//
+//        for (int i = 0; i < seats.size(); i++) {
+//            seat_id.add(seats.get(i).id);
+//            if (seats.get(i).customer_id == "") {
+//                havent_book_idx.add(i);
+//            } else {
+//                booked_idx.add(i);
+//            }
+//        }
+//
+//        for (int i = 0; i < booked_idx.size(); i++) {
+//            btn.get(i).setEnabled(false);
+//        }
+//
+//        for (int i = 0; i < havent_book_idx.size(); i++) {
+//            btn.get(i).setEnabled(true);
+//        }
 
     }
     public void confirm() {
+        int m =Global.movie_idx;
         System.out.println("confirm");
+        
         for (int i = 0; i < to_book_seat_idx.size(); i++) {
-            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
+            Global.listL.get(m).add(to_book_seat_idx.get(i));
+            System.out.println(Global.listL.get(m).get(i));
+//        for (int i = 0; i < to_book_seat_idx.size(); i++) {
+//            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
         }
     }
   
