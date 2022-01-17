@@ -2623,7 +2623,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
             seat[73] = 0;
             cnt -= 2;
             to_book_seat_idx.remove(72);
-            to_book_seat_idx.remove(73
+            to_book_seat_idx.remove(73);
         } else if (seat[72] == 0) {
             btnK04.setBackground(Color.YELLOW);
             btnK05.setBackground(Color.YELLOW);
