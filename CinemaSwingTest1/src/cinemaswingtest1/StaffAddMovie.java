@@ -136,7 +136,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
         //validation for not leave blank data
         if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||
                 txtSynopsis.getText().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||
-                txtSeat.getText().equals("")||label.getIcon().equals("")){
+                txtSeat.getText().equals("")||label.getIcon()==null){
             //if any field left blank then show message
             JOptionPane.showMessageDialog(this, "Please Enter All Data !");
         }
