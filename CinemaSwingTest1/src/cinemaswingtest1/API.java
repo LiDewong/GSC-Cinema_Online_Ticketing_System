@@ -282,7 +282,7 @@ public class API {
             String synopsis,
             String day,
             String time,
-            int total_seat,
+//            int total_seat,
             String image_url) {
         try {
             // form parameters
@@ -293,7 +293,7 @@ public class API {
             data.put("synopsis", synopsis);
             data.put("day", day);
             data.put("time", time);
-            data.put("total_seat", total_seat);
+//            data.put("total_seat", total_seat);
             data.put("image_url", image_url);
 
             HttpRequest request = HttpRequest.newBuilder()
