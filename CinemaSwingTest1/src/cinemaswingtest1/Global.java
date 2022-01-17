@@ -14,7 +14,7 @@ public class Global {
     public static String day = "";
     public static String time = "";
     public static String Url=""; 
-    public static int seat_movie1=78;
+    public static int seat_movie1;
     public static int seat_movie2;
     public static int seat_movie3;
     public static int seat_movie4;
