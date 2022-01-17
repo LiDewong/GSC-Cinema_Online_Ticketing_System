@@ -289,7 +289,12 @@ public class CustomerPayment extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPayActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        // TODO add your handling code here:
+        FoodAndBeverages fnb = new FoodAndBeverages();
+        fnb.setVisible(true);
+        fnb.pack();
+        fnb.setLocationRelativeTo(null);
+        fnb.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
