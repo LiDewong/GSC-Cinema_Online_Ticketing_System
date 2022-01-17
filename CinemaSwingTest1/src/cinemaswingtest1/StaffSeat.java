@@ -4,6 +4,8 @@
  */
 package cinemaswingtest1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author YEZP
@@ -135,6 +137,11 @@ public class StaffSeat extends javax.swing.JFrame {
             Global.seat_movie4 =  78;
         else if(jComboBox1.getSelectedItem().equals("117"))
             Global.seat_movie4 =  117;
+        
+        JOptionPane.showMessageDialog(this, "Save Successfully");
+        StaffMainMenu c = new StaffMainMenu();
+        c.show();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

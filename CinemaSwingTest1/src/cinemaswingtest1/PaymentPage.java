@@ -206,33 +206,29 @@ public class PaymentPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
-            boolean x = (jTextField1.getText()!=null) && (jTextField2.getText()!=null) && (jTextField3.getText()!=null) && (jTextField4.getText()!=null);
-            System.out.println(x);
-            if (x) {
-                TicketGenerate tt = new TicketGenerate();
-                tt.generateTicket();
-                Ticket t = new Ticket();
-                t.setVisible(true);
-                t.pack();
-                t.setLocationRelativeTo(null);
-                t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                this.dispose();
-                
-                
-            }else {
-                jLabel6.setText("Invalid");}
-            
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        
-//        Ticket t = new Ticket();
+        boolean x = (jTextField1.getText()!=null) && (jTextField2.getText()!=null) && (jTextField3.getText()!=null) && (jTextField4.getText()!=null);//        Ticket t = new Ticket();
 //        t.setVisible(true);
 //        t.pack();
 //        t.setLocationRelativeTo(null);
 //        t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        this.dispose();
+        System.out.println(x);
+        if (x) {
+            try {
+                TicketGenerate t = new TicketGenerate();
+                t.generateTicket();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+            
+            Ticket t = new Ticket();
+            t.setVisible(true);
+            t.pack();
+            t.setLocationRelativeTo(null);
+            t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }else {
+            jLabel6.setText("Invalid");}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
