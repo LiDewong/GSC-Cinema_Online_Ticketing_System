@@ -252,43 +252,43 @@ public class MovieTime extends javax.swing.JFrame {
     private void btnDay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay1ActionPerformed
         btnDay1.setBackground(Color.yellow);
         btnDay1.setForeground(Color.black);
-        if (day.equals("21")) {
+        if (day.equals("21/01/22")) {
             btnDay2.setBackground(Color.black);
             btnDay2.setForeground(Color.white);
         }
-        else if (day.equals("22")) {
+        else if (day.equals("22/01/22")) {
             btnDay3.setBackground(Color.black);
             btnDay3.setForeground(Color.white);
         }
-        day = "20";
+        day = "20/01/22";
     }//GEN-LAST:event_btnDay1ActionPerformed
 
     private void btnDay2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay2ActionPerformed
         btnDay2.setBackground(Color.yellow);
         btnDay2.setForeground(Color.black);
-        if (day.equals("20")) {
+        if (day.equals("20/01/22")) {
             btnDay1.setBackground(Color.black);
             btnDay1.setForeground(Color.white);
         }
-        else if (day.equals("22")) {
+        else if (day.equals("22/01/22")) {
             btnDay3.setBackground(Color.black);
             btnDay3.setForeground(Color.white);
         }
-        day = "21";
+        day = "21/01/22";
     }//GEN-LAST:event_btnDay2ActionPerformed
 
     private void btnDay3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay3ActionPerformed
         btnDay3.setBackground(Color.yellow);
         btnDay3.setForeground(Color.black);
-        if (day.equals("20")) {
+        if (day.equals("20/01/22")) {
             btnDay1.setBackground(Color.black);
             btnDay1.setForeground(Color.white);
         }
-        else if (day.equals("21")) {
+        else if (day.equals("21/01/22")) {
             btnDay2.setBackground(Color.black);
             btnDay2.setForeground(Color.white);
         }
-        day = "22";
+        day = "22/01/22";
     }//GEN-LAST:event_btnDay3ActionPerformed
 
     /**

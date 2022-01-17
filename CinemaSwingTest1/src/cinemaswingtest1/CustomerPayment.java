@@ -12,15 +12,17 @@ public class CustomerPayment extends javax.swing.JFrame {
     public CustomerPayment() {
         initComponents();
         
+        txtCntSeat.setText(Global.cnt_seat);
+        
         if (Global.ticket_class.equals("Student"))
-            ticket_price = 9 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = 10 * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Classic"))
-            ticket_price = 18 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = 17 * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Premium"))
-            ticket_price = 27 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = 25 * Integer.parseInt(Global.cnt_seat);
         txtPriceTicket.setText(String.format("RM %.2f", ticket_price));
         
-        txtDate.setText(String.format("%s/01/2022", Global.day));
+        txtDate.setText(Global.day);
         txtTime.setText(Global.time);
     }
 
@@ -122,7 +124,6 @@ public class CustomerPayment extends javax.swing.JFrame {
 
         txtCntSeat.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtCntSeat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtCntSeat.setText(Global.cnt_seat);
         txtCntSeat.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtCntSeat.setEnabled(false);
 
@@ -210,14 +211,14 @@ public class CustomerPayment extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addGap(49, 49, 49)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(txtPriceTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtPriceFnB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtPriceTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(77, 77, 77)))
+                            .addComponent(txtPriceTicket, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                            .addComponent(txtPriceFnB)
+                            .addComponent(txtPriceTotal))
+                        .addGap(57, 57, 57)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(

@@ -11,9 +11,9 @@ package cinemaswingtest1;
 public class Global {
     public static String customer_email = "";
     public static String seat_no = "";
-    public static String cnt_seat = "";
-    public static String ticket_class = "";
-    public static String day = "";
-    public static String time = "";
+    public static String cnt_seat = "7";
+    public static String ticket_class = "Premium";
+    public static String day = "21/02/22";
+    public static String time = "9:00AM";
     public static String Url=""; 
 }
