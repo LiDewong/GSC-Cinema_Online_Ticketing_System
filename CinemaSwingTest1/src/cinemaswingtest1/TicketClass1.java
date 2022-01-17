@@ -34,7 +34,10 @@ public class TicketClass1 extends javax.swing.JFrame {
         btnClassic = new javax.swing.JRadioButton();
         btnPremium = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         labelStudent = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         labelPremium = new javax.swing.JLabel();
         labelClassic = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -128,20 +131,35 @@ public class TicketClass1 extends javax.swing.JFrame {
         jLabel9.setText("Student");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, 90, -1));
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("/ticket");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 480, 100, 30));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("/ticket");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 300, 100, 30));
+
         labelStudent.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         labelStudent.setForeground(new java.awt.Color(255, 255, 255));
-        labelStudent.setText("RM10.00/ticket");
-        getContentPane().add(labelStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 220, -1));
+        labelStudent.setText("RM10.00");
+        getContentPane().add(labelStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 100, -1));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("/ticket");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 390, 100, 30));
 
         labelPremium.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         labelPremium.setForeground(new java.awt.Color(255, 255, 255));
-        labelPremium.setText("RM25.00/ticket");
-        getContentPane().add(labelPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 170, 30));
+        labelPremium.setText("RM25.00");
+        getContentPane().add(labelPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 100, 30));
 
         labelClassic.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         labelClassic.setForeground(new java.awt.Color(255, 255, 255));
-        labelClassic.setText("RM17.00/ticket");
-        getContentPane().add(labelClassic, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 170, 30));
+        labelClassic.setText("RM17.00");
+        getContentPane().add(labelClassic, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 100, 30));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinemaswingtest1/image/mainmenu/dark grey (2).jpg"))); // NOI18N
         jLabel13.setText("jLabel13");
@@ -235,12 +253,15 @@ public class TicketClass1 extends javax.swing.JFrame {
     private javax.swing.JRadioButton btnStudent;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel labelClassic;
