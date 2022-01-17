@@ -111,7 +111,30 @@ public class StaffSeat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        if(jComboBox1.getSelectedItem().equals("78"))
+            Global.seat_movie1 =  78;
+        else if(jComboBox1.getSelectedItem().equals("117"))
+            Global.seat_movie1 =  117;
+        
+        if(jComboBox2.getSelectedItem().equals("78"))
+            Global.seat_movie2 =  78;
+        else if(jComboBox2.getSelectedItem().equals("117"))
+            Global.seat_movie2 =  117;
+        
+        if(jComboBox3.getSelectedItem().equals("78"))
+            Global.seat_movie3 =  78;
+        else if(jComboBox3.getSelectedItem().equals("117"))
+            Global.seat_movie3 =  117;
+        
+        if(jComboBox4.getSelectedItem().equals("78"))
+            Global.seat_movie4 =  78;
+        else if(jComboBox4.getSelectedItem().equals("117"))
+            Global.seat_movie4 =  117;
+        
+        if(jComboBox4.getSelectedItem().equals("78"))
+            Global.seat_movie4 =  78;
+        else if(jComboBox1.getSelectedItem().equals("117"))
+            Global.seat_movie4 =  117;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

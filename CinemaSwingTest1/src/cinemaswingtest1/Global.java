@@ -14,6 +14,11 @@ public class Global {
     public static String day = "";
     public static String time = "";
     public static String Url=""; 
+    public static int seat_movie1;
+    public static int seat_movie2;
+    public static int seat_movie3;
+    public static int seat_movie4;
+    public static int seat_movie5;
     public static int movie_idx;
     public static int remove_movie_idx;
     public static List<Integer> booked_seat0 = new ArrayList<>();
