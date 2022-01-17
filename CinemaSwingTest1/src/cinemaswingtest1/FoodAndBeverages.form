@@ -93,7 +93,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="340" y="100" width="350" height="-1"/>
+          <AbsoluteConstraints x="350" y="100" width="350" height="-1"/>
         </Constraint>
       </Constraints>
 
@@ -423,7 +423,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="700" y="100" width="-1" height="370"/>
+          <AbsoluteConstraints x="720" y="100" width="-1" height="370"/>
         </Constraint>
       </Constraints>
 
@@ -777,7 +777,7 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="label1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel2" alignment="0" min="-2" pref="176" max="-2" attributes="0"/>
@@ -786,11 +786,8 @@
                                       <Component id="jLabel4" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                                       <Component id="jLabel6" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                                       <Component id="jLabel5" min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" min="-2" pref="56" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
