@@ -182,6 +182,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+0;
+            Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "9:00AM";
             
@@ -208,6 +209,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+5;
+            Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "3:00PM";
             
@@ -234,6 +236,7 @@ public class MovieTime extends javax.swing.JFrame {
         
         else {
             Global.movie_idx=+10;
+            Global.remove_movie_idx= Global.movie_idx;
             Global.day = day;
             Global.time = "9:00PM";
             
