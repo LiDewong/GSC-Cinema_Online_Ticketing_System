@@ -6,13 +6,13 @@ import java.util.List;
 
 public class Global {
     public static String customer_email = "";
-    public static String movie_name = "Spider-Man";
-    public static String seat_no = "F01";
+    public static String movie_name = "";
+    public static String seat_no = "";
     public static String cnt_seat = "";
     public static String ticket_class = "";
     public static String fnb_price = "0";
-    public static String day = "20/02/22";
-    public static String time = "9:00AM";
+    public static String day = "";
+    public static String time = "";
     public static String Url=""; 
     public static int seat_movie1;
     public static int seat_movie2;
