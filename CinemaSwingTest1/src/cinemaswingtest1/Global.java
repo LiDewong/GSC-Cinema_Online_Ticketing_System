@@ -15,4 +15,5 @@ public class Global {
     public static String ticket_class = "";
     public static String day = "";
     public static String time = "";
+    public static String Url=""; 
 }

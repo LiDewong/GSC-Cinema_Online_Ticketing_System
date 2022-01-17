@@ -60,8 +60,11 @@ public class MovieSeat1 extends javax.swing.JFrame {
 
     public void confirm() {
         System.out.println("confirm");
+        String email= Global.customer_email;
+        System.out.println(email+"global");
         for (int i = 0; i < to_book_seat_idx.size(); i++) {
             System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
+            System.out.println(Global.customer_email + "global");
         }
     }
 

@@ -47,6 +47,12 @@ public class StaffAddMovie extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Total Seat");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 114, -1));
+
+        txtTitle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTitleActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 290, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -126,6 +132,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
             Image imFit=imIco.getImage();
             Image imgFit=imFit.getScaledInstance(label.getWidth(),label.getHeight(),Image.SCALE_SMOOTH);
             label.setIcon(new ImageIcon(imgFit));
+            Global.Url = getselectedImage;
         }
         
         
@@ -159,9 +166,30 @@ public class StaffAddMovie extends javax.swing.JFrame {
                                                         txtTime.getText(),
                                                         txtSeat.getText()
         });
+                
+        
+        try {
+            String title = txtTitle.getText();
+            String date = txtDate.getText();
+            String cast = txtCast.getText();
+            String synopsis = txtSynopsis.getText();
+            String day =txtDay.getText();
+            String time =txtTime.getText();
+            int seat =Integer.parseInt(txtSeat.getText());
+            String url = Global.Url;
+            
+            API.createMovie(title, date, cast, synopsis, day, time, seat, url);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         
         
     }//GEN-LAST:event_btnAddActionPerformed
+
+    private void txtTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTitleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTitleActionPerformed
 
     public static void main(String args[]) {
        
