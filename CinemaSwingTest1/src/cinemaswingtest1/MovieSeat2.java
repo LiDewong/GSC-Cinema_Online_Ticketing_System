@@ -3902,7 +3902,6 @@ public void unused(){
             for (int i = 0; i < seat.length; i++) {
                 if (seat[i] == 1) {
                     Global.seat_no += id[i] + " ";
-//                    API.bookSeat(Global.customer_email, seat_id);
                 }
             }
         } catch (Exception e) {
@@ -3916,11 +3915,11 @@ public void unused(){
             JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
             Global.cnt_seat = String.valueOf(cnt);
 
-            TicketClass2 tc2 = new TicketClass2();
-            tc2.setVisible(true);
-            tc2.pack();
-            tc2.setLocationRelativeTo(null);
-            tc2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            TicketClass1 tc = new TicketClass1();
+            tc.setVisible(true);
+            tc.pack();
+            tc.setLocationRelativeTo(null);
+            tc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.dispose();
         }
     }//GEN-LAST:event_btnNextActionPerformed
