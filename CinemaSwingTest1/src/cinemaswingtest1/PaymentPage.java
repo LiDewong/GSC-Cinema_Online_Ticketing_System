@@ -206,13 +206,19 @@ public class PaymentPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-try {
+            try {
+                System.out.println(Global.seat_no);
+                TicketGenerate tt = new TicketGenerate();
+                tt.generateTicket();
+            } catch (IOException e) {
+                    System.out.println(e.getMessage());
+            }
             boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jTextField4.getText().equals("") ;
             System.out.println("a"+jTextField1.getText()+"a");
             System.out.println("hello");
             if (!x) {
-                TicketGenerate tt = new TicketGenerate();
-                tt.generateTicket();
+//                TicketGenerate tt = new TicketGenerate();
+//                tt.generateTicket();
                 Ticket t = new Ticket();
                 t.setVisible(true);
                 t.pack();
@@ -224,9 +230,7 @@ try {
             }else {
                 jLabel6.setText("Invalid");}
             
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        
         
 //        Ticket t = new Ticket();
 //        t.setVisible(true);
