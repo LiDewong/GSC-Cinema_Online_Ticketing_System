@@ -66,122 +66,122 @@ public class MovieSeat2 extends javax.swing.JFrame {
   
     public void initBtn() {
         btn.add(btnA01);
-btn.add(btnA02);
-btn.add(btnA04);
-btn.add(btnA05);
-btn.add(btnA07);
-btn.add(btnA08);
-btn.add(btnA10);
-btn.add(btnA11);
-btn.add(btnA13);
-btn.add(btnA14);
-btn.add(btnA16);
-btn.add(btnA17);
-btn.add(btnB01);
-btn.add(btnB03);
-btn.add(btnB05);
-btn.add(btnB07);
-btn.add(btnB09);
-btn.add(btnB11);
-btn.add(btnB13);
-btn.add(btnB15);
-btn.add(btnB17);
-btn.add(btnC01);
-btn.add(btnC02);
-btn.add(btnC04);
-btn.add(btnC05);
-btn.add(btnC07);
-btn.add(btnC08);
-btn.add(btnC10);
-btn.add(btnC11);
-btn.add(btnC13);
-btn.add(btnC14);
-btn.add(btnC16);
-btn.add(btnC17);
-btn.add(btnD01);
-btn.add(btnD03);
-btn.add(btnD05);
-btn.add(btnD07);
-btn.add(btnD09);
-btn.add(btnD11);
-btn.add(btnD13);
-btn.add(btnD15);
-btn.add(btnD17);
-btn.add(btnE01);
-btn.add(btnE02);
-btn.add(btnE04);
-btn.add(btnE05);
-btn.add(btnE07);
-btn.add(btnE08);
-btn.add(btnE10);
-btn.add(btnE11);
-btn.add(btnE13);
-btn.add(btnE14);
-btn.add(btnE16);
-btn.add(btnE17);
-btn.add(btnF01);
-btn.add(btnF03);
-btn.add(btnF05);
-btn.add(btnF07);
-btn.add(btnF09);
-btn.add(btnF11);
-btn.add(btnF13);
-btn.add(btnF15);
-btn.add(btnF17);
-btn.add(btnG01);
-btn.add(btnG02);
-btn.add(btnG04);
-btn.add(btnG05);
-btn.add(btnG07);
-btn.add(btnG08);
-btn.add(btnG10);
-btn.add(btnG11);
-btn.add(btnG13);
-btn.add(btnG14);
-btn.add(btnG16);
-btn.add(btnG17);
-btn.add(btnH01);
-btn.add(btnH03);
-btn.add(btnH05);
-btn.add(btnH07);
-btn.add(btnH09);
-btn.add(btnH11);
-btn.add(btnH13);
-btn.add(btnH15);
-btn.add(btnH17);
-btn.add(btnI01);
-btn.add(btnI02);
-btn.add(btnI04);
-btn.add(btnI05);
-btn.add(btnI07);
-btn.add(btnI08);
-btn.add(btnI10);
-btn.add(btnI11);
-btn.add(btnI13);
-btn.add(btnI14);
-btn.add(btnI16);
-btn.add(btnI17);
-btn.add(btnJ01);
-btn.add(btnJ03);
-btn.add(btnJ05);
-btn.add(btnJ07);
-btn.add(btnJ09);
-btn.add(btnJ11);
-btn.add(btnJ13);
-btn.add(btnJ15);
-btn.add(btnJ17);
-btn.add(btnK01);
-btn.add(btnK02);
-btn.add(btnK04);
-btn.add(btnK05);
-btn.add(btnK07);
-btn.add(btnK08);
-btn.add(btnK10);
-btn.add(btnK11);
-btn.add(btnK13);
-btn.add(btnK14);
-btn.add(btnK16);
-btn.add(btnK17);
+        btn.add(btnA02);
+        btn.add(btnA04);
+        btn.add(btnA05);
+        btn.add(btnA07);
+        btn.add(btnA08);
+        btn.add(btnA10);
+        btn.add(btnA11);
+        btn.add(btnA13);
+        btn.add(btnA14);
+        btn.add(btnA16);
+        btn.add(btnA17);
+        btn.add(btnB01);
+        btn.add(btnB03);
+        btn.add(btnB05);
+        btn.add(btnB07);
+        btn.add(btnB09);
+        btn.add(btnB11);
+        btn.add(btnB13);
+        btn.add(btnB15);
+        btn.add(btnB17);
+        btn.add(btnC01);
+        btn.add(btnC02);
+        btn.add(btnC04);
+        btn.add(btnC05);
+        btn.add(btnC07);
+        btn.add(btnC08);
+        btn.add(btnC10);
+        btn.add(btnC11);
+        btn.add(btnC13);
+        btn.add(btnC14);
+        btn.add(btnC16);
+        btn.add(btnC17);
+        btn.add(btnD01);
+        btn.add(btnD03);
+        btn.add(btnD05);
+        btn.add(btnD07);
+        btn.add(btnD09);
+        btn.add(btnD11);
+        btn.add(btnD13);
+        btn.add(btnD15);
+        btn.add(btnD17);
+        btn.add(btnE01);
+        btn.add(btnE02);
+        btn.add(btnE04);
+        btn.add(btnE05);
+        btn.add(btnE07);
+        btn.add(btnE08);
+        btn.add(btnE10);
+        btn.add(btnE11);
+        btn.add(btnE13);
+        btn.add(btnE14);
+        btn.add(btnE16);
+        btn.add(btnE17);
+        btn.add(btnF01);
+        btn.add(btnF03);
+        btn.add(btnF05);
+        btn.add(btnF07);
+        btn.add(btnF09);
+        btn.add(btnF11);
+        btn.add(btnF13);
+        btn.add(btnF15);
+        btn.add(btnF17);
+        btn.add(btnG01);
+        btn.add(btnG02);
+        btn.add(btnG04);
+        btn.add(btnG05);
+        btn.add(btnG07);
+        btn.add(btnG08);
+        btn.add(btnG10);
+        btn.add(btnG11);
+        btn.add(btnG13);
+        btn.add(btnG14);
+        btn.add(btnG16);
+        btn.add(btnG17);
+        btn.add(btnH01);
+        btn.add(btnH03);
+        btn.add(btnH05);
+        btn.add(btnH07);
+        btn.add(btnH09);
+        btn.add(btnH11);
+        btn.add(btnH13);
+        btn.add(btnH15);
+        btn.add(btnH17);
+        btn.add(btnI01);
+        btn.add(btnI02);
+        btn.add(btnI04);
+        btn.add(btnI05);
+        btn.add(btnI07);
+        btn.add(btnI08);
+        btn.add(btnI10);
+        btn.add(btnI11);
+        btn.add(btnI13);
+        btn.add(btnI14);
+        btn.add(btnI16);
+        btn.add(btnI17);
+        btn.add(btnJ01);
+        btn.add(btnJ03);
+        btn.add(btnJ05);
+        btn.add(btnJ07);
+        btn.add(btnJ09);
+        btn.add(btnJ11);
+        btn.add(btnJ13);
+        btn.add(btnJ15);
+        btn.add(btnJ17);
+        btn.add(btnK01);
+        btn.add(btnK02);
+        btn.add(btnK04);
+        btn.add(btnK05);
+        btn.add(btnK07);
+        btn.add(btnK08);
+        btn.add(btnK10);
+        btn.add(btnK11);
+        btn.add(btnK13);
+        btn.add(btnK14);
+        btn.add(btnK16);
+        btn.add(btnK17);
 
     }
     
@@ -1705,6 +1705,8 @@ public void unused(){
             seat[0] = 0;
             seat[1] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(0);
+            to_book_seat_idx.remove(1);
         }
         else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
@@ -1712,6 +1714,8 @@ public void unused(){
             seat[0] = 1;
             seat[1] = 1;
             cnt+=2;
+            to_book_seat_idx.add(0);
+            to_book_seat_idx.add(1);
         }
     }//GEN-LAST:event_btnA01ActionPerformed
 
@@ -1722,6 +1726,8 @@ public void unused(){
             seat[0] = 0;
             seat[1] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(0);
+            to_book_seat_idx.remove(1);
         }
         else if (seat[0] == 0) {
             btnA01.setBackground(Color.YELLOW);
@@ -1729,6 +1735,8 @@ public void unused(){
             seat[0] = 1;
             seat[1] = 1;
             cnt+=2;
+            to_book_seat_idx.add(0);
+            to_book_seat_idx.add(1);
         }
     }//GEN-LAST:event_btnA02ActionPerformed
 
@@ -1739,6 +1747,8 @@ public void unused(){
             seat[2] = 0;
             seat[3] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(2);
+            to_book_seat_idx.remove(3);
         }
         else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
@@ -1746,6 +1756,8 @@ public void unused(){
             seat[2] = 1;
             seat[3] = 1;
             cnt+=2;
+            to_book_seat_idx.add(2);
+            to_book_seat_idx.add(3);
         }
     }//GEN-LAST:event_btnA04ActionPerformed
 
@@ -1756,6 +1768,8 @@ public void unused(){
             seat[2] = 0;
             seat[3] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(2);
+            to_book_seat_idx.remove(3);
         }
         else if (seat[2] == 0) {
             btnA04.setBackground(Color.YELLOW);
@@ -1763,6 +1777,8 @@ public void unused(){
             seat[2] = 1;
             seat[3] = 1;
             cnt+=2;
+            to_book_seat_idx.add(2);
+            to_book_seat_idx.add(3);
         }
     }//GEN-LAST:event_btnA05ActionPerformed
 
@@ -1773,6 +1789,8 @@ public void unused(){
             seat[4] = 0;
             seat[5] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(4);
+            to_book_seat_idx.remove(5);
         }
         else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
@@ -1780,6 +1798,8 @@ public void unused(){
             seat[4] = 1;
             seat[5] = 1;
             cnt+=2;
+            to_book_seat_idx.add(4);
+            to_book_seat_idx.add(5);
         }
     }//GEN-LAST:event_btnA07ActionPerformed
 
@@ -1790,6 +1810,8 @@ public void unused(){
             seat[4] = 0;
             seat[5] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(4);
+            to_book_seat_idx.remove(5);
         }
         else if (seat[4] == 0) {
             btnA07.setBackground(Color.YELLOW);
@@ -1797,6 +1819,8 @@ public void unused(){
             seat[4] = 1;
             seat[5] = 1;
             cnt+=2;
+            to_book_seat_idx.add(4);
+            to_book_seat_idx.add(5);
         }
     }//GEN-LAST:event_btnA08ActionPerformed
 
@@ -1807,6 +1831,8 @@ public void unused(){
             seat[6] = 0;
             seat[7] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(6);
+            to_book_seat_idx.remove(7);
         }
         else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
@@ -1814,6 +1840,8 @@ public void unused(){
             seat[6] = 1;
             seat[7] = 1;
             cnt+=2;
+            to_book_seat_idx.add(6);
+            to_book_seat_idx.add(7);
         }
     }//GEN-LAST:event_btnA10ActionPerformed
 
@@ -1824,6 +1852,8 @@ public void unused(){
             seat[6] = 0;
             seat[7] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(6);
+            to_book_seat_idx.remove(7);
         }
         else if (seat[6] == 0) {
             btnA10.setBackground(Color.YELLOW);
@@ -1831,6 +1861,8 @@ public void unused(){
             seat[6] = 1;
             seat[7] = 1;
             cnt+=2;
+            to_book_seat_idx.add(6);
+            to_book_seat_idx.add(7);
         }
     }//GEN-LAST:event_btnA11ActionPerformed
 
@@ -1841,6 +1873,8 @@ public void unused(){
             seat[8] = 0;
             seat[9] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(8);
+            to_book_seat_idx.remove(9);
         }
         else if (seat[8] == 0) {
             btnA13.setBackground(Color.YELLOW);
@@ -1848,6 +1882,8 @@ public void unused(){
             seat[8] = 1;
             seat[9] = 1;
             cnt+=2;
+            to_book_seat_idx.add(8);
+            to_book_seat_idx.add(9);
         }
     }//GEN-LAST:event_btnA13ActionPerformed
 
@@ -1858,6 +1894,8 @@ public void unused(){
             seat[8] = 0;
             seat[9] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(8);
+            to_book_seat_idx.remove(9);
         }
         else if (seat[8] == 0) {
             btnA13.setBackground(Color.YELLOW);
@@ -1865,6 +1903,8 @@ public void unused(){
             seat[8] = 1;
             seat[9] = 1;
             cnt+=2;
+            to_book_seat_idx.add(8);
+            to_book_seat_idx.add(9);
         }
     }//GEN-LAST:event_btnA14ActionPerformed
 
@@ -1875,6 +1915,8 @@ public void unused(){
             seat[10] = 0;
             seat[11] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(10);
+            to_book_seat_idx.remove(11);
         }
         else if (seat[10] == 0) {
             btnA16.setBackground(Color.YELLOW);
@@ -1882,6 +1924,8 @@ public void unused(){
             seat[10] = 1;
             seat[11] = 1;
             cnt+=2;
+            to_book_seat_idx.add(10);
+            to_book_seat_idx.add(11);
         }
     }//GEN-LAST:event_btnA16ActionPerformed
 
@@ -1892,6 +1936,8 @@ public void unused(){
             seat[10] = 0;
             seat[11] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(10);
+            to_book_seat_idx.remove(11);
         }
         else if (seat[10] == 0) {
             btnA16.setBackground(Color.YELLOW);
@@ -1899,6 +1945,8 @@ public void unused(){
             seat[10] = 1;
             seat[11] = 1;
             cnt+=2;
+            to_book_seat_idx.add(10);
+            to_book_seat_idx.add(11);
         }
     }//GEN-LAST:event_btnA17ActionPerformed
 
@@ -1907,11 +1955,13 @@ public void unused(){
             btnB01.setBackground(Color.WHITE);
             seat[12] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(12);
         }
         else if (seat[12] == 0) {
             btnB01.setBackground(Color.YELLOW);
             seat[12] = 1;
             cnt+=1;
+            to_book_seat_idx.add(12);
         }
     }//GEN-LAST:event_btnB01ActionPerformed
 
@@ -1920,11 +1970,13 @@ public void unused(){
             btnB03.setBackground(Color.WHITE);
             seat[13] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(13);
         }
         else if (seat[13] == 0) {
             btnB03.setBackground(Color.YELLOW);
             seat[13] = 1;
             cnt+=1;
+            to_book_seat_idx.add(13);
         }
     }//GEN-LAST:event_btnB03ActionPerformed
 
@@ -1933,11 +1985,13 @@ public void unused(){
             btnB05.setBackground(Color.WHITE);
             seat[14] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(14);
         }
         else if (seat[14] == 0) {
             btnB05.setBackground(Color.YELLOW);
             seat[14] = 1;
             cnt+=1;
+            to_book_seat_idx.add(14);
         }
     }//GEN-LAST:event_btnB05ActionPerformed
 
@@ -1946,11 +2000,13 @@ public void unused(){
             btnB07.setBackground(Color.WHITE);
             seat[15] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(15);
         }
         else if (seat[15] == 0) {
             btnB07.setBackground(Color.YELLOW);
             seat[15] = 1;
             cnt+=1;
+            to_book_seat_idx.add(15);
         }
     }//GEN-LAST:event_btnB07ActionPerformed
 
@@ -1959,11 +2015,13 @@ public void unused(){
             btnB09.setBackground(Color.WHITE);
             seat[16] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(16);
         }
         else if (seat[16] == 0) {
             btnB09.setBackground(Color.YELLOW);
             seat[16] = 1;
             cnt+=1;
+            to_book_seat_idx.add(16);
         }
     }//GEN-LAST:event_btnB09ActionPerformed
 
@@ -1972,11 +2030,13 @@ public void unused(){
             btnB11.setBackground(Color.WHITE);
             seat[17] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(17);
         }
         else if (seat[17] == 0) {
             btnB11.setBackground(Color.YELLOW);
             seat[17] = 1;
             cnt+=1;
+            to_book_seat_idx.add(17);
         }
     }//GEN-LAST:event_btnB11ActionPerformed
 
@@ -1985,11 +2045,13 @@ public void unused(){
             btnB13.setBackground(Color.WHITE);
             seat[18] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(18);
         }
         else if (seat[18] == 0) {
             btnB13.setBackground(Color.YELLOW);
             seat[18] = 1;
             cnt+=1;
+            to_book_seat_idx.add(18);
         }
     }//GEN-LAST:event_btnB13ActionPerformed
 
@@ -1998,11 +2060,13 @@ public void unused(){
             btnB15.setBackground(Color.WHITE);
             seat[19] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(19);
         }
         else if (seat[19] == 0) {
             btnB15.setBackground(Color.YELLOW);
             seat[19] = 1;
             cnt+=1;
+            to_book_seat_idx.add(19);
         }
     }//GEN-LAST:event_btnB15ActionPerformed
 
@@ -2011,11 +2075,13 @@ public void unused(){
             btnB17.setBackground(Color.WHITE);
             seat[20] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(20);
         }
         else if (seat[20] == 0) {
             btnB17.setBackground(Color.YELLOW);
             seat[20] = 1;
             cnt+=1;
+            to_book_seat_idx.add(20);
         }
     }//GEN-LAST:event_btnB17ActionPerformed
 
@@ -2026,6 +2092,8 @@ public void unused(){
             seat[21] = 0;
             seat[22] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(21);
+            to_book_seat_idx.remove(22);
         }
         else if (seat[21] == 0) {
             btnC01.setBackground(Color.YELLOW);
@@ -2033,6 +2101,8 @@ public void unused(){
             seat[21] = 1;
             seat[22] = 1;
             cnt+=2;
+            to_book_seat_idx.add(21);
+            to_book_seat_idx.add(22);
         }
     }//GEN-LAST:event_btnC01ActionPerformed
 
@@ -2043,6 +2113,8 @@ public void unused(){
             seat[21] = 0;
             seat[22] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(21);
+            to_book_seat_idx.remove(22);
         }
         else if (seat[21] == 0) {
             btnC01.setBackground(Color.YELLOW);
@@ -2050,6 +2122,8 @@ public void unused(){
             seat[21] = 1;
             seat[22] = 1;
             cnt+=2;
+            to_book_seat_idx.add(21);
+            to_book_seat_idx.add(22);
         }
     }//GEN-LAST:event_btnC02ActionPerformed
 
@@ -2060,6 +2134,8 @@ public void unused(){
             seat[23] = 0;
             seat[24] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(23);
+            to_book_seat_idx.remove(24);
         }
         else if (seat[23] == 0) {
             btnC04.setBackground(Color.YELLOW);
@@ -2067,6 +2143,8 @@ public void unused(){
             seat[23] = 1;
             seat[24] = 1;
             cnt+=2;
+            to_book_seat_idx.add(23);
+            to_book_seat_idx.add(24);
         }
     }//GEN-LAST:event_btnC04ActionPerformed
 
@@ -2077,6 +2155,8 @@ public void unused(){
             seat[23] = 0;
             seat[24] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(23);
+            to_book_seat_idx.remove(24);
         }
         else if (seat[23] == 0) {
             btnC04.setBackground(Color.YELLOW);
@@ -2084,6 +2164,8 @@ public void unused(){
             seat[23] = 1;
             seat[24] = 1;
             cnt+=2;
+            to_book_seat_idx.add(23);
+            to_book_seat_idx.add(24);
         }
     }//GEN-LAST:event_btnC05ActionPerformed
 
@@ -2094,6 +2176,8 @@ public void unused(){
             seat[25] = 0;
             seat[26] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(25);
+            to_book_seat_idx.remove(26);
         }
         else if (seat[25] == 0) {
             btnC07.setBackground(Color.YELLOW);
@@ -2101,6 +2185,8 @@ public void unused(){
             seat[25] = 1;
             seat[26] = 1;
             cnt+=2;
+            to_book_seat_idx.add(25);
+            to_book_seat_idx.add(26);
         }
     }//GEN-LAST:event_btnC07ActionPerformed
 
@@ -2111,6 +2197,8 @@ public void unused(){
             seat[25] = 0;
             seat[26] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(25);
+            to_book_seat_idx.remove(26);
         }
         else if (seat[25] == 0) {
             btnC07.setBackground(Color.YELLOW);
@@ -2118,6 +2206,8 @@ public void unused(){
             seat[25] = 1;
             seat[26] = 1;
             cnt+=2;
+            to_book_seat_idx.add(25);
+            to_book_seat_idx.add(26);
         }
     }//GEN-LAST:event_btnC08ActionPerformed
 
@@ -2128,6 +2218,8 @@ public void unused(){
             seat[27] = 0;
             seat[28] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(27);
+            to_book_seat_idx.remove(28);
         }
         else if (seat[27] == 0) {
             btnC10.setBackground(Color.YELLOW);
@@ -2135,6 +2227,8 @@ public void unused(){
             seat[27] = 1;
             seat[28] = 1;
             cnt+=2;
+            to_book_seat_idx.add(27);
+            to_book_seat_idx.add(28);
         }
     }//GEN-LAST:event_btnC10ActionPerformed
 
@@ -2145,6 +2239,8 @@ public void unused(){
             seat[27] = 0;
             seat[28] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(27);
+            to_book_seat_idx.remove(28);
         }
         else if (seat[27] == 0) {
             btnC10.setBackground(Color.YELLOW);
@@ -2152,6 +2248,8 @@ public void unused(){
             seat[27] = 1;
             seat[28] = 1;
             cnt+=2;
+            to_book_seat_idx.add(27);
+            to_book_seat_idx.add(28);
         }
     }//GEN-LAST:event_btnC11ActionPerformed
 
@@ -2162,6 +2260,8 @@ public void unused(){
             seat[29] = 0;
             seat[30] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(29);
+            to_book_seat_idx.remove(30);
         }
         else if (seat[29] == 0) {
             btnC13.setBackground(Color.YELLOW);
@@ -2169,6 +2269,8 @@ public void unused(){
             seat[29] = 1;
             seat[30] = 1;
             cnt+=2;
+            to_book_seat_idx.add(29);
+            to_book_seat_idx.add(30);
         }
     }//GEN-LAST:event_btnC13ActionPerformed
 
@@ -2179,6 +2281,8 @@ public void unused(){
             seat[29] = 0;
             seat[30] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(29);
+            to_book_seat_idx.remove(30);
         }
         else if (seat[29] == 0) {
             btnC13.setBackground(Color.YELLOW);
@@ -2186,6 +2290,8 @@ public void unused(){
             seat[29] = 1;
             seat[30] = 1;
             cnt+=2;
+            to_book_seat_idx.add(29);
+            to_book_seat_idx.add(30);
         }
     }//GEN-LAST:event_btnC14ActionPerformed
 
@@ -2196,6 +2302,8 @@ public void unused(){
             seat[31] = 0;
             seat[32] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(31);
+            to_book_seat_idx.remove(32);
         }
         else if (seat[31] == 0) {
             btnC16.setBackground(Color.YELLOW);
@@ -2203,6 +2311,8 @@ public void unused(){
             seat[31] = 1;
             seat[32] = 1;
             cnt+=2;
+            to_book_seat_idx.add(31);
+            to_book_seat_idx.add(32);
         }
     }//GEN-LAST:event_btnC16ActionPerformed
 
@@ -2213,6 +2323,8 @@ public void unused(){
             seat[31] = 0;
             seat[32] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(31);
+            to_book_seat_idx.remove(32);
         }
         else if (seat[31] == 0) {
             btnC16.setBackground(Color.YELLOW);
@@ -2220,6 +2332,8 @@ public void unused(){
             seat[31] = 1;
             seat[32] = 1;
             cnt+=2;
+            to_book_seat_idx.add(31);
+            to_book_seat_idx.add(32);
         }
     }//GEN-LAST:event_btnC17ActionPerformed
 
@@ -2228,11 +2342,13 @@ public void unused(){
             btnD01.setBackground(Color.WHITE);
             seat[33] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(33);
         }
         else if (seat[33] == 0) {
             btnD01.setBackground(Color.YELLOW);
             seat[33] = 1;
             cnt+=1;
+            to_book_seat_idx.add(33);
         }
     }//GEN-LAST:event_btnD01ActionPerformed
 
@@ -2241,11 +2357,13 @@ public void unused(){
             btnD03.setBackground(Color.WHITE);
             seat[34] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(34);
         }
         else if (seat[34] == 0) {
             btnD03.setBackground(Color.YELLOW);
             seat[34] = 1;
             cnt+=1;
+            to_book_seat_idx.add(34);
         }
     }//GEN-LAST:event_btnD03ActionPerformed
 
@@ -2254,11 +2372,13 @@ public void unused(){
             btnD05.setBackground(Color.WHITE);
             seat[35] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(35);
         }
         else if (seat[35] == 0) {
             btnD05.setBackground(Color.YELLOW);
             seat[35] = 1;
             cnt+=1;
+            to_book_seat_idx.add(35);
         }
     }//GEN-LAST:event_btnD05ActionPerformed
 
@@ -2267,11 +2387,13 @@ public void unused(){
             btnD07.setBackground(Color.WHITE);
             seat[36] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(36);
         }
         else if (seat[36] == 0) {
             btnD07.setBackground(Color.YELLOW);
             seat[36] = 1;
             cnt+=1;
+            to_book_seat_idx.add(36);
         }
     }//GEN-LAST:event_btnD07ActionPerformed
 
@@ -2280,11 +2402,13 @@ public void unused(){
             btnD09.setBackground(Color.WHITE);
             seat[37] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(37);
         }
         else if (seat[37] == 0) {
             btnD09.setBackground(Color.YELLOW);
             seat[37] = 1;
             cnt+=1;
+            to_book_seat_idx.add(37);
         }
     }//GEN-LAST:event_btnD09ActionPerformed
 
@@ -2293,11 +2417,13 @@ public void unused(){
             btnD11.setBackground(Color.WHITE);
             seat[38] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(38);
         }
         else if (seat[38] == 0) {
             btnD11.setBackground(Color.YELLOW);
             seat[38] = 1;
             cnt+=1;
+            to_book_seat_idx.add(38);
         }
     }//GEN-LAST:event_btnD11ActionPerformed
 
@@ -2306,11 +2432,13 @@ public void unused(){
             btnD13.setBackground(Color.WHITE);
             seat[39] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(39);
         }
         else if (seat[39] == 0) {
             btnD13.setBackground(Color.YELLOW);
             seat[39] = 1;
             cnt+=1;
+            to_book_seat_idx.add(39);
         }
     }//GEN-LAST:event_btnD13ActionPerformed
 
@@ -2319,11 +2447,13 @@ public void unused(){
             btnD15.setBackground(Color.WHITE);
             seat[40] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(40);
         }
         else if (seat[40] == 0) {
             btnD15.setBackground(Color.YELLOW);
             seat[40] = 1;
             cnt+=1;
+            to_book_seat_idx.add(40);
         }
     }//GEN-LAST:event_btnD15ActionPerformed
 
@@ -2332,11 +2462,13 @@ public void unused(){
             btnD17.setBackground(Color.WHITE);
             seat[41] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(41);
         }
         else if (seat[41] == 0) {
             btnD17.setBackground(Color.YELLOW);
             seat[41] = 1;
             cnt+=1;
+            to_book_seat_idx.add(41);
         }
     }//GEN-LAST:event_btnD17ActionPerformed
 
@@ -2347,6 +2479,8 @@ public void unused(){
             seat[42] = 0;
             seat[43] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(42);
+            to_book_seat_idx.remove(43);
         }
         else if (seat[42] == 0) {
             btnE01.setBackground(Color.YELLOW);
@@ -2354,6 +2488,8 @@ public void unused(){
             seat[42] = 1;
             seat[43] = 1;
             cnt+=2;
+            to_book_seat_idx.add(42);
+            to_book_seat_idx.add(43);
         }
     }//GEN-LAST:event_btnE01ActionPerformed
 
@@ -2364,6 +2500,8 @@ public void unused(){
             seat[42] = 0;
             seat[43] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(42);
+            to_book_seat_idx.remove(43);
         }
         else if (seat[42] == 0) {
             btnE01.setBackground(Color.YELLOW);
@@ -2371,6 +2509,8 @@ public void unused(){
             seat[42] = 1;
             seat[43] = 1;
             cnt+=2;
+            to_book_seat_idx.add(42);
+            to_book_seat_idx.add(43);
         }
     }//GEN-LAST:event_btnE02ActionPerformed
 
@@ -2381,6 +2521,8 @@ public void unused(){
             seat[44] = 0;
             seat[45] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(44);
+            to_book_seat_idx.remove(45);
         }
         else if (seat[44] == 0) {
             btnE04.setBackground(Color.YELLOW);
@@ -2388,6 +2530,8 @@ public void unused(){
             seat[44] = 1;
             seat[45] = 1;
             cnt+=2;
+            to_book_seat_idx.add(44);
+            to_book_seat_idx.add(45);
         }
     }//GEN-LAST:event_btnE04ActionPerformed
 
@@ -2398,6 +2542,8 @@ public void unused(){
             seat[44] = 0;
             seat[45] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(44);
+            to_book_seat_idx.remove(45);
         }
         else if (seat[44] == 0) {
             btnE04.setBackground(Color.YELLOW);
@@ -2405,6 +2551,8 @@ public void unused(){
             seat[44] = 1;
             seat[45] = 1;
             cnt+=2;
+            to_book_seat_idx.add(44);
+            to_book_seat_idx.add(45);
         }
     }//GEN-LAST:event_btnE05ActionPerformed
 
@@ -2415,6 +2563,8 @@ public void unused(){
             seat[46] = 0;
             seat[47] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(46);
+            to_book_seat_idx.remove(47);
         }
         else if (seat[46] == 0) {
             btnE07.setBackground(Color.YELLOW);
@@ -2422,6 +2572,8 @@ public void unused(){
             seat[46] = 1;
             seat[47] = 1;
             cnt+=2;
+            to_book_seat_idx.add(46);
+            to_book_seat_idx.add(47);
         }
     }//GEN-LAST:event_btnE07ActionPerformed
 
@@ -2432,6 +2584,8 @@ public void unused(){
             seat[46] = 0;
             seat[47] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(46);
+            to_book_seat_idx.remove(47);
         }
         else if (seat[46] == 0) {
             btnE07.setBackground(Color.YELLOW);
@@ -2439,6 +2593,8 @@ public void unused(){
             seat[46] = 1;
             seat[47] = 1;
             cnt+=2;
+            to_book_seat_idx.add(46);
+            to_book_seat_idx.add(47);
         }
     }//GEN-LAST:event_btnE08ActionPerformed
 
@@ -2449,6 +2605,8 @@ public void unused(){
             seat[48] = 0;
             seat[49] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(48);
+            to_book_seat_idx.remove(49);
         }
         else if (seat[48] == 0) {
             btnE10.setBackground(Color.YELLOW);
@@ -2456,6 +2614,8 @@ public void unused(){
             seat[48] = 1;
             seat[49] = 1;
             cnt+=2;
+            to_book_seat_idx.add(48);
+            to_book_seat_idx.add(49);
         }
     }//GEN-LAST:event_btnE10ActionPerformed
 
@@ -2466,6 +2626,8 @@ public void unused(){
             seat[48] = 0;
             seat[49] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(48);
+            to_book_seat_idx.remove(49);
         }
         else if (seat[48] == 0) {
             btnE10.setBackground(Color.YELLOW);
@@ -2473,6 +2635,8 @@ public void unused(){
             seat[48] = 1;
             seat[49] = 1;
             cnt+=2;
+            to_book_seat_idx.add(48);
+            to_book_seat_idx.add(49);
         }
     }//GEN-LAST:event_btnE11ActionPerformed
 
@@ -2483,6 +2647,8 @@ public void unused(){
             seat[50] = 0;
             seat[51] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(50);
+            to_book_seat_idx.remove(51);
         }
         else if (seat[50] == 0) {
             btnE13.setBackground(Color.YELLOW);
@@ -2490,6 +2656,8 @@ public void unused(){
             seat[50] = 1;
             seat[51] = 1;
             cnt+=2;
+            to_book_seat_idx.add(50);
+            to_book_seat_idx.add(51);
         }
     }//GEN-LAST:event_btnE13ActionPerformed
 
@@ -2500,6 +2668,8 @@ public void unused(){
             seat[50] = 0;
             seat[51] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(50);
+            to_book_seat_idx.remove(51);
         }
         else if (seat[50] == 0) {
             btnE13.setBackground(Color.YELLOW);
@@ -2507,6 +2677,8 @@ public void unused(){
             seat[50] = 1;
             seat[51] = 1;
             cnt+=2;
+            to_book_seat_idx.add(50);
+            to_book_seat_idx.add(51);
         }
     }//GEN-LAST:event_btnE14ActionPerformed
 
@@ -2517,6 +2689,8 @@ public void unused(){
             seat[52] = 0;
             seat[53] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(52);
+            to_book_seat_idx.remove(53);
         }
         else if (seat[52] == 0) {
             btnE16.setBackground(Color.YELLOW);
@@ -2524,6 +2698,8 @@ public void unused(){
             seat[52] = 1;
             seat[53] = 1;
             cnt+=2;
+            to_book_seat_idx.add(52);
+            to_book_seat_idx.add(53);
         }
     }//GEN-LAST:event_btnE16ActionPerformed
 
@@ -2534,6 +2710,8 @@ public void unused(){
             seat[52] = 0;
             seat[53] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(52);
+            to_book_seat_idx.remove(53);
         }
         else if (seat[52] == 0) {
             btnE16.setBackground(Color.YELLOW);
@@ -2541,6 +2719,8 @@ public void unused(){
             seat[52] = 1;
             seat[53] = 1;
             cnt+=2;
+            to_book_seat_idx.add(52);
+            to_book_seat_idx.add(53);
         }
     }//GEN-LAST:event_btnE17ActionPerformed
 
@@ -2549,11 +2729,13 @@ public void unused(){
             btnF01.setBackground(Color.WHITE);
             seat[54] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(54);
         }
         else if (seat[54] == 0) {
             btnF01.setBackground(Color.YELLOW);
             seat[54] = 1;
             cnt+=1;
+            to_book_seat_idx.add(54);
         }
     }//GEN-LAST:event_btnF01ActionPerformed
 
@@ -2562,11 +2744,13 @@ public void unused(){
             btnF03.setBackground(Color.WHITE);
             seat[55] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(55);
         }
         else if (seat[55] == 0) {
             btnF03.setBackground(Color.YELLOW);
             seat[55] = 1;
             cnt+=1;
+            to_book_seat_idx.add(55);
         }
     }//GEN-LAST:event_btnF03ActionPerformed
 
@@ -2575,11 +2759,13 @@ public void unused(){
             btnF05.setBackground(Color.WHITE);
             seat[56] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(56);
         }
         else if (seat[56] == 0) {
             btnF05.setBackground(Color.YELLOW);
             seat[56] = 1;
             cnt+=1;
+            to_book_seat_idx.add(56);
         }
     }//GEN-LAST:event_btnF05ActionPerformed
 
@@ -2588,11 +2774,13 @@ public void unused(){
             btnF07.setBackground(Color.WHITE);
             seat[57] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(57);
         }
         else if (seat[57] == 0) {
             btnF07.setBackground(Color.YELLOW);
             seat[57] = 1;
             cnt+=1;
+            to_book_seat_idx.add(57);
         }
     }//GEN-LAST:event_btnF07ActionPerformed
 
@@ -2601,11 +2789,13 @@ public void unused(){
             btnF09.setBackground(Color.WHITE);
             seat[58] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(58);
         }
         else if (seat[58] == 0) {
             btnF09.setBackground(Color.YELLOW);
             seat[58] = 1;
             cnt+=1;
+            to_book_seat_idx.add(58);
         }
     }//GEN-LAST:event_btnF09ActionPerformed
 
@@ -2614,11 +2804,13 @@ public void unused(){
             btnF11.setBackground(Color.WHITE);
             seat[59] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(59);
         }
         else if (seat[59] == 0) {
             btnF11.setBackground(Color.YELLOW);
             seat[59] = 1;
             cnt+=1;
+            to_book_seat_idx.add(59);
         }
     }//GEN-LAST:event_btnF11ActionPerformed
 
@@ -2627,11 +2819,13 @@ public void unused(){
             btnF13.setBackground(Color.WHITE);
             seat[60] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(60);
         }
         else if (seat[60] == 0) {
             btnF13.setBackground(Color.YELLOW);
             seat[60] = 1;
             cnt+=1;
+            to_book_seat_idx.add(60);
         }
     }//GEN-LAST:event_btnF13ActionPerformed
 
@@ -2640,11 +2834,13 @@ public void unused(){
             btnF15.setBackground(Color.WHITE);
             seat[61] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(61);
         }
         else if (seat[61] == 0) {
             btnF15.setBackground(Color.YELLOW);
             seat[61] = 1;
             cnt+=1;
+            to_book_seat_idx.add(61);
         }
     }//GEN-LAST:event_btnF15ActionPerformed
 
@@ -2653,11 +2849,13 @@ public void unused(){
             btnF17.setBackground(Color.WHITE);
             seat[62] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(62);
         }
         else if (seat[62] == 0) {
             btnF17.setBackground(Color.YELLOW);
             seat[62] = 1;
             cnt+=1;
+            to_book_seat_idx.add(62);
         }
     }//GEN-LAST:event_btnF17ActionPerformed
 
@@ -2668,6 +2866,8 @@ public void unused(){
             seat[63] = 0;
             seat[64] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(63);
+            to_book_seat_idx.remove(64);
         }
         else if (seat[63] == 0) {
             btnG01.setBackground(Color.YELLOW);
@@ -2675,6 +2875,8 @@ public void unused(){
             seat[63] = 1;
             seat[64] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(63);
+            to_book_seat_idx.add(64);
         }
     }//GEN-LAST:event_btnG01ActionPerformed
 
@@ -2685,6 +2887,8 @@ public void unused(){
             seat[63] = 0;
             seat[64] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(63);
+            to_book_seat_idx.remove(64);
         }
         else if (seat[63] == 0) {
             btnG01.setBackground(Color.YELLOW);
@@ -2692,6 +2896,8 @@ public void unused(){
             seat[63] = 1;
             seat[64] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(63);
+            to_book_seat_idx.add(64);
         }
     }//GEN-LAST:event_btnG02ActionPerformed
 
@@ -2702,6 +2908,8 @@ public void unused(){
             seat[65] = 0;
             seat[66] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(65);
+            to_book_seat_idx.remove(66);
         }
         else if (seat[65] == 0) {
             btnG04.setBackground(Color.YELLOW);
@@ -2709,6 +2917,8 @@ public void unused(){
             seat[65] = 1;
             seat[66] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(65);
+            to_book_seat_idx.add(66);
         }
     }//GEN-LAST:event_btnG04ActionPerformed
 
@@ -2719,13 +2929,17 @@ public void unused(){
             seat[65] = 0;
             seat[66] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(65);
+            to_book_seat_idx.remove(66);
         }
         else if (seat[65] == 0) {
             btnG04.setBackground(Color.YELLOW);
             btnG05.setBackground(Color.YELLOW);
             seat[65] = 1;
             seat[66] = 1;
-           cnt+=2; 
+            cnt+=2; 
+            to_book_seat_idx.add(65);
+            to_book_seat_idx.add(66);
         }
     }//GEN-LAST:event_btnG05ActionPerformed
 
@@ -2736,6 +2950,8 @@ public void unused(){
             seat[67] = 0;
             seat[68] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(67);
+            to_book_seat_idx.remove(68);
         }
         else if (seat[67] == 0) {
             btnG07.setBackground(Color.YELLOW);
@@ -2743,6 +2959,8 @@ public void unused(){
             seat[67] = 1;
             seat[68] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(67);
+            to_book_seat_idx.add(68);
         }
     }//GEN-LAST:event_btnG07ActionPerformed
 
@@ -2753,6 +2971,8 @@ public void unused(){
             seat[67] = 0;
             seat[68] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(67);
+            to_book_seat_idx.remove(68);
         }
         else if (seat[67] == 0) {
             btnG07.setBackground(Color.YELLOW);
@@ -2760,6 +2980,8 @@ public void unused(){
             seat[67] = 1;
             seat[68] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(67);
+            to_book_seat_idx.add(68);
         }
     }//GEN-LAST:event_btnG08ActionPerformed
 
@@ -2770,6 +2992,8 @@ public void unused(){
             seat[69] = 0;
             seat[70] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(69);
+            to_book_seat_idx.remove(70);
         }
         else if (seat[69] == 0) {
             btnG10.setBackground(Color.YELLOW);
@@ -2777,6 +3001,8 @@ public void unused(){
             seat[69] = 1;
             seat[70] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(69);
+            to_book_seat_idx.add(70);
         }
     }//GEN-LAST:event_btnG10ActionPerformed
 
@@ -2787,6 +3013,8 @@ public void unused(){
             seat[69] = 0;
             seat[70] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(69);
+            to_book_seat_idx.remove(70);
         }
         else if (seat[69] == 0) {
             btnG10.setBackground(Color.YELLOW);
@@ -2794,6 +3022,8 @@ public void unused(){
             seat[69] = 1;
             seat[70] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(69);
+            to_book_seat_idx.add(70);
         }
     }//GEN-LAST:event_btnG11ActionPerformed
 
@@ -2804,6 +3034,8 @@ public void unused(){
             seat[71] = 0;
             seat[72] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(71);
+            to_book_seat_idx.remove(72);
         }
         else if (seat[71] == 0) {
             btnG13.setBackground(Color.YELLOW);
@@ -2811,6 +3043,8 @@ public void unused(){
             seat[71] = 1;
             seat[72] = 1;
             cnt+=2;  
+            to_book_seat_idx.add(71);
+            to_book_seat_idx.add(72);
         }
     }//GEN-LAST:event_btnG13ActionPerformed
 
@@ -2821,13 +3055,17 @@ public void unused(){
             seat[71] = 0;
             seat[72] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(71);
+            to_book_seat_idx.remove(72);
         }
         else if (seat[71] == 0) {
             btnG13.setBackground(Color.YELLOW);
             btnG14.setBackground(Color.YELLOW);
             seat[71] = 1;
             seat[72] = 1;
-            cnt+=2; 
+            cnt+=2;  
+            to_book_seat_idx.add(71);
+            to_book_seat_idx.add(72);
         }
     }//GEN-LAST:event_btnG14ActionPerformed
 
@@ -2838,6 +3076,8 @@ public void unused(){
             seat[73] = 0;
             seat[74] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(73);
+            to_book_seat_idx.remove(74);
         }
         else if (seat[73] == 0) {
             btnG16.setBackground(Color.YELLOW);
@@ -2845,6 +3085,8 @@ public void unused(){
             seat[73] = 1;
             seat[74] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(73);
+            to_book_seat_idx.add(74);
         }
     }//GEN-LAST:event_btnG16ActionPerformed
 
@@ -2855,6 +3097,8 @@ public void unused(){
             seat[73] = 0;
             seat[74] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(73);
+            to_book_seat_idx.remove(74);
         }
         else if (seat[73] == 0) {
             btnG16.setBackground(Color.YELLOW);
@@ -2862,6 +3106,8 @@ public void unused(){
             seat[73] = 1;
             seat[74] = 1;
             cnt+=2; 
+            to_book_seat_idx.add(73);
+            to_book_seat_idx.add(74);
         }
     }//GEN-LAST:event_btnG17ActionPerformed
 
@@ -2870,11 +3116,13 @@ public void unused(){
             btnH01.setBackground(Color.WHITE);
             seat[75] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(75);
         }
         else if (seat[75] == 0) {
             btnH01.setBackground(Color.YELLOW);
             seat[75] = 1;
             cnt+=1; 
+            to_book_seat_idx.add(75);
         }
     }//GEN-LAST:event_btnH01ActionPerformed
 
@@ -2883,11 +3131,13 @@ public void unused(){
             btnH03.setBackground(Color.WHITE);
             seat[76] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(76);
         }
         else if (seat[76] == 0) {
             btnH03.setBackground(Color.YELLOW);
             seat[76] = 1;
             cnt+=1; 
+            to_book_seat_idx.add(76);
         }
     }//GEN-LAST:event_btnH03ActionPerformed
 
@@ -2896,11 +3146,13 @@ public void unused(){
             btnH05.setBackground(Color.WHITE);
             seat[77] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(77);
         }
         else if (seat[77] == 0) {
             btnH05.setBackground(Color.YELLOW);
             seat[77] = 1;
             cnt+=1;
+            to_book_seat_idx.add(77);
         }
     }//GEN-LAST:event_btnH05ActionPerformed
 
@@ -2909,11 +3161,13 @@ public void unused(){
             btnH07.setBackground(Color.WHITE);
             seat[78] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(78);
         }
         else if (seat[78] == 0) {
             btnH07.setBackground(Color.YELLOW);
             seat[78] = 1;
             cnt+=1;
+            to_book_seat_idx.add(78);
         }
     }//GEN-LAST:event_btnH07ActionPerformed
 
@@ -2922,11 +3176,13 @@ public void unused(){
             btnH09.setBackground(Color.WHITE);
             seat[79] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(79);
         }
         else if (seat[79] == 0) {
             btnH09.setBackground(Color.YELLOW);
             seat[79] = 1;
             cnt+=1;
+            to_book_seat_idx.add(79);
         }
     }//GEN-LAST:event_btnH09ActionPerformed
 
@@ -2935,11 +3191,13 @@ public void unused(){
             btnH11.setBackground(Color.WHITE);
             seat[80] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(80);
         }
         else if (seat[80] == 0) {
             btnH11.setBackground(Color.YELLOW);
             seat[80] = 1;
             cnt+=1;
+            to_book_seat_idx.add(80);
         }
     }//GEN-LAST:event_btnH11ActionPerformed
 
@@ -2948,11 +3206,13 @@ public void unused(){
             btnH13.setBackground(Color.WHITE);
             seat[81] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(81);
         }
         else if (seat[81] == 0) {
             btnH13.setBackground(Color.YELLOW);
             seat[81] = 1;
             cnt+=1;
+            to_book_seat_idx.add(81);
         }
     }//GEN-LAST:event_btnH13ActionPerformed
 
@@ -2961,11 +3221,13 @@ public void unused(){
             btnH15.setBackground(Color.WHITE);
             seat[82] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(82);
         }
         else if (seat[82] == 0) {
             btnH15.setBackground(Color.YELLOW);
             seat[82] = 1;
             cnt+=1;
+            to_book_seat_idx.add(82);
         }
     }//GEN-LAST:event_btnH15ActionPerformed
 
@@ -2974,11 +3236,13 @@ public void unused(){
             btnH17.setBackground(Color.WHITE);
             seat[83] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(83);
         }
         else if (seat[83] == 0) {
             btnH17.setBackground(Color.YELLOW);
             seat[83] = 1;
             cnt+=1;
+            to_book_seat_idx.add(83);
         }
     }//GEN-LAST:event_btnH17ActionPerformed
 
@@ -2989,6 +3253,8 @@ public void unused(){
             seat[84] = 0;
             seat[85] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(84);
+            to_book_seat_idx.remove(85);
         }
         else if (seat[84] == 0) {
             btnI01.setBackground(Color.YELLOW);
@@ -2996,6 +3262,8 @@ public void unused(){
             seat[84] = 1;
             seat[85] = 1;
             cnt+=2;
+            to_book_seat_idx.add(84);
+            to_book_seat_idx.add(85);
         }
     }//GEN-LAST:event_btnI01ActionPerformed
 
@@ -3006,13 +3274,17 @@ public void unused(){
             seat[84] = 0;
             seat[85] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(84);
+            to_book_seat_idx.remove(85);
         }
         else if (seat[84] == 0) {
             btnI01.setBackground(Color.YELLOW);
             btnI02.setBackground(Color.YELLOW);
             seat[84] = 1;
             seat[85] = 1;
-            cnt+=2; 
+            cnt+=2;
+            to_book_seat_idx.add(84);
+            to_book_seat_idx.add(85);
         }
     }//GEN-LAST:event_btnI02ActionPerformed
 
@@ -3023,6 +3295,8 @@ public void unused(){
             seat[86] = 0;
             seat[87] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(86);
+            to_book_seat_idx.remove(87);
         }
         else if (seat[86] == 0) {
             btnI04.setBackground(Color.YELLOW);
@@ -3030,6 +3304,8 @@ public void unused(){
             seat[86] = 1;
             seat[87] = 1;
             cnt+=2;
+            to_book_seat_idx.add(86);
+            to_book_seat_idx.add(87);
         }
     }//GEN-LAST:event_btnI04ActionPerformed
 
@@ -3040,6 +3316,8 @@ public void unused(){
             seat[86] = 0;
             seat[87] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(86);
+            to_book_seat_idx.remove(87);
         }
         else if (seat[86] == 0) {
             btnI04.setBackground(Color.YELLOW);
@@ -3047,6 +3325,8 @@ public void unused(){
             seat[86] = 1;
             seat[87] = 1;
             cnt+=2;
+            to_book_seat_idx.add(86);
+            to_book_seat_idx.add(87);
         }
     }//GEN-LAST:event_btnI05ActionPerformed
 
@@ -3057,6 +3337,8 @@ public void unused(){
             seat[88] = 0;
             seat[89] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(88);
+            to_book_seat_idx.remove(89);
         }
         else if (seat[88] == 0) {
             btnI07.setBackground(Color.YELLOW);
@@ -3064,6 +3346,8 @@ public void unused(){
             seat[88] = 1;
             seat[89] = 1;
             cnt+=2;
+            to_book_seat_idx.add(88);
+            to_book_seat_idx.add(89);
         }
     }//GEN-LAST:event_btnI07ActionPerformed
 
@@ -3074,6 +3358,8 @@ public void unused(){
             seat[88] = 0;
             seat[89] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(88);
+            to_book_seat_idx.remove(89);
         }
         else if (seat[88] == 0) {
             btnI07.setBackground(Color.YELLOW);
@@ -3081,6 +3367,8 @@ public void unused(){
             seat[88] = 1;
             seat[89] = 1;
             cnt+=2;
+            to_book_seat_idx.add(88);
+            to_book_seat_idx.add(89);
         }
     }//GEN-LAST:event_btnI08ActionPerformed
 
@@ -3091,6 +3379,8 @@ public void unused(){
             seat[90] = 0;
             seat[91] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(90);
+            to_book_seat_idx.remove(91);
         }
         else if (seat[90] == 0) {
             btnI10.setBackground(Color.YELLOW);
@@ -3098,6 +3388,8 @@ public void unused(){
             seat[90] = 1;
             seat[91] = 1;
             cnt+=2;
+            to_book_seat_idx.add(90);
+            to_book_seat_idx.add(91);
         }
     }//GEN-LAST:event_btnI10ActionPerformed
 
@@ -3108,6 +3400,8 @@ public void unused(){
             seat[90] = 0;
             seat[91] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(90);
+            to_book_seat_idx.remove(91);
         }
         else if (seat[90] == 0) {
             btnI10.setBackground(Color.YELLOW);
@@ -3115,6 +3409,8 @@ public void unused(){
             seat[90] = 1;
             seat[91] = 1;
             cnt+=2;
+            to_book_seat_idx.add(90);
+            to_book_seat_idx.add(91);
         }
     }//GEN-LAST:event_btnI11ActionPerformed
 
@@ -3125,6 +3421,8 @@ public void unused(){
             seat[92] = 0;
             seat[93] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(92);
+            to_book_seat_idx.remove(93);
         }
         else if (seat[92] == 0) {
             btnI13.setBackground(Color.YELLOW);
@@ -3132,6 +3430,8 @@ public void unused(){
             seat[92] = 1;
             seat[93] = 1;
             cnt+=2;
+            to_book_seat_idx.add(92);
+            to_book_seat_idx.add(93);
         }
     }//GEN-LAST:event_btnI13ActionPerformed
 
@@ -3142,6 +3442,8 @@ public void unused(){
             seat[92] = 0;
             seat[93] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(92);
+            to_book_seat_idx.remove(93);
         }
         else if (seat[92] == 0) {
             btnI13.setBackground(Color.YELLOW);
@@ -3149,6 +3451,8 @@ public void unused(){
             seat[92] = 1;
             seat[93] = 1;
             cnt+=2;
+            to_book_seat_idx.add(92);
+            to_book_seat_idx.add(93);
         }
     }//GEN-LAST:event_btnI14ActionPerformed
 
@@ -3159,6 +3463,8 @@ public void unused(){
             seat[94] = 0;
             seat[95] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(94);
+            to_book_seat_idx.remove(95);
         }
         else if (seat[94] == 0) {
             btnI16.setBackground(Color.YELLOW);
@@ -3166,6 +3472,8 @@ public void unused(){
             seat[94] = 1;
             seat[95] = 1;
             cnt+=2;
+            to_book_seat_idx.add(94);
+            to_book_seat_idx.add(95);
         }
     }//GEN-LAST:event_btnI16ActionPerformed
 
@@ -3176,6 +3484,8 @@ public void unused(){
             seat[94] = 0;
             seat[95] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(94);
+            to_book_seat_idx.remove(95);
         }
         else if (seat[94] == 0) {
             btnI16.setBackground(Color.YELLOW);
@@ -3183,6 +3493,8 @@ public void unused(){
             seat[94] = 1;
             seat[95] = 1;
             cnt+=2;
+            to_book_seat_idx.add(94);
+            to_book_seat_idx.add(95);
         }
     }//GEN-LAST:event_btnI17ActionPerformed
 
@@ -3191,11 +3503,13 @@ public void unused(){
             btnJ01.setBackground(Color.WHITE);
             seat[96] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(96);
         }
         else if (seat[96] == 0) {
             btnJ01.setBackground(Color.YELLOW);
             seat[96] = 1;
             cnt+=1;
+            to_book_seat_idx.add(96);
         }
     }//GEN-LAST:event_btnJ01ActionPerformed
 
@@ -3204,11 +3518,13 @@ public void unused(){
             btnJ03.setBackground(Color.WHITE);
             seat[97] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(97);
         }
         else if (seat[97] == 0) {
             btnJ03.setBackground(Color.YELLOW);
             seat[97] = 1;
             cnt+=1;
+            to_book_seat_idx.add(97);
         }
     }//GEN-LAST:event_btnJ03ActionPerformed
 
@@ -3217,11 +3533,13 @@ public void unused(){
             btnJ05.setBackground(Color.WHITE);
             seat[98] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(98);
         }
         else if (seat[98] == 0) {
             btnJ05.setBackground(Color.YELLOW);
             seat[98] = 1;
             cnt+=1;
+            to_book_seat_idx.add(98);
         }
     }//GEN-LAST:event_btnJ05ActionPerformed
 
@@ -3230,11 +3548,13 @@ public void unused(){
             btnJ07.setBackground(Color.WHITE);
             seat[99] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(99);
         }
         else if (seat[99] == 0) {
             btnJ07.setBackground(Color.YELLOW);
             seat[99] = 1;
             cnt+=1;
+            to_book_seat_idx.add(99);
         }
     }//GEN-LAST:event_btnJ07ActionPerformed
 
@@ -3243,11 +3563,13 @@ public void unused(){
             btnJ09.setBackground(Color.WHITE);
             seat[100] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(100);
         }
         else if (seat[100] == 0) {
             btnJ09.setBackground(Color.YELLOW);
             seat[100] = 1;
             cnt+=1;
+            to_book_seat_idx.add(100);
         }
     }//GEN-LAST:event_btnJ09ActionPerformed
 
@@ -3256,11 +3578,13 @@ public void unused(){
             btnJ11.setBackground(Color.WHITE);
             seat[101] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(101);
         }
         else if (seat[101] == 0) {
             btnJ11.setBackground(Color.YELLOW);
             seat[101] = 1;
             cnt+=1;
+            to_book_seat_idx.add(101);
         }
     }//GEN-LAST:event_btnJ11ActionPerformed
 
@@ -3269,11 +3593,13 @@ public void unused(){
             btnJ13.setBackground(Color.WHITE);
             seat[102] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(102);
         }
         else if (seat[102] == 0) {
             btnJ13.setBackground(Color.YELLOW);
             seat[102] = 1;
             cnt+=1; 
+            to_book_seat_idx.add(102);
         }
     }//GEN-LAST:event_btnJ13ActionPerformed
 
@@ -3282,11 +3608,13 @@ public void unused(){
             btnJ15.setBackground(Color.WHITE);
             seat[103] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(103);
         }
         else if (seat[103] == 0) {
             btnJ15.setBackground(Color.YELLOW);
             seat[103] = 1;
             cnt+=1;
+            to_book_seat_idx.add(103);
         }
     }//GEN-LAST:event_btnJ15ActionPerformed
 
@@ -3295,11 +3623,13 @@ public void unused(){
             btnJ17.setBackground(Color.WHITE);
             seat[104] = 0;
             cnt-=1;
+            to_book_seat_idx.remove(104);
         }
         else if (seat[104] == 0) {
             btnJ17.setBackground(Color.YELLOW);
             seat[104] = 1;
             cnt+=1;
+            to_book_seat_idx.add(104);
         }
     }//GEN-LAST:event_btnJ17ActionPerformed
 
@@ -3310,6 +3640,8 @@ public void unused(){
             seat[105] = 0;
             seat[106] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(105);
+            to_book_seat_idx.remove(106);
         }
         else if (seat[105] == 0) {
             btnK01.setBackground(Color.YELLOW);
@@ -3317,6 +3649,8 @@ public void unused(){
             seat[105] = 1;
             seat[106] = 1;
             cnt+=2;
+            to_book_seat_idx.add(105);
+            to_book_seat_idx.add(106);
         }
     }//GEN-LAST:event_btnK01ActionPerformed
 
@@ -3327,6 +3661,8 @@ public void unused(){
             seat[105] = 0;
             seat[106] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(105);
+            to_book_seat_idx.remove(106);
         }
         else if (seat[105] == 0) {
             btnK01.setBackground(Color.YELLOW);
@@ -3334,6 +3670,8 @@ public void unused(){
             seat[105] = 1;
             seat[106] = 1;
             cnt+=2;
+            to_book_seat_idx.add(105);
+            to_book_seat_idx.add(106);
         }
     }//GEN-LAST:event_btnK02ActionPerformed
 
@@ -3344,6 +3682,8 @@ public void unused(){
             seat[107] = 0;
             seat[108] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(107);
+            to_book_seat_idx.remove(108);
         }
         else if (seat[107] == 0) {
             btnK04.setBackground(Color.YELLOW);
@@ -3351,6 +3691,8 @@ public void unused(){
             seat[107] = 1;
             seat[108] = 1;
             cnt+=2;
+            to_book_seat_idx.add(107);
+            to_book_seat_idx.add(108);
         }
     }//GEN-LAST:event_btnK04ActionPerformed
 
@@ -3361,6 +3703,8 @@ public void unused(){
             seat[107] = 0;
             seat[108] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(107);
+            to_book_seat_idx.remove(108);
         }
         else if (seat[107] == 0) {
             btnK04.setBackground(Color.YELLOW);
@@ -3368,6 +3712,8 @@ public void unused(){
             seat[107] = 1;
             seat[108] = 1;
             cnt+=2;
+            to_book_seat_idx.add(107);
+            to_book_seat_idx.add(108);
         }
     }//GEN-LAST:event_btnK05ActionPerformed
 
@@ -3378,6 +3724,8 @@ public void unused(){
             seat[109] = 0;
             seat[110] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(109);
+            to_book_seat_idx.remove(110);
         }
         else if (seat[109] == 0) {
             btnK07.setBackground(Color.YELLOW);
@@ -3385,6 +3733,8 @@ public void unused(){
             seat[109] = 1;
             seat[110] = 1;
             cnt+=2;
+            to_book_seat_idx.add(109);
+            to_book_seat_idx.add(110);
         }
     }//GEN-LAST:event_btnK07ActionPerformed
 
@@ -3395,6 +3745,8 @@ public void unused(){
             seat[109] = 0;
             seat[110] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(109);
+            to_book_seat_idx.remove(110);
         }
         else if (seat[109] == 0) {
             btnK07.setBackground(Color.YELLOW);
@@ -3402,6 +3754,8 @@ public void unused(){
             seat[109] = 1;
             seat[110] = 1;
             cnt+=2;
+            to_book_seat_idx.add(109);
+            to_book_seat_idx.add(110);
         }
     }//GEN-LAST:event_btnK08ActionPerformed
 
@@ -3412,6 +3766,8 @@ public void unused(){
             seat[111] = 0;
             seat[112] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(111);
+            to_book_seat_idx.remove(112);
         }
         else if (seat[111] == 0) {
             btnK10.setBackground(Color.YELLOW);
@@ -3419,6 +3775,8 @@ public void unused(){
             seat[111] = 1;
             seat[112] = 1;
             cnt+=2;
+            to_book_seat_idx.add(111);
+            to_book_seat_idx.add(112);
         }
     }//GEN-LAST:event_btnK10ActionPerformed
 
@@ -3429,6 +3787,8 @@ public void unused(){
             seat[111] = 0;
             seat[112] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(111);
+            to_book_seat_idx.remove(112);
         }
         else if (seat[111] == 0) {
             btnK10.setBackground(Color.YELLOW);
@@ -3436,6 +3796,8 @@ public void unused(){
             seat[111] = 1;
             seat[112] = 1;
             cnt+=2;
+            to_book_seat_idx.add(111);
+            to_book_seat_idx.add(112);
         }
     }//GEN-LAST:event_btnK11ActionPerformed
 
@@ -3446,6 +3808,8 @@ public void unused(){
             seat[113] = 0;
             seat[114] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(113);
+            to_book_seat_idx.remove(114);
         }
         else if (seat[113] == 0) {
             btnK13.setBackground(Color.YELLOW);
@@ -3453,6 +3817,8 @@ public void unused(){
             seat[113] = 1;
             seat[114] = 1;
             cnt+=2;
+            to_book_seat_idx.add(113);
+            to_book_seat_idx.add(114);
         }
     }//GEN-LAST:event_btnK13ActionPerformed
 
@@ -3463,6 +3829,8 @@ public void unused(){
             seat[113] = 0;
             seat[114] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(113);
+            to_book_seat_idx.remove(114);
         }
         else if (seat[113] == 0) {
             btnK13.setBackground(Color.YELLOW);
@@ -3470,6 +3838,8 @@ public void unused(){
             seat[113] = 1;
             seat[114] = 1;
             cnt+=2;
+            to_book_seat_idx.add(113);
+            to_book_seat_idx.add(114);
         }
     }//GEN-LAST:event_btnK14ActionPerformed
 
@@ -3480,6 +3850,8 @@ public void unused(){
             seat[115] = 0;
             seat[116] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(115);
+            to_book_seat_idx.remove(116);
         }
         else if (seat[115] == 0) {
             btnK16.setBackground(Color.YELLOW);
@@ -3487,6 +3859,8 @@ public void unused(){
             seat[115] = 1;
             seat[116] = 1;
             cnt+=2;
+            to_book_seat_idx.add(115);
+            to_book_seat_idx.add(116);
         }
     }//GEN-LAST:event_btnK16ActionPerformed
 
@@ -3497,6 +3871,8 @@ public void unused(){
             seat[115] = 0;
             seat[116] = 0;
             cnt-=2;
+            to_book_seat_idx.remove(115);
+            to_book_seat_idx.remove(116);
         }
         else if (seat[115] == 0) {
             btnK16.setBackground(Color.YELLOW);
@@ -3504,6 +3880,8 @@ public void unused(){
             seat[115] = 1;
             seat[116] = 1;
             cnt+=2;
+            to_book_seat_idx.add(115);
+            to_book_seat_idx.add(116);
         }
     }//GEN-LAST:event_btnK17ActionPerformed
 
