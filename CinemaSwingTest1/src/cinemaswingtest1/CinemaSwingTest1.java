@@ -12,6 +12,8 @@ public class CinemaSwingTest1 {
 //int total =78;
 //API.createMovie("lide", "12345", "lide and his team", "lide", "monday", "1234", total, "c/s");
 
+
+////initilize defult movie into the database
 //int totalseat1 =78;
 //int totalseat2 =78;
 //int totalseat3 =78;
@@ -35,7 +37,7 @@ public class CinemaSwingTest1 {
 //        List<API.Movie> movie_list = API.getAllMovie();
 //        String id = movie_list.get(0).id;
         
-        System.out.println("------");
+//        System.out.println("------");
 
 //        List<API.Seat> seat_list = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
 //        seat_list.get(0).id;
