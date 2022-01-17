@@ -22,11 +22,11 @@ public class CustomerPayment extends javax.swing.JFrame {
         fnb_price = Double.parseDouble(String.valueOf(Global.fnb_price));
         
         if (Global.ticket_class.equals("Student"))
-            ticket_price = 10 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = Integer.parseInt(Global.ticket_student) * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Classic"))
-            ticket_price = 17 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = Integer.parseInt(Global.ticket_classic) * Integer.parseInt(Global.cnt_seat);
         else if (Global.ticket_class.equals("Premium"))
-            ticket_price = 25 * Integer.parseInt(Global.cnt_seat);
+            ticket_price = Integer.parseInt(Global.ticket_premium) * Integer.parseInt(Global.cnt_seat);
         txtPriceTicket.setText(String.format("RM %.2f", ticket_price));
         
         total_price = ticket_price + fnb_price;

@@ -21,7 +21,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
         txtTitle = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtDate = new javax.swing.JTextField();
@@ -32,7 +31,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
         txtSynopsis = new javax.swing.JTextField();
         label1 = new javax.swing.JLabel();
         label2 = new javax.swing.JLabel();
-        txtSeat = new javax.swing.JTextField();
         label3 = new javax.swing.JLabel();
         txtDay = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -42,11 +40,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Total Seat");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 114, -1));
 
         txtTitle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +85,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
         label2.setForeground(new java.awt.Color(255, 255, 255));
         label2.setText("Day");
         getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, 114, -1));
-        getContentPane().add(txtSeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, 290, 30));
 
         label3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         label3.setForeground(new java.awt.Color(255, 255, 255));
@@ -143,7 +135,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
         //validation for not leave blank data
         if(txtTitle.getText().equals("")||txtDate.getText().equals("")||txtCast.getText().equals("")||
                 txtSynopsis.getText().equals("")||txtDay.getText().equals("")||txtTime.getText().equals("")||
-                txtSeat.getText().equals("")||label.getIcon()==null){
+                label.getIcon()==null){
             //if any field left blank then show message
             JOptionPane.showMessageDialog(this, "Please Enter All Data !");
         }
@@ -163,10 +155,8 @@ public class StaffAddMovie extends javax.swing.JFrame {
                                                         txtCast.getText(),
                                                         txtSynopsis.getText(),
                                                         txtDay.getText(),
-                                                        txtTime.getText(),
-                                                        txtSeat.getText()
-        });
-                
+                                                        txtTime.getText()
+        }); 
         
         try {
             String title = txtTitle.getText();
@@ -175,10 +165,9 @@ public class StaffAddMovie extends javax.swing.JFrame {
             String synopsis = txtSynopsis.getText();
             String day =txtDay.getText();
             String time =txtTime.getText();
-            int seat =Integer.parseInt(txtSeat.getText());
             String url = Global.Url;
             
-            API.createMovie(title, date, cast, synopsis, day, time, seat, url);
+            API.createMovie(title, date, cast, synopsis, day, time, url);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -188,7 +177,7 @@ public class StaffAddMovie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void txtTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTitleActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtTitleActionPerformed
 
     public static void main(String args[]) {
@@ -223,7 +212,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -234,7 +222,6 @@ public class StaffAddMovie extends javax.swing.JFrame {
     private javax.swing.JTextField txtCast;
     private javax.swing.JTextField txtDate;
     private javax.swing.JTextField txtDay;
-    private javax.swing.JTextField txtSeat;
     private javax.swing.JTextField txtSynopsis;
     private javax.swing.JTextField txtTime;
     private javax.swing.JTextField txtTitle;

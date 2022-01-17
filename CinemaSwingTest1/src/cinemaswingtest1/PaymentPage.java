@@ -206,7 +206,7 @@ public class PaymentPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
+try {
             boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jTextField4.getText().equals("") ;
             System.out.println("a"+jTextField1.getText()+"a");
             System.out.println("hello");

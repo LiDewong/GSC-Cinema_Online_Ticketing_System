@@ -24,7 +24,7 @@ public class TicketGenerate {
         
         try {
             generateQRCodeImage(String.format("GSC Ticket\nSeat: %s\nHall: %s\nMovie: %s\nTiming: %s, %s", 
-                    Global.seat_no, "1", "Spider-Man: No Way Home", Global.day, Global.time), 
+                    Global.seat_no, Global.hall, Global.movie_name, Global.day, Global.time), 
                     150, 150, QR_CODE_IMAGE_PATH);
         } catch (WriterException e) {
             System.out.println("Could not generate QR Code, WriterException :: " + e.getMessage());
@@ -67,7 +67,7 @@ public class TicketGenerate {
         g2d.drawString("Hall", 50, 130);
         
         g2d.setColor(Color.white);
-        g2d.drawString("1", 100, 130);
+        g2d.drawString(String.valueOf(Global.hall), 100, 130);
         
         g2d.setColor(Color.white);
         g2d.drawString("Movie", 50, 170);
