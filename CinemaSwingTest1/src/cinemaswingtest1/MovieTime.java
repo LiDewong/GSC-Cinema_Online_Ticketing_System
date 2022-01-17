@@ -188,20 +188,97 @@ public class MovieTime extends javax.swing.JFrame {
             Global.day = day;
             Global.time = "9:00AM";
             
-            MovieSeat1 ms1 = new MovieSeat1();
-            ms1.setVisible(true);
-            ms1.pack();
-            ms1.setLocationRelativeTo(null);
-            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.dispose();
-        }
-        
-//        MovieSeat2 ms2 = new MovieSeat2();
-//        ms2.setVisible(true);
-//        ms2.pack();
-//        ms2.setLocationRelativeTo(null);
-//        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        this.dispose();
+            if (Global.movie_name.equals("Spider-Man: No Way Home")) {
+                if (Global.seat_movie1 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("No Time To Die")) {
+                if (Global.seat_movie2 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Eternals")) {
+                if (Global.seat_movie3 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("The Medium")) {
+                if (Global.seat_movie4 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
+                if (Global.seat_movie5 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+        }       
     }//GEN-LAST:event_jLabel9amMouseClicked
 
     private void jLabel3pmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3pmMouseClicked
@@ -216,20 +293,97 @@ public class MovieTime extends javax.swing.JFrame {
             Global.day = day;
             Global.time = "3:00PM";
             
-            MovieSeat1 ms1 = new MovieSeat1();
-            ms1.setVisible(true);
-            ms1.pack();
-            ms1.setLocationRelativeTo(null);
-            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.dispose();
+            if (Global.movie_name.equals("Spider-Man: No Way Home")) {
+                if (Global.seat_movie1 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("No Time To Die")) {
+                if (Global.seat_movie2 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Eternals")) {
+                if (Global.seat_movie3 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("The Medium")) {
+                if (Global.seat_movie4 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
+                if (Global.seat_movie5 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
         }
-        
-//        MovieSeat2 ms2 = new MovieSeat2();
-//        ms2.setVisible(true);
-//        ms2.pack();
-//        ms2.setLocationRelativeTo(null);
-//        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        this.dispose();
     }//GEN-LAST:event_jLabel3pmMouseClicked
 
     private void jLabel9pmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9pmMouseClicked
@@ -244,20 +398,97 @@ public class MovieTime extends javax.swing.JFrame {
             Global.day = day;
             Global.time = "9:00PM";
             
-            MovieSeat1 ms1 = new MovieSeat1();
-            ms1.setVisible(true);
-            ms1.pack();
-            ms1.setLocationRelativeTo(null);
-            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.dispose();
+            if (Global.movie_name.equals("Spider-Man: No Way Home")) {
+                if (Global.seat_movie1 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("No Time To Die")) {
+                if (Global.seat_movie2 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Eternals")) {
+                if (Global.seat_movie3 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("The Medium")) {
+                if (Global.seat_movie4 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
+            if (Global.movie_name.equals("Ghostbusters: Afterlife")) {
+                if (Global.seat_movie5 == 78) {
+                    MovieSeat1 ms1 = new MovieSeat1();
+                    ms1.setVisible(true);
+                    ms1.pack();
+                    ms1.setLocationRelativeTo(null);
+                    ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+                else {
+                    MovieSeat2 ms2 = new MovieSeat2();
+                    ms2.setVisible(true);
+                    ms2.pack();
+                    ms2.setLocationRelativeTo(null);
+                    ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
+                }
+            }
         }
-        
-//        MovieSeat2 ms2 = new MovieSeat2();
-//        ms2.setVisible(true);
-//        ms2.pack();
-//        ms2.setLocationRelativeTo(null);
-//        ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        this.dispose();
     }//GEN-LAST:event_jLabel9pmMouseClicked
 
     private void btnDay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDay1ActionPerformed
