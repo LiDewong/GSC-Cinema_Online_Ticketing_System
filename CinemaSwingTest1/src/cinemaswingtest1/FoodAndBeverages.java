@@ -1029,7 +1029,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (totalPrice!=0)
             JOptionPane.showMessageDialog(this, "Purchase Food And Beverages Successfully !");
-
+            Global.fnb_price = String.valueOf(totalPrice);
             CustomerPayment cp = new CustomerPayment();
             cp.setVisible(true);
             cp.pack();
