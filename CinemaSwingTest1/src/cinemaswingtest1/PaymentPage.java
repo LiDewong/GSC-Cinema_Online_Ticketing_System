@@ -6,6 +6,7 @@ package cinemaswingtest1;
 
 import java.io.IOException;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -219,11 +220,12 @@ public class PaymentPage extends javax.swing.JFrame {
             if (!x) {
 //                TicketGenerate tt = new TicketGenerate();
 //                tt.generateTicket();
-                Ticket t = new Ticket();
-                t.setVisible(true);
-                t.pack();
-                t.setLocationRelativeTo(null);
-                t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                JOptionPane.showMessageDialog(this, "You Have Paid Successfully !");
+                LastPage lp = new LastPage();
+                lp.setVisible(true);
+                lp.pack();
+                lp.setLocationRelativeTo(null);
+                lp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 this.dispose();
                 
                 
