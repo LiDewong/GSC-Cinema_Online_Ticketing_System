@@ -43,24 +43,6 @@ public class MovieSeat2 extends javax.swing.JFrame {
             
         }
 
-//        seats = API.getAllSeat("ckygxcx3h000207obwxdgiaz2");
-//
-//        for (int i = 0; i < seats.size(); i++) {
-//            seat_id.add(seats.get(i).id);
-//            if (seats.get(i).customer_id == "") {
-//                havent_book_idx.add(i);
-//            } else {
-//                booked_idx.add(i);
-//            }
-//        }
-//
-//        for (int i = 0; i < booked_idx.size(); i++) {
-//            btn.get(i).setEnabled(false);
-//        }
-//
-//        for (int i = 0; i < havent_book_idx.size(); i++) {
-//            btn.get(i).setEnabled(true);
-//        }
 
     }
     public void confirm() {
@@ -70,8 +52,6 @@ public class MovieSeat2 extends javax.swing.JFrame {
         for (int i = 0; i < to_book_seat_idx.size(); i++) {
             Global.listL.get(m).add(to_book_seat_idx.get(i));
             System.out.println(Global.listL.get(m).get(i));
-//        for (int i = 0; i < to_book_seat_idx.size(); i++) {
-//            System.out.println(API.bookSeat(Global.customer_email, seat_id.get(i)));
         }
     }
   
@@ -197,130 +177,8 @@ public class MovieSeat2 extends javax.swing.JFrame {
     }
     
 public void unused(){
-    //        if (customer_email != null) {btnA01.setEnabled(false);}
-//        if (customer_email != null) {btnA02.setEnabled(false);}
-//        if (customer_email != null) {btnA04.setEnabled(false);}
-//        if (customer_email != null) {btnA05.setEnabled(false);}
-//        if (customer_email != null) {btnA07.setEnabled(false);}
-//        if (customer_email != null) {btnA08.setEnabled(false);}
-//        if (customer_email != null) {btnA10.setEnabled(false);}
-//        if (customer_email != null) {btnA11.setEnabled(false);}
-//        if (customer_email != null) {btnA13.setEnabled(false);}
-//        if (customer_email != null) {btnA14.setEnabled(false);}
-//        if (customer_email != null) {btnA16.setEnabled(false);}
-//        if (customer_email != null) {btnA17.setEnabled(false);}
-//        if (customer_email != null) {btnB01.setEnabled(false);}
-//        if (customer_email != null) {btnB03.setEnabled(false);}
-//        if (customer_email != null) {btnB05.setEnabled(false);}
-//        if (customer_email != null) {btnB07.setEnabled(false);}
-//        if (customer_email != null) {btnB09.setEnabled(false);}
-//        if (customer_email != null) {btnB11.setEnabled(false);}
-//        if (customer_email != null) {btnB13.setEnabled(false);}
-//        if (customer_email != null) {btnB15.setEnabled(false);}
-//        if (customer_email != null) {btnB17.setEnabled(false);}
-//        if (customer_email != null) {btnC01.setEnabled(false);}
-//        if (customer_email != null) {btnC02.setEnabled(false);}
-//        if (customer_email != null) {btnC04.setEnabled(false);}
-//        if (customer_email != null) {btnC05.setEnabled(false);}
-//        if (customer_email != null) {btnC07.setEnabled(false);}
-//        if (customer_email != null) {btnC08.setEnabled(false);}
-//        if (customer_email != null) {btnC10.setEnabled(false);}
-//        if (customer_email != null) {btnC11.setEnabled(false);}
-//        if (customer_email != null) {btnC13.setEnabled(false);}
-//        if (customer_email != null) {btnC14.setEnabled(false);}
-//        if (customer_email != null) {btnC16.setEnabled(false);}
-//        if (customer_email != null) {btnC17.setEnabled(false);}
-//        if (customer_email != null) {btnD01.setEnabled(false);}
-//        if (customer_email != null) {btnD03.setEnabled(false);}
-//        if (customer_email != null) {btnD05.setEnabled(false);}
-//        if (customer_email != null) {btnD07.setEnabled(false);}
-//        if (customer_email != null) {btnD09.setEnabled(false);}
-//        if (customer_email != null) {btnD11.setEnabled(false);}
-//        if (customer_email != null) {btnD13.setEnabled(false);}
-//        if (customer_email != null) {btnD15.setEnabled(false);}
-//        if (customer_email != null) {btnD17.setEnabled(false);}
-//        if (customer_email != null) {btnE01.setEnabled(false);}
-//        if (customer_email != null) {btnE02.setEnabled(false);}
-//        if (customer_email != null) {btnE04.setEnabled(false);}
-//        if (customer_email != null) {btnE05.setEnabled(false);}
-//        if (customer_email != null) {btnE07.setEnabled(false);}
-//        if (customer_email != null) {btnE08.setEnabled(false);}
-//        if (customer_email != null) {btnE10.setEnabled(false);}
-//        if (customer_email != null) {btnE11.setEnabled(false);}
-//        if (customer_email != null) {btnE13.setEnabled(false);}
-//        if (customer_email != null) {btnE14.setEnabled(false);}
-//        if (customer_email != null) {btnE16.setEnabled(false);}
-//        if (customer_email != null) {btnE17.setEnabled(false);}
-//        if (customer_email != null) {btnF01.setEnabled(false);}
-//        if (customer_email != null) {btnF03.setEnabled(false);}
-//        if (customer_email != null) {btnF05.setEnabled(false);}
-//        if (customer_email != null) {btnF07.setEnabled(false);}
-//        if (customer_email != null) {btnF09.setEnabled(false);}
-//        if (customer_email != null) {btnF11.setEnabled(false);}
-//        if (customer_email != null) {btnF13.setEnabled(false);}
-//        if (customer_email != null) {btnF15.setEnabled(false);}
-//        if (customer_email != null) {btnF17.setEnabled(false);}
-//        if (customer_email != null) {btnG01.setEnabled(false);}
-//        if (customer_email != null) {btnG02.setEnabled(false);}
-//        if (customer_email != null) {btnG04.setEnabled(false);}
-//        if (customer_email != null) {btnG05.setEnabled(false);}
-//        if (customer_email != null) {btnG07.setEnabled(false);}
-//        if (customer_email != null) {btnG08.setEnabled(false);}
-//        if (customer_email != null) {btnG10.setEnabled(false);}
-//        if (customer_email != null) {btnG11.setEnabled(false);}
-//        if (customer_email != null) {btnG13.setEnabled(false);}
-//        if (customer_email != null) {btnG14.setEnabled(false);}
-//        if (customer_email != null) {btnG16.setEnabled(false);}
-//        if (customer_email != null) {btnG17.setEnabled(false);}
-//        if (customer_email != null) {btnH01.setEnabled(false);}
-//        if (customer_email != null) {btnH03.setEnabled(false);}
-//        if (customer_email != null) {btnH05.setEnabled(false);}
-//        if (customer_email != null) {btnH07.setEnabled(false);}
-//        if (customer_email != null) {btnH09.setEnabled(false);}
-//        if (customer_email != null) {btnH11.setEnabled(false);}
-//        if (customer_email != null) {btnH13.setEnabled(false);}
-//        if (customer_email != null) {btnH15.setEnabled(false);}
-//        if (customer_email != null) {btnH17.setEnabled(false);}
-//        if (customer_email != null) {btnI01.setEnabled(false);}
-//        if (customer_email != null) {btnI02.setEnabled(false);}
-//        if (customer_email != null) {btnI04.setEnabled(false);}
-//        if (customer_email != null) {btnI05.setEnabled(false);}
-//        if (customer_email != null) {btnI07.setEnabled(false);}
-//        if (customer_email != null) {btnI08.setEnabled(false);}
-//        if (customer_email != null) {btnI10.setEnabled(false);}
-//        if (customer_email != null) {btnI11.setEnabled(false);}
-//        if (customer_email != null) {btnI13.setEnabled(false);}
-//        if (customer_email != null) {btnI14.setEnabled(false);}
-//        if (customer_email != null) {btnI16.setEnabled(false);}
-//        if (customer_email != null) {btnI17.setEnabled(false);}
-//        if (customer_email != null) {btnJ01.setEnabled(false);}
-//        if (customer_email != null) {btnJ03.setEnabled(false);}
-//        if (customer_email != null) {btnJ05.setEnabled(false);}
-//        if (customer_email != null) {btnJ07.setEnabled(false);}
-//        if (customer_email != null) {btnJ09.setEnabled(false);}
-//        if (customer_email != null) {btnJ11.setEnabled(false);}
-//        if (customer_email != null) {btnJ13.setEnabled(false);}
-//        if (customer_email != null) {btnJ15.setEnabled(false);}
-//        if (customer_email != null) {btnJ17.setEnabled(false);}
-//        if (customer_email != null) {btnK01.setEnabled(false);}
-//        if (customer_email != null) {btnK02.setEnabled(false);}
-//        if (customer_email != null) {btnK04.setEnabled(false);}
-//        if (customer_email != null) {btnK05.setEnabled(false);}
-//        if (customer_email != null) {btnK07.setEnabled(false);}
-//        if (customer_email != null) {btnK08.setEnabled(false);}
-//        if (customer_email != null) {btnK10.setEnabled(false);}
-//        if (customer_email != null) {btnK11.setEnabled(false);}
-//        if (customer_email != null) {btnK13.setEnabled(false);}
-//        if (customer_email != null) {btnK14.setEnabled(false);}
-//        if (customer_email != null) {btnK16.setEnabled(false);}
-//        if (customer_email != null) {btnK17.setEnabled(false);}
 }
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerated by the Form Editor.
-     */
-    @SuppressWarnings("unchecked")
+        @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -3961,69 +3819,7 @@ public void unused(){
             java.util.logging.Logger.getLogger(MovieSeat2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
