@@ -200,8 +200,7 @@ public class PaymentPage extends javax.swing.JFrame {
                     System.out.println(e.getMessage());
             }
             boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jTextField4.getText().equals("") ;
-            System.out.println("a"+jTextField1.getText()+"a");
-            System.out.println("hello");
+            
             if (!x) {
 
                 JOptionPane.showMessageDialog(this, "You Have Paid Successfully !");
