@@ -91,7 +91,7 @@ public class StaffFB2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        JOptionPane.showMessageDialog(this,"Save Date Successfully !");
+        JOptionPane.showMessageDialog(this,"Save Data Successfully !");
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
