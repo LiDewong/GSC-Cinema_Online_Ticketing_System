@@ -82,8 +82,8 @@ public class CustomerRegister extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
-            boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jPasswordField1.getText().equals("") ;
-            if(!x){
+            boolean x = jTextField1.getText().equals("") ||jTextField2.getText().equals("")|| jTextField3.getText().equals("")||jPasswordField1.getText().equals("") ;
+            if(x){
             String name = jTextField1.getText();
             String email = jTextField2.getText();
             String phone_number = jTextField3.getText();
