@@ -59,7 +59,9 @@ public class StaffFB extends javax.swing.JFrame {
                 {"Sides", "Chocolate Bar", "5.00"},
                 {"Sides", "Brownie", "6.00"},
                 {"Sides", "Cupcake", "4.00"},
-                {"Sides", "Candy", "3.00"}
+                {"Sides", "Candy", "3.00"},
+                {"Sides", "Doughnut", "2.00"},
+                {"Beverages", "Milky Tea", "3.50"}
             },
             new String [] {
                 "Type", "Name", "Price(RM)"
