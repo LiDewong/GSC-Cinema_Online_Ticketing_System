@@ -92,13 +92,13 @@
                   <Data value="Beverages"/>
                   <Data value="Beverages"/>
                   <Data value="Beverages"/>
-                  <Data value="Sides"/>
-                  <Data value="Sides"/>
-                  <Data value="Sides"/>
-                  <Data value="Sides"/>
-                  <Data value="Sides"/>
-                  <Data value="Sides"/>
                   <Data value="Beverages"/>
+                  <Data value="Sides"/>
+                  <Data value="Sides"/>
+                  <Data value="Sides"/>
+                  <Data value="Sides"/>
+                  <Data value="Sides"/>
+                  <Data value="Sides"/>
                 </Column>
                 <Column editable="true" title="Name" type="java.lang.Object">
                   <Data value="Popcorn(Small)"/>
@@ -113,13 +113,13 @@
                   <Data value="Fruit Juice"/>
                   <Data value="Soft Drink"/>
                   <Data value="Mineral Water"/>
+                  <Data value="Milky Tea"/>
                   <Data value="Cake"/>
                   <Data value="Chocolate Bar"/>
                   <Data value="Brownie"/>
                   <Data value="Cupcake"/>
                   <Data value="Candy"/>
                   <Data value="Doughnut"/>
-                  <Data value="Milky Tea"/>
                 </Column>
                 <Column editable="true" title="Price(RM)" type="java.lang.Object">
                   <Data value="5.00"/>
@@ -134,13 +134,13 @@
                   <Data value="7.00"/>
                   <Data value="4.00"/>
                   <Data value="3.00"/>
+                  <Data value="3.50"/>
                   <Data value="8.00"/>
                   <Data value="5.00"/>
                   <Data value="6.00"/>
                   <Data value="4.00"/>
                   <Data value="3.00"/>
                   <Data value="2.00"/>
-                  <Data value="3.50"/>
                 </Column>
               </Table>
             </Property>
