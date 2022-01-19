@@ -603,7 +603,7 @@ public class FoodAndBeverages extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("5.50");
+        jLabel1.setText("RM5.50");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
