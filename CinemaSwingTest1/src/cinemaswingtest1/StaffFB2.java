@@ -81,7 +81,7 @@ public class StaffFB2 extends javax.swing.JFrame {
         }
         else{
             //successfully added message
-            JOptionPane.showMessageDialog(this,"Add Date Successfully !");
+            JOptionPane.showMessageDialog(this,"Add Data Successfully !");
         }
         
         StaffFB.AddRowToJTable(new Object[]{
