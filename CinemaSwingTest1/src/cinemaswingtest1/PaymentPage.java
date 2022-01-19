@@ -199,7 +199,7 @@ public class PaymentPage extends javax.swing.JFrame {
             } catch (IOException e) {
                     System.out.println(e.getMessage());
             }
-            boolean x = jTextField1.getText().equals("") &&jTextField2.getText().equals("")&& jTextField3.getText().equals("")&&jTextField4.getText().equals("") ;
+            boolean x = jTextField1.getText().equals("") || jTextField2.getText().equals("") || jTextField3.getText().equals("") || jTextField4.getText().equals("") ;
             
             if (!x) {
 

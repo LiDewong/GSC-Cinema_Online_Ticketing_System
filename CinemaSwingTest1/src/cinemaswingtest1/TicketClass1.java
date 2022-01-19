@@ -170,12 +170,22 @@ public class TicketClass1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        MovieSeat1 ms1 = new MovieSeat1();
-        ms1.setVisible(true);
-        ms1.pack();
-        ms1.setLocationRelativeTo(null);
-        ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.dispose();
+        if (Global.hall == 1) {
+            MovieSeat1 ms1 = new MovieSeat1();
+            ms1.setVisible(true);
+            ms1.pack();
+            ms1.setLocationRelativeTo(null);
+            ms1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }
+        else {
+            MovieSeat2 ms2 = new MovieSeat2();
+            ms2.setVisible(true);
+            ms2.pack();
+            ms2.setLocationRelativeTo(null);
+            ms2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            this.dispose();
+        }
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed

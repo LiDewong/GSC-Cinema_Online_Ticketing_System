@@ -10,7 +10,7 @@ public class Global {
     public static String seat_no = "";
     public static String cnt_seat = "";
     public static String ticket_class = "";
-    public static String fnb_price = "0";
+    public static String fnb_price = "";
     public static String day = "";
     public static String time = "";
     public static String Url=""; 
@@ -19,7 +19,7 @@ public class Global {
     public static int seat_movie3;
     public static int seat_movie4;
     public static int seat_movie5;
-    public static int hall = 1;
+    public static int hall;
     public static int movie_idx;
     public static int remove_movie_idx;
     public static List<Integer> booked_seat0 = new ArrayList<>();
