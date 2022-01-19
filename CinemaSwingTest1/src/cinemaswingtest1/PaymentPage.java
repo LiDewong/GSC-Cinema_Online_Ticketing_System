@@ -193,16 +193,12 @@ public class PaymentPage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             try {
+                boolean x = jTextField1.getText().equals("") || jTextField2.getText().equals("") || jTextField3.getText().equals("") || jTextField4.getText().equals("") ;
+            
+            if (!x) {
                 System.out.println(Global.seat_no);
                 TicketGenerate tt = new TicketGenerate();
                 tt.generateTicket();
-            } catch (IOException e) {
-                    System.out.println(e.getMessage());
-            }
-            boolean x = jTextField1.getText().equals("") || jTextField2.getText().equals("") || jTextField3.getText().equals("") || jTextField4.getText().equals("") ;
-            
-            if (!x) {
-
                 JOptionPane.showMessageDialog(this, "You Have Paid Successfully !");
                 LastPage lp = new LastPage();
                 lp.setVisible(true);
@@ -214,6 +210,11 @@ public class PaymentPage extends javax.swing.JFrame {
                 
             }else {
                 jLabel6.setText("Invalid");}
+                
+            } catch (IOException e) {
+                    System.out.println(e.getMessage());
+            }
+            
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

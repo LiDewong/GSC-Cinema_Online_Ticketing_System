@@ -2517,14 +2517,7 @@ public class MovieSeat1 extends javax.swing.JFrame {
                     Global.seat_no += id[i] + " ";
 //                    API.bookSeat(Global.customer_email, seat_id);
 //                    confirm();
-                }
-            }
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
-        if (cnt == 0) {
+if (cnt == 0) {
             JOptionPane.showMessageDialog(this, "Please Select Your Seat !");
         } else {
             JOptionPane.showMessageDialog(this, "You Have Selected " + cnt + " Seat(s)");
@@ -2537,6 +2530,14 @@ public class MovieSeat1 extends javax.swing.JFrame {
             tc1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.dispose();
         }
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

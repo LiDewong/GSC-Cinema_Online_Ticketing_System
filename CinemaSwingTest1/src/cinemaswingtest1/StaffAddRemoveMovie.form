@@ -73,11 +73,11 @@
                   <Data value="Years after the singin competition, Buster Moon&apos;s shows have turned into an unqualified success. Howver, the others are facing troubles. Rosita still hasn&apos;t chosen a record label to sign with. Mike is a family man and has quit jazz to become a singer. Ash, still not used to life without her boyfriend, does performances at an old restaurant. Johnny has become a faous singer but he is finding it hard to persuade a record label to help him with his career. Meena, now part of choir, has difficulties earning the trust of her newfound friend. But when a gang of lowlifes tear down the whole town, Buster has to reunite the gang, look for new contestants and even sing a tune or two himself"/>
                 </Column>
                 <Column editable="true" title="Day" type="java.lang.Object">
-                  <Data value="20, 21, 22"/>
-                  <Data value="20, 21, 22"/>
-                  <Data value="20, 21, 22"/>
-                  <Data value="20, 21, 22"/>
-                  <Data value="20, 21, 22"/>
+                  <Data value="20/01/22, 21/01/22, 22/01/22"/>
+                  <Data value="20/01/22, 21/01/22, 22/01/22"/>
+                  <Data value="20/01/22, 21/01/22, 22/01/22"/>
+                  <Data value="20/01/22, 21/01/22, 22/01/22"/>
+                  <Data value="20/01/22, 21/01/22, 22/01/22"/>
                 </Column>
                 <Column editable="true" title="Time" type="java.lang.Object">
                   <Data value="9:00AM, 3:00PM, 9:00 PM"/>

@@ -54,7 +54,7 @@ public class MovieSeat2 extends javax.swing.JFrame {
 //            }
 //        }
 //
-//        for (int i = 0; i < booked_idx.size(); i++) {
+//        for (int i = 0; i < to_book_seat_idx.size(); i++) {
 //            btn.get(i).setEnabled(false);
 //        }
 //
@@ -3796,7 +3796,7 @@ public class MovieSeat2 extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(this, "You Have Selected "+cnt+" Seat(s)");
             Global.cnt_seat = String.valueOf(cnt);
-
+            confirm();
             TicketClass1 tc = new TicketClass1();
             tc.setVisible(true);
             tc.pack();

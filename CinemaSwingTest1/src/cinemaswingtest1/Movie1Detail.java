@@ -93,6 +93,7 @@ public class Movie1Detail extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Global.movie_name = "Spider-Man: No Way Home";
         Global.movie_idx=0;
+        Global.remove_movie_idx=0;
         System.out.println(Global.movie_idx);
         MovieTime mt = new MovieTime();
         mt.setVisible(true);
